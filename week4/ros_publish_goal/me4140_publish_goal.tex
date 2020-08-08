@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+% ME4140 - Fall 2016
+
+\textwidth=6.5in
+\topmargin=-0.5in
+\textheight=9.25in
+\hoffset=-0.5in
+\footskip=0.2in
+
+\pagestyle{myheadings}
+\markright{{\large ME 4140 Fall 20187---The Robotic Operating System}}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygray}{rgb}{.6, .6, .6}
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\BR}{\color{mybrown}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+\newcommand{\pkgname}{\G<package\_name>\K}
+\newcommand{\wspname}{\R<workspace\_name>\K}
+\newcommand{\nodname}{\PR<node\_name>\K}
+\newcommand{\tpcname}{/topic\_name}
+\newcommand{\home}{\textasciitilde/}
+
+\newcommand{\pthname}{/opt/ros/kinetic/share/turtlebot\textunderscore stage/maps/}
+
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+   {\bf \Large ROS - Publishing and Subscribing with Turtlebot }\vspace{2mm} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2018} \\
+\end{center}
+
+
+\begin{enumerate}
+    
+    \item This tutorial assumes you have been following the course so far. To begin create a new package with the name of your choosing.\\\\
+        {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ cd \home\wspname/src }\\
+        {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ catkin\textunderscore create\textunderscore pkg publish\textunderscore goal std\textunderscore msgs roscpp rospy}
+    
+
+    \item Now we are going to make a new node called {\bf publish\_goal}. Open a new file in the proper src folder and insert the following cpp code.\\ \\
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ gedit \home\wspname/src/publish\textunderscore goal/src/publish\textunderscore goal.cpp  }
+    
+        \begin{lstlisting}
+#include "ros/ros.h"
+#include "geometry_msgs/PoseStamped.h"
+#include <sstream>
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "publish_goal");
+    ros::NodeHandle n;
+    ros::Publisher ttu_publisher =
+    n.advertise<geometry_msgs::PoseStamped>("/move_base_simple/goal", 1000);
+    ros::Rate loop_rate(10);
+
+    geometry_msgs::PoseStamped msg;
+    msg.header.stamp=ros::Time::now();
+    msg.header.frame_id="map";
+
+    int count = 0;
+    while ((ros::ok())&&(count<5))  
+    {               
+        msg.pose.position.x = 3.0;
+        msg.pose.position.y = 2.0;
+        msg.pose.position.z = 0;
+        msg.pose.orientation.w = 1.0;
+
+        ttu_publisher.publish(msg);
+        ros::spinOnce();
+        loop_rate.sleep();
+        count++;
+    }
+}
+\end{lstlisting}
+    
+    \newpage
+    
+    \item Edit the {\it CMakeLists.txt} file for this specific node. \\\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ gedit \home\wspname/src/publish\textunderscore goal/CMakeLists.txt }\\
+    
+    Add the following lines at the bottom of the file. \\
+    
+   {\fontfamily{qcr}\selectfont add\_executable(\nodname\hspace{3mm}src/\nodname.cpp) } \\
+{\fontfamily{qcr}\selectfont target\_link\_libraries(\nodname \hspace{3mm}\$\{catkin\_LIBRARIES\}) } \\
+{\fontfamily{qcr}\selectfont add\_dependencies(\nodname \hspace{3mm}beginner\_tutorials\_generate\_messages\_cpp) }\\
+
+     \item Compile before running. Turn Everything off before you do this.\\\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ cd \home\wspname }\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ catkin\textunderscore make }
+
+    \item First start the turtlebot simulator then run the node you just made. You may have to repeat the export commands (or you can add them to the bottom of the .bashrc file. \\\\
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ export TURTLEBOT\_STAGE\_MAP\_FILE=\\"\pthname maze.yaml"}\\\\
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ export TURTLEBOT\_STAGE\_WORLD\_FILE=\\"\pthname stage/maze.world"}\\\\ 
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ roslaunch turtlebot\textunderscore stage turtlebot\textunderscore in\textunderscore stage.launch}\\
+
+\item Now open a new termimnal\\\\
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ rosrun publish\textunderscore goal publish\textunderscore goal}\\
+     
+     You should see your robot move to location programmed in your source file!
+ 
+ \newpage    
+     
+\item Now let us make a node called {\bf subscribe\_status} that can access information from the robot in the form of a topic. To do this we are going to make a new node that is part of the same package we just made/used. Open a new file in the proper src folder and insert the following cpp code.\\\\ 
+{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ gedit \home\wspname/src/publish\textunderscore goal/src/subscribe\textunderscore status.cpp  }
+         
+         \begin{lstlisting}
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+#include "actionlib_msgs/GoalStatusArray.h"
+
+void statusCB(const actionlib_msgs::GoalStatusArray::ConstPtr& msg)
+{
+    ROS_INFO("Subscriber Callback Executed");
+    if (!msg->status_list.empty())
+    {
+        actionlib_msgs::GoalStatus goalStatus = msg->status_list[0];
+        ROS_INFO("Status Recieved: %i",goalStatus.status);  
+    }
+}
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "subscribe_status");
+    ros::NodeHandle n;
+    ros::Subscriber sub = n.subscribe("/move_base/status", 1000, statusCB);
+    ros::spin();
+    return 0;
+}
+    \end{lstlisting}
+    
+    \item Edit the correct {\it CMakeLists.txt} file for this specific node too. \\\\
+ {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ gedit \home\wspname/src/publish\textunderscore goal/CMakeLists.txt }
+ 
+ {\fontfamily{qcr}\selectfont add\_executable(\nodname\hspace{3mm}src/\nodname.cpp) } \\
+{\fontfamily{qcr}\selectfont target\_link\_libraries(\nodname \hspace{3mm}\$\{catkin\_LIBRARIES\}) } \\
+{\fontfamily{qcr}\selectfont add\_dependencies(\nodname \hspace{3mm}beginner\_tutorials\_generate\_messages\_cpp) }\\
+ 
+    \item Compile before running. Turn Everything off before you do this.\\\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ cd \home\wspname }\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ catkin\textunderscore make } 
+    \item TEST YOUR NODE!
+    
+\end{enumerate}
+\end{document}
+

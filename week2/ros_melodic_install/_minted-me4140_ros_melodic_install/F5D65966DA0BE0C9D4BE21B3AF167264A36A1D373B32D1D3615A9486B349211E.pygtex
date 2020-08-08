@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+			 echo \PYGZdq{}source /opt/ros/melodic/setup.bash\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZti{}/.bashrc
+\end{Verbatim}

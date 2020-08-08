@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+add\PYGZus{}executable(\PYG{esc}{\nodname} src/\PYG{esc}{\nodname}.cpp)
+target\PYGZus{}link\PYGZus{}libraries(\PYG{esc}{\nodname} \PYGZdl{}\PYGZob{}catkin\PYGZus{}LIBRARIES\PYGZcb{})
+add\PYGZus{}dependencies(\PYG{esc}{\nodname} beginner\PYGZus{}tutorials\PYGZus{}generate\PYGZus{}messages\PYGZus{}cpp)
+\end{Verbatim}

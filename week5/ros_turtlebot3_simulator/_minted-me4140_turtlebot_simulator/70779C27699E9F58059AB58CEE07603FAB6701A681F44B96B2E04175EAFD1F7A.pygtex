@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+(sudo apt\PYGZhy{}get install ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}turtlebot ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}turtlebot\PYGZhy{}apps
+ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}turtlebot\PYGZhy{}interactions ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}turtlebot\PYGZhy{}simulator
+ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}kobuki\PYGZhy{}ftdi ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}rocon\PYGZhy{}remocon
+ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}rocon\PYGZhy{}qt\PYGZhy{}library ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}ar\PYGZhy{}track\PYGZhy{}alvar\PYGZhy{}msgs\PYGZcb{})
+\end{Verbatim}

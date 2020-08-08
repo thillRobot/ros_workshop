@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+gedit \PYGZbs{}home\PYGZbs{}wspname/src/\PYGZbs{}pkgname/CMakeLists.txt
+\end{Verbatim}

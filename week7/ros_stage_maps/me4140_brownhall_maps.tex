@@ -1,0 +1,171 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygray}{rgb}{.6, .6, .6}
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\BR}{\color{mybrown}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+
+\newcommand{\pkgname}{\G<package\_name>\K}
+\newcommand{\wspname}{\R<workspace\_name>\K}
+\newcommand{\nodname}{\PR<node\_name>\K}
+\newcommand{\usrname}{\B<user\_name>\K}
+\newcommand{\tpcname}{/topic\_name}
+
+\newcommand{\home}{\textasciitilde/}
+
+\newcommand{\rosdistro}{kinetic}
+
+\newcommand{\pthname}{/opt/ros/\rosdistro/share/turtlebot\_stage/maps/}
+
+
+
+\textwidth=6.5in
+\topmargin=-0.5in
+\textheight=9.25in
+\hoffset=-0.5in
+\footskip=0.2in
+
+\pagestyle{myheadings}
+\markright{{\large ME 4140 Fall 2017---The Robotics Operating System}}
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+	
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+   {\bf \Large ROS - Modifying Your Map }\vspace{2mm} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2017} \\
+\end{center}
+
+This tutorial will guide you through the process of making your own map from the default map and modifying it for your own purposes. \\
+
+\begin{enumerate}
+    \item Navigate to the install directory using $cd$. \vspace{4mm}\\   
+        {\fontfamily{qcr}\selectfont
+        \$ cd /opt/ros/\rosdistro/share/turtlebot\textunderscore stage/maps/} 
+    \item Make a directory to put your maps in using {\it mkdir}.\vspace{4mm}\\
+         {\fontfamily{qcr}\selectfont \$ mkdir \home\wspname/src/\pkgname/maps} 
+    
+    \item Copy 3 files into the directory you just made using $cp$. This is the directory that you want to keep them in.({\it not} with sudo).\\ \vspace{1mm}\\
+        {\fontfamily{qcr}\selectfont    
+        \$ cp maze.yaml \home\wspname/src/\pkgname/maps/new\_maze.yaml \\
+        \$ cp maze.png \home\wspname/src/\pkgname/maps/new\_maze.png \\
+        \$ cd stage \\
+        \$ cp maze.world \home\wspname/src/\pkgname/maps/new\_maze.world }    
+	\item Make two edits to the new\textunderscore maze.world file.\\
+	{\fontfamily{qcr}\selectfont    
+        \$ gedit \home\wspname/src/\pkgname/maps/new\_maze.world}\\
+        {\it change:}
+            {\fontfamily{qcr}\selectfont
+			include "turtlebot.inc" } \\
+		{\it to:}
+            {\fontfamily{qcr}\selectfont
+			\\include "/opt/ros/\rosdistro/share/turtlebot\_stage/maps/stage/turtlebot.inc" } \\
+		{\it change:}
+            {\fontfamily{qcr}\selectfont
+			name "maze"
+		  	bitmap "../maze.png" } \\
+		{\it to:}\\
+            {\fontfamily{qcr}\selectfont
+			name "new\textunderscore maze"
+		  	bitmap "new\textunderscore maze.png" }\\
+	\item Make one edit to the new\textunderscore maze.yaml file\\
+	{\fontfamily{qcr}\selectfont    
+        \$ gedit \home\wspname/src/\pkgname/maps/new\_maze.yaml}
+
+		{\it change:} 
+            {\fontfamily{qcr}\selectfont
+			image: maze.png } \\
+		{\it to: }
+            {\fontfamily{qcr}\selectfont
+			image: new\textunderscore maze.png } 
+	\item Edit your image file new\textunderscore maze.png with the image editor of your choice.\\
+{\fontfamily{qcr}\selectfont \$ sudo apt-get install pinta }\\
+    {\fontfamily{qcr}\selectfont \$ pinta \home\wspname/src/\pkgname/maps/new\textunderscore maze.png }
+	\item Set your map as an environment variable and run the simulator
+	
+		{\fontfamily{qcr}\selectfont  
+        \$ export TURTLEBOT\textunderscore STAGE\textunderscore MAP\textunderscore FILE=\\''/home/\usrname/\wspname/src/\pkgname/maps/new\textunderscore maze.yaml}"
+        
+		{\fontfamily{qcr}\selectfont 
+        \$ export TURTLEBOT\textunderscore STAGE\textunderscore WORLD\textunderscore FILE=\\"/home/\usrname/\wspname/src/\pkgname/maps/new\textunderscore maze.world}"
+        
+    \item Launch a robot in a newly modified map !   \vspace{1mm}\\
+		{\fontfamily{qcr}\selectfont   
+        \$ roslaunch turtlebot\textunderscore stage turtlebot\textunderscore in\textunderscore stage.launch }
+
+    
+\end{enumerate}
+\end{document}
+
