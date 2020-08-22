@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  22 AUG 2020 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  22 AUG 2020 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,11 +1001,7 @@ thkerncmss.
 
 ] [9
 
-]
-Overfull \vbox (1.71pt too high) detected at line 269
- []
-
-[10
+] [10
 
 ]
 \tf@nav=\write6
@@ -1017,27 +1013,27 @@ Overfull \vbox (1.71pt too high) detected at line 269
 \tf@snm=\write8
 \openout8 = `me4140_ros_overview.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./me4140_ros_overview.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `me4140_ros_overview.out' has not changed.
 (rerunfilecheck)             Checksum: 252795867BC119F642F8B687575EBE56;267.
  ) 
 Here is how much of TeX's memory you used:
- 19549 strings out of 481239
- 367764 string characters out of 5920377
- 809219 words of memory out of 5000000
- 34326 multiletter control sequences out of 15000+600000
+ 19522 strings out of 481239
+ 366886 string characters out of 5920377
+ 807219 words of memory out of 5000000
+ 34299 multiletter control sequences out of 15000+600000
  539783 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,19n,67p,815b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,19n,67p,815b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on me4140_ros_overview.pdf (10 pages, 76059 bytes).
+Output written on me4140_ros_overview.pdf (10 pages, 75751 bytes).
 PDF statistics:
  386 PDF objects out of 1000 (max. 8388607)
  353 compressed objects within 4 object streams
