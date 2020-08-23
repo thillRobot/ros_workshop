@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  22 AUG 2020 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  22 AUG 2020 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -602,14 +602,14 @@ Here is how much of TeX's memory you used:
  20714 multiletter control sequences out of 15000+600000
  534945 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,29p,527b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,29p,480b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm1200.pfb>
-Output written on me4140_virtualize_ubuntu_arch.pdf (19 pages, 2624364 bytes).
+Output written on me4140_virtualize_ubuntu_arch.pdf (19 pages, 2624638 bytes).
 PDF statistics:
  179 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

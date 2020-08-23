@@ -53,7 +53,6 @@
 \setbeamercolor{structure}{fg=TTUpurple} % itemize, enumerate, etc
 \setbeamercolor{section in toc}{fg=TTUpurple} % TOC sections
 
-
 \newcommand{\Lagr}{\mathcal{L}} % lagrangian
 
 \newcommand{\hspcu}{\underline{\hspace{20mm}}} % large horizontal space w underline
@@ -77,7 +76,7 @@
 \newcommand{\sectiontitleII}{Benefits of ROS}
 \newcommand{\sectiontitleIII}{How does ROS work?}
 \newcommand{\sectiontitleIV}{Supported Hardware and Software}
-\newcommand{\sectiontitleV}{Getting Started!}
+\newcommand{\sectiontitleV}{Tutorial 1 - Virtualize Ubuntu}
 
 \title{ME4140 - ROS Workshop}
 
@@ -236,21 +235,21 @@ Where did ROS come from?
 	% Section V - Frame I
 	            \frame{ \small
 		\frametitle{\sectiontitleV}    
-		
-You have three programs to install. A detailed description of this process with screenshots is provided in {\it virtualize\_ubuntu.pdf}.  
+	
+ \setbeamertemplate{itemize items}[triangle]
+                \begin{itemize}
 
- \setbeamertemplate{enumerate items}[ball]
-                \begin{enumerate}
+					\item {\bf Overview:} ROS runs on Linux! Your first exercise is to setup your computer so that you can begin learning ROS. 		
 
-					\item First download and install VirtualBox from Oracle which is an application for {\it virtualizing} operating systems on top of an existing one. \vspc         
-               
-                    \item Next dowload the ubuntu installation .iso file and setup a virtual operating system for learning ROS. This requires a large file that I recommend downloading ahead of time.
+					\item {\bf Assignment:} Complete the tutorial in the document {\it virtualize\_ubuntu.pdf} on ilearn. Your new system must be able to access the internet.
+                    
+                    \item {\bf Deliverable:} Write a brief summary of what you have accomplished using MS word other software. Describe what you struggled with the most and include a screen capture of your Ubuntu desktop that includes your name somehow. You will have to be creative.   
     
-                    \item Finally, install the ROS Melodic software package in Ubuntu 18.04 using the in the terminal with the program apt. \vspc
+                    \item {\bf Next Week:} After completion of Module 1, you will be ready to install the ROS Melodic software package in Ubuntu 18.04. This is described in detail in Module 2. \vspc
                     
     
                     
-                \end{enumerate}
+                \end{itemize}
 		}
 
 \end{document}
