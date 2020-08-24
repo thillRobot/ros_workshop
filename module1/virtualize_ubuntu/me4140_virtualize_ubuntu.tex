@@ -32,6 +32,40 @@
     urlcolor=blue           % color of external links
 }
 
+% custom colors
+\definecolor{TTUpurple}{rgb}{0.3098, 0.1607, 0.5176} % TTU Purple (primary)
+\definecolor{TTUgold}{rgb}{1.0000, 0.8666, 0.0000} % TTU Gold (primary) 
+\definecolor{mygray}{rgb}{.6, .6, .6}
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygreen}{rgb}{0, .39, 0}
+\definecolor{mypink}{rgb}{0.9960, 0, 0.9960}
+
+% color commands
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\BR}{\color{mybrown}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+\newcommand{\PN}{\color{mypink}}
+\newcommand{\OR}{\color{TTU}}
+\newcommand{\GD}{\color{TTUgold}}
+
+\newcommand{\Lagr}{\mathcal{L}} % lagrangian
+
+\newcommand{\hspcu}{\underline{\hspace{20mm}}} % large horizontal space w underline
+\newcommand{\vspccc}{\vspace{6mm}\\} % large vertical space
+\newcommand{\vspcc}{\vspace{4mm}\\}   % medium vertical space
+\newcommand{\vspc}{\vspace{2mm}\\}     % small vertical space
+
+\newcommand{\hspcccc}{\hspace{10mm}} % large horizontal space
+\newcommand{\hspccc}{\hspace{6mm}} % large horizontal space
+\newcommand{\hspcc}{\hspace{4mm}}   % medium horizontal space
+\newcommand{\hspc}{\hspace{2mm}}     % small horizontal space
+
+\newsavebox{\mybox} % custom box
+
 \textwidth=6.5in
 \topmargin=-0.5in
 \textheight=9.25in
@@ -39,7 +73,7 @@
 \footskip=0.2in
 
 \pagestyle{myheadings}
-\markright{{\large ME 4140 Fall 2012---Virtualizing Ubuntu Linux with Virtual Box}}
+\markright{{\large ME 4140 Fall 2020---Virtualizing Ubuntu Linux with Virtual Box}}
 
 \newcommand{\homeWeight}{10}
 \newcommand{\quizWeight}{20}
@@ -52,99 +86,106 @@
 
 \begin{center}
    {\bf \Large ROS - Virtualizing Ubuntu Linux with Virtual Box}\vspace{3mm} \\
-   {\bf \large ME 4140 - Introduction to Robotics - Fall 2019} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 
 
 \begin{description}
-	\vspace{5mm}
- 	\item[What is a \href{https://en.wikipedia.org/wiki/Virtual_machine}{Virtual Machine} ?]: \vspace{5mm} \\
-      		\includegraphics[scale=.2]{CaptureA.png}\\
+
+ 	\item[What is a \href{https://en.wikipedia.org/wiki/Virtual_machine}{Virtual Machine} ?]: \\
+ 	\begin{multicols}{2}
+      		
             \begin{itemize}
                 
-                \item A VM is an Operating System that is {\it virtualized} in your native operating system
-                \item this is very useful for experimenting and learning 
-                \item not perfect for permanent use
-                \item can be resource intensive
-                \item \href{https://www.virtualbox.org/}{VirtualBox} is a popular application used for this process
+                \item A virtual machine is an operating system that is installed or {\it virtualized} inside another operating system.
+                \item This is useful for learning and testing, but it is resource intensive and is not ideal for permanent use. 
+                \item \href{https://www.virtualbox.org/}{VirtualBox} is a trusted application commonly used for this process
                 
             \end{itemize}
+            \includegraphics[scale=.15]{CaptureA.png}\\
+	\end{multicols}
+	
+	\item[Overview of Setup Process]: \vspace{0mm} \\
 
-		\item[Overview of Setup Process]: \vspace{0mm} \\
-\begin{enumerate}
+		        You will first download and install VirtualBox from Oracle which is an application for {\it virtualizing} operating systems on top of an existing one. Next you will download the Ubuntu installation .iso file and setup a virtual operating system for learning ROS.  After completing this exercise, you will be ready to install the ROS Melodic software package in Ubuntu which is described in detailed in the next module. 
 
-					\item First install VirtualBox from Oracle which is an application for {\it virtualizing} operating systems on top of an existing one.         
-					%\setbeamertemplate{enumerate items}[default]
-					      \begin{enumerate}
-                            \item Download the install file for VirtualBox. Choose the file that matches your computer. 
-                            
-                              
-                            \item Click the file and install VirtualBox on your computer.
-                            
-                        \end{enumerate} 
-% \setbeamertemplate{enumerate items}[ball]                
-                    \item Next setup a virtual operating system to use as an environment to learn ROS. 
-                    	%\setbeamertemplate{enumerate items}[default]
-                        \begin{enumerate}
-                            \item Download or copy the .iso file for Ubuntu 18.04 LTS 
-                            \item Using VirtualBox install Ubuntu 18.04 LTS as a virtual operating system on your hard drive. 
-                            \item Briefly test your new OS. The internet must work.        
-                        \end{enumerate}
-                % \setbeamertemplate{enumerate items}[ball]    
-                    \item Install ROS Melodic
-                   % \setbeamertemplate{enumerate items}[default]
-                        \begin{enumerate}
-                            \item This is done in the {\it terminal} in Ubuntu. Follow the step by step instructions carefully.
-                        \end{enumerate}
+	\item[System Requirements]: \vspace{0mm} \\
+
+		        \begin{itemize}
+
+					\item {\bf CPU:} Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
+					\item {\bf Memory:} At least 8Gb of RAM is recommended.        
+               
+                    \item {\bf Storage:} Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
+    
+                \end{itemize}
+			\item[Disclaimer]: \begin{itemize}
+			\item {\bf \R It is a good idea to back up any important files before you begin a project. Hard disk drives fail. Solid state drives can also fail. } 
+			\item Some students may have to adjust a computer BIOS setting to allow virtualization. This setting can be easily reverted.   
+			\item It is recommended to have your computer's power supply available before you begin this installation process. 
+			\end{itemize} 			
+			
+			
                     
-                \end{enumerate}
-
-
+  
 
 \newpage
 
-\item[Virtual Box Installation]: \vspace{0mm} \\
+\item[Detailed Setup Process ]: \vspace{0mm} \\
 
-	\begin{enumerate}
+	\begin{enumerate} 
 	
 	
 	
 	
-\item  Aquire Needed Files ( VirtualBox + Ubuntu) : \vspace{5mm} \\
-\item Install VirtualBox Application: \vspace{5mm} \\
-    	\item Open VirtualBox: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture1.png}\\
-            \begin{itemize}
+\item Install VirtualBox Application: \\
+
+\begin{enumerate} 
+	
+\item Download the VirtualBox installation file using the link on ilearn. Choose the link that matches your computer type. If you are using a Linux computer already, skip step 1 and proceed to step 2. \vspace{5mm}
+
+\item Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. \vspace{5mm} \\
+
+\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture1.png}\\
+
+\end{enumerate}
+  
+\item Install Virtual Operating System: \vspace{0mm} \\
+\begin{enumerate} 
+    	\item Open the VirtualBox application you installed in step 2. \vspace{5mm} \\
+    	\begin{multicols}{2}
+      	\includegraphics[scale=.6]{Capture2.png}\\
+          
                 
-                \item if you have never used this before the list on the left should be empty
-                
-                \item before you start you should make sure you have an internet connection
-                \item before you start you should make sure you have access to a power supply or battery
-                
-            \end{itemize}
+                before proceeding make sure you have an {\bf \B internet connection } access to a {\bf \R power supply or battery }
+         
+            \end{multicols}
+            
+            \end{enumerate}
 	\newpage
 	\item Create New Virtual Machine: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture2.png}\\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture3.png}\\
                \begin{itemize}
                 
 	\item press the {\bf new} button
                 \item choose a {\bf computer name} (this is your choice but remember it!)
                 \item choose an {\bf operating system} type (Linux)
-                \item choose a {\bf version}, this depends on your physical machine This is probably Ubuntu 64-bit but possbily Ubuntu 32-bit) 
+                \item choose a {\bf version}, this depends on your physical machine This is probably Ubuntu 64-bit) \vspace{5mm}
                 
             \end{itemize}
+            \hspace*{-2.5cm}\includegraphics[scale=.6]{Capture4.png}\\
 	\newpage
-\item Define Virtual Machine Parameters: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture3.png}\\
+\item Define Virtual Machine Parameters: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture5.png}\\
             \begin{itemize}
                 
                 \item Choose the amount of RAM you want to allocate to the VM
-                \item This number is based on your available resources. More is better but it helps to leave some for windows. If your computer has 8GB total I suggest no more than 6GB for for VM.  
+                \item This number is based on your available resources. More is better but it helps to leave some the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine.  \vspace{5mm} \\
                 
             \end{itemize}
-	\newpage
-\item Define Virtual Hard Drive Parameters: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture4.png}\\
+
+\item Define Virtual Hard Drive Parameters: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture6.png}\\
  \begin{itemize}
                 
                 \item You must have enough space on your hard drive to virutalize linux and install ros. 
@@ -152,25 +193,28 @@
                 
             \end{itemize}
 	\newpage
-\item Virtual Hard Drive Setup: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture5.png}\\
+\item Virtual Hard Drive Setup: \vspace{5mm} \\
+
+        \hspace*{-2.5cm}\includegraphics[scale=.6]{Capture7.png}\\
+        \begin{itemize}
+                        
+                \item Choose the virtual hard drive type. 
+                \item VDI is recommended. \vspace{5mm} \\
+                           
+        \end{itemize}
+\item Virtual Hard Drive Setup: \vspace{5mm} \\
+
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture8.png}\\
             \begin{itemize}
                 
                 \item Create a {\bf fixed size} virtual hard drive. 
                               
             \end{itemize}
 	\newpage
-\item Virtual Hard Drive Setup: \vspace{20mm} \\
-        \includegraphics[scale=.6]{Capture5.png}\\
-        \begin{itemize}
-                        
-                \item Choose the virtual hard drive type. 
-                \item VDI is recommended.
-                           
-        \end{itemize}
+
 \newpage
 \item Virtual Hard Drive Setup : \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture6.png}\\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture9.png}\\
              \begin{itemize}
                     
                 \item choose the size of your virtual hard drive       
@@ -194,7 +238,7 @@
 
 \begin{enumerate}
 \item Start the VM for the first time: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture7.png}\\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture9.png}\\
             \begin{itemize}
                     
                  \item select your newly created VM      
@@ -202,8 +246,8 @@
                  \item wait for it...       
             \end{itemize}
 	\newpage
-\item Start the VM for the first time: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture8.png}\\
+\item Find the folder icon: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture10.png}\\
             \begin{itemize}
                     
                  \item choose to select media from a local folder 
@@ -211,12 +255,12 @@
                  
             \end{itemize}
 	
-\item Start the VM for the first time: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture9.png} \\
+\item Choose an installation media: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture11.png} \\
                \begin{itemize}
                     
      
-                \item choose the Ubuntu .iso file that you aquired
+                \item choose the Ubuntu .iso file that you downloaded.
                 \item it is recommended that the media is on the local machine
                 \item wait for it...
                 
@@ -226,39 +270,39 @@
         
 	\newpage
 \item Ubuntu Installation: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture10.png}
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture12.png}
             \begin{itemize}
                     
                  \item {\bf Install Ubuntu} (harmless if using VirtualBox)
                  \item try is just temporary (single session)
-                 \item wait for it...    
+                   
             \end{itemize}
-	\newpage
-\item Ubuntu Installation: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture11.png} 
+
+\item Ubuntu Installation: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture13.png} 
             \begin{itemize}
                     \item check that you meet the requirements
                  \item click the two check boxes for proprietary drivers
             \end{itemize}
 	\newpage
-\item Ubuntu Installation: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture12.png}\\
+\item Ubuntu Installation: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture15.png}\\
              \begin{itemize}
                     
                  \item {\bf Erase Everything and Install Ubuntu} (harmless if using VirtualBox)
                  \item DANGEROUS AND PERMANENT IF NOT USING VIRTUALBOX
                  \item wait for it...    
             \end{itemize}
-	\newpage
-\item Wait Wait Wait: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture13.png}
+
+\item Wait Wait Wait: \vspace{5mm} \\
+      		\hspace*{-2.5cm}\includegraphics[scale=.6]{Capture16.png}
 	\newpage
 \item Shut Down The VM: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture14.png}\\
+      		\includegraphics[scale=.6]{Capture17.png}\\
 			
 	\newpage
 \item Shut Down The VM: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture15.png}
+      		\includegraphics[scale=.6]{Capture18.png}
 			\begin{itemize}
                  
 				 \item wait for it...
@@ -267,7 +311,7 @@
             \end{itemize}
 	\newpage
 \item Finally!: \vspace{20mm} \\
-      		\includegraphics[scale=.6]{Capture16.png}
+      		\includegraphics[scale=.6]{Capture19.png}
             \begin{itemize}
         \item POWER OFF the Machine
     \end{itemize} 
@@ -279,6 +323,10 @@
 		\item the Ubuntu OS should appear	
     \end{itemize}        
 
+\item Finally!: \vspace{20mm} \\
+      		\includegraphics[scale=.6]{Capture20.png}
+      		\item Finally!: \vspace{20mm} \\
+      		\includegraphics[scale=.6]{Capture21.png}
 \end{enumerate}    
 \end{description}
 \end{document}
