@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  24 AUG 2020 02:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  25 AUG 2020 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,43 +259,52 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \colbreak@box=\box90
 \mc@col@check@num=\count196
 )
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen151
+\enit@toks=\toks15
+\enit@inbox=\box91
+\enit@count@id=\count197
+\enitdp@description=\count198
+)
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 33.
+(hyperref)                setting the option has no effect on input line 34.
 
-Package hyperref Info: Option `unicode' set `false' on input line 33.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 33.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 33.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 33.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 33.
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
-\mybox=\box91
+Package hyperref Info: Option `unicode' set `false' on input line 34.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 34.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 34.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 34.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+\mybox=\box92
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count197
-\l__pdf_internal_box=\box92
+\l__kernel_color_stack_int=\count199
+\l__pdf_internal_box=\box93
 )
 (./me4140_virtualize_ubuntu.aux)
 \openout1 = `me4140_virtualize_ubuntu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-\AtBeginShipoutBox=\box93
-Package hyperref Info: Link coloring ON on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+\AtBeginShipoutBox=\box94
+Package hyperref Info: Link coloring ON on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -306,11 +315,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count198
+\c@section@level=\count266
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
 (./me4140_virtualize_ubuntu.out) (./me4140_virtualize_ubuntu.out)
 \@outlinefile=\write3
@@ -319,17 +328,17 @@ LaTeX Info: Redefining \nameref on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count199
-\scratchdimen=\dimen151
-\scratchbox=\box94
-\nofMPsegments=\count266
-\nofMParguments=\count267
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count268
-\MPscratchDim=\dimen152
-\MPnumerator=\count269
-\makeMPintoPDFobject=\count270
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count267
+\scratchdimen=\dimen152
+\scratchbox=\box95
+\nofMPsegments=\count268
+\nofMParguments=\count269
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count270
+\MPscratchDim=\dimen153
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
+\everyMPtoPDFconversion=\toks17
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -339,299 +348,356 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 96.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 96.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 96.
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
 <CaptureA.png, id=6, 803.0pt x 803.0pt>
 File: CaptureA.png Graphic file (type png)
 <use CaptureA.png>
-Package pdftex.def Info: CaptureA.png  used on input line 105.
+Package pdftex.def Info: CaptureA.png  used on input line 106.
 (pdftex.def)             Requested size: 120.4448pt x 120.4448pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./CaptureA.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 <Capture1.png, id=18, 604.2575pt x 459.7175pt>
 File: Capture1.png Graphic file (type png)
 <use Capture1.png>
-Package pdftex.def Info: Capture1.png  used on input line 149.
+Package pdftex.def Info: Capture1.png  used on input line 152.
 (pdftex.def)             Requested size: 362.5573pt x 275.83263pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+[2 <./Capture1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
-
- []
-
-<Capture2.png, id=19, 164.11313pt x 175.15437pt>
+<Capture2.png, id=27, 164.11313pt x 175.15437pt>
 File: Capture2.png Graphic file (type png)
 <use Capture2.png>
-Package pdftex.def Info: Capture2.png  used on input line 157.
-(pdftex.def)             Requested size: 98.46863pt x 105.09343pt.
+Package pdftex.def Info: Capture2.png  used on input line 162.
+(pdftex.def)             Requested size: 90.26248pt x 96.33519pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-
-Overfull \vbox (32.60765pt too high) has occurred while \output is active []
-
-
-[2 <./Capture1.PNG> <./Capture2.PNG>]
-<Capture3.png, id=32, 496.35437pt x 309.65688pt>
+<Capture3.png, id=28, 496.35437pt x 309.65688pt>
 File: Capture3.png Graphic file (type png)
 <use Capture3.png>
-Package pdftex.def Info: Capture3.png  used on input line 167.
-(pdftex.def)             Requested size: 297.81493pt x 185.79555pt.
+Package pdftex.def Info: Capture3.png  used on input line 172.
+(pdftex.def)             Requested size: 272.99574pt x 170.3118pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
 
  []
 
-<Capture4.png, id=33, 500.36937pt x 323.70938pt>
+[3 <./Capture2.PNG> <./Capture3.PNG>]
+<Capture4.png, id=37, 500.36937pt x 323.70938pt>
 File: Capture4.png Graphic file (type png)
 <use Capture4.png>
-Package pdftex.def Info: Capture4.png  used on input line 176.
-(pdftex.def)             Requested size: 300.22394pt x 194.22713pt.
+Package pdftex.def Info: Capture4.png  used on input line 182.
+(pdftex.def)             Requested size: 275.204pt x 178.04071pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 181--184
 
  []
 
-[3 <./Capture3.PNG> <./Capture4.PNG>]
-<Capture5.png, id=41, 503.38063pt x 325.71687pt>
+<Capture5.png, id=38, 503.38063pt x 325.71687pt>
 File: Capture5.png Graphic file (type png)
 <use Capture5.png>
-Package pdftex.def Info: Capture5.png  used on input line 179.
-(pdftex.def)             Requested size: 302.0307pt x 195.43163pt.
+Package pdftex.def Info: Capture5.png  used on input line 193.
+(pdftex.def)             Requested size: 276.8602pt x 179.14482pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
  []
 
-<Capture6.png, id=42, 499.8675pt x 323.70938pt>
+[4 <./Capture4.PNG> <./Capture5.PNG>]
+<Capture6.png, id=47, 499.8675pt x 323.70938pt>
 File: Capture6.png Graphic file (type png)
 <use Capture6.png>
-Package pdftex.def Info: Capture6.png  used on input line 188.
-(pdftex.def)             Requested size: 299.9228pt x 194.22713pt.
+Package pdftex.def Info: Capture6.png  used on input line 204.
+(pdftex.def)             Requested size: 274.92796pt x 178.04071pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
-
- []
-
-[4 <./Capture5.PNG> <./Capture6.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 
  []
 
-<Capture7.png, id=51, 509.905pt x 365.86688pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+<Capture7.png, id=48, 509.905pt x 365.86688pt>
 File: Capture7.png Graphic file (type png)
 <use Capture7.png>
-Package pdftex.def Info: Capture7.png  used on input line 198.
-(pdftex.def)             Requested size: 305.94536pt x 219.52182pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-<Capture8.png, id=52, 499.36563pt x 366.87062pt>
-File: Capture8.png Graphic file (type png)
-<use Capture8.png>
-Package pdftex.def Info: Capture8.png  used on input line 207.
-(pdftex.def)             Requested size: 299.62169pt x 220.12407pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-[5 <./Capture7.PNG> <./Capture8.PNG>]
-<Capture9.png, id=61, 573.64313pt x 311.66437pt>
-File: Capture9.png Graphic file (type png)
-<use Capture9.png>
-Package pdftex.def Info: Capture9.png  used on input line 217.
-(pdftex.def)             Requested size: 344.18852pt x 187.00006pt.
+Package pdftex.def Info: Capture7.png  used on input line 216.
+(pdftex.def)             Requested size: 280.44861pt x 201.2274pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-[6 <./Capture9.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+[5 <./Capture6.PNG> <./Capture7.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
+<Capture8.png, id=57, 499.36563pt x 366.87062pt>
+File: Capture8.png Graphic file (type png)
+<use Capture8.png>
+Package pdftex.def Info: Capture8.png  used on input line 227.
+(pdftex.def)             Requested size: 274.65195pt x 201.77946pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+<CaptureX.png, id=58, 597.73312pt x 470.25688pt>
+File: CaptureX.png Graphic file (type png)
+<use CaptureX.png>
+Package pdftex.def Info: CaptureX.png  used on input line 237.
+(pdftex.def)             Requested size: 298.86583pt x 235.12787pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
+
+ []
+
+[6 <./Capture8.PNG> <./CaptureX.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+<Capture9.png, id=67, 573.64313pt x 311.66437pt>
 File: Capture9.png Graphic file (type png)
 <use Capture9.png>
-Package pdftex.def Info: Capture9.png  used on input line 241.
+Package pdftex.def Info: Capture9.png  used on input line 255.
 (pdftex.def)             Requested size: 344.18852pt x 187.00006pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--242
+Underfull \hbox (badness 10000) in paragraph at lines 254--257
 
  []
 
-[7]
-<Capture10.png, id=74, 577.65813pt x 332.24126pt>
+<Capture10.png, id=68, 577.65813pt x 332.24126pt>
 File: Capture10.png Graphic file (type png)
 <use Capture10.png>
-Package pdftex.def Info: Capture10.png  used on input line 250.
+Package pdftex.def Info: Capture10.png  used on input line 264.
 (pdftex.def)             Requested size: 346.59755pt x 199.34628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 263--266
 
  []
 
-<Capture11.png, id=75, 607.77063pt x 380.92313pt>
+[7 <./Capture9.PNG> <./Capture10.PNG>]
+<Capture11.png, id=78, 607.77063pt x 380.92313pt>
 File: Capture11.png Graphic file (type png)
 <use Capture11.png>
-Package pdftex.def Info: Capture11.png  used on input line 259.
+Package pdftex.def Info: Capture11.png  used on input line 273.
 (pdftex.def)             Requested size: 364.66519pt x 228.55562pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
 
  []
 
-[8 <./Capture10.PNG> <./Capture11.PNG>]
-<Capture12.png, id=84, 581.67313pt x 331.73938pt>
+<Capture12.png, id=79, 581.67313pt x 331.73938pt>
 File: Capture12.png Graphic file (type png)
 <use Capture12.png>
-Package pdftex.def Info: Capture12.png  used on input line 273.
+Package pdftex.def Info: Capture12.png  used on input line 284.
 (pdftex.def)             Requested size: 349.00656pt x 199.04515pt.
-<Capture13.png, id=85, 578.16pt x 367.3725pt>
+[8 <./Capture11.PNG> <./Capture12.PNG>]
+<Capture13.png, id=88, 578.16pt x 367.3725pt>
 File: Capture13.png Graphic file (type png)
 <use Capture13.png>
-Package pdftex.def Info: Capture13.png  used on input line 282.
+Package pdftex.def Info: Capture13.png  used on input line 293.
 (pdftex.def)             Requested size: 346.89867pt x 220.42519pt.
- [9 <./Capture12.PNG> <./Capture13.PNG>]
-<Capture15.png, id=94, 572.1375pt x 367.87437pt>
+<Capture15.png, id=89, 572.1375pt x 367.87437pt>
 File: Capture15.png Graphic file (type png)
 <use Capture15.png>
-Package pdftex.def Info: Capture15.png  used on input line 289.
+Package pdftex.def Info: Capture15.png  used on input line 304.
 (pdftex.def)             Requested size: 343.28514pt x 220.72632pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
-<Capture16.png, id=95, 573.14125pt x 368.87813pt>
+[9 <./Capture13.PNG> <./Capture15.PNG>]
+<Capture16.png, id=98, 573.14125pt x 368.87813pt>
 File: Capture16.png Graphic file (type png)
 <use Capture16.png>
-Package pdftex.def Info: Capture16.png  used on input line 298.
+Package pdftex.def Info: Capture16.png  used on input line 316.
 (pdftex.def)             Requested size: 343.8874pt x 221.32857pt.
-[10 <./Capture15.PNG> <./Capture16.PNG>]
-<Capture17.png, id=104, 571.63562pt x 365.86688pt>
-File: Capture17.png Graphic file (type png)
-<use Capture17.png>
-Package pdftex.def Info: Capture17.png  used on input line 301.
-(pdftex.def)             Requested size: 342.98401pt x 219.52182pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 315--318
 
  []
 
-[11 <./Capture17.PNG>]
-<Capture18.png, id=111, 574.64688pt x 368.87813pt>
+<Capture17.png, id=99, 571.63562pt x 365.86688pt>
+File: Capture17.png Graphic file (type png)
+<use Capture17.png>
+Package pdftex.def Info: Capture17.png  used on input line 328.
+(pdftex.def)             Requested size: 342.98401pt x 219.52182pt.
+[10 <./Capture16.PNG> <./Capture17.PNG>]
+<Capture18.png, id=108, 574.64688pt x 368.87813pt>
 File: Capture18.png Graphic file (type png)
 <use Capture18.png>
-Package pdftex.def Info: Capture18.png  used on input line 305.
+Package pdftex.def Info: Capture18.png  used on input line 339.
 (pdftex.def)             Requested size: 344.79079pt x 221.32857pt.
- [12 <./Capture18.PNG>]
-<Capture19.png, id=118, 464.23438pt x 365.86688pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
+
+ []
+
+<Capture19.png, id=109, 464.23438pt x 365.86688pt>
 File: Capture19.png Graphic file (type png)
 <use Capture19.png>
-Package pdftex.def Info: Capture19.png  used on input line 314.
+Package pdftex.def Info: Capture19.png  used on input line 344.
 (pdftex.def)             Requested size: 278.54277pt x 219.52182pt.
- [13 <./Capture19.PNG>]
-<Capture20.png, id=126, 466.24188pt x 369.38pt>
+[11 <./Capture18.PNG> <./Capture19.PNG>]
+<Capture20.png, id=118, 466.24188pt x 369.38pt>
 File: Capture20.png Graphic file (type png)
 <use Capture20.png>
-Package pdftex.def Info: Capture20.png  used on input line 327.
+Package pdftex.def Info: Capture20.png  used on input line 354.
 (pdftex.def)             Requested size: 279.74728pt x 221.6297pt.
-<Capture21.png, id=127, 464.73625pt x 367.3725pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+<Capture21.png, id=119, 464.73625pt x 367.3725pt>
 File: Capture21.png Graphic file (type png)
 <use Capture21.png>
-Package pdftex.def Info: Capture21.png  used on input line 329.
+Package pdftex.def Info: Capture21.png  used on input line 362.
 (pdftex.def)             Requested size: 278.84389pt x 220.42519pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
- [14 <./Capture20.PNG> <./Capture21.PNG>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+[12 <./Capture20.PNG> <./Capture21.PNG>]
+<Capture22.png, id=128, 419.06563pt x 373.89688pt>
+File: Capture22.png Graphic file (type png)
+<use Capture22.png>
+Package pdftex.def Info: Capture22.png  used on input line 370.
+(pdftex.def)             Requested size: 230.4868pt x 205.64392pt.
+<CaptureY.png, id=129, 594.72188pt x 471.26062pt>
+File: CaptureY.png Graphic file (type png)
+<use CaptureY.png>
+Package pdftex.def Info: CaptureY.png  used on input line 377.
+(pdftex.def)             Requested size: 327.09804pt x 259.19414pt.
+ [13 <./Capture22.PNG> <./CaptureY.PNG>]
+<Capture23.png, id=140, 451.18562pt x 386.94562pt>
+File: Capture23.png Graphic file (type png)
+<use Capture23.png>
+Package pdftex.def Info: Capture23.png  used on input line 385.
+(pdftex.def)             Requested size: 248.15285pt x 212.82074pt.
+<Capture24.png, id=141, 560.59438pt x 416.05438pt>
+File: Capture24.png Graphic file (type png)
+<use Capture24.png>
+Package pdftex.def Info: Capture24.png  used on input line 392.
+(pdftex.def)             Requested size: 308.32785pt x 228.83061pt.
+ [14 <./Capture23.PNG> <./Capture24.PNG>]
+<Capture25.png, id=150, 557.08125pt x 415.5525pt>
+File: Capture25.png Graphic file (type png)
+<use Capture25.png>
+Package pdftex.def Info: Capture25.png  used on input line 400.
+(pdftex.def)             Requested size: 306.39563pt x 228.55458pt.
+<Capture26.png, id=151, 558.085pt x 415.05063pt>
+File: Capture26.png Graphic file (type png)
+<use Capture26.png>
+Package pdftex.def Info: Capture26.png  used on input line 407.
+(pdftex.def)             Requested size: 306.94771pt x 228.27855pt.
+ [15 <./Capture25.PNG> <./Capture26.PNG>]
+File: Capture25.png Graphic file (type png)
+<use Capture25.png>
+Package pdftex.def Info: Capture25.png  used on input line 416.
+(pdftex.def)             Requested size: 306.39563pt x 228.55458pt.
+File: Capture26.png Graphic file (type png)
+<use Capture26.png>
+Package pdftex.def Info: Capture26.png  used on input line 423.
+(pdftex.def)             Requested size: 306.94771pt x 228.27855pt.
+ [16]
+File: CaptureY.png Graphic file (type png)
+<use CaptureY.png>
+Package pdftex.def Info: CaptureY.png  used on input line 432.
+(pdftex.def)             Requested size: 297.36021pt x 235.62973pt.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
+35.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 435.
+<Capture27.png, id=166, 597.23125pt x 471.7625pt>
+File: Capture27.png Graphic file (type png)
+<use Capture27.png>
+Package pdftex.def Info: Capture27.png  used on input line 440.
+(pdftex.def)             Requested size: 298.61488pt x 235.88066pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 451.
+ [17 <./Capture27.PNG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 451.
  (./me4140_virtualize_ubuntu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 451.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 451.
 Package rerunfilecheck Info: File `me4140_virtualize_ubuntu.out' has not change
 d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 451.
  ) 
 Here is how much of TeX's memory you used:
- 5605 strings out of 481239
- 86644 string characters out of 5920377
- 345445 words of memory out of 5000000
- 20734 multiletter control sequences out of 15000+600000
- 534945 words of font info for 32 fonts, out of 8000000 for 9000
+ 6022 strings out of 481239
+ 93389 string characters out of 5920377
+ 352968 words of memory out of 5000000
+ 21117 multiletter control sequences out of 15000+600000
+ 537741 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,6n,29p,475b,680s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,29p,475b,643s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm1200.pfb>
-Output written on me4140_virtualize_ubuntu.pdf (14 pages, 2852542 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
+0.pfb>
+Output written on me4140_virtualize_ubuntu.pdf (17 pages, 3959704 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
