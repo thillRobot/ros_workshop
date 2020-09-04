@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  3 SEP 2020 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  4 SEP 2020 01:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**module1_ros_overview.tex
-(./module1_ros_overview.tex
+**module2_linux_basics.tex --shell-escape module2_linux_basics.tex
+(./module2_linux_basics.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -768,40 +768,62 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen293
 \FrameSep=\dimen294
 )
-\mybox=\box121
+(/usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke.sty
+Package: keystroke 2010/04/23 v1.6 3D keystrokes (SuSE GmbH/RN)
+\suse@key=\box121
+\keystroke@left=\box122
+\keystroke@right=\box123
+\keystroke@middle=\box124
+<keystroke_left.pdf, id=10, 42.1575pt x 195.73125pt>
+File: keystroke_left.pdf Graphic file (type pdf)
+<use keystroke_left.pdf>
+Package pdftex.def Info: keystroke_left.pdf  used on input line 171.
+(pdftex.def)             Requested size: 42.15738pt x 195.73076pt.
+<keystroke_middle.pdf, id=11, 116.435pt x 195.73125pt>
+File: keystroke_middle.pdf Graphic file (type pdf)
+<use keystroke_middle.pdf>
+Package pdftex.def Info: keystroke_middle.pdf  used on input line 172.
+(pdftex.def)             Requested size: 116.43471pt x 195.73076pt.
+<keystroke_right.pdf, id=12, 42.1575pt x 195.73125pt>
+File: keystroke_right.pdf Graphic file (type pdf)
+<use keystroke_right.pdf>
+Package pdftex.def Info: keystroke_right.pdf  used on input line 173.
+(pdftex.def)             Requested size: 42.15738pt x 195.73076pt.
+)
+\mybox=\box125
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 85.
+(hyperref)                removing `\new@ifnextchar' on input line 100.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 85.
+(hyperref)                removing `\\' on input line 100.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count329
-\l__pdf_internal_box=\box122
+\l__pdf_internal_box=\box126
 )
-(./module1_ros_overview.aux)
-\openout1 = `module1_ros_overview.aux'.
+(./module2_linux_basics.aux)
+\openout1 = `module2_linux_basics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -841,7 +863,7 @@ LaTeX Font Info:    ... okay on input line 89.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count330
 \scratchdimen=\dimen295
-\scratchbox=\box123
+\scratchbox=\box127
 \nofMPsegments=\count331
 \nofMParguments=\count332
 \everyMPshowfont=\toks44
@@ -860,8 +882,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box124
-Package hyperref Info: Link coloring OFF on input line 89.
+\AtBeginShipoutBox=\box128
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -874,66 +896,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count336
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
-(./module1_ros_overview.out) (./module1_ros_overview.out)
+(./module2_linux_basics.out) (./module2_linux_basics.out)
 \@outlinefile=\write5
-\openout5 = `module1_ros_overview.out'.
+\openout5 = `module2_linux_basics.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 89.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 104.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 89.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 89.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 89.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 89.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 89.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 89.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 89.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 89.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 104.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 89.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 89.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 89.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 104.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 89.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 89.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 89.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 89.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 89.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 104.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 89.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 89.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 104.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 104.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 8
-9.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+04.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 8
-9.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
+04.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 89.
+ut line 104.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -960,7 +982,7 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count337
- (./module1_ros_overview.nav)
+ (./module2_linux_basics.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -973,71 +995,101 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 
 ] [5
 
-] [6
-
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189
+<win_logo.jpg, id=213, 260.975pt x 260.975pt>
+File: win_logo.jpg Graphic file (type jpg)
+<use win_logo.jpg>
+Package pdftex.def Info: win_logo.jpg  used on input line 190.
+(pdftex.def)             Requested size: 7.39883pt x 7.39998pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 190
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189
+LaTeX Font Info:    Trying to load font information for U+msb on input line 190
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 189.
+ut line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
+File: win_logo.jpg Graphic file (type jpg)
+<use win_logo.jpg>
+Package pdftex.def Info: win_logo.jpg  used on input line 190.
+(pdftex.def)             Requested size: 7.39883pt x 7.39998pt.
+
+Overfull \hbox (17.3601pt too wide) in paragraph at lines 190--190
+[][]  
+ []
+
+<lenovo_keyboard.jpg, id=214, 1091.07625pt x 722.7pt>
+File: lenovo_keyboard.jpg Graphic file (type jpg)
+<use lenovo_keyboard.jpg>
+Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 190.
+(pdftex.def)             Requested size: 109.11401pt x 72.27423pt.
+[6
+
+ </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_left.pdf> <./win_
+logo.jpg> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_middle.p
+df> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_right.pdf> <./
+lenovo_keyboard.jpg>]
+<ubuntu_terminal.png, id=250, 744.7825pt x 481.8pt>
+File: ubuntu_terminal.png Graphic file (type png)
+<use ubuntu_terminal.png>
+Package pdftex.def Info: ubuntu_terminal.png  used on input line 220.
+(pdftex.def)             Requested size: 148.95386pt x 96.35829pt.
+
+Overfull \hbox (0.30893pt too wide) in paragraph at lines 220--220
+[]  
+ []
+
 [7
 
-] [8
-
-] [9
-
-] [10
+ <./ubuntu_terminal.png>] [8
 
 ]
 \tf@nav=\write6
-\openout6 = `module1_ros_overview.nav'.
+\openout6 = `module2_linux_basics.nav'.
 
 \tf@toc=\write7
-\openout7 = `module1_ros_overview.toc'.
+\openout7 = `module2_linux_basics.toc'.
 
 \tf@snm=\write8
-\openout8 = `module1_ros_overview.snm'.
+\openout8 = `module2_linux_basics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
- (./module1_ros_overview.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
-Package rerunfilecheck Info: File `module1_ros_overview.out' has not changed.
-(rerunfilecheck)             Checksum: FD07878EBDA823DDE7A6C328FD883B0E;281.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+ (./module2_linux_basics.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package rerunfilecheck Info: File `module2_linux_basics.out' has not changed.
+(rerunfilecheck)             Checksum: 71B107A5ABC9C061BDF5ABB508C15A92;266.
  ) 
 Here is how much of TeX's memory you used:
- 19504 strings out of 481239
- 366408 string characters out of 5920377
- 807274 words of memory out of 5000000
- 34281 multiletter control sequences out of 15000+600000
- 540077 words of font info for 51 fonts, out of 8000000 for 9000
+ 19604 strings out of 481239
+ 368128 string characters out of 5920377
+ 815072 words of memory out of 5000000
+ 34374 multiletter control sequences out of 15000+600000
+ 540383 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,19n,67p,816b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,19n,67p,856b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on module1_ros_overview.pdf (10 pages, 84115 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on module2_linux_basics.pdf (8 pages, 267515 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 26 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

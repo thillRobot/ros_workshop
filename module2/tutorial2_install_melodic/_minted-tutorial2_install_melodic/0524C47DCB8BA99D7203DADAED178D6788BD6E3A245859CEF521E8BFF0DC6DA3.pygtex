@@ -1,0 +1,52 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{			}
+\PYG{x}{		}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Set up your keys.}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}			}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Update your Linux system.}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}sudo apt update}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Install ROS Melodic Desktop\PYGZhy{}Full}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}sudo apt install ros\PYGZhy{}melodic\PYGZhy{}desktop\PYGZhy{}full}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}				}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Initialize rosdep (2 separate commands)}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}sudo rosdep init}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}rosdep update}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}newpage}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Evironment Setup (2 separate commands)}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}echo \PYGZdq{}source /opt/ros/melodic/setup.bash\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZti{}/.bashrc}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}source \PYGZti{}/.bashrc}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}}
+\PYG{x}{\PYGZpc{}		}
+\PYG{x}{\PYGZpc{}\PYGZbs{}item Install Development Tools}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}sudo apt install python\PYGZhy{}rosinstall python\PYGZhy{}rosinstall\PYGZhy{}generator python\PYGZhy{}wstool build\PYGZhy{}essential}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}		\PYGZbs{}item Close the terminal. Open a new terminal and try the following command:\PYGZbs{}\PYGZbs{}\PYGZbs{}\PYGZbs{}}
+\PYG{x}{\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}}
+\PYG{x}{\PYGZpc{}roscore}
+\PYG{x}{\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}}
+\PYG{x}{\PYGZpc{}}
+\PYG{x}{\PYGZpc{}		\PYGZbs{}item If you see ROS start in the terminal your ROS installation was successful!\PYGZbs{}\PYGZbs{}\PYGZbs{}\PYGZbs{}}
+
+\PYG{x}{\PYGZbs{}end\PYGZob{}enumerate\PYGZcb{}}
+
+\PYG{x}{\PYGZbs{}end\PYGZob{}document\PYGZcb{}}
+\end{Verbatim}

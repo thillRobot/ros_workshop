@@ -1,0 +1,52 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+			
+		
+\PYGZpc{}\PYGZbs{}item Set up your keys.
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}			
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}item Update your Linux system.
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}sudo apt update
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}item Install ROS Melodic Desktop\PYGZhy{}Full
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}sudo apt install ros\PYGZhy{}melodic\PYGZhy{}desktop\PYGZhy{}full
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}				
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}item Initialize rosdep (2 separate commands)
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}sudo rosdep init
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}rosdep update
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}	
+\PYGZpc{}
+\PYGZpc{}\PYGZbs{}newpage
+\PYGZpc{}\PYGZbs{}item Evironment Setup (2 separate commands)
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}echo \PYGZdq{}source /opt/ros/melodic/setup.bash\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZti{}/.bashrc
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}source \PYGZti{}/.bashrc
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}
+\PYGZpc{}		
+\PYGZpc{}\PYGZbs{}item Install Development Tools
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}sudo apt install python\PYGZhy{}rosinstall python\PYGZhy{}rosinstall\PYGZhy{}generator python\PYGZhy{}wstool build\PYGZhy{}essential
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}
+\PYGZpc{}
+\PYGZpc{}		\PYGZbs{}item Close the terminal. Open a new terminal and try the following command:\PYGZbs{}\PYGZbs{}\PYGZbs{}\PYGZbs{}
+\PYGZpc{}\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}\PYGZob{}text\PYGZcb{}
+\PYGZpc{}roscore
+\PYGZpc{}\PYGZbs{}end\PYGZob{}minted\PYGZcb{}
+\PYGZpc{}
+\PYGZpc{}		\PYGZbs{}item If you see ROS start in the terminal your ROS installation was successful!\PYGZbs{}\PYGZbs{}\PYGZbs{}\PYGZbs{}
+
+\PYGZbs{}end\PYGZob{}enumerate\PYGZcb{}
+
+\PYGZbs{}end\PYGZob{}document\PYGZcb{}
+\end{Verbatim}
