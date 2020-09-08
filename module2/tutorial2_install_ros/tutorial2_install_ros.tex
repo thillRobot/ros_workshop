@@ -89,6 +89,12 @@
   \includegraphics[height=0.8em]{win_logo}}}
 \newcommand{\WinKey}{\keystroke{\WindowsLogo}}
 
+\newcommand{\T}{\raisebox{-0.1em}{T}}
+\newcommand{\TKey}{\keystroke{\T}}
+
+\newcommand{\C}{\raisebox{-0.1em}{C}}
+\newcommand{\CKey}{\keystroke{\C}}
+
 \newcommand{\CTRL}{\raisebox{-0.1em}{Ctrl}}
 \newcommand{\CTRLKey}{\keystroke{\CTRL}}
 
@@ -138,12 +144,12 @@
 \begin{description}
 
 \item[\textbf{\underline{Overview:}}] \hfill \vspace{3mm}\\
-After completing {\it Tutorial 1 - Virtualize Ubuntu}, your new operating system is running, and you are ready to install ROS. You can read more about this installation \href{http://wiki.ros.org/melodic/Installation/Ubuntu}{here} on the wiki.
+After completing {\it Tutorial 1 - Virtualize Ubuntu}, your new operating system is running, and you are ready to install ROS. You can read more about the installation \href{http://wiki.ros.org/melodic/Installation/Ubuntu}{here} on the wiki.
 
 \item[\textbf{\underline{System Requirements:}}] \hfill \vspace{0mm}
 
 \begin{itemize}
-	\item {\bf OS}: This tutorial is inteded for the Ubuntu 18.04 LTS operating system. Alternate flavors of 18.04 (i.e. - Mint, Mate, kbuntu) may work but have not been tested.
+	\item {\bf OS}: This tutorial is intended for the Ubuntu 18.04 LTS operating system. Alternate flavors of 18.04 (i.e. - Mint, Mate, kbuntu) may work but have not been tested.
 	\item {\bf Internet:} Your computer must be connected to the internet to proceed. Downloading and installing ROS may take approximately 15 to 30 minutes .
 
 
@@ -159,7 +165,7 @@ After completing {\it Tutorial 1 - Virtualize Ubuntu}, your new operating system
 
 \item[\textbf{\underline{Installation Instructions:}}] \hfill \vspace{0mm}
 
-You will enter several commands into the terminal during this tutorial. { \bf The terminal commands are shown in gray boxes.} Press \CTRLKey+\ALTKey+{\bf T} to open a new terminal, then carefully copy each command and paste it into the terminal then press \ENTERKey.
+Press \CTRLKey+\ALTKey+\TKey to open a new terminal, then carefully copy each command and paste it into the terminal then press \ENTERKey. { \bf The terminal commands are shown in gray boxes.}
 
 
 \begin{enumerate}
@@ -172,14 +178,14 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu \
 |\$|(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 	\end{minted}
 	
-	\item Set up your keys which are used authenitcate software packages for security.
+	\item Set up your keys which are used authenticate software packages for security.
 	
 	\begin{minted}[]{text}
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80'\
 --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654	
 	\end{minted}
 				
-	\item Update your Ubuntu system. It is a good idea to do this daily.  
+	\item Update your Ubuntu system. It is a good idea to do this regularly.  
 	
 	\begin{minted}[]{text}
 sudo apt update
@@ -193,6 +199,20 @@ sudo apt update
 sudo apt install ros-melodic-desktop-full
 	\end{minted}
 
+\item Evironment Setup (2 separate commands). This appends the {\it .bashrc} file which runs each time you open a new terminal. 
+\begin{minted}{text} 
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+\end{minted}
+
+\begin{minted}{text} 
+source ~/.bashrc 
+\end{minted}
+
+\item Install Development Tools. You are almost there! 
+\begin{minted}{text} 
+sudo apt install python-rosinstall python-rosinstall-generator \ 
+python-wstool build-essential
+\end{minted}
 
 	\item Initialize rosdep (2 separate commands) 
 	\begin{minted}[]{text}
@@ -203,20 +223,9 @@ sudo rosdep init
 rosdep update
 	\end{minted}
 
-\item Evironment Setup (2 separate commands) 
-\begin{minted}{text} 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-\end{minted}
 
-\begin{minted}{text} 
-source ~/.bashrc 
-\end{minted}
 		
-\item Install Development Tools. You are almost there! 
-\begin{minted}{text} 
-sudo apt install python-rosinstall python-rosinstall-generator \ 
-python-wstool build-essential
-\end{minted}
+
 
 After completing Step 7 you have installed ROS on your Ubuntu system. Now it is time to test the installation. 
 \end{enumerate}
@@ -232,7 +241,9 @@ roscore
 
 If the installation was successful, the terminal output will be {\it similar} to the image below. \vspace{3mm}\\
 
-\includegraphics[scale=1]{roscore_charlie.png}
+\includegraphics[scale=1]{roscore_charlie.png} \vspace{2mm}\\
+
+Abort the roscore process by clicking in the terminal and pressing \CTRLKey + \CKey, then close the terminal window. Congratulations, you have installed ROS Melodic.
 
 		%\item If you see ROS start in the terminal your ROS installation was successful!
 

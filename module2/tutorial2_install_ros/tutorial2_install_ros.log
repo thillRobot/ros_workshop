@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  8 SEP 2020 00:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  8 SEP 2020 02:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -984,22 +984,22 @@ runsystem(rm tutorial2_install_ros.aex)...executed.
 (./tutorial2_install_ros.aux)
 \openout1 = `tutorial2_install_ros.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1024,7 +1024,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box121
-Package hyperref Info: Link coloring ON on input line 127.
+Package hyperref Info: Link coloring ON on input line 133.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1037,9 +1037,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 127.
-LaTeX Info: Redefining \pageref on input line 127.
-LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
 
 (./tutorial2_install_ros.out) (./tutorial2_install_ros.out)
 \@outlinefile=\write6
@@ -1082,12 +1082,12 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
-0.
+6.
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-62.
+68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1136,16 +1136,6 @@ keystroke/keystroke_right.pdf>]
 \openout4 = `tutorial2_install_ros.pyg'.
 
 
-(./_minted-tutorial2_install_ros/EC1828CD7F068D51246E93A4C7266A065D358DC29FEC66
-63D7062751214DC1EF.pygtex)
-\openout4 = `tutorial2_install_ros.pyg'.
-
-
-(./_minted-tutorial2_install_ros/6A197CE061942D88BCF356A750F49A905D358DC29FEC66
-63D7062751214DC1EF.pygtex)
-\openout4 = `tutorial2_install_ros.pyg'.
-
-
 (./_minted-tutorial2_install_ros/915F9E23D273DDD0E3DA5ADBDECC19385D358DC29FEC66
 63D7062751214DC1EF.pygtex)
 \openout4 = `tutorial2_install_ros.pyg'.
@@ -1157,38 +1147,53 @@ keystroke/keystroke_right.pdf>]
 
 
 (./_minted-tutorial2_install_ros/A6CDE60B73525829C987C2D7FB1750A05D358DC29FEC66
+63D7062751214DC1EF.pygtex)
+\openout4 = `tutorial2_install_ros.pyg'.
+
+
+(./_minted-tutorial2_install_ros/EC1828CD7F068D51246E93A4C7266A065D358DC29FEC66
+63D7062751214DC1EF.pygtex)
+\openout4 = `tutorial2_install_ros.pyg'.
+
+
+(./_minted-tutorial2_install_ros/6A197CE061942D88BCF356A750F49A905D358DC29FEC66
 63D7062751214DC1EF.pygtex) [2]
 \openout4 = `tutorial2_install_ros.pyg'.
 
 
 (./_minted-tutorial2_install_ros/F354A764B38046304C6172F1812FAA465D358DC29FEC66
 63D7062751214DC1EF.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 <roscore_charlie.png, id=39, 454.19687pt x 397.485pt>
 File: roscore_charlie.png Graphic file (type png)
 <use roscore_charlie.png>
-Package pdftex.def Info: roscore_charlie.png  used on input line 235.
+Package pdftex.def Info: roscore_charlie.png  used on input line 244.
 (pdftex.def)             Requested size: 454.19576pt x 397.48402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
 [3 <./roscore_charlie.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
  (./tutorial2_install_ros.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 Package rerunfilecheck Info: File `tutorial2_install_ros.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm tutorial2_install_ros.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
  ) 
 Here is how much of TeX's memory you used:
- 26271 strings out of 481239
- 499361 string characters out of 5920377
- 897615 words of memory out of 5000000
- 40972 multiletter control sequences out of 15000+600000
+ 26273 strings out of 481239
+ 499369 string characters out of 5920377
+ 898655 words of memory out of 5000000
+ 40974 multiletter control sequences out of 15000+600000
  546778 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,5n,81p,969b,885s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1199,7 +1204,7 @@ b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on tutorial2_install_ros.pdf (3 pages, 711940 bytes).
+Output written on tutorial2_install_ros.pdf (3 pages, 713022 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
