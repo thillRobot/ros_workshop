@@ -1,0 +1,218 @@
+% !TeX document-id = {ed9f9aeb-6fc7-4042-9422-9ce343a26700}
+\documentclass[12pt]{article}
+
+
+
+\usepackage{xcolor}
+
+
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{mdframed}
+\usepackage{lipsum} 
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+
+
+\usepackage{textcomp}
+
+\usepackage[T1]{fontenc} 
+
+% all 4 borders
+\newmdenv{allfour}
+
+%\usepackage{pygmentize}
+\usepackage{minted}
+%\newminted[python]{python}{frame=single}
+%\fvset{showspaces}
+%\renewcommand\FancyVerbSpace{\textcolor{mygray}{\char32}}
+\setminted[text]{
+	escapeinside=||, 
+	%breaksymbolleft=\carriagereturn,
+	frame=single,
+	%showspaces=true
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=mygray
+}
+
+
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\mdfsetup{
+  linewidth=.5bp,
+  innerleftmargin=3.5bp,
+  innerrightmargin=3.5bp,
+  innertopmargin=.5bp,
+  innerbottommargin=.5bp,
+}
+
+% Tristan Hill
+% ME4140 - Fall 2016 - Fall 2017
+
+\textwidth=6.5in
+\topmargin=-0.5in
+\textheight=9.25in
+\hoffset=-0.5in
+\footskip=0.2in
+
+\pagestyle{myheadings}
+\markright{{\large ME 4140 Fall 2019---The Robotic Operating System}}
+
+\definecolor{monokaibg}{HTML}{272822}
+\definecolor{friendlybg}{HTML}{f0f0f0}
+
+%\definecolor{mygray}{rgb}{.6, .6, .6}
+%\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mygreen}{rgb}{0.1333 ,  0.5451,    0.1333}
+\definecolor{mypink}{rgb}{0.1333 ,  0.5451,    0.1333}
+
+
+
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+%\definecolor{dred}{#8B0000}
+% [153,50,204] - dark orchid
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+%[139,69,19] - saddle brown
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygray}{rgb}{.83, .83, .83}
+
+%\definecolor{mygray}{rgb}{.6, .6, .6}
+
+\newcommand{\VA}{\vspace{2mm}}
+\newcommand{\VB}{\vspace{5mm}} 
+\newcommand{\VC}{\vspace{30mm}} 
+
+
+\newcommand{\SQ}{\textquotesingle} 
+
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\K}{\color{black}}
+%\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+\newcommand{\GY}{\color{mygray}}
+
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+	   {\bf \Large Tutorial 2 - Install ROS }\vspace{5mm} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{2mm}\\
+\end{center}
+
+
+
+		{ Now your Ubuntu Operating System is running you are ready to install ROS. You can read more about this installation \href{http://wiki.ros.org/melodic/Installation/Ubuntu}{here}.}
+
+\begin{enumerate}
+	
+	
+	\item  Setup your sources.list to accept software from packages.ros.org.
+
+
+	\begin{minted}[]{text}
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu \
+$(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+	\end{minted}
+	
+	\item Set up your keys.  
+	
+	\begin{minted}[]{text}
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80'\
+--recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654	
+	\end{minted}	
+	
+	If (and only if)you receive an error try this command instead.
+	\begin{minted}[]{text}
+sudo apt-key adv --keyserver 'hkp://pgp.mit.edu:80'\
+--recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654	
+	\end{minted}
+	
+	And if (and only if) that does not work try this command instead.
+	\begin{minted}[]{text}
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80'\
+--recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654	
+	\end{minted}		
+	
+	\item Update your Linux system. 
+	
+	\begin{minted}[]{text}
+sudo apt update
+	\end{minted}	
+	
+	\item Install ROS Melodic Desktop-Full. Now wait for ROS to install. Type 'y' if prompted to do so. 
+	\begin{minted}[]{text}
+sudo apt install ros-melodic-desktop-full
+	\end{minted}
+
+\newpage	
+	\item Evironment Setup (2 separate commands) 
+	\begin{minted}{text} 
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+	\end{minted}
+	\begin{minted}{text} 
+source ~/.bashrc 
+	\end{minted}
+
+%\newpage
+
+\item Install Development Tools 
+\begin{minted}{text} 
+sudo apt install python-rosinstall python-rosinstall-generator \ 
+python-wstool build-essential
+\end{minted}
+	
+	\item Initialize rosdep (2 separate commands) 
+	\begin{minted}[]{text}
+sudo rosdep init
+	\end{minted}
+	\begin{minted}[]{text} 
+rosdep update
+	\end{minted}
+
+
+
+		
+
+
+		\item Close the terminal. Open a new terminal and try the following command:\\\\
+\begin{minted}{text}  
+roscore 
+\end{minted}
+
+		\item If you see ROS start in the terminal your ROS installation was successful!\\\\
+
+\end{enumerate}
+\end{document}
