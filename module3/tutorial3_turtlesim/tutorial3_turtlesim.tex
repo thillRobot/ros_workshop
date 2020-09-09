@@ -176,13 +176,17 @@ Press \CTRLKey+\ALTKey+\TKey to open a new terminal, then carefully copy each co
 sudo apt update
 	\end{minted} 
  
-\item Install \href{http://wiki.ros.org/turtlesim}{turtlesim} for ROS Melodic from the pre-built repositories. This will take a few moments. 
+\item Install \href{http://wiki.ros.org/turtlesim}{turtlesim} for ROS Melodic from the pre-built repositories. This will take a few moments. Also, install a keyboard controller node.
 			
 \begin{minted}{text}
 sudo apt install ros-melodic-turtlesim
 \end{minted}
+
+\begin{minted}{text}
+sudo apt install ros-melodic-teleop-twist-keyboard
+\end{minted}
 	
-The terminal output will show if the package has been successfully installed. 	
+The terminal output will show if the packages were successfully installed. 	
 	
 \end{enumerate}	
 
@@ -197,7 +201,7 @@ Now, test the newly installed simulator. This exercise is simple, but the proces
 %
 \begin{enumerate}
 
-\item Start the ROS core. 	 
+\item Start the roscore in a terminal. Leave this process running and this window open. 	 
 
 \begin{minted}{text}
 roscore
@@ -207,7 +211,7 @@ roscore
 %roscore
 %\end{minted}		
 
-\item Start the turtlesim node in a new terminal window.
+\item Open a second terminal, and start a turtlesim node in the new terminal window.
 
 \begin{minted}{text}
 rosrun turtlesim turtlesim_node
@@ -222,16 +226,15 @@ rosrun turtlesim turtlesim_node
 %\end{minted}		
 
 			
-\item Now lets install and run a controller node.
-\begin{minted}{text}
-sudo apt-get install ros-melodic-teleop-twist-keyboard
-\end{minted}
+\item In a third terminal run the keyboard controller node.
 
 \begin{minted}{text}
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 \end{minted}
 			
-\item There is a problem, we need to make sure the nodes are talking. Add the following {\it option} to the end of the previous command and rerun the node. 
+There is a problem, the nodes are not communicating. \vspace{3mm}\\
+
+\item Abort the keyboard node by clicking in the third terminal and pressing \CTRLKey +\CKey. Then append the following {\it option} to the end of the previous command and rerun the node. 
 \begin{minted}{text}
 cmd_vel:=turtle1/cmd_vel
 \end{minted}
