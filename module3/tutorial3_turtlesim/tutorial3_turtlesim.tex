@@ -107,6 +107,21 @@
 \newcommand{\ENTER}{\raisebox{-0.1em}{Enter}}
 \newcommand{\ENTERKey}{\keystroke{\ENTER}}
 
+\newcommand{\I}{\raisebox{-0.1em}{I}}
+\newcommand{\IKey}{\keystroke{\I}}
+
+\newcommand{\Kay}{\raisebox{-0.1em}{K}}
+\newcommand{\KayKey}{\keystroke{\Kay}}
+
+\newcommand{\J}{\raisebox{-0.1em}{J}}
+\newcommand{\JKey}{\keystroke{\J}}
+
+\newcommand{\EL}{\raisebox{-0.1em}{L}}
+\newcommand{\ELKey}{\keystroke{\EL}}
+
+\newcommand{\COMMA}{\raisebox{-0.1em}{,}}
+\newcommand{\COMMAKey}{\keystroke{\COMMA}}
+
 %\pagestyle{myheadings}
 %\markright{{\large ME 4140 Fall 2019---The Robotic Operating System}}
 
@@ -165,7 +180,7 @@ After completing {\it Tutorial 2 - Install ROS}, your system is setup. You are r
 
 \item[\textbf{\underline{Turtlesim Installation Instructions:}}] \hfill \vspace{0mm}
 
-Press \CTRLKey+\ALTKey+\TKey to open a new terminal, then carefully copy each command and paste it into the terminal then press \ENTERKey. The terminal commands are shown in gray boxes, and {\bf you will have multiple terminals open at one time during this tutorial.} 
+Press \CTRLKey+\ALTKey+\TKey to open a new terminal, then carefully copy each command and paste it into the terminal then press \ENTERKey. The terminal commands are shown in gray boxes, and {\bf you will have multiple terminals open at once during this tutorial.} 
 
 
 \begin{enumerate}    
@@ -186,14 +201,14 @@ sudo apt install ros-melodic-turtlesim
 sudo apt install ros-melodic-teleop-twist-keyboard
 \end{minted}
 	
-The terminal output will show if the packages were successfully installed. 	
+The terminal will show if the installations were successfully, and it will indicate if the packages were previously installed (turtlesim came with ros-melodic-desktop-full).
 	
 \end{enumerate}	
 
 \newpage
 \item[\textbf{\underline{Turtlesim Testdrive:}}] \hfill \vspace{0mm}
 
-Now, test the newly installed simulator. This exercise is simple, but the process is important.
+Now, test the newly installed simulator. This exercise is simple, but the process is important. 
 
 %\begin{minted}{text}
 %sudo apt-get install ros-melodic-turtlesim
@@ -211,7 +226,7 @@ roscore
 %roscore
 %\end{minted}		
 
-\item Open a second terminal, and start a turtlesim node in the new terminal window.
+\item Open a second tab (file>new tab), and start a turtlesim\_node in the new terminal tab.
 
 \begin{minted}{text}
 rosrun turtlesim turtlesim_node
@@ -226,23 +241,65 @@ rosrun turtlesim turtlesim_node
 %\end{minted}		
 
 			
-\item In a third terminal run the keyboard controller node.
+\item In a third terminal tab run the keyboard controller node.
 
 \begin{minted}{text}
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 \end{minted}
 			
-There is a problem, the nodes are not communicating. \vspace{3mm}\\
 
-\item Abort the keyboard node by clicking in the third terminal and pressing \CTRLKey +\CKey. Then append the following {\it option} to the end of the previous command and rerun the node. 
+
+\includegraphics[scale=0.4]{tutorial3_fig3.png}	
+\includegraphics[scale=0.4]{tutorial3_fig2.png}	
+
+There is a problem, the nodes are not communicating. The turtlesim node is not subscribing the to topic published by the keyboard node. \vspace{3mm}\\
+
+
+\newpage
+\item {\bf rostopic} is a tool in ROS for this type of problem. Try this in a new terminal with your other nodes still running.
+
+
+
+\begin{multicols}{2}
+
+List all available topics under master
 \begin{minted}{text}
-cmd_vel:=turtle1/cmd_vel
+rostopic list
 \end{minted}
-%\begin{minted}{text}			
-%/cmd_vel:=/turtle1/cmd_vel
-%\end{minted}	
+Get info about topic: {\bf /cmd\_vel}
+\begin{minted}{text}
+rostopic info /cmd_vel
+\end{minted}
+Get info about topic: {\bf /turtle1/cmd\_vel}
+\begin{minted}{text}
+rostopic info /turtle1/cmd_vel
+\end{minted}
+
+\vspace{10mm} 
+
+\includegraphics[scale=0.4]{tutorial3_fig4.png} \vspace{3mm}\\
+
+\end{multicols}	
+\vspace{5mm}
+\item Abort the keyboard node by clicking in the third tab and pressing \CTRLKey +\CKey. Then {\bf append the following option} to the end of the keyboard node command and rerun the node. Now, the keyboard node can communicate with the turtle. 
+\begin{minted}{text}
+                        cmd_vel:=turtle1/cmd_vel
+\end{minted}
+
+\begin{multicols}{2}
+
+\begin{framed}
+Move the turtlesim window to the side, and select the keyboard terminal to drive using the following keys.\vspace{2mm}\\ \IKey, \JKey,\KayKey, \ELKey, and \COMMAKey (comma) \vspace{5mm}
+
+Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
+\end{framed}
+
+\includegraphics[scale=0.4]{tutorial3_fig1.png}	
+\end{multicols}			
 			
 \end{enumerate}  
+
+\underline{After completing {\it Tutorial 3 - Turtlesim}, you are ready for a more advanced robot simulator.}
 
 %\newpage
 
