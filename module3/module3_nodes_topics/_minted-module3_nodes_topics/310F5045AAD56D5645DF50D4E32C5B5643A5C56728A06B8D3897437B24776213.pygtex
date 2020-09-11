@@ -1,3 +1,3 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-rosservice              3
+rosservice
 \end{Verbatim}
