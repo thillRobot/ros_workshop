@@ -9,11 +9,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="115.295"
+   inkscape:export-xdpi="115.295"
+   inkscape:export-filename="/home/thill/Documents/lectures/ros_lectures/module3/tutorial3_turtlesim/tutorial3_fig3.png"
    sodipodi:docname="tutorial3_fig3_mod.svg"
    inkscape:version="1.0 (1.0+r73+1)"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="234.59723mm"
+   height="197.55556mm"
+   viewBox="0 0 234.59723 197.55556"
    version="1.1"
    id="svg8">
   <defs
@@ -207,6 +210,10 @@
     </g>
   </defs>
   <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
      inkscape:window-maximized="0"
      inkscape:window-y="63"
      inkscape:window-x="110"
@@ -216,8 +223,8 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="832.38757"
-     inkscape:cx="282.71417"
+     inkscape:cy="393.8947"
+     inkscape:cx="333.79492"
      inkscape:zoom="0.70710678"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -238,6 +245,7 @@
     </rdf:RDF>
   </metadata>
   <g
+     transform="translate(34.832466,-119.43559)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">

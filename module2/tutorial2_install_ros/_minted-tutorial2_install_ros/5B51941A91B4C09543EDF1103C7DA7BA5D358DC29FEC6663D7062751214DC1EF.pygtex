@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+sudo apt install python\PYGZhy{}rosdep python\PYGZhy{}rosinstall \PYGZbs{}
+python\PYGZhy{}rosinstall\PYGZhy{}generator python\PYGZhy{}wstool build\PYGZhy{}essential
+\end{Verbatim}

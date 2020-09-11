@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  8 SEP 2020 02:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  10 SEP 2020 13:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1146,7 +1146,7 @@ keystroke/keystroke_right.pdf>]
 \openout4 = `tutorial2_install_ros.pyg'.
 
 
-(./_minted-tutorial2_install_ros/A6CDE60B73525829C987C2D7FB1750A05D358DC29FEC66
+(./_minted-tutorial2_install_ros/5B51941A91B4C09543EDF1103C7DA7BA5D358DC29FEC66
 63D7062751214DC1EF.pygtex)
 \openout4 = `tutorial2_install_ros.pyg'.
 
@@ -1192,7 +1192,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
 Here is how much of TeX's memory you used:
  26273 strings out of 481239
  499369 string characters out of 5920377
- 898655 words of memory out of 5000000
+ 898656 words of memory out of 5000000
  40974 multiletter control sequences out of 15000+600000
  546778 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1204,7 +1204,7 @@ b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on tutorial2_install_ros.pdf (3 pages, 713022 bytes).
+Output written on tutorial2_install_ros.pdf (3 pages, 712662 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
