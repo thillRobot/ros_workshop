@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  11 SEP 2020 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  11 SEP 2020 07:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1306,7 +1306,7 @@ runsystem(rm module3_nodes_topics.pyg)...executed.
 Here is how much of TeX's memory you used:
  23489 strings out of 481239
  460325 string characters out of 5920377
- 936565 words of memory out of 5000000
+ 936566 words of memory out of 5000000
  38134 multiletter control sequences out of 15000+600000
  545999 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

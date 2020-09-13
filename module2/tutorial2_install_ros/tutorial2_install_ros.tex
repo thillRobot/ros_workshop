@@ -134,8 +134,6 @@
 
 %\thispagestyle{plain}
 
-%\thispagestyle{plain}
-
 \begin{center}
    {\bf \Large ROS Workshop - Tutorial 2 - Install ROS}\vspace{3mm} \\
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
@@ -181,8 +179,8 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu \
 	\item Set up your keys which are used authenticate software packages for security.
 	
 	\begin{minted}[]{text}
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80'\
---recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654	
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' \ 
+--recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 	\end{minted}
 				
 	\item Update your Ubuntu system. It is a good idea to do this regularly.  
