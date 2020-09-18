@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  18 SEP 2020 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  18 SEP 2020 16:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -781,46 +781,46 @@ age with [][]catkin_make[][]
 
 (./_minted-tutorial4_create_package/D3C927251DA307BD42A405C1C9BBEDFF86909B0502E
 911E0C6C5E2068EDD3747.pygtex) [5]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./tutorial4_create_package.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `tutorial4_create_package.out' has not change
 d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -830,11 +830,11 @@ runsystem(rm tutorial4_create_package.pyg)...executed.
 Here is how much of TeX's memory you used:
  12289 strings out of 481239
  204093 string characters out of 5920377
- 710537 words of memory out of 5000000
+ 711537 words of memory out of 5000000
  27225 multiletter control sequences out of 15000+600000
  542374 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,40p,856b,1406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,40p,856b,1404s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -845,7 +845,7 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf
 cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pf
 b></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on tutorial4_create_package.pdf (6 pages, 197891 bytes).
+Output written on tutorial4_create_package.pdf (6 pages, 199628 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams

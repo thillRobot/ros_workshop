@@ -126,7 +126,7 @@ bgcolor=mygray
 \thispagestyle{plain}
 
 \begin{center}
-   {\bf \Large ROS - Create a Package}\vspace{2mm} \\
+   {\bf \Large ROS Workshop - Tutorial 4 - Create a Package}\vspace{3mm} \\
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 
@@ -155,12 +155,12 @@ bgcolor=mygray
 \begin{framed}
 	\item[\underline{Important Note on Naming:}] \hfill \vspace{0mm} 
 	
-In this tutorial you will replace several fields <> with names of your choice. These are general guidlines for \href{http://wiki.ros.org/ROS/Patterns/Conventions}{naming in ROS}. \vspace{3mm} 
+In this tutorial you will replace several <fields> with names of your choice. These are general guidlines for \href{http://wiki.ros.org/ROS/Patterns/Conventions}{naming in ROS}. \vspace{3mm} 
 \begin{itemize}
 \item use descriptive names, very long or very short names are hard to read
 \item \textbf{do not} include the < > symbols
 \item \textbf{do not} use spaces, UPPER CASE letters, or special characters $(@,\$,*, etc.)$
-\item the underscore (\_) character \textbf{is} allowed \vspace{0mm}\\
+\item the underscore \_ character \textbf{is} allowed \vspace{0mm}\\
 \end{itemize}
     \wspname \hspace{2mm} - name of your workspace \vspace{3mm}\\
     \pkgname \hspace{2mm} - name of your package  \vspace{3mm}\\
@@ -256,7 +256,7 @@ catkin_make
 	\end{minted}
 	            
 	
-	If you get here with no errors you are ready to write some code and test your new package!
+	If you get here with no errors, your workspace is setup, and you are ready to write some code and test your new package!
 	            
 	            
 	            %\end{enumerate}
@@ -270,7 +270,7 @@ catkin_make
 gedit |\home\wspname|/src/|\pkgname|/src/|\nodname|.cpp
 	\end{minted}
 	  
-	 Copy the code below into the source file. It must be saved as a \nodname.cpp in the source directory of the package your created in previously in {\bf step 1}. \vspace{1mm}
+	 Copy the code below into the source file. . \vspace{1mm}
 	
 	%\begin{minted}{cpp}
 	 
@@ -301,6 +301,8 @@ gedit |\home\wspname|/src/|\pkgname|/src/|\nodname|.cpp
 	\end{lstlisting}
 	
 	%\end{minted}
+	
+	Save and close the file. It must be saved as a \nodname.cpp in the src directory of the package your created in previously in {\bf Part I}
 	
 	\item[Step 4:] Before we can compile the node we have to modify the file below.
 	
