@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  18 SEP 2020 00:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  18 SEP 2020 00:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**module3_nodes_topics.tex
-(./module3_nodes_topics.tex
+**module4_catkin_workspace.tex
+(./module4_catkin_workspace.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -959,11 +959,11 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "module3_nodes_topics.w18")...executed.
+runsystem(uname -s > "module4_catkin_workspace.w18")...executed.
 
 
-(./module3_nodes_topics.w18)
-runsystem(rm -- "module3_nodes_topics.w18")...executed.
+(./module4_catkin_workspace.w18)
+runsystem(rm -- "module4_catkin_workspace.w18")...executed.
 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
@@ -989,7 +989,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks47
 \c@listing=\count376
 )
-runsystem(mkdir -p _minted-module3_nodes_topics)...executed.
+runsystem(mkdir -p _minted-module4_catkin_workspace)...executed.
 
 \mybox=\box140
 
@@ -1001,12 +1001,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 123.
 
-runsystem(which pygmentize && touch module3_nodes_topics.aex)...executed.
+runsystem(which pygmentize && touch module4_catkin_workspace.aex)...executed.
 
-runsystem(rm module3_nodes_topics.aex)...executed.
+runsystem(rm module4_catkin_workspace.aex)...executed.
 
-(./module3_nodes_topics.aux)
-\openout1 = `module3_nodes_topics.aux'.
+(./module4_catkin_workspace.aux)
+\openout1 = `module4_catkin_workspace.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
 LaTeX Font Info:    ... okay on input line 127.
@@ -1100,9 +1100,9 @@ LaTeX Info: Redefining \ref on input line 127.
 LaTeX Info: Redefining \pageref on input line 127.
 LaTeX Info: Redefining \nameref on input line 127.
 
-(./module3_nodes_topics.out) (./module3_nodes_topics.out)
+(./module4_catkin_workspace.out) (./module4_catkin_workspace.out)
 \@outlinefile=\write7
-\openout7 = `module3_nodes_topics.out'.
+\openout7 = `module4_catkin_workspace.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 127.
@@ -1185,134 +1185,51 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 \c@lstlisting=\count384
 
-(./module3_nodes_topics.nav)
+(./module4_catkin_workspace.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2
 
-]
-\openout5 = `module3_nodes_topics.pyg'.
+] [3
 
+] [4
 
-(./_minted-module3_nodes_topics/default-pyg-prefix.pygstyle)
-(./_minted-module3_nodes_topics/default.pygstyle)
-(./_minted-module3_nodes_topics/F354A764B38046304C6172F1812FAA4643A5C56728A06B8
-D3897437B24776213.pygtex)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/89D6B36CE47195507BA47615975E64DA43A5C56728A06B8
-D3897437B24776213.pygtex) [3
-
-]
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/41A5C138910C4D1CA68EAE71A609AFD543A5C56728A06B8
-D3897437B24776213.pygtex) [4
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 212
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 212
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 212.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/64B55F2FE797CBA6F0A85C01FD8C817043A5C56728A06B8
-D3897437B24776213.pygtex)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/449D77EC492165FE6A102BB637489CD843A5C56728A06B8
-D3897437B24776213.pygtex)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/310F5045AAD56D5645DF50D4E32C5B5643A5C56728A06B8
-D3897437B24776213.pygtex)
-Overfull \vbox (6.80551pt too high) detected at line 226
- []
-
-[5
+] [5
 
 ] [6
 
-]
-LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 2
-60.
- (/usr/share/texmf/tex/latex/tex-gyre/ot1qcr.fd
-File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
-) [7
-
-]
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/BEF463BA9DCDC85DFDFC3E486CE9923943A5C56728A06B8
-D3897437B24776213.pygtex)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/B5AF14407F6CF8B7916F2A478A8D3F3343A5C56728A06B8
-D3897437B24776213.pygtex)
-\openout5 = `module3_nodes_topics.pyg'.
-
-
-(./_minted-module3_nodes_topics/CAFA3A4B960EB473BD39C807DC3F1C5B43A5C56728A06B8
-D3897437B24776213.pygtex)
-Overfull \vbox (0.80551pt too high) detected at line 288
- []
-
-[8
-
-] [9
+] [7
 
 ]
 \tf@nav=\write8
-\openout8 = `module3_nodes_topics.nav'.
+\openout8 = `module4_catkin_workspace.nav'.
 
 \tf@toc=\write9
-\openout9 = `module3_nodes_topics.toc'.
+\openout9 = `module4_catkin_workspace.toc'.
 
 \tf@snm=\write10
-\openout10 = `module3_nodes_topics.snm'.
+\openout10 = `module4_catkin_workspace.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
- (./module3_nodes_topics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
-Package rerunfilecheck Info: File `module3_nodes_topics.out' has not changed.
-(rerunfilecheck)             Checksum: 3680F655FDA04276237BCFFE9E05F7F6;238.
-runsystem(rm module3_nodes_topics.pyg)...executed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 
+(./module4_catkin_workspace.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package rerunfilecheck Info: File `module4_catkin_workspace.out' has not change
+d.
+(rerunfilecheck)             Checksum: BD76C74239CF0185D6D8625501820977;156.
  ) 
 Here is how much of TeX's memory you used:
- 23469 strings out of 481239
- 460030 string characters out of 5920377
- 936597 words of memory out of 5000000
- 38117 multiletter control sequences out of 15000+600000
- 540893 words of font info for 54 fonts, out of 8000000 for 9000
+ 23054 strings out of 481239
+ 448804 string characters out of 5920377
+ 931551 words of memory out of 5000000
+ 37767 multiletter control sequences out of 15000+600000
+ 535938 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,19n,67p,816b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,19n,67p,820b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{sectionIII} has been referenced but does not exis
 t, replaced by a fixed one
 
@@ -1324,14 +1241,11 @@ eplaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on module3_nodes_topics.pdf (9 pages, 96779 bytes).
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on module4_catkin_workspace.pdf (7 pages, 45245 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 28 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

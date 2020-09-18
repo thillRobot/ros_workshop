@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  11 SEP 2020 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  18 SEP 2020 01:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1082,12 +1082,12 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
-6.
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-68.
+66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1163,36 +1163,36 @@ keystroke/keystroke_right.pdf>]
 
 (./_minted-tutorial2_install_ros/F354A764B38046304C6172F1812FAA465D358DC29FEC66
 63D7062751214DC1EF.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 <roscore_charlie.png, id=39, 454.19687pt x 397.485pt>
 File: roscore_charlie.png Graphic file (type png)
 <use roscore_charlie.png>
-Package pdftex.def Info: roscore_charlie.png  used on input line 244.
+Package pdftex.def Info: roscore_charlie.png  used on input line 242.
 (pdftex.def)             Requested size: 454.19576pt x 397.48402pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
 [3 <./roscore_charlie.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./tutorial2_install_ros.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `tutorial2_install_ros.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm tutorial2_install_ros.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
  26273 strings out of 481239
  499369 string characters out of 5920377
- 898656 words of memory out of 5000000
+ 898655 words of memory out of 5000000
  40974 multiletter control sequences out of 15000+600000
  546778 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

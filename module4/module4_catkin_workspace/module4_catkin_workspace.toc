@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{---}{3}{0}{1}
+\beamer@sectionintoc {2}{---}{5}{0}{2}
+\beamer@sectionintoc {3}{---}{6}{0}{3}
+\beamer@sectionintoc {4}{---}{7}{0}{4}

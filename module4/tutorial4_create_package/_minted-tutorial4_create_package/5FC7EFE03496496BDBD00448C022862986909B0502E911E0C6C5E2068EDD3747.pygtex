@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+add\PYGZus{}executable(\PYG{esc}{\nodname} src/\PYG{esc}{\nodname}.cpp)
+target\PYGZus{}link\PYGZus{}libraries(\PYG{esc}{\nodname} \PYG{esc}{\$}\PYGZob{}catkin\PYGZus{}LIBRARIES\PYGZcb{})
+\end{Verbatim}
