@@ -40,6 +40,8 @@ bgcolor=mygray
 \usepackage{listings}
 \usepackage{textcomp}
 \usepackage[T1]{fontenc} 
+\usepackage{enumitem}
+
 
 \hypersetup{
     bookmarks=true,         % show bookmarks bar?
@@ -128,7 +130,7 @@ bgcolor=mygray
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 
-\begin{description}
+\begin{description}[labelindent=1cm]
 	
 	\item[\textbf{\underline{Overview:}}] \hfill \vspace{3mm}\\
 	After completing {\it Tutorial 3 - Turtlesim}, You have begun learning ROS and you can are ready to create a custom C++ package. You can read more about this tutorial \href{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}{here} on the wiki.
@@ -301,7 +303,7 @@ gedit |\home\wspname|/src/|\pkgname|/CMakeLists.txt
 	
 	Add the following lines to the bottom of the file and save.
 	
-	\begin{minted}{text}
+	\begin{minted}[bgcolor=white]{text}
 add_executable(|\nodname| src/|\nodname|.cpp)
 target_link_libraries(|\nodname| |\$|{catkin_LIBRARIES}) 
 	\end{minted}
@@ -338,7 +340,7 @@ rostopic list
 	\end{minted}
 	
 	
-	Close your node and start it again with the cmd\textunderscore vel topic patched through to the turtle like we did previously.
+	Close your node and start it again with the cmd\textunderscore vel topic mapped to the turtle like we did previously.
 	\begin{minted}{text} 
 rosrun |\pkgname\hspace{3mm}\nodname \hspace{1mm}|/cmd_vel:=/turtle1/cmd_vel
 	\end{minted}
@@ -403,12 +405,21 @@ rosrun |\pkgname\hspace{3mm}\nodname \hspace{1mm}|/cmd_vel:=/turtle1/cmd_vel
 	%\end{minted}
 	
 
-	\vspace*{20mm}
+	\vspace*{5mm}
 	
+
 
 	\end{description}	
 	
-	\item Whew, that was quite alot. Please let me know if you have any questions. If you want more try this \href{http://wiki.ros.org/joy/Tutorials/WritingTeleopNode}{JoyStick Teleop Node} for use with a Linux compatable joystick.\\ 
+	
+	
+
+	\item[\textbf{\underline{Tutorial Complete:}}] \hfill \vspace{3mm}\\ After completing {\it Tutorial 4 - Create Package}, you are finally ready for a more advanced robot simulator.
+	
+	\hfill \vspace{3mm}\\
+	
+	\item [Bonus Excercise:] Install the \href{http://wiki.ros.org/joy/Tutorials/WritingTeleopNode}{JoyStick Teleop Node} to drive the turtle with a USB joystick.
+	
 	
 	\end{description}
 
