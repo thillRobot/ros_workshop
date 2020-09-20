@@ -3,11 +3,13 @@
 
 % Tennessee Technological University
 % ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020
-% Tristan Hill - September 10, 2020
+% Tristan Hill - September 19, 2020
 % Turtorial 5 - Turtlebot3 Simulator
 
 \documentclass[12pt]{article}
-\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_tutorial} % custom preamble
+
+% Custom Preamble
+\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_tutorial} 
 
 % Title and Misc
 \newcommand{\MNUM}{5} %Module Number
@@ -29,28 +31,28 @@
 \begin{enumerate}
 	\item Update your linux system before you get started. 
 	\begin{minted}{text} 
-	sudo apt-get update
+	sudo apt update
 	\end{minted}
 
 	\item Install the necessary nodes into your ROS system. This tutorial comes from \href{http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation} {here.} 
     	
     	{\bf turtlebot3 }
 	\begin{minted}{text} 
-	sudo apt-get install ros-|\rosdistro|-turtlebot3
+	sudo apt install ros-|\rosdistro|-turtlebot3
 	\end{minted}
  	 {\bf turtlebot3\_simulations}
 	\begin{minted}{text} 
-	sudo apt-get install ros-|\rosdistro|-turtlebot3-simulations
+	sudo apt install ros-|\rosdistro|-turtlebot3-simulations
 	\end{minted}
  	{\bf turtlebot3\_gazebo}
 	\begin{minted}{text} 
-	sudo apt-get install ros-|\rosdistro|-turtlebot3-gazebo
+	sudo apt install ros-|\rosdistro|-turtlebot3-gazebo
 	\end{minted}
 
 
 %    \item Next install the physical 'turtlebot' drivers into your ROS system. This step is only necessary if you are using a real turtlebot. \href{http://wiki.ros.org/Robots/TurtleBot} {Link Here} 
 %   \begin{minted}{text}  
-%(sudo apt-get install ros-|\rosdistro|-turtlebot ros-|\rosdistro|-turtlebot-apps
+%(sudo apt install ros-|\rosdistro|-turtlebot ros-|\rosdistro|-turtlebot-apps
 %ros-|\rosdistro|-turtlebot-interactions ros-|\rosdistro|-turtlebot-simulator 
 %ros-|\rosdistro|-kobuki-ftdi ros-|\rosdistro|-rocon-remocon 
 %ros-|\rosdistro|-rocon-qt-library ros-|\rosdistro|-ar-track-alvar-msgs})

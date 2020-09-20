@@ -1,0 +1,189 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\usepackage[T1]{fontenc} 
+%\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+\usepackage{multicol}
+%\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{fancyvrb}
+\usepackage{framed}
+%\usepackage[pdftex]{graphicx}
+
+\usepackage{beamerthemesplit}
+\beamertemplateballitem
+
+\usepackage{amsmath}
+\usepackage{keystroke}
+\usepackage{varwidth}
+\usepackage{tasks}
+\usepackage{fleqn}
+
+\usepackage{MnSymbol,wasysym}
+\usepackage{tikzsymbols}
+
+% Margins
+%\textwidth=6.5in
+%\topmargin=-0.5in
+%\textheight=9.25in
+%\hoffset=-0.5in
+%\footskip=0.2in
+
+\usepackage{listings}
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\usepackage{minted}
+\setminted[text]{
+	escapeinside=||, 
+	frame=single,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=mygray
+}
+\setminted[cpp]{
+	escapeinside=||, 
+	frame=single,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=mygray
+}
+
+\usepackage{hyperref}
+
+
+% custom colors
+\definecolor{TTUpurple}{rgb}{0.3098, 0.1607, 0.5176} % TTU Purple (primary)
+\definecolor{TTUgold}{rgb}{1.0000, 0.8666, 0.0000} % TTU Gold (primary) 
+\definecolor{mygray}{rgb}{.6, .6, .6}
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygreen}{rgb}{0, .39, 0}
+\definecolor{mypink}{rgb}{0.9960, 0, 0.9960}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{monokaibg}{HTML}{272822}
+\definecolor{friendlybg}{HTML}{f0f0f0}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=TTUgold,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+% color commands
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\BR}{\color{mybrown}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+\newcommand{\PN}{\color{mypink}}
+\newcommand{\OR}{\color{TTU}}
+\newcommand{\GD}{\color{TTUgold}}
+
+% beamer colors
+\setbeamercolor{palette primary}{bg=TTUpurple,fg=TTUgold}
+\setbeamercolor{palette secondary}{bg=black,fg=TTUgold}
+\setbeamercolor{palette tertiary}{bg=black,fg=TTUpurple}
+\setbeamercolor{palette quaternary}{bg=TTUgold,fg=black}
+\setbeamercolor{structure}{fg=TTUpurple} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=TTUpurple} % TOC sections
+
+% Mathematics Commands
+\newcommand{\Lagr}{\mathcal{L}} % lagrangian
+
+% Space Commands 
+\newcommand{\hspcu}{\underline{\hspace{20mm}}} % large horizontal space w underline
+\newcommand{\vspccc}{\vspace{6mm}\\} % large vertical space
+\newcommand{\vspcc}{\vspace{4mm}\\}   % medium vertical space
+\newcommand{\vspc}{\vspace{2mm}\\}     % small vertical space
+
+\newcommand{\hspcccc}{\hspace{10mm}} % large horizontal space
+\newcommand{\hspccc}{\hspace{6mm}} % large horizontal space
+\newcommand{\hspcc}{\hspace{4mm}}   % medium horizontal space
+\newcommand{\hspc}{\hspace{2mm}}     % small horizontal space
+
+\newcommand{\SQ}{\textquotesingle} 
+
+% ROS related commands
+\newcommand{\usrname}{<user\_name>} 
+\newcommand{\pkgname}{<package\_name>} 
+\newcommand{\wspname}{<workspace\_name>}
+\newcommand{\nodname}{<node\_name>}
+\newcommand{\tpcname}{<topic\_name>}
+\newcommand{\lfname}{<file\_name>}
+
+\newcommand{\home}{\textasciitilde/}
+\newcommand{\rosdistro}{melodic}
+\newcommand{\pthname}{/opt/ros/\rosdistro/share/turtlebot\_stage/maps/}
+
+% keyboard graphics
+\newcommand{\WindowsLogo}{\raisebox{-0.1em}{%
+\includegraphics[height=0.8em]{win_logo}}}
+\newcommand{\WinKey}{\keystroke{\WindowsLogo}}
+
+\newcommand{\TAB}{\raisebox{-0.1em}{Tab}}
+\newcommand{\TABKey}{\keystroke{\TAB}}
+
+\newcommand{\T}{\raisebox{-0.1em}{T}}
+\newcommand{\TKey}{\keystroke{\T}}
+
+\newcommand{\C}{\raisebox{-0.1em}{C}}
+\newcommand{\CKey}{\keystroke{\C}}
+
+\newcommand{\CTRL}{\raisebox{-0.1em}{Ctrl}}
+\newcommand{\CTRLKey}{\keystroke{\CTRL}}
+
+\newcommand{\ALT}{\raisebox{-0.1em}{Alt}}
+\newcommand{\ALTKey}{\keystroke{\ALT}}
+
+\newcommand{\ENTER}{\raisebox{-0.1em}{Enter}}
+\newcommand{\ENTERKey}{\keystroke{\ENTER}}
+
+\newcommand{\I}{\raisebox{-0.1em}{I}}
+\newcommand{\IKey}{\keystroke{\I}}
+
+\newcommand{\Kay}{\raisebox{-0.1em}{K}}
+\newcommand{\KayKey}{\keystroke{\Kay}}
+
+\newcommand{\J}{\raisebox{-0.1em}{J}}
+\newcommand{\JKey}{\keystroke{\J}}
+
+\newcommand{\EL}{\raisebox{-0.1em}{L}}
+\newcommand{\ELKey}{\keystroke{\EL}}
+
+\newcommand{\COMMA}{\raisebox{-0.1em}{,}}
+\newcommand{\COMMAKey}{\keystroke{\COMMA}}
