@@ -1,93 +1,26 @@
-%
-% ME4140 - Fall 2016 - Fall 2020
-% ROS by Tristan Hill - Tutorials for TnTech Students
-% Tutorial 1 - Virtualizing Ubuntu
-%
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Tennessee Technological University
+% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020
+% Tristan Hill - September 10, 2020
+% Turtorial 5 - Turtlebot3 Simulator
 
 \documentclass[12pt]{article}
-\usepackage{hyperref}
-\usepackage[pdftex]{graphicx}
-\usepackage{multirow}
-\usepackage{setspace}
-\usepackage{color}
-\usepackage{multicol}
-\usepackage{enumitem}
+\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_tutorial}
 
-\hypersetup{
-    bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={My title},    % title
-    pdfauthor={Author},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfcreator={Creator},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={keyword1, key2, key3}, % list of keywords
-    pdfnewwindow=true,      % links in new PDF window
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=blue           % color of external links
-}
-
-% custom colors
-\definecolor{TTUpurple}{rgb}{0.3098, 0.1607, 0.5176} % TTU Purple (primary)
-\definecolor{TTUgold}{rgb}{1.0000, 0.8666, 0.0000} % TTU Gold (primary) 
-\definecolor{mygray}{rgb}{.6, .6, .6}
-\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
-\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
-\definecolor{mygreen}{rgb}{0, .39, 0}
-\definecolor{mypink}{rgb}{0.9960, 0, 0.9960}
-
-% color commands
-\newcommand{\R}{\color{red}}
-\newcommand{\B}{\color{blue}}
-\newcommand{\BR}{\color{mybrown}}
-\newcommand{\K}{\color{black}}
-\newcommand{\G}{\color{mygreen}}
-\newcommand{\PR}{\color{mypurple}}
-\newcommand{\PN}{\color{mypink}}
-\newcommand{\OR}{\color{TTU}}
-\newcommand{\GD}{\color{TTUgold}}
-
-\newcommand{\Lagr}{\mathcal{L}} % lagrangian
-
-\newcommand{\hspcu}{\underline{\hspace{20mm}}} % large horizontal space w underline
-\newcommand{\vspccc}{\vspace{6mm}\\} % large vertical space
-\newcommand{\vspcc}{\vspace{4mm}\\}   % medium vertical space
-\newcommand{\vspc}{\vspace{2mm}\\}     % small vertical space
-
-\newcommand{\hspcccc}{\hspace{10mm}} % large horizontal space
-\newcommand{\hspccc}{\hspace{6mm}} % large horizontal space
-\newcommand{\hspcc}{\hspace{4mm}}   % medium horizontal space
-\newcommand{\hspc}{\hspace{2mm}}     % small horizontal space
-
-\newsavebox{\mybox} % custom box
-
-\textwidth=6.5in
-\topmargin=-0.5in
-\textheight=9.25in
-\hoffset=-0.5in
-\footskip=0.2in
-
+% Title and Misc
+\newcommand{\MNUM}{1} %Module Number
+\newcommand{\MNAME}{Virtualize Ubuntu} %Module Name
 \pagestyle{myheadings}
-\markright{{\large ME 4140 Fall 2020 - Tutorial 1 - Virtualize Ubuntu}}
-
-\newcommand{\homeWeight}{10}
-\newcommand{\quizWeight}{20}
-\newcommand{\examWeight}{15}
-\newcommand{\finalWeight}{25}
+\markright{{\large ME4140 - ROS Workshop - Fall 2020}}
 
 \begin{document}
 
 \thispagestyle{plain}
 
 \begin{center}
-   {\bf \Large ROS Workshop - Tutorial 1 - Virtualize Ubuntu}\vspace{3mm} \\
+   {\bf \Large ROS Workshop - Tutorial\hspc\MNUM\hspc - \MNAME}\vspace{3mm}\\
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 

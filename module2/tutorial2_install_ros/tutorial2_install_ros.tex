@@ -1,33 +1,19 @@
-% !TeX document-id = {ed9f9aeb-6fc7-4042-9422-9ce343a26700}
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Tennessee Technological University
+% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020
+% Tristan Hill - September 10, 2020
+% Turtorial 3 - Turtlesim
+
 \documentclass[12pt]{article}
+\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_tutorial}
 
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{framed}
-%\usepackage{mdframed}
-\usepackage{setspace}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage[pdftex]{graphicx}
-\usepackage{keystroke}
-\usepackage{lipsum} 
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{textcomp}
-\usepackage[T1]{fontenc} 
-\usepackage{MnSymbol,wasysym}
-\usepackage{tikzsymbols}
-
-\usepackage{enumitem}
-\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
-
-\usepackage{geometry}
- \geometry{
- left=20mm,
- right=10mm,
- top=20mm,
- }
+% Title and Misc
+\newcommand{\MNUM}{3} %Module Number
+\newcommand{\MNAME}{Install ROS} %Module Name
+\pagestyle{myheadings}
+\markright{{\large ME4140 - ROS Workshop - Fall 2020}}
 
 \textwidth=7.0in
 \topmargin=-0.6in
@@ -36,106 +22,12 @@
 \hoffset=-0.5in
 \footskip=0.2in
 
-%\usepackage{pygmentize}
-\usepackage{minted}
-%\newminted[python]{python}{frame=single}
-%\fvset{showspaces}
-%\renewcommand\FancyVerbSpace{\textcolor{mygray}{\char32}}
-\setminted[text]{
-	escapeinside=||, 
-	%breaksymbolleft=\carriagereturn,
-	frame=single,
-	%showspaces=true
-	framesep=2mm,
-	baselinestretch=1.2,
-	bgcolor=mygray
-}
-
-% all 4 borders
-%\newmdenv{allfour}
-
-\hypersetup{
-    %bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={My title},    % title
-    pdfauthor={Author},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfcreator={Creator},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={keyword1, key2, key3}, % list of keywords
-    pdfnewwindow=true,      % links in new PDF window
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=blue           % color of external links
-}
-
-%\mdfsetup{
-%  linewidth=.5bp,
-%  innerleftmargin=3.5bp,
-%  innerrightmargin=3.5bp,
-%  innertopmargin=.5bp,
-%  innerbottommargin=.5bp,
-%}
-
-% windows logo
-% Lower the picture a little to match the text baseline
-\newcommand{\WindowsLogo}{\raisebox{-0.1em}{%
-  \includegraphics[height=0.8em]{win_logo}}}
-\newcommand{\WinKey}{\keystroke{\WindowsLogo}}
-
-\newcommand{\T}{\raisebox{-0.1em}{T}}
-\newcommand{\TKey}{\keystroke{\T}}
-
-\newcommand{\C}{\raisebox{-0.1em}{C}}
-\newcommand{\CKey}{\keystroke{\C}}
-
-\newcommand{\CTRL}{\raisebox{-0.1em}{Ctrl}}
-\newcommand{\CTRLKey}{\keystroke{\CTRL}}
-
-\newcommand{\ALT}{\raisebox{-0.1em}{Alt}}
-\newcommand{\ALTKey}{\keystroke{\ALT}}
-
-\newcommand{\ENTER}{\raisebox{-0.1em}{Enter}}
-\newcommand{\ENTERKey}{\keystroke{\ENTER}}
-
-%\pagestyle{myheadings}
-%\markright{{\large ME 4140 Fall 2019---The Robotic Operating System}}
-
-\definecolor{monokaibg}{HTML}{272822}
-\definecolor{friendlybg}{HTML}{f0f0f0}
-\definecolor{mygreen}{rgb}{0.1333 ,  0.5451,    0.1333}
-\definecolor{mypink}{rgb}{0.1333 ,  0.5451,    0.1333}
-\definecolor{mygreen}{rgb}{0, .39, 0}
-%\definecolor{dred}{#8B0000} 
-\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
-\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
-\definecolor{mygray}{rgb}{.83, .83, .83}
-
-\newcommand{\R}{\color{red}}
-\newcommand{\B}{\color{blue}}
-\newcommand{\K}{\color{black}}
-%\newcommand{\G}{\color{mygreen}}
-\newcommand{\PR}{\color{mypurple}}
-\newcommand{\GY}{\color{mygray}}
-
-\newcommand{\VA}{\vspace{2mm}}
-\newcommand{\VB}{\vspace{5mm}} 
-\newcommand{\VC}{\vspace{30mm}} 
-
-\newcommand{\SQ}{\textquotesingle} 
-
 \begin{document}
 
-%\thispagestyle{plain}
+\thispagestyle{plain}
 
 \begin{center}
-   {\bf \Large ROS Workshop - Tutorial 2 - Install ROS}\vspace{3mm} \\
+   {\bf \Large ROS Workshop - Tutorial\hspc\MNUM\hspc - \MNAME}\vspace{3mm}\\
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 
@@ -243,10 +135,9 @@ If the installation was successful, the terminal output will be {\it similar} to
 
 Abort the roscore process by clicking in the terminal and pressing \CTRLKey + \CKey, then close the terminal window. Congratulations, you have installed ROS Melodic.
 
-
 \item[\textbf{\underline{Tutorial Complete:}}] \hfill \vspace{3mm}\\
 
-		%\item If you see ROS start in the terminal your ROS installation was successful!
+If you see ROS start in the terminal your ROS installation was successful!
 
 
 \end{description}
