@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  24 SEP 2020 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  24 SEP 2020 23:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1439,11 +1439,47 @@ File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
 
 ] [4
 
-] [5
+]
+<folders_small.png, id=183, 1426.54695pt x 1305.88748pt>
+File: folders_small.png Graphic file (type png)
+<use folders_small.png>
+Package pdftex.def Info: folders_small.png  used on input line 80.
+(pdftex.def)             Requested size: 213.97281pt x 195.87466pt.
 
-] [6
+Overfull \vbox (0.433pt too high) detected at line 83
+ []
 
-] [7
+[5
+
+ <./folders_small.png>] [6
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 114
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 114
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 114.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+[7
 
 ]
 \tf@nav=\write8
@@ -1455,46 +1491,40 @@ File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
 \tf@snm=\write10
 \openout10 = `module4_catkin_workspace.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
-
-(./module4_catkin_workspace.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
-
-
-Package rerunfilecheck Warning: File `module4_catkin_workspace.out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `module4_catkin_workspace.out':
-(rerunfilecheck)             Before: 4805841FFD54A7DCDF99BA0CBBBE06F6;241
-(rerunfilecheck)             After:  6E4AD46FD61876B32CE78F229807A072;266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+ (./module4_catkin_workspace.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `module4_catkin_workspace.out' has not change
+d.
+(rerunfilecheck)             Checksum: 6E4AD46FD61876B32CE78F229807A072;266.
  ) 
 Here is how much of TeX's memory you used:
- 30541 strings out of 481239
- 598909 string characters out of 5920377
- 1087125 words of memory out of 5000000
- 45126 multiletter control sequences out of 15000+600000
- 543617 words of font info for 41 fonts, out of 8000000 for 9000
+ 30668 strings out of 481239
+ 601451 string characters out of 5920377
+ 1087198 words of memory out of 5000000
+ 45208 multiletter control sequences out of 15000+600000
+ 554722 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,19n,83p,791b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{sectionIII} has been referenced but does not exis
 t, replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fo
-nts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfsx0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfsx1440.pfb>
-Output written on module4_catkin_workspace.pdf (7 pages, 132000 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dis
+t/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfsx1440.pfb>
+Output written on module4_catkin_workspace.pdf (7 pages, 501055 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
  26 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
