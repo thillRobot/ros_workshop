@@ -8,14 +8,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="500mm"
-   height="457.72891mm"
-   viewBox="0 0 499.99998 457.72891"
+   width="2000mm"
+   height="1830.9156mm"
+   viewBox="0 0 1999.9999 1830.9156"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (1.0.1+r73)"
    sodipodi:docname="folders_large.svg"
-   inkscape:export-filename="/home/thill/Documents/lectures/ros_lectures/module4/module4_catkin_workspace/folders_small.png"
+   inkscape:export-filename="/home/thill/Documents/lectures/ros_lectures/module4/module4_catkin_workspace/folders_large.png"
    inkscape:export-xdpi="115.295"
    inkscape:export-ydpi="115.295">
   <defs
@@ -4915,18 +4915,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.30278628"
-     inkscape:cx="948.68384"
-     inkscape:cy="768.6164"
+     inkscape:zoom="0.075696569"
+     inkscape:cx="5555.2025"
+     inkscape:cy="5092.3228"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1608"
-     inkscape:window-height="988"
-     inkscape:window-x="72"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1427"
+     inkscape:window-height="863"
+     inkscape:window-x="187"
+     inkscape:window-y="363"
+     inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -4947,10 +4947,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(100.11047,42.804315)">
+     transform="translate(100.11046,42.804311)">
     <g
        id="g76818"
-       transform="matrix(0.15169526,0,0,0.15169526,149.45081,178.24933)">
+       transform="matrix(0.60678104,0,0,0.60678104,898.13467,841.41027)">
       <path
          style="fill:#ffccaa;stroke:#ac9393;stroke-width:5.29164px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 919.43357,-837.08927 c -125.3436,30.35752 -333.829,84.66676 -537.1326,126.97008 -203.30365,42.30336 -507.92957,90.25332 -647.50848,111.07424 -139.57894,20.82096 -426.26284,53.97936 -554.2554,71.38428 -127.99252,17.40494 -144.5888,27.76548 -192.81019,69.95796 -42.6693,37.33446 -33.7781,178.1451 -36.7999,267.97856 -3.7596,141.546742 -1.4172,227.228541 -0.3492,338.51754 2.9826,160.13802 -3.0338,302.79942 -3.569,452.20442 -0.7796,217.6146 -2.8165,431.92919 -9.9216,647.04519 -2.7356,82.8216 -13.6659,299.938 -102.3348,301.6686 -48.3402,0.944 -62.177,-72.1268 -76.3918,-132.1582 -19.0681,-80.5274 -32.0327,-169.3392 -50.586,-263.2282 -18.6792,-94.5266 -52.6591,-287.09119 -69.4713,-393.24539 -64.6746,-273.1044 -101.5837,-617.22202 -161.9349,-888.42942 -65.0018,-288.52052 -54.2378,-313.29604 -116.4768,-602.20966 -6.5514,-36.8846 0.234,-67.76104 21.016,-87.41876 19.1762,-18.13888 52.4942,-24.1518 75.4412,-30.58348 108.397,-26.1738 250.832,-49.21512 360.4276,-67.58628 109.5955,-18.3712 157.7878,-22.69792 376.30377,-54.97584 218.51596,-32.27797 540.34346,-66.23277 842.166351,-124.70677 91.414199,-17.5886 68.627349,-8.7988 159.103779,-30.1938 61.55701,-14.5564 -5.87878,-135.905 44.28563,-163.5846 121.7392,-67.1734 492.7868,-118.701 577.04148,-132.3202 84.25468,-13.6192 235.76939,-38.5288 272.87979,-32.7864 7.399,9.379 8.9754,14.9263 12.3648,32.6237 12.2324,75.2967 19.9052,168.4503 21.6078,187.6251 9.064,76.9952 17.9148,117.8404 31.6266,177.7485 2.5628,11.1545 39.374,142.83915 33.1222,137.57451 -88.0896,38.18956 -142.5014,50.6968 -267.84503,81.05432 z"

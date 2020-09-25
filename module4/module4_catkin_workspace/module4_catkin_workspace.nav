@@ -19,13 +19,15 @@
 \headcommand {\sectionentry {3}{Catkin Workspace - Working Directory}{6}{Catkin Workspace - Working Directory}{0}}
 \headcommand {\slideentry {3}{0}{1}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\sectionentry {4}{Tutorial 4 - Create a Package}{7}{Tutorial 4 - Create a Package}{0}}
-\headcommand {\slideentry {4}{0}{1}{7/7}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@partpages {1}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@sectionpages {7}{7}}
-\headcommand {\beamer@documentpages {7}}
-\headcommand {\gdef \inserttotalframenumber {7}}
+\headcommand {\beamer@sectionpages {6}{7}}
+\headcommand {\beamer@subsectionpages {6}{7}}
+\headcommand {\sectionentry {4}{Tutorial 4 - Create a Package}{8}{Tutorial 4 - Create a Package}{0}}
+\headcommand {\slideentry {4}{0}{1}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@partpages {1}{8}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@sectionpages {8}{8}}
+\headcommand {\beamer@documentpages {8}}
+\headcommand {\gdef \inserttotalframenumber {8}}

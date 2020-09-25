@@ -10,6 +10,23 @@
 
 \usepackage{/home/thill/Documents/lectures/ros_lectures/ros_module}
 
+
+\usepackage{forest}
+
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}
+
+
 \newcommand{\MNUM}{4\hspace{2mm}} % Module number
 \newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
 \newcommand{\moduletitle}{Catkin Workspace} % Titles and Stuff
@@ -60,16 +77,27 @@
                 
                     \item {\it Software in ROS is organized in packages. A package might contain ROS nodes, a ROS-independent library, a dataset, configuration files, a third-party piece of software, or anything else that logically constitutes a useful module.}** 
                     \item a collection of related nodes, each node belongs to a package
-                     \item many pre-built packages with ros installation: {\fontfamily{qcr}\selectfont  {\bf -desktop-full}}
+                    %item many pre-built packages with ros installation: {\fontfamily{qcr}\selectfont  {\bf -desktop-full}}
                           \end{itemize}           
 	\end{frame}
 
 
 	% Section I - Frame II
-	\frame[containsverbatim]{ \small
+	\begin{frame}[containsverbatim] \small
 		\frametitle{\sectiontitleI}
 
-	}
+	Where do packages come from?		
+	
+	\begin{itemize}
+	\item package manager {\bf apt} - install pre-built packages from a repository \vspace{3mm}
+	
+	\item dependency tool {\bf rosdep} - helps install system dependencies for software that you are building from source \vspace{3mm}
+	
+	\item local ROS {\bf workspace} - build custom software packages in your home folder \vspace{3mm}				
+	\end{itemize}
+
+
+	\end{frame}
 
 \section{\sectiontitleII}
 
@@ -77,7 +105,50 @@
 	\begin{frame}[label=sectionII,containsverbatim] \small
 		\frametitle{\sectiontitleII}
 		
-		\includegraphics[scale=.15]{folders_small.png}
+		\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[/
+  [bin
+  ]
+  [boot
+  ]
+  [home
+    [thill
+    	[Downloads
+    	]
+    	[ros\_workspace
+    	]
+    	[...
+    	]
+    ]
+  ]
+  [opt
+    [ros
+    ]
+  ]
+  [...
+  ]
+]
+\end{forest}
  
 
 \end{frame}
@@ -87,11 +158,106 @@
 	% Section II - Frame I
 	\frame{ \small
 		\frametitle{\sectiontitleIII}
-		
-		
+		\begin{multicols}{2}
+
+		\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[/thill
+  [Downloads
+  ]
+  [ros\_workspace
+    [src
+    	[ros\_workspace
+    		[package\_one
+    		]
+    		[package\_two
+    		]
+    	]
+    	[...
+    	]
+    ]
+    [devel
+    ]
+  ]
+  [...
+  ]
+]
+\end{forest}
+
+
+		\hspace*{-1cm}\includegraphics[scale=.13]{folders_small.png}		
+			
+		\end{multicols}
 
 }
 
+% Section II - Frame II
+	\frame{ \small
+		\frametitle{\sectiontitleIII}
+		\begin{multicols}{2}
+
+		\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+    	[/ros\_workspace
+    		[package\_one
+    			[src
+    			]
+    			[launch
+    			]
+    			[params
+    			]
+    		]
+    		[package\_two
+    		]
+    	]
+    	[...
+    	]
+\end{forest}
+
+
+		\hspace*{-1cm}\includegraphics[scale=.40]{folders_package.png}		
+			
+		\end{multicols}
+
+}
 
 \section{\sectiontitleIV}	
 	% Section V - Frame I
