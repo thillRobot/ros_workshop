@@ -3,7 +3,7 @@
 
 % Tennessee Technological University
 % ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020
-% Tristan Hill - September 19, 2020
+% Tristan Hill - September 19, 2020 - October 09, 2020
 % Turtorial 5 - Turtlebot3 Simulator
 
 \documentclass[12pt]{article}
@@ -26,7 +26,42 @@
    {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \vspace{5mm}\\
 \end{center}
 
-\includegraphics[scale=.5]{turtlebot_family.png}
+\includegraphics[scale=.5]{turtlebot3_family.png} \includegraphics[scale=.35]{turtlebot3_simulations.png}
+
+
+\begin{description}[labelindent=1cm]
+	
+	\item[\textbf{\underline{Overview:}}] \hfill \vspace{3mm}\\
+	After completing {\it Tutorial 4 - Create Package}, You have learned some basics of ROS, and you can are ready for a more advanced robot. You can read more \href{https://www.turtlebot.com/}{here} and \href{https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/}{here}.
+	
+	\item[\textbf{\underline{System Requirements:}}] \hfill \vspace{0mm}
+
+\begin{itemize}
+	\item {\bf ROS+OS}: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+	\item {\bf ROS:} Your computer must be connected to the internet to proceed. Update the system before you begin.
+	\item {\bf Workspace Setup:} You must have successfully setup a Catkin Workspace in tutorial 4.  
+\end{itemize}
+
+	
+	\item[\textbf{\underline{Disclaimer:}}] \hfill \vspace{0mm}
+	
+	\begin{itemize}
+
+		\item {\R\underline{\bf Backup the System:}} If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+		
+		\item \underline{\B ROSLAUNCH:} This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
+	
+		 
+	\end{itemize}
+
+
+	
+
+
+
+	\newpage 
+
+\item[\textbf{\underline{Part 1 - Turtlebot3 Installation:}}] \hfill \vspace{0mm}
 
 \begin{enumerate}
 	\item Update your linux system before you get started. 
@@ -38,15 +73,15 @@
     	
     	{\bf turtlebot3 }
 	\begin{minted}{text} 
-	sudo apt install ros-|\rosdistro|-turtlebot3
+sudo apt install ros-|\rosdistro|-turtlebot3
 	\end{minted}
  	 {\bf turtlebot3\_simulations}
 	\begin{minted}{text} 
-	sudo apt install ros-|\rosdistro|-turtlebot3-simulations
+sudo apt install ros-|\rosdistro|-turtlebot3-simulations
 	\end{minted}
- 	{\bf turtlebot3\_gazebo}
+{\bf turtlebot3\_gazebo}
 	\begin{minted}{text} 
-	sudo apt install ros-|\rosdistro|-turtlebot3-gazebo
+sudo apt install ros-|\rosdistro|-turtlebot3-gazebo
 	\end{minted}
 
 
@@ -58,33 +93,37 @@
 %ros-|\rosdistro|-rocon-qt-library ros-|\rosdistro|-ar-track-alvar-msgs})
 %\end{minted}
 %    
+\end{enumerate}	
 \newpage
-    \item Test the simulator. First set the environment variable TURTLEBOT\_MODEL. Add this line to the .bashrc script so you do not have to do it for each terminal. \\
+
+\item[\textbf{\underline{Part 2 - Turtlebot3 Testdrive:}}] \hfill \vspace{0mm}
+\begin{enumerate}
+    \item Test the simulator. The environment variable TURTLEBOT\_MODEL must be set to choose your robot type. Use echo to add this line to the .bashrc script so you do not have to do it for each terminal. \\
 	\begin{minted}{text} 
-	export TURTLEBOT3_MODEL=burger
+echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 	\end{minted}
 	Then turn on the simulator. 
 	\begin{minted}{text} 
-	roslaunch turtlebot3_gazebo turtlebot3_world.launch
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
 	\end{minted}
 
-	You should see the gazebo window open containing your robot. Test that the keyboard drives the robot. This may take some time.
+	You should see the gazebo window open containing your robot. Test that the keyboard drives the robot. Enter the following command in a new terminal.
 	\begin{minted}{text} 
-	roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 	\end{minted}
 	    
 	    \item Now turn on the node to produce robot data in the simulated world.  \\
 
 	\begin{minted}{text} 
-	roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 	\end{minted}
 
 	Open RVIZ to view the data. This is a very useful tool. 	
 	\begin{minted}{text} 
-	roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 	\end{minted}
 	
-	\item Next we are going to learn about SLAM and GMAPPING ! Please see the tutorial referenced above if you are ready to proceed.\\
+\item Next we are going to learn about robot navigation with SLAM and GMAPPING ! Please see the tutorial referenced above if you are ready to proceed.\\
 %    \begin{itemize}
 %    
 %        \item {\fontfamily{qcr}\selectfont  \hspace{5mm} \pthname maze.png}
@@ -123,5 +162,6 @@
 %
 %\vspace{5mm}    Now run your node again.
 \end{enumerate}
+\end{description}
 \end{document}
 

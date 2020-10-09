@@ -1,3 +1,3 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-	roslaunch turtlebot3\PYGZus{}gazebo turtlebot3\PYGZus{}gazebo\PYGZus{}rviz.launch
+sudo apt install ros\PYGZhy{}\PYG{esc}{\rosdistro}\PYGZhy{}turtlebot3\PYGZhy{}simulations
 \end{Verbatim}
