@@ -1,0 +1,162 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{color}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+% ME4140 - Fall 2016
+
+\textwidth=6.5in
+\topmargin=-0.5in
+\textheight=9.25in
+\hoffset=-0.5in
+\footskip=0.2in
+
+\pagestyle{myheadings}
+\markright{{\large ME 4140 Fall 2016---The Robotic Operating System}}
+
+
+
+\newcommand{\pkgname}{package\textunderscore name}
+\newcommand{\wspname}{workspace\textunderscore name}
+\newcommand{\nodname}{node\textunderscore name}
+\newcommand{\tpcname}{topic\textunderscore name}
+\newcommand{\lfname}{file\textunderscore name}
+
+\newcommand{\pthname}{/opt/ros/indigo/share/turtlebot\textunderscore stage/maps/}
+
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}
+   {\bf \Large ROS - Publishing and Subscribing to The Turtlebot Simulator}\vspace{2mm} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2016} \\
+\end{center}
+
+
+\begin{enumerate}
+	
+	\item This tutorial assumes you have been following the course so far. TO begin create a new package with the name of your choosing.
+
+
+		{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ catkin\textunderscore create\textunderscore pkg publish\textunderscore goal std\textunderscore msgs rospy roscpp }
+    
+
+	\item Open a new file in the proper src folder and insert the following code. 
+
+     	\begin{lstlisting}
+
+	#include "ros/ros.h"
+#include "geometry_msgs/Twist.h"
+#include "geometry_msgs/PoseStamped.h"
+#include <sstream>
+int main(int argc, char **argv)
+{
+	ros::init(argc, argv, "publish_goal");
+	ros::NodeHandle n;
+	ros::Publisher ttu_publisher =
+	n.advertise<geometry_msgs::PoseStamped>("/move_base_simple/goal", 1000);
+	ros::Rate loop_rate(10);
+
+	geometry_msgs::PoseStamped msg;
+	msg.header.stamp=ros::Time::now();
+	msg.header.frame_id="map";
+
+	int count = 0;
+	while ((ros::ok())&&(count<5))  
+	{				
+		msg.pose.position.x = 3.0;
+		msg.pose.position.y = 2.0;
+		msg.pose.position.z = 0;
+
+		msg.pose.orientation.w = 1.0;
+
+		ttu_publisher.publish(msg);
+		ros::spinOnce();
+		loop_rate.sleep();
+		++count;
+	}
+}
+
+
+\end{lstlisting}
+	
+    \item Now you need to install the 'turtlebot' simulator into your ROS system.
+    
+	{\fontfamily{qcr}\selectfont  \hspace{5mm} \$ sudo apt-get install ros-indigo-turtlebot-simulator }
+	
+    \item Now install the physical 'turtlebot' drivers into your ROS system. This step may only be necessary if you are using a real robot. \href{http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation} {Link Here} \\
+    
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ sudo apt-get install ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-turtlebot-interactions ros-indigo-turtlebot-simulator ros-indigo-kobuki-ftdi ros-indigo-rocon-remocon ros-indigo-rocon-qt-library ros-indigo-ar-track-alvar-msgs}
+    
+    \item This simulates a physical robot in a 2D world. Next we neeed to setup the world. There are 3 important files that control the world. Your installation came with a demo world.
+    \begin{itemize}
+    
+        \item {\fontfamily{qcr}\selectfont  \hspace{5mm} \pthname maze.png}
+        \item {\fontfamily{qcr}\selectfont  \hspace{5mm} \pthname maze.yaml}
+        \item {\fontfamily{qcr}\selectfont  \hspace{5mm} \pthname stage/maze.world}
+    
+    \end{itemize}
+
+    \item First try the simulator in the demo world called {\it maze}. We will export the files as {\it environment variables}
+
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ export TURTLEBOT\textunderscore STAGE\textunderscore MAP\textunderscore FILE=\\"\pthname maze.yaml"}\\
+ 
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ export TURTLEBOT\textunderscore STAGE\textunderscore WORLD\textunderscore FILE=\\"\pthname stage/maze.world"}\\
+    
+    \item Now use the launch file (available upon install) to start the simulator.\\
+    {\fontfamily{qcr}\selectfont  \hspace{5mm} \$ roslaunch turtlebot\textunderscore stage turtlebot\textunderscore in\textunderscore stage.launch}
+    
+    \item Now you can modify the world you have just simulated. To do this copy all three files and rename them something sensible. Open the {\it .png} file with any image editor, and draw on it and save. You also need to modify just a few lines in the {\it .yaml} file and the {\it .world} file. (Note: This step will be detailed in the next tutorial. Continue at your own risk or contact me for help.)
+    
+    
+\end{enumerate}
+\end{document}
+

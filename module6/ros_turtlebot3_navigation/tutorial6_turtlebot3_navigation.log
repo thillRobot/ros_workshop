@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  16 OCT 2020 01:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  16 OCT 2020 02:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**tutorial4_create_package.tex
-(./tutorial4_create_package.tex
+**tutorial6_turtlebot3_navigation.tex
+(./tutorial6_turtlebot3_navigation.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -744,24 +744,46 @@ File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 \l__tikzsymbols_Moai_thickness_dim=\dimen292
 )
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count309
+\Gm@cntv=\count310
+\c@Gm@tempcnt=\count311
+\Gm@bindingoffset=\dimen293
+\Gm@wd@mp=\dimen294
+\Gm@odd@mp=\dimen295
+\Gm@even@mp=\dimen296
+\Gm@layoutwidth=\dimen297
+\Gm@layoutheight=\dimen298
+\Gm@layouthoffset=\dimen299
+\Gm@layoutvoffset=\dimen300
+\Gm@dimlist=\toks39
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count309
+\lst@mode=\count312
 \lst@gtempboxa=\box117
-\lst@token=\toks39
-\lst@length=\count310
-\lst@currlwidth=\dimen293
-\lst@column=\count311
-\lst@pos=\count312
-\lst@lostspace=\dimen294
-\lst@width=\dimen295
-\lst@newlines=\count313
-\lst@lineno=\count314
-\lst@maxwidth=\dimen296
+\lst@token=\toks40
+\lst@length=\count313
+\lst@currlwidth=\dimen301
+\lst@column=\count314
+\lst@pos=\count315
+\lst@lostspace=\dimen302
+\lst@width=\dimen303
+\lst@newlines=\count316
+\lst@lineno=\count317
+\lst@maxwidth=\dimen304
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count315
-\lst@skipnumbers=\count316
+\c@lstnumber=\count318
+\lst@skipnumbers=\count319
 \lst@framebox=\box118
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -792,7 +814,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count317
+\etb@tempcnta=\count320
 )
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -800,56 +822,56 @@ tim
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count318
-\output=\toks40
-\linenoprevgraf=\count319
-\linenumbersep=\dimen297
-\linenumberwidth=\dimen298
-\c@linenumber=\count320
-\c@pagewiselinenumber=\count321
-\c@LN@truepage=\count322
-\c@internallinenumber=\count323
-\c@internallinenumbers=\count324
-\quotelinenumbersep=\dimen299
-\bframerule=\dimen300
-\bframesep=\dimen301
+\linenopenalty=\count321
+\output=\toks41
+\linenoprevgraf=\count322
+\linenumbersep=\dimen305
+\linenumberwidth=\dimen306
+\c@linenumber=\count323
+\c@pagewiselinenumber=\count324
+\c@LN@truepage=\count325
+\c@internallinenumber=\count326
+\c@internallinenumbers=\count327
+\quotelinenumbersep=\dimen307
+\bframerule=\dimen308
+\bframesep=\dimen309
 \bframebox=\box119
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count325
-\c@FV@TrueTabCounter=\count326
+\c@FV@TrueTabGroupLevel=\count328
+\c@FV@TrueTabCounter=\count329
 \FV@TabBox@Group=\box120
 \FV@TmpLength=\skip64
-\c@FV@HighlightLinesStart=\count327
-\c@FV@HighlightLinesStop=\count328
-\FV@LoopCount=\count329
+\c@FV@HighlightLinesStart=\count330
+\c@FV@HighlightLinesStop=\count331
+\FV@LoopCount=\count332
 \FV@NCharsBox=\box121
-\FV@BreakIndent=\dimen302
-\FV@BreakIndentNChars=\count330
-\FV@BreakSymbolSepLeft=\dimen303
-\FV@BreakSymbolSepLeftNChars=\count331
-\FV@BreakSymbolSepRight=\dimen304
-\FV@BreakSymbolSepRightNChars=\count332
-\FV@BreakSymbolIndentLeft=\dimen305
-\FV@BreakSymbolIndentLeftNChars=\count333
-\FV@BreakSymbolIndentRight=\dimen306
-\FV@BreakSymbolIndentRightNChars=\count334
-\c@FancyVerbLineBreakLast=\count335
+\FV@BreakIndent=\dimen310
+\FV@BreakIndentNChars=\count333
+\FV@BreakSymbolSepLeft=\dimen311
+\FV@BreakSymbolSepLeftNChars=\count334
+\FV@BreakSymbolSepRight=\dimen312
+\FV@BreakSymbolSepRightNChars=\count335
+\FV@BreakSymbolIndentLeft=\dimen313
+\FV@BreakSymbolIndentLeftNChars=\count336
+\FV@BreakSymbolIndentRight=\dimen314
+\FV@BreakSymbolIndentRightNChars=\count337
+\c@FancyVerbLineBreakLast=\count338
 \FV@LineBox=\box122
 \FV@LineIndentBox=\box123
-\FV@LineWidth=\dimen307
+\FV@LineWidth=\dimen315
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count336
-\calc@Bcount=\count337
-\calc@Adimen=\dimen308
-\calc@Bdimen=\dimen309
+\calc@Acount=\count339
+\calc@Bcount=\count340
+\calc@Adimen=\dimen316
+\calc@Bdimen=\dimen317
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count338
+\calc@Ccount=\count341
 \calc@Cskip=\skip67
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
@@ -866,9 +888,6 @@ Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
@@ -882,37 +901,37 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "tutorial4_create_package.w18")...executed.
+runsystem(uname -s > "tutorial6_turtlebot3_navigation.w18")...executed.
 
 
-(./tutorial4_create_package.w18)
-runsystem(rm -- "tutorial4_create_package.w18")...executed.
+(./tutorial6_turtlebot3_navigation.w18)
+runsystem(rm -- "tutorial6_turtlebot3_navigation.w18")...executed.
 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count339
-\decimalpart=\count340
+\integerpart=\count342
+\decimalpart=\count343
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count341
-\float@exts=\toks41
+\c@float@type=\count344
+\float@exts=\toks42
 \float@box=\box124
-\@float@everytoks=\toks42
+\@float@everytoks=\toks43
 \@floatcapt=\box125
 )
 \minted@appexistsfile=\read4
 \minted@bgbox=\box126
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count342
-\c@minted@pygmentizecounter=\count343
-\@float@every@listing=\toks43
-\c@listing=\count344
+\c@minted@FancyVerbLineTemp=\count345
+\c@minted@pygmentizecounter=\count346
+\@float@every@listing=\toks44
+\c@listing=\count347
 )
-runsystem(mkdir -p _minted-tutorial4_create_package)...executed.
+runsystem(mkdir -p _minted-tutorial6_turtlebot3_navigation)...executed.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -933,9 +952,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen310
-\Hy@linkcounter=\count345
-\Hy@pagecounter=\count346
+\@linkdim=\dimen318
+\Hy@linkcounter=\count348
+\Hy@pagecounter=\count349
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -945,8 +964,8 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count347
-\pdfmajorversion=\count348
+\Hy@SavedSpaceFactor=\count350
+\pdfmajorversion=\count351
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -954,14 +973,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count349
+\c@Hy@tempcnt=\count352
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen311
+\XeTeXLinkMargin=\dimen319
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -970,9 +989,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count350
-\Field@Width=\dimen312
-\Fld@charsize=\dimen313
+\Fld@menulength=\count353
+\Field@Width=\dimen320
+\Fld@charsize=\dimen321
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -986,9 +1005,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count351
-\c@Item=\count352
-\c@Hfootnote=\count353
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -998,8 +1017,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count354
-\c@bookmark@seq@number=\count355
+\Fld@listcount=\count357
+\c@bookmark@seq@number=\count358
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1014,53 +1033,54 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 85.
+(hyperref)                setting the option has no effect on input line 89.
 
-Package hyperref Info: Option `unicode' set `false' on input line 85.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 85.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 85.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 85.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 85.
-Package hyperref Info: Option `colorlinks' set `true' on input line 85.
+Package hyperref Info: Option `unicode' set `false' on input line 89.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 89.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 89.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 89.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 89.
+Package hyperref Info: Option `colorlinks' set `true' on input line 89.
 \mybox=\box127
 )
-runsystem(which pygmentize && touch tutorial4_create_package.aex)...executed.
+runsystem(which pygmentize && touch tutorial6_turtlebot3_navigation.aex)...exec
+uted.
 
-runsystem(rm tutorial4_create_package.aex)...executed.
+runsystem(rm tutorial6_turtlebot3_navigation.aex)...executed.
 
- (./tutorial4_create_package.aux)
-\openout1 = `tutorial4_create_package.aux'.
+ (./tutorial6_turtlebot3_navigation.aux)
+\openout1 = `tutorial6_turtlebot3_navigation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count356
-\scratchdimen=\dimen314
+\scratchcounter=\count359
+\scratchdimen=\dimen322
 \scratchbox=\box128
-\nofMPsegments=\count357
-\nofMParguments=\count358
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count359
-\MPscratchDim=\dimen315
-\MPnumerator=\count360
-\makeMPintoPDFobject=\count361
-\everyMPtoPDFconversion=\toks45
+\nofMPsegments=\count360
+\nofMParguments=\count361
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count362
+\MPscratchDim=\dimen323
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1071,10 +1091,43 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count362
-\AtBeginShipoutBox=\box129
-Package hyperref Info: Link coloring ON on input line 18.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=523.95749pt
+* \textheight=668.4975pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-36.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=14.45377pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=-36.135pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@lstlisting=\count365
+\AtBeginShipoutBox=\box129
+Package hyperref Info: Link coloring ON on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1084,228 +1137,166 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
-(./tutorial4_create_package.out) (./tutorial4_create_package.out)
+(./tutorial6_turtlebot3_navigation.out) (./tutorial6_turtlebot3_navigation.out)
 \@outlinefile=\write6
-\openout6 = `tutorial4_create_package.out'.
+\openout6 = `tutorial6_turtlebot3_navigation.out'.
 
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 29
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+<turtlebotPi.jpg, id=11, 756.8275pt x 454.69875pt>
+File: turtlebotPi.jpg Graphic file (type jpg)
+<use turtlebotPi.jpg>
+Package pdftex.def Info: turtlebotPi.jpg  used on input line 43.
+(pdftex.def)             Requested size: 189.2064pt x 113.67441pt.
+<turtlebot3_maps.png, id=12, 1100.11pt x 451.6875pt>
+File: turtlebot3_maps.png Graphic file (type png)
+<use turtlebot3_maps.png>
+Package pdftex.def Info: turtlebot3_maps.png  used on input line 44.
+(pdftex.def)             Requested size: 330.03555pt x 135.5073pt.
+
+Overfull \hbox (15.51978pt too wide) in paragraph at lines 43--45
+[][] [] 
+ []
+
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 48
 .
-
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+) [1
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--63
-
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout3 = `tutorial4_create_package.pyg'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./turtlebotPi.jpg> <./turt
+lebot3_maps.png>]
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/default-pyg-prefix.pygstyle)
-(./_minted-tutorial4_create_package/default.pygstyle)
-(./_minted-tutorial4_create_package/394513855AA03CC4050D38C644079E1586909B0502E
-911E0C6C5E2068EDD3747.pygtex
+(./_minted-tutorial6_turtlebot3_navigation/default-pyg-prefix.pygstyle)
+(./_minted-tutorial6_turtlebot3_navigation/default.pygstyle)
+(./_minted-tutorial6_turtlebot3_navigation/C11022F32EFD18B39A7459693B4674A47C4D
+07A6F3D3068F66BE04E188893462.pygtex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-\openout3 = `tutorial4_create_package.pyg'.
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/D0889597F8381203B4101A8793E9393386909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/1533173F5A262397D8799CEBE14E49047C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
-
-(./_minted-tutorial4_create_package/048B1B5A17935D568237E5DCF17196CF86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/B0A601E1CD3BF2BC6F5B526A6983018886909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/D6F6C7A6D70B097168266E6B139553B586909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/D98927AC5244954390E49BE20966553786909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/D7E59A03BC6059C3EB1C125BF3084B7E86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/EDDC547C55500089BB782355896AE79F86909B0502E
-911E0C6C5E2068EDD3747.pygtex) [2]
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/0C4772EDFCC2AE95FD07DDBE64EFC9CA86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/1005BF9289021F479F8CB668A010388A86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-Overfull \hbox (17.94382pt too wide) in paragraph at lines 142--143
-[]\T1/cmr/m/n/12 Back out to the workspace di-rec-tory then com-pile your pack-
-age with [][]catkin_make[][] 
  []
 
-\openout3 = `tutorial4_create_package.pyg'.
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/8055DFD962A4949BBA14517D4E08575D86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/AB5A59541BE5004283F6964C51550A8F7C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/D6F6C7A6D70B097168266E6B139553B586909B0502E
-911E0C6C5E2068EDD3747.pygtex) [3]
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/B538DB5A47AA01B77352FD184DA087767C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/1EFC16E5ED2EC1C669D290961D12906286909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/6A276433900B96D89B1B76B4EAACBD577C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/3DAF11D7D62E09131D3AB642750469F886909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/9134CD539436FEC5C3CB921545BCA1DC7C4D
+07A6F3D3068F66BE04E188893462.pygtex) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/5FC7EFE03496496BDBD00448C022862986909B0502E
-911E0C6C5E2068EDD3747.pygtex) [4]
-\openout3 = `tutorial4_create_package.pyg'.
+(./_minted-tutorial6_turtlebot3_navigation/209B68DD04BC111CB67CD9D7B7C729B67C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-(./_minted-tutorial4_create_package/B0A601E1CD3BF2BC6F5B526A6983018886909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/D6F6C7A6D70B097168266E6B139553B586909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/F354A764B38046304C6172F1812FAA4686909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/DEB1DE929CFC9D98B44D40B68362AE9786909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/3ECA7DD1070C642905AA5EEC48355ADD86909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/2E1454C1676918F2DBE705EE733FA92786909B0502E
-911E0C6C5E2068EDD3747.pygtex)
-\openout3 = `tutorial4_create_package.pyg'.
-
-
-(./_minted-tutorial4_create_package/D3C927251DA307BD42A405C1C9BBEDFF86909B0502E
-911E0C6C5E2068EDD3747.pygtex) [5]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+(./_minted-tutorial6_turtlebot3_navigation/B5CB8948FF0F87E8F83231582C1A38957C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--293
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--293
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
+<turtlebot3_rviz.png, id=40, 1100.11pt x 451.6875pt>
+File: turtlebot3_rviz.png Graphic file (type png)
+<use turtlebot3_rviz.png>
+Package pdftex.def Info: turtlebot3_rviz.png  used on input line 140.
+(pdftex.def)             Requested size: 385.04427pt x 158.09299pt.
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+(./_minted-tutorial6_turtlebot3_navigation/2E1454C1676918F2DBE705EE733FA9277C4D
+07A6F3D3068F66BE04E188893462.pygtex)
+\openout3 = `tutorial6_turtlebot3_navigation.pyg'.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-
- []
-
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
- (./tutorial4_create_package.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
-Package rerunfilecheck Info: File `tutorial4_create_package.out' has not change
-d.
+(./_minted-tutorial6_turtlebot3_navigation/00179095F6DA8EB5F2CF2D4DE54187447C4D
+07A6F3D3068F66BE04E188893462.pygtex) [3 <./turtlebot3_rviz.png>]
+<../../charlie_robot.jpeg, id=49, 258.9675pt x 196.735pt>
+File: ../../charlie_robot.jpeg Graphic file (type jpg)
+<use ../../charlie_robot.jpeg>
+Package pdftex.def Info: ../../charlie_robot.jpeg  used on input line 161.
+(pdftex.def)             Requested size: 90.63997pt x 68.85826pt.
+ [4 <../../charlie_robot.jpeg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
+ (./tutorial6_turtlebot3_navigation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
+Package rerunfilecheck Info: File `tutorial6_turtlebot3_navigation.out' has not
+ changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-runsystem(rm tutorial4_create_package.pyg)...executed.
+runsystem(rm tutorial6_turtlebot3_navigation.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27327 strings out of 481239
- 518294 string characters out of 5920377
- 820654 words of memory out of 5000000
- 41956 multiletter control sequences out of 15000+600000
- 549522 words of font info for 65 fonts, out of 8000000 for 9000
+ 27368 strings out of 481239
+ 517549 string characters out of 5920377
+ 821549 words of memory out of 5000000
+ 42055 multiletter control sequences out of 15000+600000
+ 548459 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,7n,73p,857b,1405s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/share/texlive/texmf-d
-ist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/share/texmf/fonts/enc/dvips/cm
--super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/mnsym
-bol/MnSymbol12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1440.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.
-pfb>
-Output written on tutorial4_create_package.pdf (6 pages, 205716 bytes).
+ 76i,6n,73p,864b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
+cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sftt1200.pfb>
+Output written on tutorial6_turtlebot3_navigation.pdf (4 pages, 890122 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

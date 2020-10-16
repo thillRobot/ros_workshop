@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+echo \PYGZdq{}export TURTLEBOT3\PYGZus{}MODEL=waffle\PYGZus{}pi\PYGZdq{} \PYGZgt{}\PYGZgt{} \PYGZti{}/.bashrc
+source \PYGZti{}/.bashrc
+\end{Verbatim}
