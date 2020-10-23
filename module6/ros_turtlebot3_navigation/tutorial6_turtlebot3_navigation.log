@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  16 OCT 2020 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.29)  22 OCT 2020 23:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(/home/thill/Documents/lectures/ros_lectures/ros_tutorial.sty
+(/home/thill/Documents/lectures/ros_workshop/ros_tutorial.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
@@ -1280,7 +1280,7 @@ runsystem(rm tutorial6_turtlebot3_navigation.pyg)...executed.
 Here is how much of TeX's memory you used:
  27368 strings out of 481239
  517549 string characters out of 5920377
- 821549 words of memory out of 5000000
+ 821550 words of memory out of 5000000
  42055 multiletter control sequences out of 15000+600000
  548459 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

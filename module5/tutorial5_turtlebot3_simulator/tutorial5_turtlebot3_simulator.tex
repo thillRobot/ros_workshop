@@ -9,7 +9,7 @@
 \documentclass[12pt]{article}
 
 % Custom Preamble
-\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_tutorial} 
+\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_tutorial} 
 
 % Title and Misc
 \newcommand{\MNUM}{5} %Module Number
@@ -101,6 +101,10 @@ sudo apt install ros-|\rosdistro|-turtlebot3-gazebo
     \item Test the simulator. The environment variable TURTLEBOT\_MODEL must be set to choose your robot type. Use echo to add this line to the .bashrc script so you do not have to do it for each terminal. \\
 	\begin{minted}{text} 
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+	\end{minted}
+Now that run that script. It will also run each time you open a new terminal.	
+	\begin{minted}{text} 
+source ~/.bashrc
 	\end{minted}
 	Then turn on the simulator. 
 	\begin{minted}{text} 
