@@ -1,6 +1,20 @@
 ## this is a log for working with the rasp pi b+ for turtlebot3
 
-### I brought a pi3B+ home to test
+The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are loosely following the turtlebot3 manual here (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
+
+### Hardware
+  * turtlebot3 wafflepi full robot kit (need to double check)
+    * Rasp Pi 3B+
+    * openCR 1.0
+    * RPLidar A1
+  * Lenovo ThinkCentreM73 i3 (good little computer)
+
+
+### Software
+  * Mate 18.04 LTS - 
+  * Ubuntu 18.04 LTS - Control 
+  
+
 
 here is what I have done so far:
 * downloaded Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
