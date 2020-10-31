@@ -14,12 +14,17 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * Ubuntu 18.04 LTS - Control - Remote
   * ROS Melodic 
   
-here is what I have done so far:
-* downloaded Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
-* used pi-imager to load the image to SD card
-* open MATE desktop and it seems to work, graphics are terribly slow
-* i install ros successfully and tested roscore
-* i did some other things then it crashed, this seems to be a common brought
+### Installation
+
+#### Install MATE 18.04 on Rasp Pi
+Since this s rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
+* download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
+* download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
+* use `pi-imager` to load the image to SD card
+* open MATE desktop and it seems to work, 
+  * graphics are terribly slow
+  *  install ros successfully and tested roscore
+  * i did some other things then it crashed, this seems to be a common problem
 
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
