@@ -29,7 +29,7 @@ Since this s rasp pi we are not really installing the OS on the pi. Instead we a
 
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
-#### Install MATE 18.04 on Rasp Pi - USING DESKTOP
+#### Install MATE 18.04 on Rasp Pi - USING TERMINAL
 Again, since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
