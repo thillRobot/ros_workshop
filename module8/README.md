@@ -9,13 +9,10 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
     * RPLidar A1
   * Lenovo ThinkCentreM73 i3 (good little computer)
 
-
 ### Software
-  * Mate 18.04 LTS - 
-  * Ubuntu 18.04 LTS - Control 
+  * Mate 18.04 LTS - Robot - Local 
+  * Ubuntu 18.04 LTS - Control - Remote
   
-
-
 here is what I have done so far:
 * downloaded Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
 * used pi-imager to load the image to SD card
