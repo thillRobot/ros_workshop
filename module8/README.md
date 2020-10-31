@@ -16,25 +16,29 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   
 ### Installation
 
-#### Install MATE 18.04 on Rasp Pi
+#### Install MATE 18.04 on Rasp Pi - USING DESKTOP
 Since this s rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
 * use `pi-imager` to load the image to SD card
-* open MATE desktop and it seems to work, 
+* use GUI to setup user accounts
+* login to MATE desktop -> and it seems to work but... 
   * graphics are terribly slow
   *  install ros successfully and tested roscore
   * i did some other things then it crashed, this seems to be a common problem
 
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
-lets ttry that again:
-* download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
-* used pi-imager to load the image to SD card
-* use GUI to setup account and keyboard yada yada
+#### Install MATE 18.04 on Rasp Pi - USING DESKTOP
+Again, since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
+* download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
+* download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
+* use `pi-imager` to load the image to SD card
+* use GUI to setup user accounts
 * do not login into desktop, press: 'ctrl+alt+f1' to open a terminal
 * login as your user, not root for now
 
+We are going to complete the installation through the terminal.
 
 * update the repository list - no need to upgrade
 
