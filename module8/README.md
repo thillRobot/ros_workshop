@@ -12,6 +12,7 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
 ### Software
   * Mate 18.04 LTS - Robot - Local 
   * Ubuntu 18.04 LTS - Control - Remote
+  * ROS Melodic 
   
 here is what I have done so far:
 * downloaded Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
