@@ -1,6 +1,6 @@
-### this is a log for working with the rasp pi b+ for turtlebot3
+## this is a log for working with the rasp pi b+ for turtlebot3
 
-#### I brought a pi3B+ home to test
+### I brought a pi3B+ home to test
 
 here is what I have done so far:
 * downloaded Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website
