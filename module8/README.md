@@ -22,7 +22,7 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
 ### ROBOT Software Installation 
 
 #### Install MATE 18.04 on Rasp Pi - USING DESKTOP
-Since this s rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
+Since this is rasp pi we are not really installing the OS on the pi. Instead we are copying an image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
 * use `pi-imager` to load the image to SD card
