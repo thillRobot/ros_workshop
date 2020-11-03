@@ -1,11 +1,9 @@
 # ros_workshop
-This is a collection of lectures for the ROS workshop for ME4140, Introduction to Robotics
+This is a ROS workshop for ME4140, Introduction to Robotics in which Students will learn the basics of using ROS.
 
-I am preparing the ROS workshop to run in the Fall 2020 at Tennessee Technological University
+The tutorials will cover installation of ROS, use of packages and nodes, and navigation with a 2D mobile robot. 
 
-It shouldnt be too bad... It will be easy !
-
-### Things to do:
+### Things to do
 
 - [ ] put it on the github, write this readme!
 - [x] plan weekly schedule, what goes in what weeks
