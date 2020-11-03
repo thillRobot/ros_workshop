@@ -1,5 +1,5 @@
 # ros_workshop
-This is a ROS workshop for ME4140, Introduction to Robotics in which Students will learn the basics of using ROS.
+This is a ROS workshop for ME4140, Introduction to Robotics, in which students will learn the basics of using ROS.
 
 The tutorials will cover installation of ROS, use of packages and nodes, and navigation with a 2D mobile robot. 
 
