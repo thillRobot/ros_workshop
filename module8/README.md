@@ -3,18 +3,21 @@
 The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are loosely following the turtlebot3 manual here (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
 
 ### Hardware
-  * turtlebot3 wafflepi full robot kit (need to double check)
-    * Rasp Pi 3B+
-    * openCR 1.0
-    * RPLidar A1
-  * Lenovo ThinkCentreM73 i3 (good little computer)
+  * turtlebot3 waffle pi full robot kit 
+    * Rasp Pi 3B+ - (ROBOT) 
+    * openCR 1.0 - (MCU)
+    * RPLidar A1 - (SENSOR)
+  * Mystery Laptop for ME4444 - (CONTROL)
+  * Lenovo ThinkCentreM73 i3 - (CONTROL) - note: on loan from Robotics Lab
 
-### Software
-  * Mate 18.04 LTS - Robot - Local 
-  * Ubuntu 18.04 LTS - Control - Remote
-  * ROS Melodic 
+### Required Software
+  * Mate 18.04 LTS - (ROBOT) - local 
+  * Ubuntu 18.04 LTS - (CONTROL) - remote
+  * ROS Melodic
+  * OpenSSH
+  * pi-imager
   
-### Installation
+### ROBOTInstallation 
 
 #### Install MATE 18.04 on Rasp Pi - USING DESKTOP
 Since this s rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
