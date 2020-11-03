@@ -26,11 +26,10 @@ Since this is rasp pi we are not really installing the OS on the pi. Instead we 
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
 * use `pi-imager` to load the image to SD card
-* use GUI to setup user accounts
-* login to MATE desktop -> and it seems to work but... 
-  * graphics are terribly slow
-  *  install ros successfully and tested roscore
-  * i did some other things then it crashed, this seems to be a common problem
+* use installation GUI to setup user account
+* login to MATE desktop 
+* install ros following the steps here http://wiki.ros.org/melodic/Installation/Ubuntu
+  NOTE: I did some other things then it crashed, this seems to be a common problem. Also, the grapics are terribly slow. 
 
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
