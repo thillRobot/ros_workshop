@@ -8,7 +8,7 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
     * openCR 1.0 - (MCU)
     * RPLidar A1 - (SENSOR)
   * Mystery Laptop for ME4444 - (CONTROL)
-  * Lenovo ThinkCentreM73 i3 - (CONTROL) - note: on loan from Robotics Lab
+  * Lenovo ThinkCentreM73 i3 - (CONTROL) - note: on loan from ME Robotics Lab
 
 ### Required Software
   * Mate 18.04 LTS - (ROBOT) - local 
