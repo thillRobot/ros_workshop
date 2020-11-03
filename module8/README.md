@@ -1,4 +1,4 @@
-## this is a log for working with the rasp pi b+ for turtlebot3
+# Module 8 - Turtlebot3 Robot Installation
 
 The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are loosely following the turtlebot3 manual here (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
 
