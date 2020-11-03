@@ -17,7 +17,9 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * OpenSSH
   * pi-imager
   
-### ROBOTInstallation 
+### CONTROL Software Installation 
+
+### ROBOT Software Installation 
 
 #### Install MATE 18.04 on Rasp Pi - USING DESKTOP
 Since this s rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
