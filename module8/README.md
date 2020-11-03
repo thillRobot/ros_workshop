@@ -44,7 +44,7 @@ We are going to complete the installation through the terminal.
 
   `sudo apt update`
 
-* install SSH for remote connection - this is already install on Mate image
+* install SSH for remote connection - this is already installed on Mate image
 
   `sudo apt install openssh-server`
 
