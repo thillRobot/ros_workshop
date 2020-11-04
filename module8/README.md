@@ -221,33 +221,34 @@ We are going to complete the installation through the terminal.
    
   #### 3) Install Dependent Packages on TurtleBot PC(Download and Compile TurtleBot3 Packges on pi)
   
-      download the drivers from github, make sure you are in `~/pi_ros/src`  before you clone the repo
+  download the drivers from github, make sure you are in `~/pi_ros/src`  before you clone the repo
 
-      ```
-      $ cd ~/pi_ros/src
-      $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-      $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-      $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-      ```
+  ```
+  cd ~/pi_ros/src
+  git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+  git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+  git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  ```
 
-      go into turtlbot3 and delete some stuff (I am not sure why I am just following)
+  go into turtlbot3 and delete some stuff (I am not sure why I am just following)
 
-      ``` $ cd ~/catkin_ws/src/turtlebot3
-      $ rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
-      ```
+  ``` 
+  cd ~/catkin_ws/src/turtlebot3
+  rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+  ```
 
-      install some Packages (changed kinetic to melodic)
+  install some Packages (changed kinetic to melodic)
 
-
-      $ sudo apt install ros-melodic-rosserial-python ros-melodic-tf
-
-
-      backout to the top of the workspace and build with catkin_make (what is -j1 ?)
+  
+  `sudo apt install ros-melodic-rosserial-python ros-melodic-tf`
 
 
-      `$ cd ~/catkin_ws && catkin_make -j1`
+  backout to the top of the workspace and build with catkin_make (what is -j1 ?)
 
-      Everything seemed to work just fine - good news
+
+  `cd ~/catkin_ws && catkin_make -j1`
+
+  Everything seemed to work just fine - good news
 
  #### 4) USB Settings
 
