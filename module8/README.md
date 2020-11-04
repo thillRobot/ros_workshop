@@ -23,14 +23,32 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
 
 #### Install MATE 18.04 on Rasp Pi - USING DESKTOP
 Since this is rasp pi we are not really installing the OS on the pi. Instead we are copying an image onto the pi.
-* download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
-* download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
-* use `pi-imager` to load the image to SD card
-* use installation GUI to setup user account
-* login to MATE desktop 
-* install ros following the steps here http://wiki.ros.org/melodic/Installation/Ubuntu
+1) download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
+2) download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
+3) use `pi-imager` to load the image to SD card
+4) setup user accountwith Mate installation GUI (comes with boot disk)
+5) login to MATE desktop and test internet connection with `sudo apt update`
 
-  **NOTE:** I did some other things then it crashed, this seems to be a common problem. Also, the grapics are terribly slow. 
+  **NOTE:** this all worked but the grapics are terribly slow. 
+
+#### Install ROS Melodic 
+These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu).
+1) Setup your sources.list
+
+`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+
+2) Set up your keys (if you have issues see the link above)
+
+`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+
+`curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
+
+3) Installation
+
+`sudo apt update`
+
+`sudo apt install ros-melodic-desktop-full'
+
 
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
