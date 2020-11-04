@@ -43,11 +43,13 @@ These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installatio
 
 `curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
 
-3) Installation
+3) Installation (This step will take several minutes depending on your connection speed and computer)
 
 `sudo apt update`
 
-`sudo apt install ros-melodic-desktop-full'
+`sudo apt install ros-melodic-desktop-full`
+
+
 
 
 
