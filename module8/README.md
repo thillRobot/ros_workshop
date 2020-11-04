@@ -49,6 +49,27 @@ These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installatio
 
 `sudo apt install ros-melodic-desktop-full`
 
+4) Environment setup
+
+```
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+5) Dependencies for building packages
+
+`sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
+
+Initialize rosdep
+
+`sudo apt install python-rosdep` (this line is redundant)
+
+```
+sudo rosdep init
+rosdep update
+```
+
+
 
 
 
