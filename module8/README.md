@@ -50,6 +50,7 @@ These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installatio
 `sudo apt install ros-melodic-desktop-full'
 
 
+
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
 #### Install MATE 18.04 on Rasp Pi - USING TERMINAL
