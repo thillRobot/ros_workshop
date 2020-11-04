@@ -70,7 +70,7 @@ rosdep update
 ```
 
 
-
+The pi kept crashing before I got to here...
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
 #### Install MATE 18.04 on Rasp Pi - USING TERMINAL
