@@ -85,11 +85,12 @@ sudo rosdep init
 rosdep update
 ```
 
-
 The pi kept crashing before I got to here...
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
-#### Install MATE 18.04 on Rasp Pi - USING TERMINAL
+### Try again USING TERMINAL
+
+#### 1) Install MATE 18.04 on Rasp Pi -
 Again, since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
@@ -160,7 +161,7 @@ We are going to complete the installation through the terminal.
 
   now would be a good time to make a backup image... lol
 
-  #### Install ROS Melodic 
+  #### 2) Install ROS Melodic 
   These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu).
   1) Setup your sources.list
 
@@ -202,7 +203,7 @@ We are going to complete the installation through the terminal.
 
   I think that we should just stay headless and I predict that issue will go away, but we will see.
 
-  #### Setup ROS Workspace 
+  ##### Setup ROS Workspace 
   then setup a workspace for ros called 'pi_ros'
 
 ``` ~$ mkdir -p ~/pi_ros/src
@@ -218,7 +219,7 @@ We are going to complete the installation through the terminal.
 
    
    
-  #### Download and Compile TurtleBot3 Packges on pi
+  #### 3) Install Dependent Packages on TurtleBot PC(Download and Compile TurtleBot3 Packges on pi)
   
       download the drivers from github, make sure you are in `~/pi_ros/src`  before you clone the repo
 
@@ -248,6 +249,7 @@ We are going to complete the installation through the terminal.
 
       Everything seemed to work just fine - good news
 
- ####     DO step 4,5 next
+ #### 4) USB Settings
 
 
+#### 5) Network Configuration
