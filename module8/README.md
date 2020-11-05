@@ -11,8 +11,8 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * Lenovo ThinkCentreM73 i3 - (CONTROL) - note: on loan from ME Robotics Lab
 
 ### Required Software
-  * Mate 18.04 LTS - (ROBOT) - local 
-  * Ubuntu 18.04 LTS - (CONTROL) - remote
+  * Mate 18.04 LTS - (ROBOT COMPUTER) - local 
+  * Ubuntu 18.04 LTS - (CONTROL COMPUTER) - remote
   * ROS Melodic
   * OpenSSH
   * pi-imager
@@ -32,77 +32,26 @@ These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtleb
 5) Network Configuration
 
   
-### CONTROL Software Installation 
+### CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
 1) Download Ubuntu Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
-2) Use `Startup Disk Creator` or `Rufus` to make boot disk with image from step 1. 
+2) Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
+3) Install Ubuntu using boot disk from step 2. 
+4) Install ROS-Melodic (see below for details)
 
-### ROBOT Software Installation 
-**NOTE:** Using the Mate Desktop is not reccomened. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal, and in the future we will look into using a RaspPI 4 which claims to have increased memory.
-
-
-#### Install MATE 18.04 on Rasp Pi - USING DESKTOP (not reccomended)
-Since this is rasp pi we are not really installing the OS on the pi. Instead we are copying an image onto the pi.
-1) download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
-2) download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
-3) use `pi-imager` to load the image to SD card
-4) setup user accountwith Mate installation GUI (comes with boot disk)
-5) login to MATE desktop and test internet connection with `sudo apt update`
-
-   this all worked but the grapics are terribly slow. 
-
-#### Install ROS Melodic 
-These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu).
-1) Setup your sources.list
-
-`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
-
-2) Set up your keys (if you have issues see the link above)
-
-`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
-
-`curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
-
-3) Installation (This step will take several minutes depending on your connection speed and computer)
-
-`sudo apt update`
-
-`sudo apt install ros-melodic-desktop-full`
-
-4) Environment setup
-
-```
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-```
-
-5) Dependencies for building packages
-
-`sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
-
-Initialize rosdep
-
-`sudo apt install python-rosdep` (this line is redundant)
-
-```
-sudo rosdep init
-rosdep update
-```
-
-The pi kept crashing before I got to here...
-I think that we should just stay headless and I predict that issue will go away, but we will see.
-
-
+### ROBOT COMPUTER Software Installation 
+**NOTE:** Using the Mate Desktop is not reccomended. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal (ctrl+alt+f1 before loggin in), and in the future we will look into using a RaspPI 4 which claims to have increased memory.
 
 #### 1) Install MATE 18.04 on Rasp Pi -
-Again, since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
+Since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
 * use `pi-imager` to load the image to SD card
 * use GUI to setup user accounts
 * do not login into desktop, press: 'ctrl+alt+f1' to open a terminal
-* login as your user, not root for now
+* login as your user, and test internet connection with `sudo apt update`
 
+##### Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
 We are going to complete the installation through the terminal.
 
 * update the repository list - no need to upgrade
