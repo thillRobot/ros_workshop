@@ -3,7 +3,7 @@
 The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are loosely following the turtlebot3 manual here. (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
 
 ### Hardware
-  * turtlebot3 waffle pi full robot kit 
+  * turtlebot3 waffle pi full robot kit (x2)
     * Rasp Pi 3B+ - (ROBOT) 
     * openCR 1.0 - (MCU)
     * RPLidar A1 - (SENSOR)
