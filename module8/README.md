@@ -18,15 +18,21 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * pi-imager
   
 ### Software Installation Overview
+#### I) Setup CONTROL COMPUTER
+#### II) Setup ROBOT COMPUTER
+#### III) Test the Robot!
 
-  
 ### CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
 
-#### 1) Download Ubuntu Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
-#### 2) Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
-#### 3) Install Ubuntu using boot disk from step 2. 
+#### 1) Download Ubuntu 
+Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
+#### 2) Create Bootable USB 
+Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
+#### 3) Install Ubuntu 
+Use boot disk from step 2 to install the Ubuntu operating system. Setup a user account, and update while installing. 
 #### 4) Install ROS-Melodic (see below for details)
+Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu) OR see detailed steps below.
 
 ### ROBOT COMPUTER Software Installation 
 These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
