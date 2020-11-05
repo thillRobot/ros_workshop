@@ -32,10 +32,14 @@ These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtleb
 5) Network Configuration
 
   
-  
 ### CONTROL Software Installation 
+The control computer requires the same OS version as the robot computer, but the flavor can be different. 
+1) Download Ubuntu Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
+2) Use `Startup Disk Creator` or `Rufus` to make boot disk with image from step 1. 
 
 ### ROBOT Software Installation 
+**NOTE:** Using the Mate Desktop is not reccomened. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal, and in the future we will look into using a RaspPI 4 which claims to have increased memory.
+
 
 #### Install MATE 18.04 on Rasp Pi - USING DESKTOP (not reccomended)
 Since this is rasp pi we are not really installing the OS on the pi. Instead we are copying an image onto the pi.
@@ -45,7 +49,7 @@ Since this is rasp pi we are not really installing the OS on the pi. Instead we 
 4) setup user accountwith Mate installation GUI (comes with boot disk)
 5) login to MATE desktop and test internet connection with `sudo apt update`
 
-  **NOTE:** this all worked but the grapics are terribly slow. 
+   this all worked but the grapics are terribly slow. 
 
 #### Install ROS Melodic 
 These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu).
@@ -88,7 +92,7 @@ rosdep update
 The pi kept crashing before I got to here...
 I think that we should just stay headless and I predict that issue will go away, but we will see.
 
-### Try again USING TERMINAL
+
 
 #### 1) Install MATE 18.04 on Rasp Pi -
 Again, since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
