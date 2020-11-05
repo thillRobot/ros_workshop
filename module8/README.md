@@ -18,8 +18,8 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * pi-imager
   
 ### Software Installation Overview
-#### I) Setup CONTROL COMPUTER
-#### II) Setup ROBOT COMPUTER
+#### I) CONTROL COMPUTER Software Installation
+#### II) ROBOT COMPUTER Software Installation 
 #### III) Test the Robot!
 
 ### CONTROL COMPUTER Software Installation 
