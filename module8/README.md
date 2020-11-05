@@ -205,5 +205,9 @@ We are going to complete the installation through the terminal.
  ### III) USB Setting and Network Configuration
 
  #### 4) USB Settings
+ Run this on the PI to setup persitant USB connection to the OpenCR controller. I did this on the separate pi,but I think it needs to be repeated once the controller is plugged in.
+
+ `rosrun turtlebot3_bringup create_udev_rules`
+ 
 
  #### 5) Network Configuration
