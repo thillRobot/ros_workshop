@@ -41,6 +41,7 @@ These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtleb
 #### 1) Install MATE 18.04 on Rasp Pi -
 Since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
+  this is currently not available, get it here instead (https://www.dropbox.com/sh/sl7p8ccff6ofv3n/AAB6gt3jbKkXziI_uIC-9wS6a?dl=0)
 * download and/or install `pi-imager` (https://www.raspberrypi.org/downloads/)
 * use `pi-imager` to load the image to SD card
 * use GUI to setup user accounts
