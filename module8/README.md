@@ -156,10 +156,11 @@ We are going to complete the installation through the terminal.
   ##### Setup ROS Workspace 
   then setup a workspace for ros called 'pi_ros'
 
-``` ~$ mkdir -p ~/pi_ros/src
-  ~$ cd pi_ros/
-  ~/pi_ros$ catkin_make
-  ~/$ echo "~/pi_ros/devel/setup.bash" >> ~/.bashrc
+  ``` 
+  mkdir -p ~/pi_ros/src
+  cd pi_ros/
+  catkin_make
+  echo "~/pi_ros/devel/setup.bash" >> ~/.bashrc
   source ~/pi_ros/devel/setup.bash
   ```
 
