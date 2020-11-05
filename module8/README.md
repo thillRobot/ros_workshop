@@ -18,11 +18,11 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * pi-imager
   
 ### Software Installation Overview
-#### I) CONTROL COMPUTER Software Installation
-#### II) ROBOT COMPUTER Software Installation 
-#### III) Test the Robot!
+  #### I) CONTROL COMPUTER Software Installation
+  #### II) ROBOT COMPUTER Software Installation 
+  #### III) USB Setting and Network Configuration
 
-### CONTROL COMPUTER Software Installation 
+### I) CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
 
 #### 1) Download Ubuntu 
@@ -34,7 +34,7 @@ Use boot disk from step 2 to install the Ubuntu operating system. Setup a user a
 #### 4) Install ROS-Melodic (see below for details)
 Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu) OR see detailed steps below.
 
-### ROBOT COMPUTER Software Installation 
+### II) ROBOT COMPUTER Software Installation 
 These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
 **NOTE:** Using the Mate Desktop is not reccomended. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal (ctrl+alt+f1 before loggin in), and in the future we will look into using a RaspPI 4 which claims to have increased memory.
 
@@ -198,8 +198,9 @@ We are going to complete the installation through the terminal.
   `cd ~/catkin_ws && catkin_make -j1`
 
   Everything seemed to work just fine - good news
+ 
+ ### III) USB Setting and Network Configuration
 
  #### 4) USB Settings
 
-
-#### 5) Network Configuration
+ #### 5) Network Configuration
