@@ -166,11 +166,12 @@ We are going to complete the installation through the terminal.
 
   your workspace should compile without errors
 
-  now install the turtlebot3 packeges following this https://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/ (SBC setup)
+  now install the turtlebot3 packeges 
 
    
    
   #### 3) Install Dependent Packages on TurtleBot PC(Download and Compile TurtleBot3 Packges on pi)
+  This follows the (SBC setup) tutorial here (https://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
   
   download the drivers from github, make sure you are in `~/pi_ros/src`  before you clone the repo
 
