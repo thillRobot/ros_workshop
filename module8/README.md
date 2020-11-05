@@ -19,27 +19,17 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   
 ### Software Installation Overview
 
-These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
-
-1) Install Ubuntu MATE on TurtleBot PC - we already did this 'manually'
-
-2) Install ROS on TurtleBot PC - we already did this 'manually'
-
-3) Install Dependent Packages on TurtleBot PC - replace all instances of 'kinetic' with 'melodic'
-  
-4) USB Settings
-
-5) Network Configuration
-
   
 ### CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
-1) Download Ubuntu Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
-2) Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
-3) Install Ubuntu using boot disk from step 2. 
-4) Install ROS-Melodic (see below for details)
+
+#### 1) Download Ubuntu Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
+#### 2) Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
+#### 3) Install Ubuntu using boot disk from step 2. 
+#### 4) Install ROS-Melodic (see below for details)
 
 ### ROBOT COMPUTER Software Installation 
+These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
 **NOTE:** Using the Mate Desktop is not reccomended. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal (ctrl+alt+f1 before loggin in), and in the future we will look into using a RaspPI 4 which claims to have increased memory.
 
 #### 1) Install MATE 18.04 on Rasp Pi -
