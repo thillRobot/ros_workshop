@@ -21,6 +21,7 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   #### I) CONTROL COMPUTER Software Installation
   #### II) ROBOT COMPUTER Software Installation 
   #### III) USB Setting and Network Configuration
+  #### IV) Embedded Controller Configuration
 
 ### I) CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
@@ -212,3 +213,6 @@ We are going to complete the installation through the terminal.
  
 
  #### 5) Network Configuration
+
+
+ ### IV) Embedded Controller Configuration
