@@ -31,7 +31,7 @@ Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.1
 Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
 #### 3) Install Ubuntu 
 Use boot disk from step 2 to install the Ubuntu operating system. Setup a user account, and update while installing. 
-#### 4) Install ROS-Melodic (see below for details)
+#### 4) Install ROS-Melodic
 Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu) OR see detailed steps below.
 
 ### II) ROBOT COMPUTER Software Installation 
