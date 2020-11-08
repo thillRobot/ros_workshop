@@ -58,8 +58,9 @@ We are going to complete the installation through the terminal.
   `sudo apt update`
 
 * install SSH for remote connection - this is already installed on Mate image
+  while you are doing installs, you should install a terminal text editor like VIM
 
-  `sudo apt install openssh-server`
+  `sudo apt install openssh-server vim`
 
 * test connectivity
 
