@@ -120,7 +120,7 @@ We are going to complete the installation through the terminal.
   Host key verification failed.
   ```
 
-  This is because my host has already talked to this pi with different keys. 
+  This is because my computer (sh client) has already talked to this pi with different keys. 
   So run this to delete the old keys and ...
 
   `ssh-keygen -R [hostname-or-IP]` 
