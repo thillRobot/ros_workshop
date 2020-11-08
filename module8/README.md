@@ -84,7 +84,9 @@ We are going to complete the installation through the terminal.
 
   ssh was not working, so... I made some changes to /etc/ssh/sshd_config THIS WAS NOT THE FIX
   the fix is much easier, just run this on the host (the pi) and you should be good to go
-
+  
+  THIS IS WRONG
+  
   `sudo dpkg-reconfigure openssh-server`
 
   finally test that you can connect to the pi from the control computer
