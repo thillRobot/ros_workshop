@@ -89,56 +89,58 @@ We are going to complete the installation through the terminal.
   
   `sudo service ssh status`
   
-   Start the ssh server with the following line.
+  Start the ssh server with the following line.
   
   `sudo systemctl start ssh`
   
-   And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 ). It it still not working.
+  And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 ). It it still not working.
 
-   It will work if you re-configure the ssh server 
+  It will work if you re-configure the ssh server 
  
-   `sudo dpkg-reconfigure openssh-server`
+  `sudo dpkg-reconfigure openssh-server`
    
-   You may run into this fingerprint issue beacause the hosts key has changed
+  You may run into this fingerprint issue beacause the hosts key has changed
 
-   ```
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-   IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
-   Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-   It is also possible that a host key has just been changed.
-   The fingerprint for the ECDSA key sent by the remote host is
-   SHA256:pfMmexrK8i2wUQBmbKuj5DDQnaAoqK2WSyg1nE8VnoE.
-   Please contact your system administrator.
-   Add correct host key in /home/thill/.ssh/known_hosts to get rid of this message.
-   Offending ECDSA key in /home/thill/.ssh/known_hosts:1
-     remove with:
-     ssh-keygen -f "/home/thill/.ssh/known_hosts" -R "192.168.254.22"
-   ECDSA host key for 192.168.254.22 has changed and you have requested strict checking.
-   Host key verification failed.
-   ```
+  ```
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+  Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+  It is also possible that a host key has just been changed.
+  The fingerprint for the ECDSA key sent by the remote host is
+  SHA256:pfMmexrK8i2wUQBmbKuj5DDQnaAoqK2WSyg1nE8VnoE.
+  Please contact your system administrator.
+  Add correct host key in /home/thill/.ssh/known_hosts to get rid of this message.
+  Offending ECDSA key in /home/thill/.ssh/known_hosts:1
+    remove with:
+    ssh-keygen -f "/home/thill/.ssh/known_hosts" -R "192.168.254.22"
+  ECDSA host key for 192.168.254.22 has changed and you have requested strict checking.
+  Host key verification failed.
+  ```
 
-   This is because my host has already talked to this pi with different keys. 
-   So run this to delete the old keys and ...
+  This is because my host has already talked to this pi with different keys. 
+  So run this to delete the old keys and ...
 
-   `ssh-keygen -R [hostname-or-IP]` 
+  `ssh-keygen -R [hostname-or-IP]` 
 
-   alternatively you could manually delete the offending key from the 
+  alternatively you could manually delete the offending key from the 
 
-   `rm /etc/ssh/ssh_host*`
+  `rm /etc/ssh/ssh_host*`
 
-   finally test that you can connect to the pi from the control computer
-   notice how it shows that you have changed computers
+  finally test that you can connect to the pi from the control computer
+  notice how it shows that you have changed computers
 
-  `thill@T1600-brwn305:~$ ssh thill@192.168.254.22`
+  `thill@T1600-brwn305:~$ ssh robot_team2@192.168.254.22`
 
-```  thill@192.168.254.22's password:
+  ```  
+  thill@192.168.254.22's password:
+  robot_team2@192.168.254.22's password: 
   Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-1032-raspi2 aarch64)
 
-   * Documentation:  https://help.ubuntu.com
-   * Management:     https://landscape.canonical.com
-   * Support:        https://ubuntu.com/advantage
+  * Documentation:  https://help.ubuntu.com
+  * Management:     https://landscape.canonical.com
+  * Support:        https://ubuntu.com/advantage
 
 
   0 packages can be updated.
@@ -147,9 +149,9 @@ We are going to complete the installation through the terminal.
   New release '20.04.1 LTS' available.
   Run 'do-release-upgrade' to upgrade to it.
 
-  Last login: Sat Oct 24 01:09:38 2020 from 192.168.254.45
-  thill@mate18-pi3bp:~$
-```
+  Last login: Sat Nov  7 23:33:14 2020 
+  ```
+  
   this means that you are in, woop woop!
 
   now would be a good time to make a backup image... lol
