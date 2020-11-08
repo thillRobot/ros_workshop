@@ -85,8 +85,6 @@ We are going to complete the installation through the terminal.
   ssh was not working, so... I made some changes to /etc/ssh/sshd_config THIS WAS NOT THE FIX
   the fix is much easier, just run this on the ROBOT_COPMUTER (pi) and you should be good to go
   
-  `sudo dpkg-reconfigure openssh-server`
-  
   You can check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
   
   ssh-keygen -R [hostname-or-IP]
@@ -97,7 +95,13 @@ We are going to complete the installation through the terminal.
   
   `sudo systemctl start ssh`
   
-  And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 )
+   And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 ). It it still not working.
+
+   It will work if you re-configure the ssh server 
+ 
+   `sudo dpkg-reconfigure openssh-server`
+   
+   You may run into this fingerprint issue beacause the hosts key has changed
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -116,19 +120,14 @@ Offending ECDSA key in /home/thill/.ssh/known_hosts:1
 ECDSA host key for 192.168.254.22 has changed and you have requested strict checking.
 Host key verification failed.
 ```
-This is because my hoes has already talked to this pi with different keys. 
-So run this to delete the old keys and 
+This is because my host has already talked to this pi with different keys. 
+So run this to delete the old keys and ...
 
 `ssh-keygen -R [hostname-or-IP]` 
 
 alternatively you could manually delete the offending key from the 
 
- rm /etc/ssh/ssh_host*
-
-
-
-
-  
+ `rm /etc/ssh/ssh_host*`
 
   finally test that you can connect to the pi from the control computer
   notice how it shows that you have changed computers
