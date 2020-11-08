@@ -134,7 +134,6 @@ We are going to complete the installation through the terminal.
   `thill@T1600-brwn305:~$ ssh robot_team2@192.168.254.22`
 
   ```  
-  thill@192.168.254.22's password:
   robot_team2@192.168.254.22's password: 
   Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-1032-raspi2 aarch64)
 
