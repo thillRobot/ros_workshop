@@ -78,16 +78,57 @@ We are going to complete the installation through the terminal.
   64 bytes from 192.168.254.22: icmp_seq=2 ttl=64 time=0.620 ms
   64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms`
 
-  next try to ssh in from the remote computer. Make sure openssh-server is on both machines
+  next try to ssh in from the CONTROL COMPUTER. Make sure openssh-server is on both machines
 
   `ssh <user on pi>@<ip of pi>`
 
   ssh was not working, so... I made some changes to /etc/ssh/sshd_config THIS WAS NOT THE FIX
-  the fix is much easier, just run this on the host (the pi) and you should be good to go
-  
-  THIS IS WRONG
+  the fix is much easier, just run this on the ROBOT_COPMUTER (pi) and you should be good to go
   
   `sudo dpkg-reconfigure openssh-server`
+  
+  You can check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
+  
+  ssh-keygen -R [hostname-or-IP]
+  
+  `sudo service ssh status`
+  
+  Start the ssh server with the following line.
+  
+  `sudo systemctl start ssh`
+  
+  And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 )
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:pfMmexrK8i2wUQBmbKuj5DDQnaAoqK2WSyg1nE8VnoE.
+Please contact your system administrator.
+Add correct host key in /home/thill/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/thill/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f "/home/thill/.ssh/known_hosts" -R "192.168.254.22"
+ECDSA host key for 192.168.254.22 has changed and you have requested strict checking.
+Host key verification failed.
+```
+This is because my hoes has already talked to this pi with different keys. 
+So run this to delete the old keys and 
+
+`ssh-keygen -R [hostname-or-IP]` 
+
+alternatively you could manually delete the offending key from the 
+
+ rm /etc/ssh/ssh_host*
+
+
+
+
+  
 
   finally test that you can connect to the pi from the control computer
   notice how it shows that you have changed computers
