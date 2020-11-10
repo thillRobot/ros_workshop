@@ -157,7 +157,7 @@ We are going to complete the installation through the terminal.
   now would be a good time to make a backup image... lol
 
   #### 2) Install ROS Melodic 
-  These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu).
+  These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu). I just noticed that the tutorial is using `ros-melodic-base` and I and using `ros-melodic-desktop-full`
   1) Setup your sources.list
 
   `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
