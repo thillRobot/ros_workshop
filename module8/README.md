@@ -253,9 +253,32 @@ We are going to complete the installation through the terminal.
  Run this on the PI to setup persitant USB connection to the OpenCR controller. I did this on the separate pi,but I think it needs to be repeated once the controller is plugged in.
 
  `rosrun turtlebot3_bringup create_udev_rules`
+
  
+
 
  #### 5) Network Configuration
 
 
  ### IV) Embedded Controller Configuration
+ 
+I ran into some problems with the installation script in this step (6.3.1.1 - OpenCR Firmware Update for TB3), and this has been resolved. One line must be added to the `update_opencr/update.sh` script and the script must be run again. This is documented here on Github: https://github.com/ROBOTIS-GIT/turtlebot3/issues/455
+
+Add the following line the the `update_opencr/update.sh` file.
+
+```
+case $(uname -m) in
+    i386)   architecture="386" ;;
+    i686)   architecture="386" ;;
+    x86_64) architecture="amd64" ;;
+    armv7l) architecture="arm" ;;
+    aarch64) architecture="arm";;  # <-- my fix
+    arm)    dpkg --print-architecture | grep -q "arm64" && architecture="arm64" || architecture="arm" ;;
+esac
+```
+
+Now run the installation script again, but do not to re run the `wget` because you do not need to download the update again.
+
+```
+cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+```
