@@ -291,4 +291,4 @@ There does not appear to be any required steps here. See this section for more i
 See this section for more information about optional components and upgrades. 
 
 ### Software Installation Complete - AWESOME 
-Is it finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** 
+Is it finally time to test the motors in **Module 9 - Turtlebot3 Bringup** 
