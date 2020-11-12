@@ -27,20 +27,20 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
 ### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
 
-#### 1) Download Ubuntu 
+#### i) Download Ubuntu 
 Ubuntu 18.04.5 LTS Desktop 64bit image (https://wiki.ubuntu.com/Releases?_ga=2.126560777.568362595.1604554678-2034758377.1604554678)
-#### 2) Create Bootable USB 
+#### ii) Create Bootable USB 
 Use `Startup Disk Creator` or `Rufus` to make bootable USB disk with image from step 1. 
-#### 3) Install Ubuntu 
+#### iii) Install Ubuntu 
 Use boot disk from step 2 to install the Ubuntu operating system. Setup a user account, and update while installing. 
-#### 4) Install ROS-Melodic
+#### iv) Install ROS-Melodic
 Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu) OR see detailed steps below.
 
 ### (6.2 - SBC Setup) ROBOT COMPUTER Software Installation
 These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
 **NOTE:** Using the Mate Desktop is not reccomended. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal (ctrl+alt+f1 before loggin in), and in the future we will look into using a RaspPI 4 which claims to have increased memory.
 
-#### 1) Install MATE 18.04 on Rasp Pi -
+#### i) Install MATE 18.04 on Rasp Pi -
 Since this is a rasp pi we are not really installing the OS on the pi. Instead we are copying and image onto the pi.
 * download Mate 18.04 64bit image for pi 3B + from Ubuntu Mate website (https://ubuntu-mate.org/download/arm64/)
   this is currently not available, get it here instead (https://www.dropbox.com/sh/sl7p8ccff6ofv3n/AAB6gt3jbKkXziI_uIC-9wS6a?dl=0)
@@ -51,8 +51,8 @@ Since this is a rasp pi we are not really installing the OS on the pi. Instead w
 * do not login into desktop, press: 'ctrl+alt+f1' to open a terminal
 * login as your user, and test internet connection with `sudo apt update`
 
-##### Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
-We are going to complete the installation through the terminal.
+#### ii) Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
+This will make the rest of the installation on the SBC much simpler.
 
 * update the repository list - no need to upgrade
 
@@ -63,17 +63,15 @@ We are going to complete the installation through the terminal.
 
   `sudo apt install openssh-server vim`
 
-* test connectivity
+* check that you get a valid ip address and record the IP address - this will change when you move between buildings
 
   `ip a`
 
-  check that you get a valid ip address - take a picture of the terminal!
-
-  try to ping the pi from a remote computer (on the network)
+ * Try to ping the `robot` from the `remote` and vice versa.
 
   `ping 192.168.xxx.yy`
 
-  you should get bytes transferred as shown below
+ * You should get a message about bytes transferred as shown below.
 
   ```
   PING 192.168.254.22 (192.168.254.22) 56(84) bytes of data.
@@ -82,29 +80,32 @@ We are going to complete the installation through the terminal.
   64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms
   ```
 
-  next try to ssh in from the CONTROL COMPUTER. Make sure openssh-server is on both machines
+  Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. Make sure openssh-server is installed on both machines.
+  
+  `sudo apt install openssh-server`
 
   `ssh <user on pi>@<ip of pi>`
 
-  ssh was not working, so... I made some changes to /etc/ssh/sshd_config THIS WAS NOT THE FIX
-  the fix is much easier, just run this on the ROBOT_COPMUTER (pi) and you should be good to go
+  `connection refused port 22 closed yada yada`
+
+  SSH may work not on a pi with a fresh image of mate18-arm64, but the solution is shown below.  
+  You may read that you have to make some changes to `/etc/ssh/sshd_config` and THIS IS NOT THE FIX that worked for me. 
+  Instead the fix is much easier. You must reconfigure the ssh server on the ROBOT COPMUTER (pi) and you should be good to go.
   
-  You can check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
+  `sudo dpkg-reconfigure openssh-server`
+  
+  Start the ssh server with the following line.
+ 
+  `sudo systemctl start ssh`
+  
+  Check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
   
   `sudo service ssh status`
   
-  Start the ssh server with the following line.
-  
-  `sudo systemctl start ssh`
-  
-  And then you can check the status again and see that ssh is running. ( Server listening on 0.0.0.0 port 22 ). It it still not working.
+  And then you can check the status again and see if ssh is running. ( Server listening on 0.0.0.0 port 22 ). 
 
-  It will work if you re-configure the ssh server 
- 
-  `sudo dpkg-reconfigure openssh-server`
    
-  You may run into this fingerprint issue beacause the hosts key has changed
-
+  You may run into the fingerprint issue shown below if the hosts key changes. This will happen if you re-configure a pi after it has gone through an initial ssh handshake. This is just a security warning, but it should not happen unless you caused it to.
   ```
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
@@ -132,10 +133,10 @@ We are going to complete the installation through the terminal.
 
   `rm /etc/ssh/ssh_host*`
 
-  finally test that you can connect to the pi from the control computer
-  notice how it shows that you have changed computers
+  finally, try again to connect to the ROBOT COMPUTER from the REMOTE COPMUTER
+  notice how it shows that you have changed computers. The first time you will have to type `yes`
 
-  `thill@T1600-brwn305:~$ ssh robot_team2@192.168.254.22`
+  `thill@T1600-brwn305:~$ ssh <user on pi>@<ip of pi>`
 
   ```  
   robot_team2@192.168.254.22's password: 
@@ -159,7 +160,7 @@ We are going to complete the installation through the terminal.
 
   now would be a good time to make a backup image... lol
 
-  #### 2) Install ROS Melodic 
+  #### iii) Install ROS Melodic 
   These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu). I just noticed that the tutorial is using `ros-melodic-base` and I and using `ros-melodic-desktop-full`
   1) Setup your sources.list
 
@@ -202,7 +203,7 @@ We are going to complete the installation through the terminal.
   I think that we should just stay headless and I predict that issue will go away, but we will see.
 
   ##### Setup ROS Workspace 
-  then setup a workspace for ros called 'pi_ros'
+  Setup a workspace for ros called `pi_ros`. Compile your workspace with `catkin_make`.
 
   ``` 
   mkdir -p ~/pi_ros/src
@@ -212,7 +213,7 @@ We are going to complete the installation through the terminal.
   source ~/pi_ros/devel/setup.bash
   ```
 
-  your workspace should compile without errors
+  
 
   now install the turtlebot3 packeges 
 
