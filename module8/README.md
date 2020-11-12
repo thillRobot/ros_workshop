@@ -18,11 +18,11 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * pi-imager
   
 ### Turtlebot3 Setup Overview
-  #### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
-  #### (6.2 - SBC Setup) ROBOT COMPUTER Software Installation  
-  #### (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
-  #### (6.4 Hardware Setup)
-  #### (6.5 Compatible Devices)
+  #### - [x] (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
+  #### - [x] (6.2 - SBC Setup) ROBOT COMPUTER Software Installation  
+  #### - [x] (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
+  #### - [] (6.4 Hardware Setup)
+  #### - [] (6.5 Compatible Devices)
 
 ### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
@@ -58,12 +58,13 @@ This will make the rest of the installation on the SBC much simpler.
 
   `sudo apt update`
 
-##### install SSH for remote connection - this is already installed on Mate image
-  while you are doing installs, you should install a terminal text editor like VIM
+##### setup SSH for remote connection 
+This is already installed on Mate image, but make sure openssh-server is installed on both machines.
+While you are doing installs, you should install a terminal text editor like `vim`.
 
   `sudo apt install openssh-server vim`
 
-##### check that you get a valid ip address and record the IP address - this will change when you move between buildings
+* Check that you get a valid ip address and record the IP address - this will change when you move between buildings
 
   `ip a`
 
@@ -80,32 +81,31 @@ This will make the rest of the installation on the SBC much simpler.
   64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms
   ```
 
-  Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. Make sure openssh-server is installed on both machines.
+  * Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. 
   
-  `sudo apt install openssh-server`
 
   `ssh <user on pi>@<ip of pi>`
 
   `connection refused port 22 closed yada yada`
-
-  SSH may work not on a pi with a fresh image of mate18-arm64, but the solution is shown below.  
+  
+  * SSH may work not on a pi with a fresh image of mate18-arm64, but the solution is shown below.  
   You may read that you have to make some changes to `/etc/ssh/sshd_config` and THIS IS NOT THE FIX that worked for me. 
   Instead the fix is much easier. You must reconfigure the ssh server on the ROBOT COPMUTER (pi) and you should be good to go.
   
   `sudo dpkg-reconfigure openssh-server`
   
-  Start the ssh server with the following line.
+  * Start the ssh server with the following line.
  
   `sudo systemctl start ssh`
   
-  Check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
+  * Check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
   
   `sudo service ssh status`
   
-  And then you can check the status again and see if ssh is running. ( Server listening on 0.0.0.0 port 22 ). 
+  * You should get something that contains `Server listening on 0.0.0.0 port 22` 
 
    
-  You may run into the fingerprint issue shown below if the hosts key changes. This will happen if you re-configure a pi after it has gone through an initial ssh handshake. This is just a security warning, but it should not happen unless you caused it to.
+  * You may run into the fingerprint issue shown below if the hosts key changes. This will happen if you re-configure a pi after it has gone through an initial ssh handshake. This is just a security warning, but it should not happen unless you caused it to.
   ```
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
@@ -124,17 +124,17 @@ This will make the rest of the installation on the SBC much simpler.
   Host key verification failed.
   ```
 
-  This is because my computer (sh client) has already talked to this pi with different keys. 
-  So run this to delete the old keys and ...
+  * This is because my computer (sh client) has already talked to this pi with different keys. 
+  So run this to delete the old keys.
 
   `ssh-keygen -R [hostname-or-IP]` 
 
-  alternatively you could manually delete the offending key from the 
+   Alternatively you could manually delete the offending key from the following file.
 
   `rm /etc/ssh/ssh_host*`
 
-  finally, try again to connect to the ROBOT COMPUTER from the REMOTE COPMUTER
-  notice how it shows that you have changed computers. The first time you will have to type `yes`
+  Finally, try again to connect to the ROBOT COMPUTER from the REMOTE COPMUTER
+  notice it shows that you have changed computers. The first time you `ssh` will have to type `yes`
 
   `thill@T1600-brwn305:~$ ssh <user on pi>@<ip of pi>`
 
