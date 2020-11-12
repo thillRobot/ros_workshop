@@ -72,12 +72,14 @@ We are going to complete the installation through the terminal.
 
   `ping 192.168.xxx.yy`
 
-  you should get byte transferred as shown below
+  you should get bytes transferred as shown below
 
-  `PING 192.168.254.22 (192.168.254.22) 56(84) bytes of data.
+  ```
+  PING 192.168.254.22 (192.168.254.22) 56(84) bytes of data.
   64 bytes from 192.168.254.22: icmp_seq=1 ttl=64 time=0.599 ms
   64 bytes from 192.168.254.22: icmp_seq=2 ttl=64 time=0.620 ms
-  64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms`
+  64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms
+  ```
 
   next try to ssh in from the CONTROL COMPUTER. Make sure openssh-server is on both machines
 
