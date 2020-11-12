@@ -1,6 +1,6 @@
-# Module 8 - Turtlebot3 Robot Software Installation
+# Module 8 - Turtlebot3 Setup
 
-The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are loosely following the turtlebot3 manual here. (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
+The main objective is to get the turtlebot3 robots working with ros navigation for ME4440. We are following the turtlebot3 manual here. (https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup). 
 
 ### Hardware
   * turtlebot3 waffle pi full robot kit (x2)
@@ -17,11 +17,12 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * OpenSSH
   * pi-imager
   
-### Software Installation Overview
-  #### I) CONTROL COMPUTER Software Installation
-  #### II) ROBOT COMPUTER Software Installation 
-  #### III) USB Setting and Network Configuration
-  #### IV) Embedded Controller Configuration
+### Turtlebot3 Setup Overview
+  #### I) CONTROL COMPUTER Software Installation (6.1 - PC Setup)
+  #### II) ROBOT COMPUTER Software Installation  (6.2 - SBC Setep)
+  #### III) Embedded Controller Firmware Update (6.3 - OpenCR Setup)
+  #### IV) (6.4 Hardware Setup)
+  #### V)  (6.5 Compatible Devices)
 
 ### I) CONTROL COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
@@ -249,7 +250,7 @@ We are going to complete the installation through the terminal.
 
   Everything seemed to work just fine - good news
  
- ### III) USB Setting and Network Configuration
+ #### III) USB Setting and Network Configuration
 
  #### 4) USB Settings
  Run this on the PI to setup persitant USB connection to the OpenCR controller. I did this on the separate pi,but I think it needs to be repeated once the controller is plugged in.
