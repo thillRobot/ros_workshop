@@ -282,3 +282,4 @@ Now run the installation script again, but do not to re run the `wget` because y
 ```
 cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
+**step 6.3.1.1 is now complete** 
