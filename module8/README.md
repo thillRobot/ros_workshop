@@ -205,7 +205,7 @@ We are going to complete the installation through the terminal.
   mkdir -p ~/pi_ros/src
   cd pi_ros/
   catkin_make
-  echo "~/pi_ros/devel/setup.bash" >> ~/.bashrc
+  echo "source ~/pi_ros/devel/setup.bash" >> ~/.bashrc
   source ~/pi_ros/devel/setup.bash
   ```
 
