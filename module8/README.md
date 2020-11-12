@@ -64,15 +64,15 @@ While you are doing installs, you should install a terminal text editor like `vi
 
   `sudo apt install openssh-server vim`
 
-* Check that you get a valid ip address and record the IP address - this will change when you move between buildings
+Check that you get a valid ip address and record the IP address - this will change when you move between networks
 
   `ip a`
 
- * Try to ping the `robot` from the `remote` and vice versa.
+Try to ping the `robot` from the `remote` and vice versa.
 
   `ping 192.168.xxx.yy`
 
- * You should get a message about bytes transferred as shown below.
+You should get a message about bytes transferred as shown below.
 
   ```
   PING 192.168.254.22 (192.168.254.22) 56(84) bytes of data.
@@ -81,31 +81,32 @@ While you are doing installs, you should install a terminal text editor like `vi
   64 bytes from 192.168.254.22: icmp_seq=3 ttl=64 time=0.624 ms
   ```
 
-  * Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. 
+Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. 
   
 
   `ssh <user on pi>@<ip of pi>`
 
   `connection refused port 22 closed yada yada`
   
-  * SSH may work not on a pi with a fresh image of mate18-arm64, but the solution is shown below.  
-  You may read that you have to make some changes to `/etc/ssh/sshd_config` and THIS IS NOT THE FIX that worked for me. 
-  Instead the fix is much easier. You must reconfigure the ssh server on the ROBOT COPMUTER (pi) and you should be good to go.
+SSH may work not on a pi3b+ with a fresh image of mate18-arm64, but the solution is shown below.  
+You may read that you have to make some changes to `/etc/ssh/sshd_config` and THIS IS NOT THE FIX that worked for me. 
+Instead the fix is much easier. You must reconfigure the ssh server on the ROBOT COPMUTER (pi) and you should be good to go.
   
   `sudo dpkg-reconfigure openssh-server`
   
-  * Start the ssh server with the following line.
+Start the ssh server with the following line.
  
   `sudo systemctl start ssh`
   
-  * Check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
+Check status of the ssh server, and you will see that is is not working ( Active: inactive (dead) )
   
   `sudo service ssh status`
   
-  * You should get something that contains `Server listening on 0.0.0.0 port 22` 
+You should get something that contains `Server listening on 0.0.0.0 port 22` 
 
    
-  * You may run into the fingerprint issue shown below if the hosts key changes. This will happen if you re-configure a pi after it has gone through an initial ssh handshake. This is just a security warning, but it should not happen unless you caused it to.
+You may run into the fingerprint issue shown below if the hosts key changes. This will happen if you re-configure a pi after it has gone through an initial ssh handshake. This is just a security warning, but it should not happen unless you caused it to.
+  
   ```
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
@@ -124,17 +125,17 @@ While you are doing installs, you should install a terminal text editor like `vi
   Host key verification failed.
   ```
 
-  * This is because my computer (sh client) has already talked to this pi with different keys. 
-  So run this to delete the old keys.
+This is because my computer (sh client) has already talked to this pi with different keys. 
+So run this to delete the old keys.
 
   `ssh-keygen -R [hostname-or-IP]` 
 
-   Alternatively you could manually delete the offending key from the following file.
+Alternatively you could manually delete the offending key by removing the following file.
 
   `rm /etc/ssh/ssh_host*`
 
-  Finally, try again to connect to the ROBOT COMPUTER from the REMOTE COPMUTER
-  notice it shows that you have changed computers. The first time you `ssh` will have to type `yes`
+Finally, try again to connect to the ROBOT COMPUTER from the REMOTE COPMUTER
+Notice it shows that you have changed computers. The first time you `ssh` will have to type `yes`
 
   `thill@T1600-brwn305:~$ ssh <user on pi>@<ip of pi>`
 
@@ -155,10 +156,17 @@ While you are doing installs, you should install a terminal text editor like `vi
 
   Last login: Sat Nov  7 23:33:14 2020 
   ```
-  
-  this means that you are in, woop woop!
+This means that you are in, woop woop!
 
-  now would be a good time to make a backup image... lol
+##### Imaging and Cloning the SD Card for Backup 
+
+We have made tremendous progress, so now would be a good time to make a backup image. There are many ways to do this but I like to use `dd` which is commonly available in linux. The install below is most likely not needed, but it will not hurt.
+
+`sudo apt install dd` 
+
+There is a post here (https://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) that clearly explains how to use `dd` to clone an SD card.
+
+Copying to an Sd card takes a long time. 
 
   #### iii) Install and Setup ROS Melodic 
   These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu). I just noticed that the tutorial is using `ros-melodic-base` and I and using `ros-melodic-desktop-full`
