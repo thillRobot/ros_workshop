@@ -7,24 +7,24 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
     * Rasp Pi 3B+ - (ROBOT) 
     * openCR 1.0 - (MCU)
     * RPLidar A1 - (SENSOR)
-  * Laptop for ME4444 - (CONTROL COMPUTER)
-  * Lenovo ThinkCentreM73 i3 - (CONTROL COMPUTER) - note: on loan from ME Robotics Lab
+  * Laptop for ME4444 - (REMOTE COMPUTER #1)
+  * Lenovo ThinkCentreM73 i3 - (REMOTE COMPUTER #2) - note: on loan from ME Robotics Lab
 
 ### Required Software
-  * Mate 18.04 LTS - (ROBOT COMPUTER) - local 
-  * Ubuntu 18.04 LTS - (CONTROL COMPUTER) - remote
+  * Mate 18.04 LTS - (ROBOT COMPUTER) 
+  * Ubuntu 18.04 LTS - (REMOTE COMPUTER) 
   * ROS Melodic
   * OpenSSH
   * pi-imager
   
 ### Turtlebot3 Setup Overview
-  #### I) CONTROL COMPUTER Software Installation (6.1 - PC Setup)
-  #### II) ROBOT COMPUTER Software Installation  (6.2 - SBC Setep)
-  #### III) Embedded Controller Firmware Update (6.3 - OpenCR Setup)
-  #### IV) (6.4 Hardware Setup)
-  #### V)  (6.5 Compatible Devices)
+  #### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
+  #### (6.2 - SBC Setup) ROBOT COMPUTER Software Installation  
+  #### (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
+  #### (6.4 Hardware Setup)
+  #### (6.5 Compatible Devices)
 
-### I) CONTROL COMPUTER Software Installation 
+### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
 
 #### 1) Download Ubuntu 
@@ -36,7 +36,7 @@ Use boot disk from step 2 to install the Ubuntu operating system. Setup a user a
 #### 4) Install ROS-Melodic
 Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu) OR see detailed steps below.
 
-### II) ROBOT COMPUTER Software Installation 
+### (6.2 - SBC Setup) ROBOT COMPUTER Software Installation
 These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
 **NOTE:** Using the Mate Desktop is not reccomended. Ubuntu 18.04 on the RasPi 3B+ tends to run out of memory. I reccomend using the terminal (ctrl+alt+f1 before loggin in), and in the future we will look into using a RaspPI 4 which claims to have increased memory.
 
@@ -263,7 +263,7 @@ We are going to complete the installation through the terminal.
  #### 5) Network Configuration
 
 
- ### IV) Embedded Controller Configuration
+### (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
  
 I ran into some problems with the installation script in this step (6.3.1.1 - OpenCR Firmware Update for TB3), and this has been resolved. One line must be added to the `update_opencr/update.sh` script and the script must be run again. This is documented here on Github: https://github.com/ROBOTIS-GIT/turtlebot3/issues/455
 
@@ -286,5 +286,8 @@ Now run the installation script again, but do not to re run the `wget` because y
 cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
 
+### (6.4 Hardware Setup)
+### (6.5 Compatible Devices)
+
 **Software Installation Complete** 
-It is finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** 
+Is it finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** ?
