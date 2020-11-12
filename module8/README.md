@@ -55,7 +55,7 @@ Since this is a rasp pi we are not really installing the OS on the pi. Instead w
 * do not login into desktop, press: 'ctrl+alt+f1' to open a terminal
 * login as your user, and test internet connection with `sudo apt update`
 
-ii) Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
+##### 1+) Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
 This will make the rest of the installation on the SBC much simpler.
 
 update the repository list - no need to upgrade
