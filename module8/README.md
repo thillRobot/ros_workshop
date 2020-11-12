@@ -36,7 +36,7 @@ Follow the instructions on the ROS wiki here (http://wiki.ros.org/melodic/Instal
 #### (6.1.3 - Install Dependent ROS 1 Packages) 
 I JUST REALIZED THAT I THINK WE SKIPPED THIS STEP
 #### (6.1.4 - Network Configuration)
-We did this using `ip a`.
+Setup `ssh` connection. Use `ip a` and `ping` to test.
 
 ### (6.2 - SBC Setup) ROBOT COMPUTER Software Installation
 These steps come from here:(https://emanual.robotis.com/docs/en/platform/turtlebot3/setup/#setup).
@@ -88,7 +88,6 @@ You should get a message about bytes transferred as shown below.
 
 Try to ssh into the ROBOT COMPUTER from the REMOTE COMPUTER. 
   
-
   `ssh <user on pi>@<ip of pi>`
 
   `connection refused port 22 closed yada yada`
@@ -247,7 +246,7 @@ This means that you are in, woop woop!
 
  ##### 5) Network Configuration
  
- See ssh section above. Use `ip a` and `ping`.
+ See `ssh` section above. Use `ip a` and `ping` to test connection.
  
  #### Imaging and Cloning the SD Card for Backup 
 
