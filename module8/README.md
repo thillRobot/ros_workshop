@@ -274,7 +274,7 @@ case $(uname -m) in
     i686)   architecture="386" ;;
     x86_64) architecture="amd64" ;;
     armv7l) architecture="arm" ;;
-    aarch64) architecture="arm";;  # <-- my fix
+    aarch64) architecture="arm";;  # <-- add this line
     arm)    dpkg --print-architecture | grep -q "arm64" && architecture="arm64" || architecture="arm" ;;
 esac
 ```
@@ -284,4 +284,8 @@ Now run the installation script again, but do not to re run the `wget` because y
 ```
 cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
-**step 6.3.1.1 is now complete** 
+
+**Software Installation Complete** 
+It is finally time to test the motors!
+
+### 
