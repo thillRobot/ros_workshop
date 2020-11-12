@@ -54,16 +54,16 @@ Since this is a rasp pi we are not really installing the OS on the pi. Instead w
 #### ii) Setup SSH connection between CONTROL COMPUTER and ROBOT COMPUTER
 This will make the rest of the installation on the SBC much simpler.
 
-* update the repository list - no need to upgrade
+##### update the repository list - no need to upgrade
 
   `sudo apt update`
 
-* install SSH for remote connection - this is already installed on Mate image
+##### install SSH for remote connection - this is already installed on Mate image
   while you are doing installs, you should install a terminal text editor like VIM
 
   `sudo apt install openssh-server vim`
 
-* check that you get a valid ip address and record the IP address - this will change when you move between buildings
+##### check that you get a valid ip address and record the IP address - this will change when you move between buildings
 
   `ip a`
 
@@ -189,7 +189,7 @@ This will make the rest of the installation on the SBC much simpler.
 
   `sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
 
-  Initialize rosdep
+  ##### Initialize rosdep
 
   `sudo apt install python-rosdep` (this line is redundant)
 
