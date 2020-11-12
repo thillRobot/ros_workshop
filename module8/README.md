@@ -286,6 +286,4 @@ cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
 
 **Software Installation Complete** 
-It is finally time to test the motors!
-
-### 
+It is finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** 
