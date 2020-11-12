@@ -248,7 +248,7 @@ This means that you are in, woop woop!
  
  See `ssh` section above. Use `ip a` and `ping` to test connection.
  
- #### Imaging and Cloning the SD Card for Backup 
+ #### 6.2 COMPLETE - Image and Clone SD Card for Backup 
 
 We have made tremendous progress, so now would be a good time to make a backup image. There are many ways to do this but I like to use `dd` which is commonly available in linux. The install below is most likely not needed, but it will not hurt.
 
