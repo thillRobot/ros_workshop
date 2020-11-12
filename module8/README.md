@@ -18,11 +18,11 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
   * pi-imager
   
 ### Turtlebot3 Setup Overview
-  #### - [x] (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
-  #### - [x] (6.2 - SBC Setup) ROBOT COMPUTER Software Installation  
-  #### - [x] (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
-  #### - [] (6.4 Hardware Setup)
-  #### - [] (6.5 Compatible Devices)
+  - [x] (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
+  - [x] (6.2 - SBC Setup) ROBOT COMPUTER Software Installation  
+  - [x] (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
+  - [] (6.4 Hardware Setup)
+  - [] (6.5 Compatible Devices)
 
 ### (6.1 - PC Setup) REMOTE COMPUTER Software Installation 
 The control computer requires the same OS version as the robot computer, but the flavor can be different. 
