@@ -130,7 +130,7 @@ So run this to delete the old keys.
 
   `ssh-keygen -R [hostname-or-IP]` 
 
-Alternatively you could manually delete the offending key by removing the following file.
+Alternatively you could manually delete the offending key by removing the following file. DON'T DO BOTH.
 
   `rm /etc/ssh/ssh_host*`
 
