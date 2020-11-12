@@ -283,7 +283,12 @@ cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
 
 ### (6.4 Hardware Setup)
+
+There does not appear to be any required steps here. See this section for more info about the chassis and other hardware.
+
 ### (6.5 Compatible Devices)
 
+See this section for more information about optional components and upgrades. 
+
 **Software Installation Complete** 
-Is it finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** ?
+Is it finally time to test the motors in **Module 9 - Turtlebot3 - Bringup** 
