@@ -164,6 +164,7 @@ This means that you are in, woop woop!
 
   ##### 2) Install ROS on TurtleBot PC 
   These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu). I just noticed that the tutorial is using `ros-melodic-base` and I and using `ros-melodic-desktop-full`
+  
   Setup your sources.list
 
   `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
