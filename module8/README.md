@@ -160,32 +160,32 @@ This will make the rest of the installation on the SBC much simpler.
 
   now would be a good time to make a backup image... lol
 
-  #### iii) Install ROS Melodic 
+  #### iii) Install and Setup ROS Melodic 
   These steps come from the ROS wiki here (http://wiki.ros.org/melodic/Installation/Ubuntu). I just noticed that the tutorial is using `ros-melodic-base` and I and using `ros-melodic-desktop-full`
-  1) Setup your sources.list
+  ##### Setup your sources.list
 
   `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
 
-  2) Set up your keys (if you have issues see the link above)
+  ##### Set up your keys (if you have issues see the link above)
 
   `sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 
   `curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
 
-  3) Installation (This step will take several minutes depending on your connection speed and computer)
+  ##### Installation (This step will take several minutes depending on your connection speed and computer)
 
   `sudo apt update`
 
   `sudo apt install ros-melodic-desktop-full`
 
-  4) Environment setup
+ ##### Environment setup
 
   ```
   echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
   source ~/.bashrc
   ```
 
-  5) Dependencies for building packages
+  ##### Dependencies for building packages
 
   `sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`
 
@@ -197,10 +197,6 @@ This will make the rest of the installation on the SBC much simpler.
   sudo rosdep init
   rosdep update
   ```
-
-
-
-  I think that we should just stay headless and I predict that issue will go away, but we will see.
 
   ##### Setup ROS Workspace 
   Setup a workspace for ros called `pi_ros`. Compile your workspace with `catkin_make`.
