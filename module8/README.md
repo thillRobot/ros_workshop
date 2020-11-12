@@ -248,7 +248,7 @@ This means that you are in, woop woop!
  
  See `ssh` section above. Use `ip a` and `ping` to test connection.
  
- #### 6.2 COMPLETE - Image and Clone SD Card for Backup 
+ #### (6.2 - COMPLETE ) - Image and Clone SD Card for Backup!
 
 We have made tremendous progress, so now would be a good time to make a backup image. There are many ways to do this but I like to use `dd` which is commonly available in linux. The install below is most likely not needed, but it will not hurt.
 
@@ -256,7 +256,7 @@ We have made tremendous progress, so now would be a good time to make a backup i
 
 There is a post here (https://askubuntu.com/questions/227924/sd-card-cloning-using-the-dd-command) that clearly explains how to use `dd` to clone an SD card.
 
-Copying from an SD card to a HDD or SSD take 16GB of free space. Copying to an SD card from an HDD or SSD takes a long time. You can also copy from one SD directly to another with `dd`. What a hammer.
+Copying from an SD card to a HDD or SSD takes 16GB (or size of card) of free space. Copying to an SD card from an HDD or SSD takes a long time. You can also copy from one SD directly to another with `dd`. What a hammer.
 
 
 ### (6.3 - OpenCR Setup) Embedded Controller Firmware Update 
@@ -282,11 +282,11 @@ Now run the installation script again, but do not to re run the `wget` because y
 cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
 ```
 
-### (6.4 Hardware Setup)
+### (6.4 - Hardware Setup)
 
 There does not appear to be any required steps here. See this section for more info about the chassis and other hardware.
 
-### (6.5 Compatible Devices)
+### (6.5 - Compatible Devices)
 
 See this section for more information about optional components and upgrades. 
 
