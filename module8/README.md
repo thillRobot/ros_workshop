@@ -241,7 +241,7 @@ This means that you are in, woop woop!
  
 
  ##### 4) USB Settings
- Run this on the PI to setup persitant USB connection to the OpenCR controller. I did this on the separate pi,but I think it needs to be repeated once the controller is plugged in.
+ Run this on the PI to setup persitant USB connection to the OpenCR controller. The `pi` must be `OpenCR` for this to work.
 
  `rosrun turtlebot3_bringup create_udev_rules`
 
