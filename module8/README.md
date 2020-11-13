@@ -41,8 +41,6 @@ notice I had to change the kinetics to melodics as you can see below
 sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
 ```
 
-<https://teams.microsoft.com/l/message/19:ef11fd530d7742efab25a618d847e01a@thread.tacv2/1605220446870?tenantId=66fecaf8-3dc0-4d2c-b8b8-eff0ddea46f0&amp;groupId=a3e812d9-3110-4ccd-9da8-cbc2a375c2f8&amp;parentMessageId=1605220024163&amp;teamName=Senior Design Robot Collaboration&amp;channelName=General&amp;createdTime=1605220446870>
-
 #### (6.1.4 - Network Configuration)
 Setup `ssh` connection. Use `ip a` and `ping` to test.
 
