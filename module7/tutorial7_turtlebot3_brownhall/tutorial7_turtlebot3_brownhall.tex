@@ -53,7 +53,8 @@ What is the goal of the.  This tutorial comes from \href{http://emanual.robotis.
 \begin{itemize}
 	\item {\bf ROS+OS}: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 	\item {\bf ROS:} Your computer must be connected to the internet to proceed. Update the system before you begin.
-	\item {\bf Workspace Setup:} The Turtlebot3 Simulator from tutorial 6 must be operational before completing tutorial 7.  
+	\item {\bf Workspace Setup:} The Turtlebot3 Simulator from tutorial 6 must be operational before completing tutorial 7. It will help to use a working package in your ros workspace. 
+	\item {\bf Download a Package:} The exercise requires several additional files, and you will download them as package into the src folder of our ros workspace. The original package can be found here \href{https://github.com/ROBOTIS-GIT/turtlebot3_gazebo_plugin/tree/master/src}{here} or \href{git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git}{here}.
 \end{itemize}
 
 	
@@ -61,20 +62,77 @@ What is the goal of the.  This tutorial comes from \href{http://emanual.robotis.
 	
 	\begin{itemize}
 
-		\item {\R\underline{\bf Backup the System:}} If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 		
-		\item \underline{\B ROSLAUNCH:} This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
+		\item ...
 	
-		\item \underline{\G Mouse for 3D viewing:} This simulator view is much easier use if you have a three button mouse plugged in, but this is not required.
-	
-		 
+
 	\end{itemize}
+   
+\item[\textbf{\underline{Part 1 - Download Turtlebot3 Brown Hall Package:}}] \hfill \vspace{0mm}   
+   
+		\begin{itemize}
+
+		
+		\item \underline{\bf Option 1: Download from ilearn} - You can find the required package in Module 7 of the ROS Workshop on the ilearn website. Download the .zip file and move it src folder of your ROS workspace before extracting the compressed folder.
+	
+		\item \underline{\bf Option 2: clone from Github} - You can clone the package from Github with the {\bf git} command.
+		
+		\begin{minted}{text}
+cd ~/|\wspname|/src
+git clone https://github.com/thillRobot/turtlebot3_planner.git
+		\end{minted}
+
+	
+	\end{itemize}   
+   
    
 \newpage   
     
+\item[\textbf{\underline{Part 2 - Configure Brown Hall Gazebo Environment:}}] \hfill \vspace{0mm}   
+   
+	\begin{minted}{text}
+gedit ~/.bashrc
+	\end{minted}   
+
+Add the following lines to the bottom of the file. \\   
+   
+\begin{lstlisting}{text}
+export GAZEBO_PLUGIN_PATH=~/<path>/turtlebot3_planner/model:${GAZEBO_PLUGIN_PATH}
+export GAZEBO_MODEL_PATH=~/<path>/turtlebot3_planner/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_RESOURCE_PATH=~/<path>/turtlebot3_planner/models:${GAZEBO_RESOURCE_PATH}
+\end{lstlisting}
+   
+Now source the file you just edited.
+
+	\begin{minted}{text}
+source ~/.bashrc
+	\end{minted}
+   
+   \vspace{20mm}
+\item[\textbf{\underline{Part 3 - Launch Turtlebot3 in Brown Hall:}}] \hfill \vspace{0mm}   
+   
+Start the simulator and with the robot in Brown Hall.   
+   
+   	\begin{minted}{text}
+roslaunch turtlebot3_gazebo turtlebot3_planner.launch
+	\end{minted}
+	
+	Start a node to drive with the keyboard.
+	
+	  	\begin{minted}{text}
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+	\end{minted}
+   
+   
+   
+   \newpage 
+\item[\textbf{\underline{Part 4 - Publish Goal for Turtlebot3 :}}] \hfill \vspace{0mm}   
+       
+    
+    
     \item Create a new node with the name of your choosing. You can put this node in the package you created previously for turtlebot3.  Change directory to the source folder of the package and enter the following command to open a new file for your source code.
 \begin{minted}{text}
-gedit |\home\wspname|/src/turtlebot3|\_|control/src/publish|\_|goal.cpp
+gedit |\home\wspname|/src/turtlebot3|\_|planner/src/publish|\_|goal.cpp
 \end{minted}
 
     

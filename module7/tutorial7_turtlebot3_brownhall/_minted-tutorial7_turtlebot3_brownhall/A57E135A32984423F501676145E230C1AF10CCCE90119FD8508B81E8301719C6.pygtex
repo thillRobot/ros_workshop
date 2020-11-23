@@ -1,3 +1,3 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-gedit \PYG{esc}{\home\wspname}/src/turtlebot3\PYG{esc}{\_}control/src/publish\PYG{esc}{\_}goal.cpp
+roslaunch turtlebot3\PYGZus{}gazebo turtlebot3\PYGZus{}planner.launch
 \end{Verbatim}
