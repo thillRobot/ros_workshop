@@ -298,3 +298,7 @@ See this section for more information about optional components and upgrades.
 
 ### Software Installation Complete - AWESOME 
 Is it finally time to test the motors in **Module 9 - Turtlebot3 Bringup** 
+
+On Tuesday Nov 24 we successfully tested **keyboard teleop** - Good Job team
+
+
