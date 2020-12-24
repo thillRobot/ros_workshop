@@ -9,6 +9,7 @@ The main objective is to get the turtlebot3 robots working with ros navigation f
     * RPLidar A1 - (SENSOR)
   * Laptop for ME4444 - (REMOTE COMPUTER #1)
   * Lenovo ThinkCentreM73 i3 - (REMOTE COMPUTER #2) - note: on loan from ME Robotics Lab
+  * Lenovo ThinkCentreM73 i5 (ubuntu18-m73i5) - (REMOTE COMPUTER #3) - note: on loan from ME Robotics Lab
 
 ### Required Software
   * Mate 18.04 LTS - (ROBOT COMPUTER) 
