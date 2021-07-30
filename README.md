@@ -5,7 +5,7 @@ The tutorials will cover installation of ROS, use of packages and nodes, and nav
 
 ### Things to do
 
-- [ ] put it on the github, write this readme!
+- [x] put it on the github, write this readme!
 - [x] plan weekly schedule, what goes in what weeks
-- [x] thoroughly test all modul
-- [ ] convert all PDFs to readme files so the github stands alone  	
+- [x] thoroughly test all modules
+- [ ] convert PDF files to markdown so the github stands alone  	
