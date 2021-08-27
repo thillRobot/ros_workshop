@@ -14,10 +14,10 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 - [VirtualBox](https://www.virtualbox.org/) is a trusted application from Oracle widely used for this process. [VMware](https://www.vmware.com/) is alternative option for virtualization, but it will not be supported in this course.
 
 ## System Requirements
-- *CPU:* Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
-- *Memory:* At least 8Gb of RAM is recommended.        
-- *Storage:* Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
-- *GPU:* A dedicated graphics prcocessing unit is *not required*. This process has been tested with Intel embedded graphics.
+- **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
+- **Memory:** At least 8Gb of RAM is recommended.        
+- **Storage:** Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
+- **GPU:** A dedicated graphics prcocessing unit is *not required*. This process has been tested with Intel embedded graphics.
 
 ## Before You Begin
 - It is a good idea to back up any important files before you begin a project. Hard disk drives fail. Solid state drives can also fail. 
@@ -51,7 +51,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose a **computer name** aka _hostname_ (this is your choice but remember it!)
 - choose an **operating system** type (this should be _Linux_)
 - choose a **version**, this depends on your host machine hardware - it is most likely _Ubuntu 64-bit_ 
-- click **next***
+- click **next**
 
 #### Define Virtual Machine Parameters
 <img src="Capture5.png" alt="drawing" width="1000"/>
