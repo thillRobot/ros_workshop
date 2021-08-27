@@ -48,6 +48,7 @@ Click the {\bf new} button.
 
 #### Define Basic Settings
 <img src="Capture4.png" alt="drawing" width="1000"/>
+
 - choose a *computer name* (this is your choice but remember it!)
 - choose an *operating system* type (Linux)
 - choose a *version*, this depends on your physical machine - probably Ubuntu 64-bit 
@@ -55,27 +56,32 @@ Click the {\bf new} button.
 
 #### Define Virtual Machine Parameters
 <img src="Capture5.png" alt="drawing" width="1000"/>
+
 - Choose the amount of RAM you want to allocate to the VM  
 - More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
 - click *next*
 
 #### Define Virtual Hard Drive Parameters
 <img src="Capture6.png" alt="drawing" width="1000"/>
- - choose *create a virtual hard drive now*
- - click *create*
+
+- choose *create a virtual hard drive now*
+- click *create*
 
 #### Virtual Hard Drive Setup
 <img src="Capture7.png" alt="drawing" width="1000"/>
- - choose the virtual hard drive type, _VDI_ is the recommended type. 
- - click *next*
+
+- choose the virtual hard drive type, _VDI_ is the recommended type. 
+- click *next*
 
 #### Virtual Hard Drive Setup (continued)
 <img src="Capture8.png" alt="drawing" width="1000"/>
+
 - choose *Fixed Size* virtual hard drive. 
 - click *next*
 
 #### Virtual Hard Drive Setup (continued)
 <img src="CaptureX.png" alt="drawing" width="1000"/>
+
 - choose the size of your virtual hard drive       
 - to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
 - click *create*
