@@ -7,7 +7,7 @@
 In this tutorial you will first download and install VirtualBox from Oracle which is an application for _virtualizing_ operating systems inside of an existing one. Next, you will download the Ubuntu installation .iso file and setup a virtual operating system for learning ROS.  After completing this exercise, you will be ready to install the ROS Melodic software package in Ubuntu which is described in detailed in the next module.
 
 
-<img src="CaptureA.png" alt="drawing" width="200"/>
+<img src="CaptureA.png" alt="drawing" width="400"/>
 
 ## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) ?
 - A virtual machine is an operating system that is installed or _virtualized_ inside another operating system.
@@ -33,49 +33,49 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
     
 - Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
 
-<img src="Capture1.png" alt="drawing" width="300"/>
+<img src="Capture1.png" alt="drawing" width="1000"/>
 
 
 ### Part 2 - Virtual Machine Configuration
 Before proceeding make sure you have an internet connection and access to a power supply or battery.
 
 #### Open the VirtualBox application installed in Part 2
-<img src="Capture2.png" alt="drawing" width="800"/>
+<img src="Capture2.png" alt="drawing" width="400"/>
 
 #### Create New Virtual Machine
-<img src="Capture3.png" alt="drawing" width="800"/>
+<img src="Capture3.png" alt="drawing" width="1000"/>
 Click the {\bf new} button.
 
 #### Define Basic Settings
-<img src="Capture4.png" alt="drawing" width="800"/>
+<img src="Capture4.png" alt="drawing" width="1000"/>
 - choose a *computer name* (this is your choice but remember it!)
 - choose an *operating system* type (Linux)
 - choose a *version*, this depends on your physical machine - probably Ubuntu 64-bit 
 - click *next*
 
 #### Define Virtual Machine Parameters
-<img src="Capture5.png" alt="drawing" width="800"/>
+<img src="Capture5.png" alt="drawing" width="1000"/>
 - Choose the amount of RAM you want to allocate to the VM  
 - More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
 - click *next*
 
 #### Define Virtual Hard Drive Parameters
-<img src="Capture6.png" alt="drawing" width="800"/>
+<img src="Capture6.png" alt="drawing" width="1000"/>
  - choose *create a virtual hard drive now*
  - click *create*
 
 #### Virtual Hard Drive Setup
-<img src="Capture7.png" alt="drawing" width="800"/>
+<img src="Capture7.png" alt="drawing" width="1000"/>
  - choose the virtual hard drive type, _VDI_ is the recommended type. 
  - click *next*
 
 #### Virtual Hard Drive Setup (continued)
-<img src="Capture8.png" alt="drawing" width="800"/>
+<img src="Capture8.png" alt="drawing" width="1000"/>
 - choose *Fixed Size* virtual hard drive. 
 - click *next*
 
 #### Virtual Hard Drive Setup (continued)
-<img src="CaptureX.png" alt="drawing" width="800"/>
+<img src="CaptureX.png" alt="drawing" width="1000"/>
 - choose the size of your virtual hard drive       
 - to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
 - click *create*
