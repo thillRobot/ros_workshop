@@ -43,3 +43,4 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
 - [x] plan weekly schedule, what goes in what weeks
 - [x] thoroughly test all modules
 - [ ] convert PDF files to markdown so the github stands alone - this is started at least	
+- [ ] Update to Focal Fossa
