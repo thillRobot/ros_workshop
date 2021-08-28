@@ -5,7 +5,7 @@ The tutorials will cover installation of ROS, use of packages and nodes, and nav
 
 # Modules 
 
-Each Module contains a lecture and a tutorial. You can begin with [module 1](module1/) 
+Each Module contains a lecture and a tutorial. You can begin with [module 1](module1/), or skip to [module 2](module2/) if you already have Ubuntu installed.
 
 - [module 1](module1/) 
   - Lecture: ROS Overview
