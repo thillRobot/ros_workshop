@@ -83,4 +83,14 @@ Close all terminals. Open a new terminal and enter the following command.
 roscore
 ```
 
+If the installation was successful, the terminal output will be _similar_ to the image below.
+
 <img src="roscore_charlie.png" alt="drawing" width="1000"/>
+
+Abort the roscore process by clicking in the terminal and pressing CTRL + C then close the terminal window. Congratulations, you have installed ROS Melodic.
+
+## Tutorial Complete:
+
+Congratulations you have installed ROS.
+
+
