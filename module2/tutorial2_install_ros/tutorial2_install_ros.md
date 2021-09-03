@@ -19,13 +19,13 @@ After completing _Tutorial 1 - Virtualize Ubuntu_, your new operating system is 
 The following commands must be entered into the Ubuntu terminal. Press CTRL+ALT+T to open a new terminal, then carefully copy each command and paste it into the terminal then press ENTER. **The terminal commands are shown `formatted as commands`.**
 
 
-### Step 1.1 - Configure your Ubuntu repositories. The default settings are fine.
-### Step 1.2 - Setup your sources.list to accept software from packages.ros.org.
+### Step 1.1 - Configure your Ubuntu repositories (The default settings are fine)
+### Step 1.2 - Setup your sources.list to accept software from packages.ros.org
 
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
-### Step 1.3 - Set up your keys which are used authenticate software packages for security.
+### Step 1.3 - Set up your keys used to authenticate software packages for security
 
 ```
 sudo apt install curl # if you haven't already installed curl
@@ -35,8 +35,9 @@ sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-### Step 1.4 - Install the ROS package. Update the package list before going any further.
+### Step 1.4 - Install the ROS package
 
+Update the package list before intalling ROS.
 ```
 sudo apt update
 ``` 
