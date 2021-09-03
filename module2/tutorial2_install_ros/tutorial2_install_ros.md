@@ -55,8 +55,10 @@ Append a single line to the text file `~/.bashrc`
 
 ```
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+```
 
+```
+source ~/.bashrc
 ```
 ### Step 1.6 - Install the Developer Packages
 
