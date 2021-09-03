@@ -17,7 +17,7 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 - **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
 - **Memory:** At least 8Gb of RAM is recommended.        
 - **Storage:** Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
-- **GPU:** A dedicated graphics prcocessing unit is *not required*. This process has been tested with Intel embedded graphics.
+- **GPU:** A dedicated graphics prcocessing unit is **not required**. This process has been tested with Intel embedded graphics.
 
 ## Before You Begin
 - It is a good idea to back up any important files before you begin a project. Hard disk drives fail. Solid state drives can also fail. 
