@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+sudo sh \PYGZhy{}c \PYGZsq{}echo \PYGZdq{}deb http://packages.ros.org/ros/ubuntu \PYGZdl{}(lsb\PYGZus{}release
+\PYGZhy{}sc) main\PYGZdq{} \PYGZgt{} /etc/apt/sources.list.d/ros\PYGZhy{}latest.list\PYGZsq{}
+\end{Verbatim}

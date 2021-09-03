@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  3 SEP 2021 06:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  3 SEP 2021 07:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1971,7 +1971,7 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
 (./_minted-tutorial2_install_ros/default-pyg-prefix.pygstyle)
 (./_minted-tutorial2_install_ros/default.pygstyle)
-(./_minted-tutorial2_install_ros/8D3DCBE6405C42D14AFB2DA635C71CFC5D358DC29FEC66
+(./_minted-tutorial2_install_ros/F13E32E11FB2AE1888C397FA167C0A9C5D358DC29FEC66
 63D7062751214DC1EF.pygtex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
 
@@ -1986,7 +1986,7 @@ File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \openout3 = `tutorial2_install_ros.pyg'.
 
 
-(./_minted-tutorial2_install_ros/ED8BFEB893E00128FD8AB5D74F3A2CDF5D358DC29FEC66
+(./_minted-tutorial2_install_ros/E2CDD7A39AAE2DB8A2A34B5B399C1B005D358DC29FEC66
 63D7062751214DC1EF.pygtex)
 \openout3 = `tutorial2_install_ros.pyg'.
 
@@ -1997,7 +1997,7 @@ File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </usr/share/texlive/texmf-d
 ist/tex/latex/keystroke/keystroke_left.pdf> </usr/share/texlive/texmf-dist/tex/
 latex/keystroke/keystroke_middle.pdf> </usr/share/texlive/texmf-dist/tex/latex/
-keystroke/keystroke_right.pdf>]
+keystroke/keystroke_right.pdf>] [2]
 \g__tikzsymbols_savebox_F_0 g 0 G_12_Coffeecup_1_box=\box106
 \g__tikzsymbols_savebox_F_0 g 0 G_12_Cooley_1_none_box=\box107
 \openout3 = `tutorial2_install_ros.pyg'.
@@ -2029,37 +2029,37 @@ keystroke/keystroke_right.pdf>]
 
 
 (./_minted-tutorial2_install_ros/6A197CE061942D88BCF356A750F49A905D358DC29FEC66
-63D7062751214DC1EF.pygtex) [2]
+63D7062751214DC1EF.pygtex) [3]
 \openout3 = `tutorial2_install_ros.pyg'.
 
 
 (./_minted-tutorial2_install_ros/F354A764B38046304C6172F1812FAA465D358DC29FEC66
 63D7062751214DC1EF.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-<roscore_charlie.png, id=40, 454.19687pt x 397.485pt>
-File: roscore_charlie.png Graphic file (type png)
-<use roscore_charlie.png>
-Package pdftex.def Info: roscore_charlie.png  used on input line 134.
-(pdftex.def)             Requested size: 454.19576pt x 397.48402pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[3 <./roscore_charlie.png>] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+<roscore_charlie.png, id=44, 454.19687pt x 397.485pt>
+File: roscore_charlie.png Graphic file (type png)
+<use roscore_charlie.png>
+Package pdftex.def Info: roscore_charlie.png  used on input line 140.
+(pdftex.def)             Requested size: 454.19576pt x 397.48402pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+[4 <./roscore_charlie.png>] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./tutorial2_install_ros.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `tutorial2_install_ros.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm tutorial2_install_ros.pyg)...executed.
@@ -2067,12 +2067,12 @@ runsystem(rm tutorial2_install_ros.pyg)...executed.
  ) 
 Here is how much of TeX's memory you used:
  33936 strings out of 492982
- 659716 string characters out of 6134897
+ 659704 string characters out of 6134897
  770599 words of memory out of 5000000
- 36924 multiletter control sequences out of 15000+600000
+ 36923 multiletter control sequences out of 15000+600000
  546655 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,6n,71p,10370b,847s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,8n,71p,10370b,847s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
 cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
@@ -2081,10 +2081,10 @@ fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfsl1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sftt1200.pfb>
-Output written on tutorial2_install_ros.pdf (4 pages, 724221 bytes).
+Output written on tutorial2_install_ros.pdf (5 pages, 721612 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

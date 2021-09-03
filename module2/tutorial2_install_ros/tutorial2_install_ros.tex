@@ -48,9 +48,9 @@ After completing {\it Tutorial 1 - Virtualize Ubuntu}, your new operating system
 \item[\textbf{\underline{Disclaimer:}}] \hfill \vspace{0mm}
 
 \begin{itemize}
-	\item {\bf\RD Copy and Paste Errors:} {\RD It is strongly recommended to download this PDF and view it in Ubuntu so that you can copy and paste the required commands correctly.}
+	\item {\bf Copy and Paste Errors:}  It is strongly recommended to use copy and paste to enter the commands in this tutorial, but {\RD this will not work correctly in the ilearn PDF viewer}. Use the tutorial webpage or download the PDF to copy the commands directly.
 
-	\item {\bf Backup: } If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine in case you want to revert. See {\it Tutorial 1 - Virtualize Ubuntu } for details.   
+	\item {\bf Backup: } If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine in case you want to revert. (See {\it Tutorial 1 - Virtualize Ubuntu }) 
 \end{itemize}
 
 \item[\textbf{\underline{Installation Instructions:}}] \hfill \vspace{0mm}
@@ -64,16 +64,22 @@ Press \CTRLKey+\ALTKey+\TKey to open a new terminal, then carefully copy each co
 	\item  Setup your sources.list to accept software from packages.ros.org.
 
 	\begin{minted}{text}
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu \
-|\$|(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release 
+-sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 	\end{minted}
 	
 	\item Set up your keys which are used authenticate software packages for security.
 	
 	\begin{minted}[]{text}
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' \ 
---recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc 
+| sudo apt-key add -
 	\end{minted}
+	
+%	\begin{minted}[]{text}
+%sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' \ 
+%--recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+%	\end{minted}
 				
 	\item Update your Ubuntu system. It is a good idea to do this regularly.  
 	
