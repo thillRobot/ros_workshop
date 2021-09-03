@@ -12,7 +12,7 @@ After completing _Tutorial 1 - Virtualize Ubuntu_, your new operating system is 
 
 ## Before You Begin
 - **Copy and Paste Errors:** It is strongly recommended to use copy and paste to enter the commands in this tutorial, but this will not work correctly in the ilearn PDF viewer. Use the tutorial webpage or download the PDF to copy the commands directly.
-- **Backup:** If you are using a virt1ual machine, it is recommend to make a snaphot of your virtual machine before begining this tutorial. See {\it Tutorial 1 - Virtualize Ubuntu } for details.
+- **Backup:** If you are using a virt1ual machine, it is recommend to make a snaphot of your virtual machine before begining this tutorial. See _Tutorial 1 - Virtualize Ubuntu_ for details.
 
 ## Installation Instructions
 
