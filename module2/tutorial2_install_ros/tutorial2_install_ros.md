@@ -74,3 +74,13 @@ sudo rosdep init
 ```
 rosdep update
 ```
+
+### Test the Installed Package
+
+Close all terminals. Open a new terminal and enter the following command.
+
+```
+roscore
+```
+
+<img src="roscore_charlie.png" alt="drawing" width="1000"/>
