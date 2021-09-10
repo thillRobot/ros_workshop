@@ -12,10 +12,10 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: Virtualize Ubuntu
 - [module 2](module2/) 
   - Lecture: Linux Basics
-  - Tutorial: Install ROS (needs conversion to markdown)
+  - Tutorial: Install ROS
 - [module 3](module3/) 
   - Lecture: Nodes Topics
-  - Tutorial: Turtlesim Testdrive (needs conversion to markdown)
+  - Tutorial: Turtlesim Testdrive
 - [module 4](module4/) 
   - Lecture: Catkin Workspace
   - Tutorial: Create Package (needs conversion to markdown)
