@@ -127,3 +127,7 @@ Move the turtlesim window to the side, and select the keyboard terminal to drive
 Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
 
 <img src="tutorial3_fig1.png" alt="drawing" width="750"/>
+
+## Tutorial Complete
+
+Congratulations! After completing _Tutorial 3 - Turtlesim Testdrive_ you are ready to learn how to create a custom package to automate or the turtle's behavior.
