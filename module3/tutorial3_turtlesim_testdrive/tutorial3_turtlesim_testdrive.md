@@ -70,21 +70,25 @@ The nodes are not communicating because the turtlesim node is not subscribing th
 
 ### Troubleshoot 
 
-Use the rostopic tool to to invesitage the topics published be the nodes _while the system is running_. 
+#### rostopic
+Use the `rostopic` tool to to invesitage the topics published be the nodes _while the system is running_. 
 
 | List available topics | Print info about <TOPIC> | Print data from <TOPIC> |
 |-----------------------|--------------------------|-------------------------|
-| `rostopic list`       |`rostopic info <TOPIC>`   |`rostopic echo <TOPIC>`  |
-|                       |                          |                         |                   
+| `rostopic list`       |`rostopic info <TOPIC>`   |`rostopic echo <TOPIC>`  |                 
 
 Replace `<TOPIC>` with the name of an avaialable topic. An example is shown below.
-
-### Example
 
 First, list the available topics.
 ```
 rostopic list
 ```
+
+Print data from the `/cmd_vel` topic to verify that the keyboard is publishing commands.
+```
+rostopic echo /cmd_vel
+```
+Press `Ctrl+c` in the terminal to stop the 
 
 Print info about different topics. Notice this first topic is published by the keyboard.
 ```
@@ -95,7 +99,25 @@ rostopic info /cmd_vel
 rostopic info /turtle1/cmd_vel
 ```
 
-Print data from the `/cmd_vel` topic to verify that the keyboard is publishing commands.
+Look at the output of the `info` commands. Do you the communication disconnection? 
+
+#### rqt-graph
+
+Use the `rqt-graph` tool to visualize the publisher subscriber connections.
 ```
-rostopic info /cmd_vel
+rosrun rqt-graph rqt-graph
 ```
+
+### Solution
+
+Abort the keyboard node by clicking in the third tab and pressing `Ctrl+c`. Then append the following option to the end of the keyboard node command and rerun the command. Now, the keyboard node can communicate with the turtle node.
+
+```
+cmd_vel:=turtle1/cmd_vel 
+```
+
+### Step 4 - Testdrive!
+
+Move the turtlesim window to the side, and select the keyboard terminal to drive using the following keys. **I** **J** **K** **L**, and **,**  
+
+Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
