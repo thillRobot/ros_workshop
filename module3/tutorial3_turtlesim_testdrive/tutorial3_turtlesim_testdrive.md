@@ -92,7 +92,7 @@ Print data from the `/cmd_vel` topic to verify that the keyboard is publishing c
 ```
 rostopic echo /cmd_vel
 ```
-Press `Ctrl+c` in the terminal to stop the 
+Press `Ctrl+c` in the terminal to stop the current command.
 
 Print info about different topics. Notice this first topic is published by the keyboard.
 ```
@@ -109,7 +109,7 @@ Look at the output of the `info` commands. Do you the communication disconnectio
 
 Use the `rqt-graph` tool to visualize the publisher subscriber connections.
 ```
-rosrun rqt-graph rqt-graph
+rosrun rqt_graph rqt_graph
 ```
 
 ### Solution
