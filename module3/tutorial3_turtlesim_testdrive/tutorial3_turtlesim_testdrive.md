@@ -64,6 +64,7 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 <img src="tutorial3_fig3.png" alt="drawing" width="1000"/>
 
+<img src="tutorial3_fig2.png" alt="drawing" width="1000"/>
 
 ### Issue! - Communication Disconnect
 
