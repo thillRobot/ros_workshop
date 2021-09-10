@@ -130,4 +130,4 @@ Drive your turtle around the window and save an image of the window showing the 
 
 ## Tutorial Complete
 
-Congratulations! After completing _Tutorial 3 - Turtlesim Testdrive_ you are ready to learn how to create a custom package to automate or the turtle's behavior.
+Congratulations! After completing _Tutorial 3 - Turtlesim Testdrive_, you are ready to learn how to create a custom package to control or automate the turtle's behavior.
