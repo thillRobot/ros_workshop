@@ -83,7 +83,7 @@ Use the `rostopic` tool to to invesitage the topics published be the nodes _whil
 
 Replace `<TOPIC>` with the name of an avaialable topic. An example is shown below.
 
-First, list the available topics.
+First, list the available topics. Run these commands in a separate terminal while the others three are still running.
 ```
 rostopic list
 ```
