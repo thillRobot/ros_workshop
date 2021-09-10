@@ -13,6 +13,22 @@ After completing _Tutorial 2 - Install ROS_ , your system is setup. You are read
 
 - **Copy and Paste Errors:** Be careful if you use copy and paste for commands. Make sure to copy the entire command.
     
-- **Learn the Terminal:** The commands in this tutorial are relatively short, and it may help improve understanding to type them manually. Press **Tab** for _auto-completion_!
+- **Practice with the Terminal:** The commands in this tutorial are relatively short, and it may help improve understanding to type them manually. Press **Tab** for _auto-completion_!
     
 ## Installation Instructions
+
+Press **Ctrl+Alt+t** to open a new terminal, then carefully enter each command into the terminal then press **Enter**. The terminal commands are shown in gray boxes. _You will have multiple terminals open at once during this tutorial_. 
+
+### Update your Ubuntu package list. 
+
+It is recommended to do this before you install something new.
+
+```
+sudo apt update
+```
+### Install `turtlesim` package for ROS Melodic
+Also, install a keyboard controller node `teleop-twist-keyboard`. This will take a few moments. 
+
+```
+sudo apt install ros-melodic-turtlesim ros-melodic-teleop-twist-keyboard
+```
