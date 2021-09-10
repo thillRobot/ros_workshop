@@ -62,9 +62,9 @@ Open a third terminal tab and run the keyboard controller node. Now, there shoul
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-<img src="tutorial3_fig3.png" alt="drawing" width="1000"/>
+<img src="tutorial3_fig3.png" alt="drawing" width="750"/>
 
-<img src="tutorial3_fig2.png" alt="drawing" width="1000"/>
+<img src="tutorial3_fig2.png" alt="drawing" width="750"/>
 
 ### Issue! - Communication Disconnect
 
@@ -125,3 +125,5 @@ cmd_vel:=turtle1/cmd_vel
 Move the turtlesim window to the side, and select the keyboard terminal to drive using the following keys. **I** **J** **K** **L**, and **,**  
 
 Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
+
+<img src="tutorial3_fig1.png" alt="drawing" width="750"/>
