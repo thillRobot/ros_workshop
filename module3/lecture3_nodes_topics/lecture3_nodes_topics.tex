@@ -2,19 +2,19 @@
 % !TEX encoding = UTF-8 Unicode
 
 % Tennessee Technological University
-% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020 
-% Tristan Hill - August 08, 2020
-% Module 3 - Nodes Topics
+% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020 - Fall 2021
+% Tristan Hill - August 08, 2020 - August 22, 2021
+% Module 2
 
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
 % custom preamble
-\usepackage{/home/thill/Documents/lectures/ros_lectures/ros_module}
+\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_lecture}
 
 \newcommand{\MNUM}{3\hspace{2mm}} % Module number
-\newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
+\newcommand{\TNUM}{3\hspace{2mm}} % Topic number 
 \newcommand{\moduletitle}{Nodes and Topics} % Titles and Stuff
-%\newcommand{\topictitle}{---} 
+\newcommand{\lecturetitle}{Lecture \MNUM - \moduletitle}  
 
 \newcommand{\sectiontitleI}{Components of a ROS system} % More Titles and Stuff
 \newcommand{\sectiontitleII}{Communication and Message Passing}
@@ -26,15 +26,15 @@
 \date{Mechanical Engineering\vspc Tennessee Technological University}
 
 \begin{document}
-
-\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
-
-\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
-
-% Section 0 - Outline
-\frame{
 	
-	\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+	\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+	
+	\frame{\titlepage \center\begin{framed}\Large \textbf{\lecturetitle}\end{framed} \vspace{5mm}}
+	
+	% Section 0 - Outline
+	\frame{
+		
+		\large \textbf{\lecturetitle} \vspace{3mm}\\
 	
 	\begin{itemize}
 	
@@ -198,7 +198,7 @@ sudo apt remove ros-<distribution>-<packagename>
 
 					\item {\bf Overview:} Turtlesim is a simple ROS robot! Your exercise is to install and test a simple simulator called turtlesim. 		
 
-					\item {\bf Assignment:} Complete the tutorial in the document {\it tutorial3\_turtlesim.pdf} on ilearn. You must be able to drive your turtle around the screen.
+					\item {\bf Assignment:} Complete the tutorial \href{https://github.com/thillRobot/ros_workshop/blob/master/module3/tutorial3_turtlesim_testdrive/tutorial3_turtlesim_testdrive.md}{\it Tutorial3 Turtlesim Testdrive}. You must be able to drive your turtle around the screen using the keyboard.
                     
                     \item {\bf Deliverable:} Write a one to two paragraph summary of what you accomplished and what you struggled with the most. Include an image of the turtlesim window after you have driven a pattern. 
     

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  9 SEP 2021 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  9 SEP 2021 23:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**lecture1_ros_overview.tex
-(./lecture1_ros_overview.tex
+**lecture2_linux_basics.tex
+(./lecture2_linux_basics.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1980,11 +1980,11 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "lecture1_ros_overview.w18")...executed.
+runsystem(uname -s > "lecture2_linux_basics.w18")...executed.
 
 
-(./lecture1_ros_overview.w18)
-runsystem(rm -- "lecture1_ros_overview.w18")...executed.
+(./lecture2_linux_basics.w18)
+runsystem(rm -- "lecture2_linux_basics.w18")...executed.
 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
@@ -2011,7 +2011,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks56
 \c@listing=\count390
 )
-runsystem(mkdir -p _minted-lecture1_ros_overview)...executed.
+runsystem(mkdir -p _minted-lecture2_linux_basics)...executed.
 
 
 
@@ -2027,42 +2027,36 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 104.
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 29.
+(hyperref)                removing `\color' on input line 30.
 
-runsystem(which pygmentize && touch lecture1_ros_overview.aex)...executed.
+runsystem(which pygmentize && touch lecture2_linux_basics.aex)...executed.
 
-runsystem(rm lecture1_ros_overview.aex)...executed.
+runsystem(rm lecture2_linux_basics.aex)...executed.
 
-(./lecture1_ros_overview.aux
+(./lecture2_linux_basics.aux)
+\openout1 = `lecture2_linux_basics.aux'.
 
-LaTeX Warning: Label `sectionI<1>' multiply defined.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
 
-
-LaTeX Warning: Label `sectionI' multiply defined.
-
-)
-\openout1 = `lecture1_ros_overview.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2130,7 +2124,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box122
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2140,71 +2134,71 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count397
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
-(./lecture1_ros_overview.out) (./lecture1_ros_overview.out)
+(./lecture2_linux_basics.out) (./lecture2_linux_basics.out)
 \@outlinefile=\write8
-\openout8 = `lecture1_ros_overview.out'.
+\openout8 = `lecture2_linux_basics.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 30.
 \symnumbers=\mathgroup11
 \sympureletters=\mathgroup12
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 29.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 29.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 29.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 29.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 29.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 29.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 29.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 29.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 29
+(Font)              `pureletters' in the math version `normal' on input line 30
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 29
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 30
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 29.
+(Font)              `pureletters' in the math version `bold' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 2
-9.
+(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
+0.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 29.
+ut line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -2231,7 +2225,7 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count398
- (./lecture1_ros_overview.nav)
+ (./lecture2_linux_basics.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -2242,104 +2236,111 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 
 ] [4
 
-]pdfTeX warning (ext4): destination with the same identifier (name{sectionI<1>}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 		\end{frame}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{sectionI}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.103 		\end{frame}
-                    [5
-
-] [6
+] [5
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 129.
+<win_logo.jpg, id=227, 260.975pt x 260.975pt>
+File: win_logo.jpg Graphic file (type jpg)
+<use win_logo.jpg>
+Package pdftex.def Info: win_logo.jpg  used on input line 116.
+(pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 129.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 129.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 129.
+line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
+File: win_logo.jpg Graphic file (type jpg)
+<use win_logo.jpg>
+Package pdftex.def Info: win_logo.jpg  used on input line 116.
+(pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
+
+Overfull \hbox (17.32558pt too wide) in paragraph at lines 116--116
+[][]  
+ []
+
+<lenovo_keyboard.jpg, id=228, 1091.07625pt x 722.7pt>
+File: lenovo_keyboard.jpg Graphic file (type jpg)
+<use lenovo_keyboard.jpg>
+Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 116.
+(pdftex.def)             Requested size: 109.11401pt x 72.27423pt.
+[6
+
+ </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_left.pdf> <./win_
+logo.jpg> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_middle.p
+df> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_right.pdf> <./
+lenovo_keyboard.jpg>]
+<ubuntu_terminal.png, id=265, 744.7825pt x 481.8pt>
+File: ubuntu_terminal.png Graphic file (type png)
+<use ubuntu_terminal.png>
+Package pdftex.def Info: ubuntu_terminal.png  used on input line 146.
+(pdftex.def)             Requested size: 148.95386pt x 96.35829pt.
+
+Overfull \hbox (0.30893pt too wide) in paragraph at lines 146--146
+[]  
+ []
+
 [7
 
-] [8
-
-] [9
-
-] [10
+ <./ubuntu_terminal.png>] [8
 
 ]
 \tf@nav=\write9
-\openout9 = `lecture1_ros_overview.nav'.
+\openout9 = `lecture2_linux_basics.nav'.
 
 \tf@toc=\write10
-\openout10 = `lecture1_ros_overview.toc'.
+\openout10 = `lecture2_linux_basics.toc'.
 
 \tf@snm=\write11
-\openout11 = `lecture1_ros_overview.snm'.
+\openout11 = `lecture2_linux_basics.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
- (./lecture1_ros_overview.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
-
-
-Package rerunfilecheck Warning: File `lecture1_ros_overview.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lecture1_ros_overview.out':
-(rerunfilecheck)             Before: E9AF2869DC251B1F7BA12584A09AAC04;323
-(rerunfilecheck)             After:  FD07878EBDA823DDE7A6C328FD883B0E;281.
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+ (./lecture2_linux_basics.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package rerunfilecheck Info: File `lecture2_linux_basics.out' has not changed.
+(rerunfilecheck)             Checksum: 71B107A5ABC9C061BDF5ABB508C15A92;266.
  ) 
 Here is how much of TeX's memory you used:
- 36798 strings out of 492982
- 733320 string characters out of 6134897
- 875121 words of memory out of 5000000
- 39649 multiletter control sequences out of 15000+600000
- 552306 words of font info for 73 fonts, out of 8000000 for 9000
+ 36819 strings out of 492982
+ 733854 string characters out of 6134897
+ 881981 words of memory out of 5000000
+ 39667 multiletter control sequences out of 15000+600000
+ 553075 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,19n,73p,10370b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{sectionII} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/share/texlive/texmf-dis
-t/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx1440.pfb>
-Output written on lecture1_ros_overview.pdf (10 pages, 171218 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/share/texlive/texmf-d
+ist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss09
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss144
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440
+.pfb>
+Output written on lecture2_linux_basics.pdf (8 pages, 347785 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 35 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-  # ME4140 - Introduction to Robotics - Fall 2021
+# ME4140 - Introduction to Robotics - Fall 2021
 
 # ROS Workshop - Tutorial 2 - Install ROS
 
