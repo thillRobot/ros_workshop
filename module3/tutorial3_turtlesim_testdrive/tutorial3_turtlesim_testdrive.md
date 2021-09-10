@@ -49,18 +49,21 @@ roscore
 
 ### Step 2 - Turtlesim Robot Node
 
-Open a second tab (ctrl+shift+t), and start a node `turtlesim_node` from the package `turtlesim` in the new terminal tab.
+Open a second tab (ctrl+shift+t), and start a node `turtlesim_node` from the package `turtlesim` in the new terminal tab. Leave this process running and this tab open.
 
 ```
 rosrun turtlesim turtlesim_node
 ```
 
 ### Step 3 - Keyboard Controller Node
-In a third terminal tab and run the keyboard controller node.
+Open a third terminal tab and run the keyboard controller node. Now, there should be three open tabs each running a different process.
 
 ```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+
+<img src="tutorial3_fig3.png" alt="drawing" width="1000"/>
+
 
 ### Issue! - Communication Disconnect
 
