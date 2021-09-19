@@ -1,6 +1,8 @@
-# ME4140, Introduction to Robotics - ME6640, Advanced Robotics - Fall 2021
-
 # ROS Workshop - Tutorial 4 - Create Custom Package
+## ME4140, Introduction to Robotics 
+## ME6640, Advanced Robotics 
+
+
 	
 ## Overview:
 After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.

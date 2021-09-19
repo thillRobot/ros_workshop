@@ -1,6 +1,6 @@
-# ME4140 - Introduction to Robotics - Fall 2021
-
 # ROS Workshop - Tutorial 3 - Turtlesim Testdrive
+## ME4140, Introduction to Robotics 
+## ME6640, Advanced Robotics 
 
 ## Overview
 After completing _Tutorial 2 - Install ROS_ , your system is setup. You are ready to begin with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 

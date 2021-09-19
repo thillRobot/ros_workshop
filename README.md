@@ -18,7 +18,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: Turtlesim Testdrive
 - [module 4](module4/) 
   - Lecture: Catkin Workspace
-  - Tutorial: Create Package (needs conversion to markdown)
+  - Tutorial: Create Package (needs conversion to markdown- WORK IN PROGRESS - use PDF for now)
 - [module 5](module5/) 
   - Lecture: Turtlebot Platform
   - Tutorial: Turtlebot3 Simulator (needs conversion to markdown) 
