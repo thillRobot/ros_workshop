@@ -1,40 +1,20 @@
-% !TEX TS-program = xelatex
-% !TEX encoding = UTF-8 Unicode
+# ME4140, Introduction to Robotics - ME6640, Advanced Robotics - Fall 2021
 
-% Tennessee Technological University
-% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020 - Fall2021
-% Tristan Hill - September 10, 2020
-% Turtorial 4 - Create Custom Package
-
-\documentclass[12pt]{article}
-\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_tutorial}
-
-% Title and Misc
-\newcommand{\MNUM}{4} %Module Number
-\newcommand{\MNAME}{Create Package} %Module Name
-\pagestyle{myheadings}
-\markright{{\large ME4140 - ROS Workshop - Fall 2021}}
-
-\begin{document}
-
-\thispagestyle{plain}
-
-\begin{center}
-   {\bf \Large ROS Workshop - Tutorial\hspc\MNUM\hspc - \MNAME}\vspace{3mm}\\
-   {\bf \large ME 4140 - Introduction to Robotics - Fall 2021} \vspace{5mm}\\
-\end{center}
-
-\begin{description}[labelindent=1cm]
+# ROS Workshop - Tutorial 4 - Create Custom Package
 	
-	\item[\textbf{\underline{Overview:}}] \hfill \vspace{3mm}\\
-	After completing {\it Tutorial 3 - Turtlesim}, You have begun learning ROS and you can are ready to create a custom C++ package. You can read more \href{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}{here} on the wiki.
-	
-	\item[\textbf{\underline{System Requirements:}}] \hfill \vspace{0mm}
+## Overview:
+After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you can are ready to create a custom C++ package. You can read more [http://wiki.ros.org/catkin/Tutorials/create_a_workspace](here) on the wiki.
 
-\begin{itemize}
-	\item {\bf ROS+OS}: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
-	\item {\bf ROS:} Your computer must be connected to the internet to proceed. Update the system before you begin.
-\end{itemize}
+## System Requirements:
+
+- **ROS+OS:** This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **Internet:** Your computer must be connected to the internet to proceed. 
+- **Ubuntu Updates:** Update the system before you begin the tutorial. This can be done with the _Software Updater_ found in the _Launcher_ or the following command. This will update the list of available packages and apply any available upgrades to the previously installed packages.  
+
+```
+sudo apt update && sudo apt upgrade
+``` 
+
 
 	
 	\item[\textbf{\underline{Disclaimer:}}] \hfill \vspace{0mm}
