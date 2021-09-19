@@ -3,7 +3,7 @@
 # ROS Workshop - Tutorial 4 - Create Custom Package
 	
 ## Overview:
-After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you can are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
+After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
 
 ## System Requirements:
 
@@ -13,7 +13,6 @@ After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you c
 
 ```
 sudo apt update && sudo apt upgrade
-
 ``` 
 	
 ## Before You Begin:
