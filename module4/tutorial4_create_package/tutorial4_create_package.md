@@ -13,35 +13,33 @@ After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you c
 
 ```
 sudo apt update && sudo apt upgrade
+
 ``` 
 
 
 	
-	\item[\textbf{\underline{Disclaimer:}}] \hfill \vspace{0mm}
+## Before You Begin:
 	
-	\begin{itemize}
-
-		\item {\RD\underline{\bf Backup the System:}} If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 		
-		\item {\bf Workspace Setup:} In Part I you will setup a Catkin Workspace as your working directory for creating packages. {\GR \underline {This only needs to be done once.}}  
-	\end{itemize}
+- **Workspace Setup:** In Part I you will setup a Catkin Workspace as your working directory for creating packages. _This only needs to be done once_.  
+	
 
-\begin{framed}
-	\item[\underline{Important Note on Naming:}] \hfill \vspace{0mm} 
+## Important Note on Naming: 
 	
 In this tutorial you will replace several <fields> with names of your choice. These are general guidlines for \href{http://wiki.ros.org/ROS/Patterns/Conventions}{naming in ROS}. \vspace{3mm} 
-\begin{itemize}
-\item use descriptive names, very long or very short names are hard to read
-\item \textbf{do not} include the < > symbols
-\item \textbf{do not} use spaces, UPPER CASE letters, or special characters $(@,\$,*, etc.)$
-\item the underscore \_ character \textbf{is} allowed \vspace{0mm}\\
-\end{itemize}
-    \wspname \hspace{2mm} - name of your workspace \vspace{3mm}\\
-    \pkgname \hspace{2mm} - name of your package  \vspace{3mm}\\
-    \nodname \hspace{2mm} - name of your node  \vspace{3mm}\\
-	\usrname \hspace{2mm} - ubuntu user name \vspace{3mm}\\
-	
-	\end{framed}
+
+- use descriptive names, very long or very short names are hard to read
+- **do not** include the < > symbols
+- **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
+- the underscore _ character **is** allowed 
+
+    \wspname - name of your workspace 
+    \pkgname - name of your package  
+    \nodname - name of your node  
+	\usrname - ubuntu user name 	
+
+
 	\newpage
 	\item[\textbf{\underline{ Part I - Setup the \href{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}{Workspace:} }}] {\GR ( Part I only needs to be done once Fall2021.) }   \hfill \vspace{0mm}
 	
