@@ -3,7 +3,7 @@
 # ROS Workshop - Tutorial 4 - Create Custom Package
 	
 ## Overview:
-After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you can are ready to create a custom C++ package. You can read more [http://wiki.ros.org/catkin/Tutorials/create_a_workspace](here) on the wiki.
+After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you can are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
 
 ## System Requirements:
 
@@ -34,14 +34,14 @@ In this tutorial you will replace several <fields> with names of your choice. Th
 - **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
 - the underscore _ character **is** allowed 
 
-    \wspname - name of your workspace 
-    \pkgname - name of your package  
-    \nodname - name of your node  
-	\usrname - ubuntu user name 	
+    <workspace_name> - name of your workspace 
+    <package_name> - name of your package  
+    <node_name> - name of your node  
+	<user_name> - ubuntu user name 	
 
+## Instructions for Creating a Custom Package and Node
 
-	\newpage
-	\item[\textbf{\underline{ Part I - Setup the \href{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}{Workspace:} }}] {\GR ( Part I only needs to be done once Fall2021.) }   \hfill \vspace{0mm}
+### Part I Setup the \href{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}{Workspace:} }}] {\GR ( Part I only needs to be done once Fall2021.) }   \hfill \vspace{0mm}
 	
 	Before building a custom ROS package you need to setup a {\it catkin workspace} as the working directory. Catkin is the program that manages the file system behind the scenes and compiles your .cpp code. 
 	
