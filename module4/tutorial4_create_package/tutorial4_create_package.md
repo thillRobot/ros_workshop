@@ -40,7 +40,7 @@ In this tutorial you will replace several <fields> with names of your choice. Th
 
 ### Part I Setup the [Workspace:](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) ( Part I only needs to be done once Fall2021. )  
 
-In Part I you will setup a {\it catkin workspace} as the working directory for your ROS system. Catkin is the program that manages your custom nodes and compiles your .cpp source code into executable programs. 
+In Part I you will setup a _catkin workspace_ as the working directory for your ROS system. Catkin is the program that manages your custom nodes and compiles your .cpp source code into executable programs. 
 	
 
 #### Step 1: Source the installation files
