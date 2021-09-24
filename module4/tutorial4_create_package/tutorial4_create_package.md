@@ -268,79 +268,90 @@ Stop the publisher node and start it again with the `cmd_vel` topic mapped to `t
 rosrun <package_name> <node_name> cmd_vel:=/turtle1/cmd_vel
 ```
 
-If the turtlesim node subscribes to the published topic, the turtle will begin to move in a spiral motion as the velocity published and updated in the while loop. Close the terminals or use the `ctrl-c` to stop the individual processes when you are done testing. 
+If the turtlesim node subscribes to the published topic, the turtle will begin to move in a spiral motion as the velocity is published and updated in the while loop. Close the terminals or use the `ctrl-c` to stop the individual processes when you are done testing. 
 
 ### Part III - Create A (Subscriber Node)[http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)]
 	 	
-	Now create a {\bf subscriber node} in the same package as the previous node. 
-	
-	\begin{description}
-	
-	\item [Step 1:] Use the code below called {\bf turtlesim\_subscriber.cpp} to start.\\
-	
-	\begin{lstlisting}
-	
-	#include "ros/ros.h"
-	#include "std_msgs/String.h"
-	#include "geometry_msgs/Twist.h"
-	/**
-	* This tutorial demonstrates simple receipt of messages over the ROS system.
-	*/
-	void dataCallback(const geometry_msgs::Twist::ConstPtr& msg)
-	{
-		ROS_INFO("I heard: [%f]", msg->linear.x);
-	}
-	int main(int argc, char **argv)
-	{
-		ros::init(argc, argv, "turtlesim_subscriber");
-		ros::NodeHandle n;
-		ros::Subscriber sub = n.subscribe("/cmd_vel", 1000, dataCallback);
-		ros::spin();
-		return 0;
-	}
-	
-	\end{lstlisting}
-	
-	
-	\item [Step 2:] Modify the appropriate CMakeLists.txt file as you did previously. \\\\
-	%\begin{minted}{text}
-	%gedit |\home\wspname/src/\pkgname/CMakeLists.txt|
-	%\end{minted}
-	
-	\item [Step 3:] Compile the new subscriber node using catkin. \\\\
-	
-	%\begin{minted}{text} 
-	%|cd \home\wspname|
-	%\end{minted}
-	
-	%\begin{minted}{text} 
-	%catkin_make
-	%\end{minted}
-	
-	\item [Step 4:] Test the new node. Does it work? How do you know?\\
-	
-	%\begin{minted}{text} 
-	%rosrun |\pkgname\hspace{3mm}\nodname| 
-	%\end{minted}
+Next, create a subscriber node in the same package as the previous node. 
 	
 
-	\vspace*{5mm}
+#### Step 1: Use the code below called `turtlesim_subscriber.cpp` to start.
 	
+```	
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+#include "geometry_msgs/Twist.h"
+/*
+* This tutorial demonstrates simple receipt of messages over the ROS system.
+*/
+void dataCallback(const geometry_msgs::Twist::ConstPtr& msg)
+{
+	ROS_INFO("I heard: [%f]", msg->linear.x);
+}
+int main(int argc, char **argv)
+{
+	ros::init(argc, argv, "turtlesim_subscriber");
+	ros::NodeHandle n;
+	ros::Subscriber sub = n.subscribe("/cmd_vel", 1000, dataCallback);
+	ros::spin();
+	return 0;
+}
+```	
+	
+#### Step 2: Modify the CMakeLists.txt and compile 
+
+Remeber, each C++ node in the package requires an entry in the appropriate `CMakeList.txt` file.
+
+```
+gedit ~/catkin_ws/src/<package_name>/CMakeLists.txt
+```
+
+Add the following lines to the file as done previously. This time <node_name> should refer to the new subscriber node.
+
+```
+add_executable(<node_name> src/<node_name>.cpp)
+target_link_libraries(<node_name> ${catkin_LIBRARIES}) 
+```
+
+Change to the top of the ROS workspace and compile. 	
+```
+cd ~/catkin_ws
+```
+	
+```
+catkin_make
+```
+Addtional entries in the output should be shown associated with the changes to the workspace. 
+
+	
+#### Step 4: Test the new node. 
 
 
-	\end{description}	
+Repeat the process used in Part II to start the turtle simulator and publisher node. Does the subscriber node recieve the intended topic? How do you know?\\
+
+Start ROS with the `roscore` command. 
+``` 
+roscore
+```
+
+Open a new terminal or terminal tab and start a turtle simulator node.
+
+```	
+rosrun turtlesim turtlesim_node
+```
+
+Open a third terminal or terminal tab and start your custom publisher node.
+```
+rosrun <package_name> <node_name>
+
+```
 	
+	
+## Tutorial Complete: After completing _Tutorial 4 - Create Package_, you are ready for a more advanced robot simulator.
+	
+
+### Bonus Excercise: Install the (Joystick Teleop Node)[http://wiki.ros.org/joy/Tutorials/WritingTeleopNode] to drive the turtle with a USB joystick.
 	
 	
 
-	\item[\textbf{\underline{Tutorial Complete:}}] \hfill \vspace{3mm}\\ After completing {\it Tutorial 4 - Create Package}, you are finally ready for a more advanced robot simulator.
-	
-	\hfill \vspace{3mm}\\
-	
-	\item [Bonus Excercise:] Install the \href{http://wiki.ros.org/joy/Tutorials/WritingTeleopNode}{JoyStick Teleop Node} to drive the turtle with a USB joystick.
-	
-	
-	\end{description}
-
-\end{document}
 
