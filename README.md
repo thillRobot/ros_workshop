@@ -9,16 +9,16 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
 
 - [module 1](module1/) 
   - Lecture: ROS Overview
-  - Tutorial: Virtualize Ubuntu
+  - Tutorial: [Virtualize](Ubuntu(module1/tutorial1_virtualize_ubuntu/tutorial1_virtualize_ubuntu.md)
 - [module 2](module2/) 
   - Lecture: Linux Basics
-  - Tutorial: Install ROS
+  - Tutorial: [Install ROS](module2/tutorial2_install_ros/tutorial2_install_ros.md)
 - [module 3](module3/) 
   - Lecture: Nodes Topics
-  - Tutorial: Turtlesim Testdrive
+  - Tutorial: [Turtlesim Testdrive](module3/tutorial3_turtlesim_testdrive/tutorial3_turtlesim_testdrive.md)
 - [module 4](module4/) 
   - Lecture: Catkin Workspace
-  - Tutorial: Create Package (this _should_ be ready now...)
+  - Tutorial: [Create Package](module4/tutorial4_create_package/tutorial4_create_package.md)
 - [module 5](module5/) 
   - Lecture: Turtlebot Platform
   - Tutorial: Turtlebot3 Simulator (needs conversion to markdown) 
