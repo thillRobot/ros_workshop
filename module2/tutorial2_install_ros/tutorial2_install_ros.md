@@ -1,6 +1,5 @@
 # ROS Workshop - Tutorial 2 - Install ROS
-## ME4140, Introduction to Robotics 
-## ME6640, Advanced Robotics 
+## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics
 
 ## Overview
 
