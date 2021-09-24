@@ -82,50 +82,68 @@ catkin_make
 The terminal output should look similar to what is shown below. 
 
 ```
+Base path: /home/thill/catkin_ws
+Source space: /home/thill/catkin_ws/src
 
+ ... 
 
-sadfaSDF
+####
+#### Running command: "cmake /home/thill/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/thill/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/thill/catkin_ws/install -G Unix Makefiles" in "/home/thill/catkin_ws/build"
+####
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
 
-ASDFASDF
-ASDFASDF
+ ...
 
-
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/thill/catkin_ws/build
+####
+#### Running command: "make -j16 -l16" in "/home/thill/catkin_ws/build"
+####
 ``` 
 
+Note: The `catkin_make` command needs to be run from the top of the workspace directory each time the C++ code for a node is edited to compile the C++ code into an exectuable. This is not the case with Python based nodes.
 
-		\end{minted}
-		
-		
-		\item [Step 5:]  Now add your workspace directory to .bashrc and source the script.
-		\begin{minted}{text} 
-echo "source ~/|\wspname|/devel/setup.bash" >> ~/.bashrc
-		\end{minted}
-		
-		\begin{minted}{text} 
+##### Add workspace directory to .bashrc and source the script.
+
+The command below appends the line `source ~/catkin_ws/devel/setup.bash` to the file `.bashrc` which contains terminal configuration commands. 
+
+```
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+```
+
+The `.bashrc` script runs automatically each time you open a new terminal, so ROS will now look for custom packages in the directory `~/catkin_ws/devel/setup.bash`. For the changes to take affect close and re-open a terminal, or `source` the script manually with the following commad. 		
+
+```		 
 source ~/.bashrc 
-		\end{minted}
+```		
 		
-		\begin{multicols}{2}
-		Open the {\bf .bashrc} file with the gedit text editor. You can see the lines you have added with {\bf echo} >> at the bottom of the file. Close the file.  
-		\begin{minted}{text}  
+Open the `.bashrc` file with the gedit text editor (or use `vim`). You can see the lines you have added with `echo` at the bottom of the file. Verify that the paths are correct. Make any neccessary edits, and save the filke if it has changed. This file is used to customize the user's terminal session environment.   
+
+```
+
 gedit |\home|.bashrc
-		\end{minted}
-		\end{multicols}
+
+```
+
 		
-		%\item [Step 6:]Before continuing test that your ROS system is setup correctly.
-		%\begin{minted}{text} 
-		%echo |\$|ROS_PACKAGE_PATH
-		%\end{minted}
-		%
-		%You should see something like this in the terminal. This is the path where ROS is installed. Do not enter this as a command.
-		%\begin{minted}{text} 
-		%/home/<user_name>/|\wspname|/src:/opt/ros/|\rosdistro|/share
-		%\end{minted}
+#### Step 6: Test ROS system before continuing 
 		
-	\end{description}
-	
-	\newpage
-	\item[\textbf{\underline{Part II - Create A \href{http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)}{{\bf Publisher }}Node:}}] \hfill \vspace{0mm}
+```		
+echo |\$|ROS_PACKAGE_PATH
+```		
+
+You should see something like this in the terminal. This is the path where ROS is installed. Do not enter this as a command.
+```
+%/home/<user_name>/|\wspname|/src:/opt/ros/|\rosdistro|/share
+```
+
+## Part II - Create A [Publisher Node](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)) 
 	   
 	   You can write custom nodes for your ROS system in C++, Python, or Lisp. These documents will support C++.
 	         \begin{description}    				
