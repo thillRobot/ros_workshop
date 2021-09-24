@@ -50,7 +50,7 @@ source /opt/ros/melodic/setup.bash
 ```
 
 #### Step 2: Navigate Parent Directory
-Open a new terminal and navigate to the future location of your workspace. It is reccomended to choose `/~` as the directory location.  
+Open a new terminal and navigate to the future location of your workspace. It is reccomended to choose home (`/~`) as the directory location.  
 ```
 cd /home/$USER      # Note: the variable $USER contains your user name
 ```
