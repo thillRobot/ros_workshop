@@ -181,55 +181,54 @@ Use _gedit_ from the command line to create and open a new file named `<node_nam
 gedit ~/catkin_ws/src/<package_name>/src/<node_name>.cpp
 ```
 
-Copy the code below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. 
+Copy the C++ ode below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. 
 	
 ```c++	 
-	#include "ros/ros.h"
-	#include "geometry_msgs/Twist.h"
-	#include <sstream>
-	
-	int main(int argc, char **argv)
-	{
-	    ros::init(argc, argv, "<node_name>");
-	    ros::NodeHandle n;
-	    ros::Publisher ttu_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1000);
-	    ros::Rate loop_rate(10);
-	
-	    int count = 0;
-	    while (ros::ok())
-	    {
-	        geometry_msgs::Twist msg;
-	        msg.linear.x = 2+0.01*count;
-	        msg.angular.z = 2;
-	        ttu_publisher.publish(msg);
-	        ros::spinOnce();
-	        loop_rate.sleep();
-	        count++;
-	    }
-	}
+#include "ros/ros.h"
+#include "geometry_msgs/Twist.h"
+#include <sstream>
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "<node_name>");
+    ros::NodeHandle n;
+    ros::Publisher ttu_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1000);
+    ros::Rate loop_rate(10);
+
+    int count = 0;
+    while (ros::ok())
+    {
+        geometry_msgs::Twist msg;
+        msg.linear.x = 2+0.01*count;
+        msg.angular.z = 2;
+        ttu_publisher.publish(msg);
+        ros::spinOnce();
+        loop_rate.sleep();
+        count++;
+    }
+}
 ```
 	
 Save the file as a <node_name>.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
 
-Note: The `catkin_make` command needs to be run from the top of the workspace directory each time the C++ code for a node is edited to compile the C++ code into an exectuable. This is not the case with Python based nodes.
 
-### Step 4: Modify `CMakeLists.txt` before compiling node
+
+### Step 4: Configure `CMakeLists.txt` and compile node
 	
+Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `<package_name>` as indicated by the preceding directort location `~/catkin_ws/src/<package_name>/` .
+
 ```
-gedit ~/cstkin_ws/src/<package_name>/CMakeLists.txt
+gedit ~/catkin_ws/src/<package_name>/CMakeLists.txt
 ```
 
-	Add the following lines to the bottom of the file and save.
+Add the following two lines to the bottom of the file and save. This file will not be used again in this exercise so it can be closed. Each additional node added to the workspace requires both an `add_executable` and a `target_link_libraries` line in the package `CMakeLists.txt` file. These commands configure the workspace to compile the c++ source code added above.
 	
 ```
 add_executable(<node_name> src/<node_name>.cpp)
 target_link_libraries(<node_name> ${catkin_LIBRARIES}) 
 ```
 
-	
-### Step 5: Compile and test the new publisher node. 
-
-The `catkin_make` command will compile and build your source code as well as check for errors throughout the ROS workspace. Remember to navigate to the corrent directory before compiling. 
+The C++ code must be compiled before the node can be run. The `catkin_make` command will compile and build your source code as well as check for errors throughout the ROS workspace. Remember to navigate to the workspace directory before compiling. 
 ```
 cd ~/catkin_ws
 ```
@@ -238,10 +237,11 @@ cd ~/catkin_ws
 catkin_make
 ```
 
+If the workspace compiled correctly, the output will look similar to Step 2 with additional entries indicating custom node has been succefully added to the workspace. If there are errors in the workspace configuration or C++ code, an error message will be shown in the output. 
 
+The `catkin_make` command must be run from the top of the workspace directory each time the C++ code is edited for the changes to take affect. This is not the case with Python based nodes because Python is an _interpretive_ language like MATLAB meaning the code is run one line at a time, instead of compiled as a whole before execution. 
 
-
-
+### Step 5: Test the new publisher node
 
 Start ROS with the `roscore` command. 
 ``` 
