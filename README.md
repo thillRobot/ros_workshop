@@ -9,7 +9,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
 
 - [module 1](module1/) 
   - Lecture: ROS Overview
-  - Tutorial: [Virtualize](Ubuntu(module1/tutorial1_virtualize_ubuntu/tutorial1_virtualize_ubuntu.md)
+  - Tutorial: [Virtualize Ubuntu](module1/tutorial1_virtualize_ubuntu/tutorial1_virtualize_ubuntu.md)
 - [module 2](module2/) 
   - Lecture: Linux Basics
   - Tutorial: [Install ROS](module2/tutorial2_install_ros/tutorial2_install_ros.md)
