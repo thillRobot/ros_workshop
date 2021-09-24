@@ -107,7 +107,7 @@ Source space: /home/******/catkin_ws/src
 ####
 ``` 
 
-##### Add workspace directory to `.bashrc` and source the script.
+#### Step 5: Add workspace directory to `.bashrc` and source the script
 
 The command below appends the line `source ~/catkin_ws/devel/setup.bash` to the file `.bashrc` which contains terminal configuration commands. 
 
@@ -139,11 +139,11 @@ You should see something like this in the terminal. This is the path where ROS i
 %/home/<user_name>/catkin_ws/src:/opt/ros/<ros_distro>/share
 ```
 
-## Part II - Create A [Publisher Node](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)) 
+### Part II - Create A [Publisher Node](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)) 
 	   
 In Part II you will create, compile, and test a custom node written in C++ to control the turtle simulator. ROS supports custom nodes written in C++, Python, or Lisp, but these documents will primarily support C++. 
 
-### Step 1: [Create a new package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage) in your workspace.
+#### Step 1: [Create a new package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage) in your workspace.
 
 Navigate to the source directory of the ROS workspace. Custom packages are stored here.
 
@@ -157,7 +157,7 @@ catkin_create_pkg <pkg_name> std_msgs rospy roscpp
 ```
 	            
 	            
-### Step 2: Compile your package with \href{http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace}{catkin\_make} 
+#### Step 2: Compile your package with [catkin_make](http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace) 
 
 Back out to the top of the workspace directory then compile using the `catkin_make` command. This step is not required until later, but it should verify that you completed the previous parts correctly. 	
 
@@ -173,7 +173,7 @@ Look at the output to see that the workspace has compiled again including the cu
 	            
 	            
 
-### Step 3: Create a new file for your C++ {\bf publisher node}
+#### Step 3: Create a new file for your C++ {\bf publisher node}
 Use _gedit_ from the command line to create and open a new file named `<node_name>` in the directory shown.
 
 	
@@ -211,9 +211,7 @@ int main(int argc, char **argv)
 	
 Save the file as a <node_name>.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
 
-
-
-### Step 4: Configure `CMakeLists.txt` and compile node
+#### Step 4: Configure `CMakeLists.txt` and compile node
 	
 Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `<package_name>` as indicated by the preceding directort location `~/catkin_ws/src/<package_name>/` .
 
@@ -241,7 +239,7 @@ If the workspace compiled correctly, the output will look similar to Step 2 with
 
 The `catkin_make` command must be run from the top of the workspace directory each time the C++ code is edited for the changes to take affect. This is not the case with Python based nodes because Python is an _interpretive_ language like MATLAB meaning the code is run one line at a time, instead of compiled as a whole before execution. 
 
-### Step 5: Test the new publisher node
+#### Step 5: Test the new publisher node
 
 Start ROS with the `roscore` command. 
 ``` 
@@ -254,30 +252,25 @@ Open a new terminal or terminal tab and start a turtle simulator node.
 rosrun turtlesim turtlesim_node
 ```
 
-Open a terminal or terminal tab and start yourt custom  turtle simulator node.
-	Start your new node
-	\begin{minted}{text} 
-rosrun |\pkgname\hspace{3mm}\nodname|
-	\end{minted}
+Open a third terminal or terminal tab and start your custom publisher node.
+```
+rosrun <package_name> <node_name>
+```
 	
-	Use rostopic to view current topics. 
-	\begin{minted}{text}  
+Use rostopic to view the available topics. 
+```  
 rostopic list
-	\end{minted}
-	
-	
-	Close your node and start it again with the cmd\textunderscore vel topic mapped to the turtle like we did previously.
-	\begin{minted}{text} 
-rosrun |\pkgname\hspace{3mm}\nodname \hspace{1mm}|/cmd_vel:=/turtle1/cmd_vel
-	\end{minted}
-	 
-	\end{description}
-	 
-	 
-	\newpage
-	
-	
-\item[\textbf{\underline{Part III - Create A \href{http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)}{{\bf Subscriber }}Node:}}] \hfill \vspace{0mm}
+```	
+
+Stop the publisher node and start it again with the `cmd_vel` topic mapped to `turtle1/cmd_vel` as in the previous tutorial.
+
+```
+rosrun <package_name> <node_name> cmd_vel:=/turtle1/cmd_vel
+```
+
+If the turtlesim node subscribes to the published topic, the turtle will begin to move in a spiral motion as the velocity published and updated in the while loop. Close the terminals or use the `ctrl-c` to stop the individual processes when you are done testing. 
+
+### Part III - Create A (Subscriber Node)[http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)]
 	 	
 	Now create a {\bf subscriber node} in the same package as the previous node. 
 	
