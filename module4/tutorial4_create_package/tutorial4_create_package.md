@@ -31,7 +31,7 @@ In this tutorial you will replace several <fields> with names of your choice. Th
 - **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
 - the underscore _ character **is** allowed 
 
-    <workspace_name> - name of your workspace 
+    <workspace_name> - name of your workspace (default: `catkin_ws` will be used in this tutorial)
     <package_name> - name of your package  
     <node_name> - name of your node  
 	<user_name> - ubuntu user name 	
@@ -82,13 +82,13 @@ catkin_make
 The terminal output should look similar to what is shown below. 
 
 ```
-Base path: /home/thill/catkin_ws
-Source space: /home/thill/catkin_ws/src
+Base path: /home/******/catkin_ws
+Source space: /home/******/catkin_ws/src
 
  ... 
 
 ####
-#### Running command: "cmake /home/thill/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/thill/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/thill/catkin_ws/install -G Unix Makefiles" in "/home/thill/catkin_ws/build"
+#### Running command: "cmake /home/******/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/******/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/******/catkin_ws/install -G Unix Makefiles" in "/home/******/catkin_ws/build"
 ####
 -- The C compiler identification is GNU 7.5.0
 -- The CXX compiler identification is GNU 7.5.0
@@ -101,13 +101,13 @@ Source space: /home/thill/catkin_ws/src
 -- BUILD_SHARED_LIBS is on
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/thill/catkin_ws/build
+-- Build files have been written to: /home/******/catkin_ws/build
 ####
-#### Running command: "make -j16 -l16" in "/home/thill/catkin_ws/build"
+#### Running command: "make -j16 -l16" in "/home/******/catkin_ws/build"
 ####
 ``` 
 
-Note: The `catkin_make` command needs to be run from the top of the workspace directory each time the C++ code for a node is edited to compile the C++ code into an exectuable. This is not the case with Python based nodes.
+
 
 ##### Add workspace directory to .bashrc and source the script.
 
@@ -123,69 +123,69 @@ The `.bashrc` script runs automatically each time you open a new terminal, so RO
 source ~/.bashrc 
 ```		
 		
-Open the `.bashrc` file with the gedit text editor (or use `vim`). You can see the lines you have added with `echo` at the bottom of the file. Verify that the paths are correct. Make any neccessary edits, and save the filke if it has changed. This file is used to customize the user's terminal session environment.   
+Open the `.bashrc` file with the gedit text editor (or use `vim`). You can see the lines you have added with `echo` at the bottom of the file. Verify that the paths are correct. Make any neccessary edits, and save then source file if it has changed. This file is used to customize the user's terminal session environment.   
 
 ```
-
-gedit |\home|.bashrc
-
+gedit ~/.bashrc
 ```
 
 		
 #### Step 6: Test ROS system before continuing 
 		
 ```		
-echo |\$|ROS_PACKAGE_PATH
+echo $ROS_PACKAGE_PATH
 ```		
 
 You should see something like this in the terminal. This is the path where ROS is installed. Do not enter this as a command.
 ```
-%/home/<user_name>/|\wspname|/src:/opt/ros/|\rosdistro|/share
+%/home/<user_name>/catkin_ws/src:/opt/ros/<ros_distro>/share
 ```
 
 ## Part II - Create A [Publisher Node](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)) 
 	   
-	   You can write custom nodes for your ROS system in C++, Python, or Lisp. These documents will support C++.
-	         \begin{description}    				
-	          \item [Step 1:] \href{http://wiki.ros.org/ROS/Tutorials/CreatingPackage}{Create a new package} in your workspace for your new node to belong to. Make sure to do this in the correct parent directory .
-	\begin{minted}{text} 
-cd |\home\wspname|/src
-	\end{minted}
-	
-	\begin{minted}{text} 
-catkin_create_pkg |\pkgname| std_msgs rospy roscpp
-	\end{minted}
+In Part II you will create, compile, and test a custom node written in C++ to control the turtle simulator. ROS supports custom nodes written in C++, Python, or Lisp, but these documents will primarily support C++. 
+
+### Step 1: [Create a new package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage) in your workspace.
+
+Navigate to the source directory of the ROS workspace. Custom packages are stored here.
+
+```
+cd ~/catkin_ws/src
+```
+Initialize a new package with the `catkin_create_pkg` commans. Choose the `<package_name>` and dependecies. More dependecies can be added later. The name should not inlcude capital letters or special characters. See the naming rules discussed above for more information.  	
+
+```
+catkin_create_pkg <pkg_name> std_msgs rospy roscpp
+```
 	            
 	            
-	\item [Step 2:] Back out to the workspace directory then compile your package with \href{http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace}{catkin\_make} 
-	
-	\begin{minted}{text}  
+### Step 2: Compile your package with \href{http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace}{catkin\_make} 
+
+Back out to the top of the workspace directory then compile using the `catkin_make` command. This step is not required until later, but it shoudl verify that you completed the previous parts correctly. 	
+
+```  
 cd |\home\wspname| 	OR 	cd ..
-	\end{minted}
-	             
-	\begin{minted}{text}  
+```
+
+```
 catkin_make
-	\end{minted}
+```	            
+
+Look at the output to see that the workspace has compiled again including the custom package. If you get here with no errors, the ROS workspace is setup and ready for the C++ code. 
 	            
-	
-	If you get here with no errors, your workspace is setup, and you are ready to write some code and test your new package!
 	            
-	            
-	            %\end{enumerate}
-	\newpage
-	\item [Step 3:] Create a new file for your C++ {\bf publisher node} from the command line. The text editor {\it gedit} will create and open a new file named \nodname in the current directory.
+
+### Step 3: Create a new file for your C++ {\bf publisher node}
+Use _gedit_ from the command line to create and open a new file named `<node_name>` in the directory shown.
+
 	
-	%Make sure it is saved in the source directory of the package your created in previously in {\bf step 1}.
-	%Write a {\bf publisher node} in C++. It will start as C++ code and then it will be compiled into an executable. Create a  %the sample code shown below. 
+``` 
+gedit ~\catkin_ws/src/<package_name>/src/<node_name>.cpp
+```
+
+Copy the code below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. \vspace{1mm}
 	
-	\begin{minted}{text}  
-gedit |\home\wspname|/src/|\pkgname|/src/|\nodname|.cpp
-	\end{minted}
-	  
-	 Copy the code below into the source file. . \vspace{1mm}
-	
-	%\begin{minted}{cpp}
-	 
+```c++	 
 	\begin{lstlisting}
 	#include "ros/ros.h"
 	#include "geometry_msgs/Twist.h"
@@ -193,7 +193,7 @@ gedit |\home\wspname|/src/|\pkgname|/src/|\nodname|.cpp
 	
 	int main(int argc, char **argv)
 	{
-	    ros::init(argc, argv, "replace_with_your_node_name");
+	    ros::init(argc, argv, "<node_name>");
 	    ros::NodeHandle n;
 	    ros::Publisher ttu_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1000);
 	    ros::Rate loop_rate(10);
@@ -211,12 +211,13 @@ gedit |\home\wspname|/src/|\pkgname|/src/|\nodname|.cpp
 	    }
 	}
 	\end{lstlisting}
+```
 	
-	%\end{minted}
-	
-	Save and close the file. It must be saved as a \nodname.cpp in the src directory of the package your created in previously in {\bf Part I}
-	
-	\item[Step 4:] Before we can compile the node we have to modify the file below.
+Save the file as a \nodname.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
+
+Note: The `catkin_make` command needs to be run from the top of the workspace directory each time the C++ code for a node is edited to compile the C++ code into an exectuable. This is not the case with Python based nodes.
+
+### Step 4: Modify `CMakeLists.txt` before compiling node
 	
 	\begin{minted}{text}  
 gedit |\home\wspname|/src/|\pkgname|/CMakeLists.txt
