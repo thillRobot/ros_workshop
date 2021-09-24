@@ -270,7 +270,7 @@ rosrun <package_name> <node_name> cmd_vel:=/turtle1/cmd_vel
 
 If the turtlesim node subscribes to the published topic, the turtle will begin to move in a spiral motion as the velocity is published and updated in the while loop. Close the terminals or use the `ctrl-c` to stop the individual processes when you are done testing. 
 
-### Part III - Create A (Subscriber Node)[http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++)]
+### Part III - Create A [Subscriber Node](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber(c++))
 	 	
 Next, create a subscriber node in the same package as the previous node. 
 	
@@ -350,7 +350,7 @@ rosrun <package_name> <node_name>
 ## Tutorial Complete: After completing _Tutorial 4 - Create Package_, you are ready for a more advanced robot simulator.
 	
 
-### Bonus Excercise: Install the (Joystick Teleop Node)[http://wiki.ros.org/joy/Tutorials/WritingTeleopNode] to drive the turtle with a USB joystick.
+### Bonus Excercise: Install the [Joystick Teleop Node](http://wiki.ros.org/joy/Tutorials/WritingTeleopNode) to drive the turtle with a USB joystick.
 	
 	
 
