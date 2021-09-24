@@ -107,9 +107,7 @@ Source space: /home/******/catkin_ws/src
 ####
 ``` 
 
-
-
-##### Add workspace directory to .bashrc and source the script.
+##### Add workspace directory to `.bashrc` and source the script.
 
 The command below appends the line `source ~/catkin_ws/devel/setup.bash` to the file `.bashrc` which contains terminal configuration commands. 
 
@@ -152,7 +150,7 @@ Navigate to the source directory of the ROS workspace. Custom packages are store
 ```
 cd ~/catkin_ws/src
 ```
-Initialize a new package with the `catkin_create_pkg` commans. Choose the `<package_name>` and dependecies. More dependecies can be added later. The name should not inlcude capital letters or special characters. See the naming rules discussed above for more information.  	
+Initialize a new package with the `catkin_create_pkg` command. Choose the `<package_name>` and dependecies `std_msgs`, `rospy`, and `roscpp`. More dependecies can be added later. The name should not inlcude capital letters or special characters. See the naming rules discussed above for more information.  	
 
 ```
 catkin_create_pkg <pkg_name> std_msgs rospy roscpp
@@ -161,10 +159,10 @@ catkin_create_pkg <pkg_name> std_msgs rospy roscpp
 	            
 ### Step 2: Compile your package with \href{http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace}{catkin\_make} 
 
-Back out to the top of the workspace directory then compile using the `catkin_make` command. This step is not required until later, but it shoudl verify that you completed the previous parts correctly. 	
+Back out to the top of the workspace directory then compile using the `catkin_make` command. This step is not required until later, but it should verify that you completed the previous parts correctly. 	
 
 ```  
-cd |\home\wspname| 	OR 	cd ..
+cd ~/catkin_ws 	OR 	cd ..
 ```
 
 ```
@@ -180,13 +178,12 @@ Use _gedit_ from the command line to create and open a new file named `<node_nam
 
 	
 ``` 
-gedit ~\catkin_ws/src/<package_name>/src/<node_name>.cpp
+gedit ~/catkin_ws/src/<package_name>/src/<node_name>.cpp
 ```
 
-Copy the code below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. \vspace{1mm}
+Copy the code below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. 
 	
 ```c++	 
-	\begin{lstlisting}
 	#include "ros/ros.h"
 	#include "geometry_msgs/Twist.h"
 	#include <sstream>
@@ -210,47 +207,54 @@ Copy the code below into the source file. This script will publish a topic simil
 	        count++;
 	    }
 	}
-	\end{lstlisting}
 ```
 	
-Save the file as a \nodname.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
+Save the file as a <node_name>.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
 
 Note: The `catkin_make` command needs to be run from the top of the workspace directory each time the C++ code for a node is edited to compile the C++ code into an exectuable. This is not the case with Python based nodes.
 
 ### Step 4: Modify `CMakeLists.txt` before compiling node
 	
-	\begin{minted}{text}  
-gedit |\home\wspname|/src/|\pkgname|/CMakeLists.txt
-	\end{minted}
-	
+```
+gedit ~/cstkin_ws/src/<package_name>/CMakeLists.txt
+```
+
 	Add the following lines to the bottom of the file and save.
 	
-	\begin{minted}[bgcolor=white]{text}
-add_executable(|\nodname| src/|\nodname|.cpp)
-target_link_libraries(|\nodname| |\$|{catkin_LIBRARIES}) 
-	\end{minted}
-	\newpage
-	 
+```
+add_executable(<node_name> src/<node_name>.cpp)
+target_link_libraries(<node_name> ${catkin_LIBRARIES}) 
+```
+
 	
-	\item[Step 5:] Compile and test the new publisher node. This will compile and build your source code as well as check for errors in your entire workspace.
-	\begin{minted}{text}  
-cd |\home\wspname|
-	\end{minted}
-	
-	\begin{minted}{text}  
+### Step 5: Compile and test the new publisher node. 
+
+The `catkin_make` command will compile and build your source code as well as check for errors throughout the ROS workspace. Remember to navigate to the corrent directory before compiling. 
+```
+cd ~/catkin_ws
+```
+
+```
 catkin_make
-	\end{minted}
-	
-	Start a core
-	\begin{minted}{text} 
+```
+
+
+
+
+
+
+Start ROS with the `roscore` command. 
+``` 
 roscore
-	\end{minted}
-	
-	Turn on a turtle.
-	\begin{minted}{text} 
+```
+
+Open a new terminal or terminal tab and start a turtle simulator node.
+
+```	
 rosrun turtlesim turtlesim_node
-	\end{minted}
-	
+```
+
+Open a terminal or terminal tab and start yourt custom  turtle simulator node.
 	Start your new node
 	\begin{minted}{text} 
 rosrun |\pkgname\hspace{3mm}\nodname|
