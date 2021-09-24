@@ -16,7 +16,7 @@ sudo apt update && sudo apt upgrade
 	
 ## Before You Begin:
 	
--  **STOP: TUTORIAL NOT READY** - This file is being converted at the moment. Check back soon for updates. It is not recommended to use this tutorial in the current state. Use the PDF version while you wait. - TH 
+-  **STOP: TUTORIAL READY** - This file has just been converted, and it should be working. Minor edits will be made as it is tested.  
 
 - **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 		
