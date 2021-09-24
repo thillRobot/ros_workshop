@@ -350,7 +350,7 @@ rosrun <package_name> <node_name>
 ## Tutorial Complete: After completing _Tutorial 4 - Create Package_, you are ready for a more advanced robot simulator.
 	
 
-### Bonus Excercise: Install the [Joystick Teleop Node](http://wiki.ros.org/joy/Tutorials/WritingTeleopNode) to drive the turtle with a USB joystick.
+### Bonus Excercise: Install the [Joystick Teleop Node](http://wiki.ros.org/joy/Tutorials/WritingTeleopNode) to drive the turtle with a USB joystick or game controller.
 	
 	
 

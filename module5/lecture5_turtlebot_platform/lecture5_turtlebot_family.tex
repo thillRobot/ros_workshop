@@ -9,7 +9,7 @@
 
 \documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
 
-\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_module}
+\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_lecture}
 
 \newcommand{\MNUM}{5\hspace{2mm}} % Module number
 \newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
@@ -19,7 +19,7 @@
 \newcommand{\sectiontitleI}{A Brief History} % More Titles and Stuff
 \newcommand{\sectiontitleII}{Recent Models}
 \newcommand{\sectiontitleIII}{Turtlebot3 at TNTECH}
-\newcommand{\sectiontitleIV}{Tutorial 4 - Turtlebot3}
+\newcommand{\sectiontitleIV}{Tutorial \MNUM - Turtlebot3}
 
 \setbeamercolor{title in head/foot}{fg=TTUgold} % this needs work...
 
@@ -84,7 +84,24 @@
 	% Section II - Frame I
 	\frame{ \small
 		\frametitle{\sectiontitleIII}
-	
+	\begin{multicols}{2}
+		
+	\includegraphics[scale=.35]{tb3.png}	
+		
+%	\begin{itemize}
+%		\item On-board Computer - Rasp Pi
+%		\item Drive Motors - Dynamixel Network Servos
+%	  	\item Distance Sensor - 360 Laser Distance Sensor LDS-01
+%	  	\item Camera - Raspberry Pi Camera Module v2.1
+%	  	\item Inertial System - ()Gyro. 3 Axis, Accel. 3 Axis, Mag. 3 Axis)
+%		
+%	\end{itemize}	
+		
+		
+		
+	\end{multicols}
+
+	{\tiny Full Details \href{https://emanual.robotis.com/docs/en/platform/turtlebot3/features/\#features}{here} }
 
 }
 
@@ -99,7 +116,7 @@
 
 					\item {\bf Overview:} Finally, you are going to install the Turtlebot3 simulator in ROS. This is a 3D robot simualator that uses Gazebo. 		
 
-					\item {\bf Assignment:} Complete the tutorial in the document {\it tutorial\MNUM\_turtlebot3\_simulator.pdf } on ilearn. You must be able to drive your turtlebot3 around the virtual arena.
+					\item {\bf Assignment:} Complete the Tutorial 5 Turtlebot3 Simulator on ilearn. You must be able to drive your turtlebot3 around the virtual arena.
                     
                     \item {\bf Deliverable:} Write a one to two paragraph summary of what you accomplished and what you struggled with the most. Include an image of the Gazebo window after you have driven the robot around with the keyboard. 
     

@@ -1,0 +1,294 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% Tennessee Technological University
+% ME4140 - Fall 2016 - Fall 2017 - Fall 2020 
+% Tristan Hill - September 10, 2020
+% Module 4 - Catkin Workspace
+
+\documentclass[fleqn]{beamer} % for presentation (has nav buttons at bottom)
+
+\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_lecture}
+
+
+\usepackage{forest}
+
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}
+
+
+\newcommand{\MNUM}{4\hspace{2mm}} % Module number
+\newcommand{\TNUM}{---\hspace{2mm}} % Topic number - single topic for now
+\newcommand{\moduletitle}{Catkin Workspace} % Titles and Stuff
+%\newcommand{\topictitle}{---} 
+
+\newcommand{\sectiontitleI}{Software Packages - Review} % More Titles and Stuff
+\newcommand{\sectiontitleII}{Directory Structure - Linux and ROS}
+\newcommand{\sectiontitleIII}{Catkin Workspace - Working Directory}
+\newcommand{\sectiontitleIV}{Tutorial 4 - Create a Package}
+
+\author{ME4140/ME6640 - ROS Workshop}
+\title{\GD Module \MNUM - \moduletitle}
+\date{Mechanical Engineering\vspc Tennessee Technological University}
+
+\begin{document}
+
+\lstset{language=MATLAB,basicstyle=\ttfamily\small,showstringspaces=false}
+
+\frame{\titlepage \center\begin{framed}\Large \textbf{Module \MNUM - \moduletitle}\end{framed} \vspace{5mm}}
+
+% Section 0 - Outline
+\frame{
+	
+	\large \textbf{Module \MNUM - \moduletitle} \vspace{3mm}\\
+	
+	\begin{itemize}
+	
+		\item \hyperlink{sectionI}{\sectiontitleI}    \vspc % Section I
+		\item \hyperlink{sectionII}{\sectiontitleII} 	\vspc % Section II
+		\item \hyperlink{sectionIII}{\sectiontitleIII} 	\vspc %Section III
+		\item \hyperlink{sectionIV}{\sectiontitleIV} \vspc %Section IV	
+	
+	\end{itemize}
+
+}
+
+\section{\sectiontitleI}
+
+	% Section I - Frame I
+	\begin{frame}[label=sectionI] \small
+		\frametitle{\sectiontitleI}
+		
+		{\large In general, software is organized in \href{http://wiki.ros.org/Packages}{packages}}
+
+                \begin{itemize}
+					\item Definition: A suite of programs that function as a single entity to accomplish a task, or group of related tasks.                           
+                                                       
+                
+                    \item {\it Software in ROS is organized in packages. A package might contain ROS nodes, a ROS-independent library, a dataset, configuration files, a third-party piece of software, or anything else that logically constitutes a useful module.}** 
+                    \item a collection of related nodes, each node belongs to a package
+                    %item many pre-built packages with ros installation: {\fontfamily{qcr}\selectfont  {\bf -desktop-full}}
+                          \end{itemize}           
+	\end{frame}
+
+
+	% Section I - Frame II
+	\begin{frame}[containsverbatim] \small
+		\frametitle{\sectiontitleI}
+
+	Where do packages come from?		
+	
+	\begin{itemize}
+	\item package manager {\bf apt} - install pre-built packages from a repository \vspace{3mm}
+	
+	\item dependency tool {\bf rosdep} - helps install system dependencies for software that you are building from source \vspace{3mm}
+	
+	\item local ROS {\bf workspace} - build custom software packages in your home folder \vspace{3mm}				
+	\end{itemize}
+
+
+	\end{frame}
+
+\section{\sectiontitleII}
+
+	% Section II - Frame I
+	\begin{frame}[label=sectionII,containsverbatim] \small
+		\frametitle{\sectiontitleII}
+		
+		\begin{forest}
+  	for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  	}  
+[/
+  [bin
+  ]
+  [boot
+  ]
+  [home
+    [thill
+    	[Downloads
+    	]
+    	[{\BL catkin\_ws}
+    	]
+    	[...
+    	]
+    ]
+  ]
+  [opt
+    [ros
+    ]
+  ]
+  [...
+  ]
+]
+\end{forest}
+ 
+
+\end{frame}
+
+\section{\sectiontitleIII}
+
+	% Section II - Frame I
+	\frame{ \small
+		\frametitle{\sectiontitleIII}
+		\begin{multicols}{2}
+
+		\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[/thill
+  [Downloads
+  ]
+  [{\BL catkin\_ws}
+    [src
+    	[package\_one
+    		[...
+    		]
+    	]
+    	[package\_two
+    		[...
+    		]
+    	]
+    	[...
+    	]
+    ]
+    [devel
+    ]
+  ]
+  [...
+  ]
+]
+\end{forest}
+
+
+		\hspace*{-1cm}\includegraphics[scale=.13]{folders_small.png}		
+			
+		\end{multicols}
+
+}
+
+% Section II - Frame II
+	\frame{ \small
+		\frametitle{\sectiontitleIII}
+		\begin{multicols}{2}
+
+		\begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+    	[{\BL catkin\_ws}
+    		[src
+    			[package\_one
+    				[src
+    					[node\_one.cpp
+    					]
+    					[node\_two.cpp
+    					]
+    				]
+    			]
+    			[package\_two
+    				[src
+    					[node\_three.cpp
+    					]
+    				]
+    			]
+    		    [...
+    			]
+    		]
+    	]
+    	[...
+    	]
+\end{forest}
+
+
+		%\hspace*{-1cm}\includegraphics[scale=.40]{folders_package.png}		
+			
+		\end{multicols}
+
+}
+
+\section{\sectiontitleIV}	
+	% Section V - Frame I
+	            \begin{frame}[label=sectionIV] \small
+		\frametitle{\sectiontitleIV}    
+	
+ \setbeamertemplate{itemize items}[triangle]
+                \begin{itemize}
+
+					\item {\bf Overview:} You can customize your ROS system! Your exercise is to build a custom package and C++ node to control the turtlesim. 		
+
+					\item {\bf Assignment:} Complete the tutorial in the document {\it tutorial4\_create\_package.pdf} on ilearn. Your custom package and node must  send a velocity command to the turtle and make it move without using the keyboard drive node.
+                    
+                    \item {\bf Deliverable:} Write a one to two paragraph summary of what you accomplished and what you struggled with the most. Include an image of the turtlesim window after your turtle has driven a pattern. 
+    
+                    \item {\bf Next Week:} After completion of Module 4, you are ready for a better robot. You will learn to use a simulated turtlebot3 in a Gazebo simulator. \vspc
+                    
+       
+                \end{itemize}
+		\end{frame}
+
+\end{document}
+
+

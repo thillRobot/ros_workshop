@@ -8,16 +8,16 @@ The tutorials will cover installation of ROS, use of packages and nodes, and nav
 Each Module contains a lecture and a tutorial. You can begin with [module 1](module1/), or skip to [module 2](module2/) if you already have Ubuntu installed.
 
 - [module 1](module1/) 
-  - Lecture: ROS Overview
+  - Lecture: [ROS Overview](module1/lecture1_ros_overview/lecture1_ros_overview.pdf)
   - Tutorial: [Virtualize Ubuntu](module1/tutorial1_virtualize_ubuntu/tutorial1_virtualize_ubuntu.md)
 - [module 2](module2/) 
-  - Lecture: Linux Basics
+  - Lecture: [Linux Basics](module2/lecture2_linux_basics/lecture2_linux_basics.pdf)
   - Tutorial: [Install ROS](module2/tutorial2_install_ros/tutorial2_install_ros.md)
 - [module 3](module3/) 
-  - Lecture: Nodes Topics
+  - Lecture: [Nodes Topics](module3/lecture3_nodes_topics/lecture3_nodes_topics.pdf)
   - Tutorial: [Turtlesim Testdrive](module3/tutorial3_turtlesim_testdrive/tutorial3_turtlesim_testdrive.md)
 - [module 4](module4/) 
-  - Lecture: Catkin Workspace
+  - Lecture: [Catkin Workspace](module4/lecture4_catkin_workspace/module4_catkin_workspace.pdf)
   - Tutorial: [Create Package](module4/tutorial4_create_package/tutorial4_create_package.md)
 - [module 5](module5/) 
   - Lecture: Turtlebot Platform
