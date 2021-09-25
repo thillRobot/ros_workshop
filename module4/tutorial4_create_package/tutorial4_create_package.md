@@ -277,7 +277,7 @@ Next, create a subscriber node in the same package as the previous node.
 
 #### Step 1: Use the code below called `turtlesim_subscriber.cpp` to start.
 	
-```	
+```c++	
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "geometry_msgs/Twist.h"
