@@ -25,7 +25,7 @@ Update the list of avilable packages before you get started.
 sudo apt update
 ```	
 ### Step 2 Install Turtlebot3 Packages 
-Install the neccessary packages into your ROS system. This tutorial comes from [here]http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation}.
+Install the neccessary packages into your ROS system. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation).
     	
 **turtlebot3**
 ```
