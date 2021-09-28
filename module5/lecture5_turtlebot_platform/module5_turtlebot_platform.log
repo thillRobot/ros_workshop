@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  24 SEP 2021 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.3.1)  28 SEP 2021 06:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**lecture5_turtlebot_family.tex
-(./lecture5_turtlebot_family.tex
+**module5_turtlebot_platform.tex
+(./module5_turtlebot_platform.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1980,11 +1980,11 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "lecture5_turtlebot_family.w18")...executed.
+runsystem(uname -s > "module5_turtlebot_platform.w18")...executed.
 
 
-(./lecture5_turtlebot_family.w18)
-runsystem(rm -- "lecture5_turtlebot_family.w18")...executed.
+(./module5_turtlebot_platform.w18)
+runsystem(rm -- "module5_turtlebot_platform.w18")...executed.
 
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
@@ -2011,7 +2011,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks56
 \c@listing=\count390
 )
-runsystem(mkdir -p _minted-lecture5_turtlebot_family)...executed.
+runsystem(mkdir -p _minted-module5_turtlebot_platform)...executed.
 
 
 
@@ -2025,34 +2025,34 @@ Package hyperref Info: Option `pdffitwindow' set `false' on input line 104.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 104.
 Package hyperref Info: Option `colorlinks' set `true' on input line 104.
 )
-runsystem(which pygmentize && touch lecture5_turtlebot_family.aex)...executed.
+runsystem(which pygmentize && touch module5_turtlebot_platform.aex)...executed.
 
-runsystem(rm lecture5_turtlebot_family.aex)...executed.
+runsystem(rm module5_turtlebot_platform.aex)...executed.
 
- (./lecture5_turtlebot_family.aux)
-\openout1 = `lecture5_turtlebot_family.aux'.
+ (./module5_turtlebot_platform.aux)
+\openout1 = `module5_turtlebot_platform.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2120,7 +2120,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box122
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2130,71 +2130,71 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count397
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
-(./lecture5_turtlebot_family.out) (./lecture5_turtlebot_family.out)
+(./module5_turtlebot_platform.out) (./module5_turtlebot_platform.out)
 \@outlinefile=\write8
-\openout8 = `lecture5_turtlebot_family.out'.
+\openout8 = `module5_turtlebot_platform.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 31.
 \symnumbers=\mathgroup11
 \sympureletters=\mathgroup12
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 32.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 32.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 32.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 32.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 31.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 32
+(Font)              `pureletters' in the math version `normal' on input line 31
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 32
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 31
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 32.
+(Font)              `pureletters' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 3
-2.
+1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 32.
+ut line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -2221,7 +2221,7 @@ ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count398
- (./lecture5_turtlebot_family.nav)
+ (./module5_turtlebot_platform.nav)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -2236,7 +2236,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 <turtlebot_family.png, id=178, 803.0pt x 481.8pt>
 File: turtlebot_family.png Graphic file (type png)
 <use turtlebot_family.png>
-Package pdftex.def Info: turtlebot_family.png  used on input line 77.
+Package pdftex.def Info: turtlebot_family.png  used on input line 76.
 (pdftex.def)             Requested size: 281.05421pt x 168.63252pt.
  [5
 
@@ -2244,36 +2244,36 @@ Package pdftex.def Info: turtlebot_family.png  used on input line 77.
 <tb3.png, id=210, 1074.0125pt x 903.375pt>
 File: tb3.png Graphic file (type png)
 <use tb3.png>
-Package pdftex.def Info: tb3.png  used on input line 106.
+Package pdftex.def Info: tb3.png  used on input line 105.
 (pdftex.def)             Requested size: 375.91pt x 316.18599pt.
 
-Overfull \hbox (227.26508pt too wide) in paragraph at lines 106--106
+Overfull \hbox (227.26508pt too wide) in paragraph at lines 105--105
 [][]  
  []
 
 
-Overfull \vbox (150.74432pt too high) detected at line 106
+Overfull \vbox (150.74432pt too high) detected at line 105
  []
 
 [6
 
  <./tb3.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+LaTeX Font Info:    Try loading font information for U+msa on input line 126.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+LaTeX Font Info:    Try loading font information for U+msb on input line 126.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 127.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 126.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 127.
+line 126.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -2283,31 +2283,31 @@ thkerncmss.
 
 ]
 \tf@nav=\write9
-\openout9 = `lecture5_turtlebot_family.nav'.
+\openout9 = `module5_turtlebot_platform.nav'.
 
 \tf@toc=\write10
-\openout10 = `lecture5_turtlebot_family.toc'.
+\openout10 = `module5_turtlebot_platform.toc'.
 
 \tf@snm=\write11
-\openout11 = `lecture5_turtlebot_family.snm'.
+\openout11 = `module5_turtlebot_platform.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
- (./lecture5_turtlebot_family.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
-Package rerunfilecheck Info: File `lecture5_turtlebot_family.out' has not chang
-ed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+ (./module5_turtlebot_platform.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `module5_turtlebot_platform.out' has not chan
+ged.
 (rerunfilecheck)             Checksum: 26BB9A4BCA8E38C70E6F2BF337BAEF4D;211.
  ) 
 Here is how much of TeX's memory you used:
  36750 strings out of 492982
- 732524 string characters out of 6134897
- 874665 words of memory out of 5000000
+ 732541 string characters out of 6134897
+ 874687 words of memory out of 5000000
  39610 multiletter control sequences out of 15000+600000
  551490 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,19n,73p,10374b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,19n,73p,10375b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{sectionIII} has been referenced but does not exis
 t, replaced by a fixed one
 
@@ -2327,7 +2327,7 @@ c/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfsx1440.pfb>
-Output written on lecture5_turtlebot_family.pdf (7 pages, 827963 bytes).
+Output written on module5_turtlebot_platform.pdf (7 pages, 825332 bytes).
 PDF statistics:
  320 PDF objects out of 1000 (max. 8388607)
  279 compressed objects within 3 object streams
