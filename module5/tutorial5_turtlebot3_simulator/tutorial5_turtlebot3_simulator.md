@@ -1,74 +1,34 @@
-% !TEX TS-program = xelatex
-% !TEX encoding = UTF-8 Unicode
-
-% Tennessee Technological University
-% ME4140 - Fall 2016 - Fall 2017 - ? - Fall 2019 - Fall 2020
-% Tristan Hill - September 19, 2020 - October 09, 2020
-% Turtorial 5 - Turtlebot3 Simulator
-
-\documentclass[12pt]{article}
-
-% Custom Preamble
-\usepackage{/home/thill/Documents/lectures/ros_workshop/ros_tutorial} 
-
-% Title and Misc
-\newcommand{\MNUM}{5} %Module Number
-\newcommand{\MNAME}{Turtlebot3 Simulator} %Module Name
-\pagestyle{myheadings}
-\markright{{\large ME4140 - ROS Workshop - Fall 2021}}
-
-\begin{document}
-
-\thispagestyle{plain}
-
-\begin{center}
-   {\bf \Large ROS Workshop - Tutorial\hspc\MNUM\hspc - \MNAME}\vspace{3mm}\\
-   {\bf \large ME 4140 - Introduction to Robotics - Fall 2021} \vspace{5mm}\\
-\end{center}
-
-\includegraphics[scale=.5]{turtlebot3_family.png} \includegraphics[scale=.35]{turtlebot3_simulations.png}
+# ROS Workshop - Turtorial 5 - Turtlebot3 Simulator
+## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 
-\begin{description}[labelindent=1cm]
+<img src="turtlebot3_simulations.png" alt="drawing" width="400"/>
+
+
+
+## Overview:
+After completing _Tutorial 4 - Create Package_, You have learned some basics of ROS, and you are ready for a more advanced robot. You can read more about the Turtlebot3 \href{https://www.turtlebot.com/}{here} and \href{https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/}{here}.
 	
-	\item[\textbf{\underline{Overview:}}] \hfill \vspace{3mm}\\
-	After completing {\it Tutorial 4 - Create Package}, You have learned some basics of ROS, and you are ready for a more advanced robot. You can read more \href{https://www.turtlebot.com/}{here} and \href{https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/}{here}.
-	
-	\item[\textbf{\underline{System Requirements:}}] \hfill \vspace{0mm}
-
-\begin{itemize}
-	\item {\bf ROS+OS}: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
-	\item {\bf ROS:} Your computer must be connected to the internet to proceed. Update the system before you begin.
-	\item {\bf Workspace Setup:} You must have successfully setup a Catkin Workspace in tutorial 4.  
-\end{itemize}
+## System Requirements:
+- ROS+OS: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e.  Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- ROS: Your computer must be connected to the internet to proceed. Update the system before you begin.
+- Workspace Setup: You must have successfully setup a Catkin Workspace in tutorial 4.  
 
 	
-	\item[\textbf{\underline{Disclaimer:}}] \hfill \vspace{0mm}
+## Before You Begin:
 	
-	\begin{itemize}
-
-		\item {\RD\underline{\bf Backup the System:}} If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
-		
-		\item \underline{\BL ROSLAUNCH:} This tutorial involves using the roslaunch command which runs a multiple of nodes at once as described in the launch file. We will learn more about this later. 
+- Backup the System: If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+- ROSLAUNCH: This tutorial involves using the roslaunch command which runs a multiple of nodes at once as described in the launch file. We will learn more about this later. 
 	
 		 
-	\end{itemize}
-
-
 	
+## Part 1 - Turtlebot3 Package Installation:
 
-
-
-	\newpage 
-
-\item[\textbf{\underline{Part 1 - Turtlebot3 Installation:}}] \hfill \vspace{0mm}
-
-\begin{enumerate}
-	\item Update your package list before you get started. 
-	\begin{minted}{text} 
-	sudo apt update
-	\end{minted}
-
+### Step 1 Update Repository List
+Update the list of avilable packages before you get started. 
+```
+sudo apt update
+```	
 	\item Install the necessary nodes into your ROS system. This tutorial comes from \href{http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation} {here.} 
     	
     	{\bf turtlebot3 }
