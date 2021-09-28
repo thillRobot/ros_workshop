@@ -20,8 +20,8 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Lecture: [Catkin Workspace](module4/lecture4_catkin_workspace/module4_catkin_workspace.pdf)
   - Tutorial: [Create Package](module4/tutorial4_create_package/tutorial4_create_package.md)
 - [module 5](module5/) 
-  - Lecture: Turtlebot Platform
-  - Tutorial: Turtlebot3 Simulator (needs conversion to markdown) 
+  - Lecture: [Turtlebot Platform](module5/lecture5_turtlebot_platform/lecture5_turtlebot_family.pdf)
+  - Tutorial: [Turtlebot3 Simulator](module5/tutorial5_turtlebot3_simulator/tutorial5_turtlebot3_simulator.md) 
 - [module 6](module6/) 
   - Lecture: Navigation Stack (slides need to be made)
   - Tutorial: Publish Goal (needs conversion to markdown)
