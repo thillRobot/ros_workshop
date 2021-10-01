@@ -101,7 +101,6 @@ The gazebo window will open containing your robot, and you will also see the rvi
 	
 - _2D Nav Goal_ - Click and drag the direction to define a goal point for the robot in the map.
 
-
 <img src="turtlebot3_rviz.png" alt="drawing" width="400"/>
 
 
@@ -117,67 +116,47 @@ rosrun rqt_graph rqt_graph
 \end{enumerate}
 
 \newpage
-\item[\textbf{\underline{Part 4 - Issues Loading Maps Files:}}] \hfill \vspace{2mm}	\\
+## Part 4 - Issues Loading Maps Files:
 
 You may have run into an issue in which {\it turtlebot3\_navigation} cannot load the map file. A typical error message is shown below, along with the preferred solution.
 
 
-\color{red}
-\begin{minted}{text} 
+```
 
 [ERROR] [1604667817.760623311]: Map server could not open /<map_name>.yaml.
+```
 
-\end{minted}
-\color{black}
+### Step 1 
+Leave the top line of `map.yaml` as is when the file is generated. Do not add the full path to map file. The filename is sufficient. 
 
-\begin{itemize}
+### Step 2 
+Copy map.yaml and {\it map.pgm } to a directory named maps/ in a package in the ROS workspace.
 
-\item Leave the top line of {\it map.yaml } as is when the file is generated. Do not add the full path to map file. The filename is sufficient. 
+### Step 3 
+Check that the workspace will compile by running
+ `catkin_make` from the top of the workspace. You should see in the terminal output, that your package was successfully built. 
 
-\item Copy {\it map.yaml } and {\it map.pgm } to the maps/ directory of a package in the ROS workspace.
+### Step 4
 
-\item Ensure that the workspace will compile and build with {\it catkin\_make}. You should see in the terminal output, that your package was successfully built. 
+Use the `find` command to point the node to the maps directory of your package where the map files are stored. Repeat Part 3 with the addition of the `find` command in the map argument. 
 
-\item Finally, use the {\it find} command to point the node to the maps directory of your package.
+Start the simulator
+```
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+ 
+Turn on the navigation nodes and RVIZ. Use the name of the map you created, and it should be recogonized and displayed in RVIZ. 
 
-\end{itemize}
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find <package_name>)\maps\<map_name>.yaml'
+```
 
-Now repeat the commands from before with the addition of the find command in the map argument. 
-
-\begin{enumerate}
-
-
-\item {\bf   Start the turtlebot3 simulator.}
-\begin{minted}{text} 
-  roslaunch turtlebot3_gazebo turtlebot3_world.launch
-\end{minted}
-\item {\bf  Turn on the navigation nodes and RVIZ. Use the name of the map you created. }
-
-\begin{framed}
-\begin{verbatim}
-
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch \
-map_file:='$(find <YOUR PKG>)\maps\<YOUR MAP>.yaml'
-
-\end{verbatim}
-\end{framed}
-
-
-
-
-\end{enumerate}
-
-\vspace{100mm}
-
-\item[\textbf{\underline{Tutorial Complete:}}] \hfill \vspace{3mm}\\ 
-	After completing {\it Tutorial 6 - Turtlebot3 Simulator}, you are ready to learn about ... more ROS!
+### Tutorial Complete: 
+After completing _Tutorial 6 - Turtlebot3 Simulator_, you are ready to learn about ... more ROS!
 	
-	\hspace {30mm}	
-	
-	
-	
-	\includegraphics[scale=.350]{../../charlie_robot.jpeg} \vspace{5mm}\\
-    \LARGE \textbf{NOW, YOU KNOW ABOUT ROS! GOOD JOB!}
+<img src="../../charlie_robot.jpeg" alt="drawing" width="400"/>
+
+NOW, YOU KNOW ABOUT ROS! GOOD JOB!
 	
 	
 		
