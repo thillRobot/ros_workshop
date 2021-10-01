@@ -24,7 +24,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: [Turtlebot3 Simulator](module5/tutorial5_turtlebot3_simulator/tutorial5_turtlebot3_simulator.md) 
 - [Module 6](module6/) 
   - Lecture: Navigation Stack (slides need to be made)
-  - Tutorial: [Turtlebot3 Navigation](module5/tutorial6_turtlebot3_navigation/tutorial6_turtlebot3_navigation.md)
+  - Tutorial: [Turtlebot3 Navigation](module6/tutorial6_turtlebot3_navigation/tutorial6_turtlebot3_navigation.md)
 - [Module 7](module7/) 
   - Lecture: Custom Maps (slides need to be made)
   - Tutorial: Turtlebot3 Brown Hall (needs conversion to markdown)
@@ -45,3 +45,4 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
 - [ ] convert PDF files to markdown so the github stands alone - this is started at least	
 - [ ] Update to Focal Fossa
 - [ ] remove this list
+- [ ] add references for all images
