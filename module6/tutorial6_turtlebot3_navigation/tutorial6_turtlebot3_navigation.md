@@ -1,12 +1,14 @@
 # ROS Workshop - Turtorial 6 - Turtlebot3 Navigation
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
-## The Navigation Stack
+## Navigation:
 
 What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS melodic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
 
-<img src="turtlebotPi.jpg" alt="drawing" width="400"/>
-<img src="turtlebot3_maps.png" alt="drawing" width="400"/>
+<img src="turtlebot3_models.png" alt="drawing" width="400"/>
+
+(Image: [emanual.robotis.com](https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#features) )
+
 	
 ## Overview:
 After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basics of ROS, and you have a more advanced robot. Next you are going to learn to use the navigation stack with the turtlebot3 simulator. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation}{here} and \href{http://wiki.ros.org/navigation/Tutorials}).
@@ -20,34 +22,30 @@ After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basic
 	
 ## Before Beginning:
 	
-- Backup the System: If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 
-- ROSLAUNCH: This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
+- **ROSLAUNCH:** This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
 
-- Mouse for 3D viewing: This simulator view is much easier use if you have a three button mouse plugged in, but this is not required.
+- **Mouse for 3D viewing:** This simulator view is much easier use if you have a three button mouse plugged in, but this is not required.
 	
-		 
-
-
-
-\newpage
-\item[\textbf{\underline{Part 1 - Install navigation and gmapping packges:}}] \hfill \vspace{0mm}
+		
+## Part 1 - Install navigation and gmapping packges
 	
-\begin{enumerate}
-\item {\bf Install the {\bf navigation} and {\bf gmapping} nodes if you have not already.}
-\begin{minted}{text} 
+
+### Step 1 Install the `navigation` and `gmapping` nodes if you have not already. It will not hurt to run the install command again.
+
+```
 sudo apt install ros-melodic-navigation ros-melodic-gmapping
-\end{minted}
+```
 
-\item {\bf Set the robot model. This only needs to be done once. Modify the .bashrc file If you want to change models. }
-\begin{minted}{text}
+### Step 2 -  Set the robot model. This only needs to be done once. Modify the .bashrc file If you want to change models.
+
+```
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 source ~/.bashrc
-\end{minted}
+```
 
-\end{enumerate}
-
-\item[\textbf{\underline{Part 2 - Generate a map of the virtual space:}}] \hfill \vspace{0mm}	\\
+## Part 2 - Generate a map of the virtual space:
 
 \begin{enumerate}
 \item {\bf   Start the turtlebot3 simulator.}
