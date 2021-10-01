@@ -57,7 +57,7 @@ The environment variable `TURTLEBOT_MODEL` must be set to define the robot type.
 ``` 
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 ```
-Now that run that script with `source`. It will also run each time you open a new terminal.	
+Now that run `.bashrc` with `source`. This also runs automatically each time you open a new terminal.	
 ```	
 source ~/.bashrc
 ```	
