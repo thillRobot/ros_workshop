@@ -76,7 +76,7 @@ Enter the following command in a new terminal to add keyboard control to the sys
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-Now turn on the node to produce robot data in the simulated world.  \\
+Now turn on the node to produce robot data in the simulated world.  
 
 ``` 
 roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
