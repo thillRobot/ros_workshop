@@ -75,42 +75,34 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 When you are finished collecting data save the map. (`-f` allows the filename to be set)
  
 ```
-rosrun map_server map_saver -f map
+rosrun map_server map_saver -f <map_name>
 ```
 
 Two new map files both with the same filename (<map_name>.pgm and <map_name>.yaml) will appear in the current folder after Step 4. If you move the map to a new directory, keep both files together and the file names must match.
 
 
+## Part 3 - Navigate Virtual space:
+Now that navigation is installed and there is a map saved to file, the robot can perform\\ autonomous point to point navigation with dynamic obstacle avoidance using the map and RVIZ as the user interface. \\
 
-
-%    \item Next install the physical 'turtlebot' drivers into your ROS system. This step is only necessary if you are using a real turtlebot. \href{http://wiki.ros.org/Robots/TurtleBot} {Link Here} 
-%   \begin{minted}{text}  
-%(sudo apt-get install ros-|\rosdistro|-turtlebot ros-|\rosdistro|-turtlebot-apps
-%ros-|\rosdistro|-turtlebot-interactions ros-|\rosdistro|-turtlebot-simulator 
-%ros-|\rosdistro|-kobuki-ftdi ros-|\rosdistro|-rocon-remocon 
-%ros-|\rosdistro|-rocon-qt-library ros-|\rosdistro|-ar-track-alvar-msgs})
-%\end{minted}
-%    
-\newpage
-\item[\textbf{\underline{Part 3 - Navigate the virtual space using the map and RVIZ:}}] \hfill \vspace{2mm}	\\
-Now that navigation is installed and there is a map saved to file, the robot can perform\\ autonomous point to point navigation with dynamic obstacle avoidance. \\
-\begin{enumerate}
-\item {\bf   Start the turtlebot3 simulator.}
-\begin{minted}{text} 
+### Step 1 - Start the turtlebot3 simulator
+``` 
   roslaunch turtlebot3_gazebo turtlebot3_world.launch
-\end{minted}
-\item {\bf  Turn on the navigation nodes and RVIZ. Use the name of the map you created. }
-\begin{minted}{text} 
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=map.yaml
-\end{minted}
+```
 
-	The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. \\
-	
-	1) \underline{Pose Estimate} - Click and drag the direction to set the current pose estimate of the robot. \vspace{2mm} \\
-	
-	2) \underline{2D Nav Goal} - Click and drag the direction to define a goal point for the robot in the map. \vspace{2mm} \\
+### Step 2 - Turn on navigation and RVIZ. 
+Use the name of the map you created for the map_file option in the command.
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=<map_name>.yaml
+```
 
-\includegraphics[scale=.350]{turtlebot3_rviz.png}
+The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. \\
+	
+- _Pose Estimate_ - Click and drag the direction to set the current pose estimate of the robot.
+	
+- _2D Nav Goal_ - Click and drag the direction to define a goal point for the robot in the map.
+
+
+<img src="turtlebot3_rviz.png" alt="drawing" width="400"/>
 
 
 
@@ -133,7 +125,7 @@ You may have run into an issue in which {\it turtlebot3\_navigation} cannot load
 \color{red}
 \begin{minted}{text} 
 
-[ERROR] [1604667817.760623311]: Map server could not open /map.yaml.
+[ERROR] [1604667817.760623311]: Map server could not open /<map_name>.yaml.
 
 \end{minted}
 \color{black}
