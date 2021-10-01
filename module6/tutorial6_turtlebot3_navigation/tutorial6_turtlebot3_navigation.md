@@ -32,7 +32,8 @@ After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basic
 ## Part 1 - Install navigation and gmapping packges
 	
 
-### Step 1 Install the `navigation` and `gmapping` nodes if you have not already. It will not hurt to run the install command again.
+### Step 1 Install `navigation` and `gmapping` 
+Install the packages required for autonomous navigation if you have not already. It will not hurt to run the install command again.
 
 ```
 sudo apt install ros-melodic-navigation ros-melodic-gmapping
@@ -47,27 +48,39 @@ source ~/.bashrc
 
 ## Part 2 - Generate a map of the virtual space:
 
-\begin{enumerate}
-\item {\bf   Start the turtlebot3 simulator.}
-\begin{minted}{text} 
+
+
+### Step 1 Start the turtlebot3 simulator
+
+```
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
-\end{minted}
-\item {\bf Next, start SLAM using the gmapping node. }
-\begin{minted}{text} 
+```
+
+### Step 2 Start gmapping SLAM
+ 
+```
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
-\end{minted}
-\item {\bf Drive the robot around with the keyboard to collect pose and Lidar data}
-\begin{minted}{text} 
+```
+
+### Step 3 Collect sensor data
+
+Drive the robot around with the keyboard to collect pose and Lidar data
+
+```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-\end{minted}
-\item {\bf When you are finished save the map. (-f allows the filename to be set)}
-\begin{minted}{text} 
+```
+
+### Step 4 Save Map
+
+When you are finished collecting data save the map. (`-f` allows the filename to be set)
+ 
+```
 rosrun map_server map_saver -f map
-\end{minted}
+```
 
-Two map files (.pgm and .yaml) will appear in the current folder after Step 4. If you move the map to a new directory, keep both files together.
+Two new map files both with the same filename (<map_name>.pgm and <map_name>.yaml) will appear in the current folder after Step 4. If you move the map to a new directory, keep both files together and the file names must match.
 
-\end{enumerate}
+
 
 
 %    \item Next install the physical 'turtlebot' drivers into your ROS system. This step is only necessary if you are using a real turtlebot. \href{http://wiki.ros.org/Robots/TurtleBot} {Link Here} 
