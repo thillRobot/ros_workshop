@@ -31,10 +31,10 @@ In this tutorial you will replace several <fields> with names of your choice. Th
 - **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
 - the underscore _ character **is** allowed 
 
-    <workspace_name> - name of your workspace (default: `catkin_ws` will be used in this tutorial)
-    <package_name> - name of your package  
-    <node_name> - name of your node  
-	<user_name> - ubuntu user name 	
+   -  <workspace_name> : name of your workspace (default: `catkin_ws` will be used in this tutorial)
+   -  <package_name> : name of your package  
+   -  <node_name> : name of your node  
+   -  <user_name> : ubuntu user name 	
 
 ## Instructions for Creating a Custom Package and Node
 
