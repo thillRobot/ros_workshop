@@ -34,12 +34,12 @@ sudo apt install ros-melodic-turtlebot3
 
 **turtlebot3_simulations**
 ```
-sudo apt install ros-mnelodic-turtlebot3-simulations
+sudo apt install ros-melodic-turtlebot3-simulations
 ```
 
 **turtlebot3_gazebo**
 ```
-sudo apt install ros-meloidic-turtlebot3-gazebo
+sudo apt install ros-melodic-turtlebot3-gazebo
 ```
 
 ### Step 3 Test Package Installation
