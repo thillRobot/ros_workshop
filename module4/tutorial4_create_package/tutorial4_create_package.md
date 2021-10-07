@@ -209,7 +209,7 @@ int main(int argc, char **argv)
 }
 ```
 	
-Save the file as a <node_name>.cpp in the src directory of the package your created in previously in {\bf Part I}.The sample code shown below. 
+Save the file as a <node_name>.cpp in the src directory of the package your created in previously in **Part I**.The sample code shown below. 
 
 #### Step 4: Configure `CMakeLists.txt` and compile node
 	
