@@ -104,25 +104,20 @@ The gazebo window will open containing your robot, and you will also see the rvi
 <img src="turtlebot3_rviz.png" alt="drawing" width="400"/>
 
 
-
-\item {\bf Check the available topics with rostopic. }
-\begin{minted}{text} 
+Check the available topics with rostopic.
+``` 
 rostopic list
-\end{minted}
-\begin{minted}{text} 
-rosrun rqt_graph rqt_graph 
-\end{minted}
-
-\end{enumerate}
-
-\newpage
-## Part 4 - Issues Loading Maps Files:
-
-You may have run into an issue in which {\it turtlebot3\_navigation} cannot load the map file. A typical error message is shown below, along with the preferred solution.
-
-
 ```
 
+```
+rosrun rqt_graph rqt_graph 
+```
+
+## Part 4 - Issues Loading Maps Files:
+
+You may have run into an issue in which `turtlebot3_navigation` cannot load the map file. A typical error message is shown below, along with the preferred solution.
+
+```
 [ERROR] [1604667817.760623311]: Map server could not open /<map_name>.yaml.
 ```
 
