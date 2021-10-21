@@ -11,7 +11,7 @@ What do we mean by navigation? This means different things in different places. 
 
 	
 ## Overview:
-After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basics of ROS, and you have a more advanced robot. Next you are going to learn to use the navigation stack with the turtlebot3 simulator. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation}{here} and \href{http://wiki.ros.org/navigation/Tutorials}).
+After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basics of ROS, and you have a more advanced robot. Next you are going to learn to use the navigation stack with the turtlebot3 simulator. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
 	
 ## System Requirements:
 
@@ -82,7 +82,7 @@ Two new map files both with the same filename (<map_name>.pgm and <map_name>.yam
 
 
 ## Part 3 - Navigate Virtual space:
-Now that navigation is installed and there is a map saved to file, the robot can perform\\ autonomous point to point navigation with dynamic obstacle avoidance using the map and RVIZ as the user interface. \\
+Now that navigation is installed and there is a map saved to file, the robot can perform autonomous point to point navigation with dynamic obstacle avoidance using the map and RVIZ as the user interface. 
 
 ### Step 1 - Start the turtlebot3 simulator
 ``` 
@@ -95,7 +95,7 @@ Use the name of the map you created for the map_file option in the command.
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=<map_name>.yaml
 ```
 
-The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. \\
+The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. 
 	
 - _Pose Estimate_ - Click and drag the direction to set the current pose estimate of the robot.
 	
