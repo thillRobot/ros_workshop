@@ -80,7 +80,9 @@ mkdir ~/catkin_ws/src/<package_name>/maps
 rosrun map_server map_saver -f <map_name>  
 ```
 
-For Example, you could use the absolute paths to the map file in new directory. 
+**For Example:** The two options below work on my system. 
+
+_Option 1_ Use the absolute paths to the map file in new directory. 
 
 ```
 mkdir ~/catkin_ws/src/turtlesim_control/maps
@@ -88,7 +90,7 @@ mkdir ~/catkin_ws/src/turtlesim_control/maps
 rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world  
 ```
 
-OR, you could navigate to package directory and use relative paths. 
+_ Option 2_ Navigate to package directory and use relative paths. 
 
 ```
 cd ~/catkin_ws/src/turtlesim_control
@@ -119,7 +121,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map
 
 ```
 
-**For Example:** The three options below work on a typical system.
+**For Example:** The three options below work on a my system.
 
 _Option 1_ Navigate to the package directory and then use relative paths to the map files. 
 
@@ -139,7 +141,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 
 ```
 
-_Option 3_ (**preffered method**) Use `find` to access the package containing the maps without needing to change the current directory. Use relative paths from the package directory in the find command.
+_Option 3_ (**preffered method**) Use `find` to access the package containing the maps without changing the current directory. Use relative paths from the package directory in the find command.
 
 ```
  roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlesim_control)/maps/demo_world.yaml'
