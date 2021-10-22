@@ -17,7 +17,7 @@ After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basic
 
 - **ROS+OS**: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **ROS**: Your computer must be connected to the internet to proceed. Update the system before you begin.
-- **Workspace Setup**:} The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 6.  
+- **Workspace Setup**: The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 6.  
 
 	
 ## Before Beginning:
