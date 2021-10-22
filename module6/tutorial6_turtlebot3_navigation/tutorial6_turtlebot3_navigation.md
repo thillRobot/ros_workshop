@@ -64,7 +64,7 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 ### Step 3 Collect sensor data
 
-Drive the robot around with the keyboard to collect pose and Lidar data
+Drive the robot around with the keyboard as the turtlesim automatically collectS pose and Lidar data. Stop when you think you have Collected enough data to generate a map of the entire area.
 
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -72,13 +72,33 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### Step 4 Save Map
 
-When you are finished collecting data save the map. (`-f` allows the filename to be set)
+Create a directory in your custom turtlesim package for storing map files, then save the map with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
  
 ```
-rosrun map_server map_saver -f <map_name>
+mkdir ~/catkin_ws/src/<package_name>/maps
+
+rosrun map_server map_saver -f <map_name>  
 ```
 
-Two new map files both with the same filename (<map_name>.pgm and <map_name>.yaml) will appear in the current folder after Step 4. If you move the map to a new directory, keep both files together and the file names must match.
+For Example, you could use the absolute paths to the map file in new directory. 
+
+```
+mkdir ~/catkin_ws/src/turtlesim_control/maps
+
+rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world  
+```
+
+OR, you could navigate to package directory and use relative paths. 
+
+```
+cd ~/catkin_ws/src/turtlesim_control
+
+mkdir maps
+
+rosrun map_server map_saver -f maps/demo_world  
+```
+
+Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match.
 
 
 ## Part 3 - Navigate Virtual space:
@@ -90,9 +110,33 @@ Now that navigation is installed and there is a map saved to file, the robot can
 ```
 
 ### Step 2 - Turn on navigation and RVIZ. 
-Use the name of the map you created for the map_file option in the command.
+Use the name of the map you created for the map_file option in the command. If you navigate to the package with the maps the absolute paths will work.
+
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=<map_name>.yaml
+cd ~/catkin_ws/src/<package_name>
+
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map_name>.yaml
+
+```
+
+For Example
+
+```
+cd ~/catkin_ws/src/turtlesim_control
+
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
+
+```
+
+
+Or you can use the built-in ROS Change Directory tool `roscd` to quickly navigating to a ROS package on the system. This method is preferred because it is not specfic to the location of the package containing the maps. 
+
+
+```
+roscd turtlesim_control
+
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
+
 ```
 
 The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. 
