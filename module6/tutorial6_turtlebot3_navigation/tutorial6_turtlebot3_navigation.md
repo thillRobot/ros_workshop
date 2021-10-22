@@ -1,4 +1,4 @@
-# ROS Workshop - Turtorial 6 - Turtlebot3 Navigation
+# ROS Workshop - Tutorial 6 - Turtlebot3 Navigation
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Navigation:
