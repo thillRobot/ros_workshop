@@ -36,6 +36,8 @@ After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basic
 Install the packages required for autonomous navigation if you have not already. It will not hurt to run the install command again.
 
 ```
+sudo apt update
+
 sudo apt install ros-melodic-navigation ros-melodic-gmapping
 ```
 
