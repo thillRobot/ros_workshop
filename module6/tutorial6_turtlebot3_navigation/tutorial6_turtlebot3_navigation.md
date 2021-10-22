@@ -119,7 +119,9 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map
 
 ```
 
-For Example
+**For Example:** The three options below work on a typical system.
+
+_Option 1_ Navigate to the package directory and then use relative paths to the map files. 
 
 ```
 cd ~/catkin_ws/src/turtlesim_control
@@ -128,9 +130,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 
 ```
 
-
-Or you can use the built-in ROS Change Directory tool `roscd` to quickly navigating to a ROS package on the system. This method is preferred because it is not specfic to the location of the package containing the maps. 
-
+_Option 2_ Use the built-in ROS Change Directory tool `roscd` to quickly navigating to a ROS package on the system. This method is portable because it is not specfic to the location of the package containing the maps. 
 
 ```
 roscd turtlesim_control
@@ -138,6 +138,13 @@ roscd turtlesim_control
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
 
 ```
+
+_Option 3_ (**preffered method**) Use `find` to access the package containing the maps without needing to change the current directory. Use relative paths from the package directory in the find command.
+
+```
+ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlesim_control)/maps/demo_world.yaml'
+```
+
 
 The gazebo window will open containing your robot, and you will also see the rviz window open separately. Find and test the following features of navigation in RVIZ. 
 	
