@@ -179,10 +179,10 @@ You may have run into an issue in which `turtlebot3_navigation` cannot load the 
 ```
 
 ### Step 1 
-Leave the top line of `map.yaml` as is when the file is generated. Do not add the full path to map file. The filename is sufficient. 
+Check that the top line of `map.yaml` contains the name of the map with the .yaml extension. The path to the map file should not be included in this line. 
 
 ### Step 2 
-Copy map.yaml and {\it map.pgm } to a directory named maps/ in a package in the ROS workspace.
+Check that `map.yaml` and `map.pgm` exist in a directory named maps/ in a package in the ROS workspace.
 
 ### Step 3 
 Check that the workspace will compile by running
