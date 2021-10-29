@@ -97,9 +97,9 @@ rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world
 _Option 2_ Navigate to package directory and use relative paths. 
 
 ```
-cd ~/catkin_ws/src/turtlesim_control/maps
+mkdir ~/catkin_ws/src/turtlesim_control/maps
 
-mkdir maps
+cd ~/catkin_ws/src/turtlesim_control/maps
 
 rosrun map_server map_saver -f demo_world  
 ```
