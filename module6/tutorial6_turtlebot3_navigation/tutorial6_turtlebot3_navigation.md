@@ -79,6 +79,8 @@ Create a directory in your custom turtlesim package for storing map files, then 
 ```
 mkdir ~/catkin_ws/src/<package_name>/maps
 
+cd ~/catkin_ws/src/<package_name>/maps
+
 rosrun map_server map_saver -f <map_name>  
 ```
 
