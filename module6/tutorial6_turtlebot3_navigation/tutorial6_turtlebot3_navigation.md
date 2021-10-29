@@ -66,7 +66,7 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 ### Step 3 Collect sensor data
 
-Drive the robot around with the keyboard as the turtlesim automatically collectS pose and Lidar data. The teleop node can be stopped when you think you have collected enough data to generate a map of the entire area. Leave the `gmapping` process running.
+Drive the robot around with the keyboard as the turtlesim automatically collects pose and Lidar data. The teleop node can be stopped when you have collected enough data to generate a map of the entire area. Leave the `gmapping` process running.
 
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -74,7 +74,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### Step 4 Save Map
 
-Create a directory in your custom turtlesim package for storing map files, then save the map with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
+Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
  
 ```
 mkdir ~/catkin_ws/src/<package_name>/maps
