@@ -179,7 +179,7 @@ You may have run into an issue in which `turtlebot3_navigation` cannot load the 
 ```
 
 ### Step 1 
-Check that the top line of `map.yaml` contains the name of the map with the .yaml extension. The path to the map file should not be included in this line. The file generated in the this tutorial is shown below.
+Check that the top line of `map.yaml` contains the name of the map with the `.pgm` extension. The path to the map file should not be included in this line. The file generated in the this tutorial is shown below.
 
 ```
 image: demo_world.pgm
