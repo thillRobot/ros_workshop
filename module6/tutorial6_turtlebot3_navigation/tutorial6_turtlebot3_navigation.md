@@ -179,7 +179,16 @@ You may have run into an issue in which `turtlebot3_navigation` cannot load the 
 ```
 
 ### Step 1 
-Check that the top line of `map.yaml` contains the name of the map with the .yaml extension. The path to the map file should not be included in this line. 
+Check that the top line of `map.yaml` contains the name of the map with the .yaml extension. The path to the map file should not be included in this line. The file generated in the this tutorial is shown below.
+
+```
+image: demo_world.pgm
+resolution: 0.050000
+origin: [-10.000000, -10.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+```
 
 ### Step 2 
 Check that `map.yaml` and `map.pgm` exist in a directory named maps/ in a package in the ROS workspace.
