@@ -66,7 +66,7 @@ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
 ### Step 3 Collect sensor data
 
-Drive the robot around with the keyboard as the turtlesim automatically collectS pose and Lidar data. Stop when you think you have Collected enough data to generate a map of the entire area.
+Drive the robot around with the keyboard as the turtlesim automatically collectS pose and Lidar data. The teleop node can be stopped when you think you have collected enough data to generate a map of the entire area. Leave the `gmapping` process running.
 
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
@@ -102,7 +102,7 @@ mkdir maps
 rosrun map_server map_saver -f maps/demo_world  
 ```
 
-Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match.
+Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
 
 
 ## Part 3 - Navigate Virtual space:
