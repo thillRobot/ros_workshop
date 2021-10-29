@@ -28,7 +28,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
 - [Module 7](module7/) 
   - Lecture: Custom Maps (slides need to be made)
   - Tutorial: Turtlebot3 Brown Hall (needs conversion to markdown)
-- [Module 8](module8) 
+- [Module 8](module8/) 
   - Lecture: Using Launch Files (slides need to be made)
   - Tutorial: Launch Turtlebot3 Simulator (needs conversion to markdown)
 - [Module 9](module9/) 
