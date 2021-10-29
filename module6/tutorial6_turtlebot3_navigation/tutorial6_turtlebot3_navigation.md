@@ -95,11 +95,11 @@ rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world
 _Option 2_ Navigate to package directory and use relative paths. 
 
 ```
-cd ~/catkin_ws/src/turtlesim_control
+cd ~/catkin_ws/src/turtlesim_control/maps
 
 mkdir maps
 
-rosrun map_server map_saver -f maps/demo_world  
+rosrun map_server map_saver -f demo_world  
 ```
 
 Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
