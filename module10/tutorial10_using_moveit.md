@@ -150,21 +150,24 @@ Add the robot to the simulator using the urdf for gazebo.
 rosrun gazebo_ros spawn_model -file $(find aubo_i5_moveit_config)/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
 ```
 
-Well it looks like it worked. Woop Woop!
+Find did not work, lets try that again later. Use the full path for now.
+
+```
+rosrun gazebo_ros spawn_model -file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
+    
+    [INFO] [1636155628.986157]: Loading model XML from file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
+    [INFO] [1636155628.992780]: Waiting for service /gazebo/spawn_urdf_model
+    [INFO] [1636155628.997679]: Calling service /gazebo/spawn_urdf_model
+    [INFO] [1636155629.301420]: Spawn status: SpawnModel: Successfully spawned entity
+```
+
+Well it looks like it worked. Woop Woop it is dinne time!
 
 <img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="1000"/>
 
 
-```
-rosrun gazebo_ros spawn_model -file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
-[INFO] [1636155628.986157]: Loading model XML from file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
-[INFO] [1636155628.992780]: Waiting for service /gazebo/spawn_urdf_model
-[INFO] [1636155628.997679]: Calling service /gazebo/spawn_urdf_model
-[INFO] [1636155629.301420]: Spawn status: SpawnModel: Successfully spawned entity
-```
 
 If the `ws_aubo` workspace is not sourced the error below is shown. This should be fixed.
-
 
 
 ```
