@@ -35,7 +35,7 @@ sudo apt dist-upgrade
 Install neccesary packages
 
 ```
-sudo apt-get install ros-melodic-catkin python-catkin-tools
+sudo apt install ros-melodic-catkin python-catkin-tools
 ```
 
 Install moveit
