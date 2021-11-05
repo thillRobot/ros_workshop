@@ -29,7 +29,7 @@ Upgrade system
 ```
 rosdep update
 sudo apt update
-sudo apt dist-upgrade
+sudo apt upgrade  # tutorial above uses `dist-upgrade`
 ```
 
 Install neccesary packages (These are available in `venv`, test that next)
@@ -41,7 +41,7 @@ sudo apt install ros-melodic-catkin python-catkin-tools
 Install moveit
 
 ```
-sudo apt install ros-melodic-moveit 
+sudo apt-get install ros-$ROS_DISTRO-moveit
 ```
 
 Create a workspace for moveit
