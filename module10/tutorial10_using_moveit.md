@@ -97,6 +97,8 @@ Download the aubo_robot package into a different workspace so that it can be loa
 mkdir -p ~/aubo_ws/src
 cd ~/aubo_ws/src
 git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO
+
+cd ~ # we are not working here for now
 ```
 
 Run the `moveit setup assistant` 
