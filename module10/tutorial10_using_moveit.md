@@ -32,7 +32,7 @@ sudo apt update
 sudo apt dist-upgrade
 ```
 
-Install neccesary packages
+Install neccesary packages (These are available in `venv`, test that next)
 
 ```
 sudo apt install ros-melodic-catkin python-catkin-tools
