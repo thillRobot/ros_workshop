@@ -54,7 +54,6 @@ Download the moveit_tutorials package into the melodic workspace.
 ```
 cd ~/ws_moveit/src
 git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-devel
-
 ```
 
 Prepare the workspace and compile with `catkin build`. 
@@ -80,13 +79,13 @@ echo "source ~/ws_moveit/devel/setup.bash" >> ~/.bashrc
 
 Install the Franka Robot Description Package (because tutorial said so...)
 
-I am not sure this is needed. 
+I think this is only needed if you are using one of Franka Emikas robots 
 ```
 sudo apt-get install ros-melodic-franka-description
 ```
 
 Install `ros_industrial` to use the aubo_arm package from [AuboRobot](https://github.com/AuboRobot/aubo_robot) (because they said so...)
-I am not sure this is needed. 
+I think this is only needed if you are going to complile the aubo package.
 ```
 sudo apt install ros-$ROS_DISTRO-industrial-core
 ```
@@ -94,12 +93,17 @@ sudo apt install ros-$ROS_DISTRO-industrial-core
 Download the aubo_robot package into a different workspace so that it can be loaded by the `moveit setup assistant`. It will not compile, so it should not be in `ws_moveit`.
 
 ```
-mkdir -p ~/aubo_ws/src
-cd ~/aubo_ws/src
-git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO
+mkdir -p ~/ws_aubo/src
+cd ~/ws_aubo
+catkin_make
 
-cd ~ # we are not working here for now
+git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO src/aubo_robot
+
+source ~/ws_aubo/devel/setup.bash # just for now
+cd ~ 
 ```
+
+
 
 Run the `moveit setup assistant` from the tutorial [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html) to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
 
@@ -107,6 +111,66 @@ Run the `moveit setup assistant` from the tutorial [here](http://docs.ros.org/en
 roslaunch moveit_setup_assistant setup_assistant.launch
 ```
 
-I used the the file `/aubo_robot/aubo_description/urdf/aubo_i3.urdf` to generate the urdf `aubo_i3_gazebo.urdf` and a package by the same name. We are no there yet, but this seems like progress.
+I used the the file `/aubo_robot/aubo_description/urdf/aubo_i5.urdf` to generate the urdf `aubo_i5_gazebo.urdf` and a package named `aubo_i5_moveit_config`
 
 
+Create a /gazebo directory in the new package to put the gazebo urdf in
+
+```
+
+mkdir ~/ws_moveit/src/aubo_i5_moveit_config/gazebo
+vim ~/ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
+```
+
+
+Paste in the urdf XML from the clipboard (lol) 
+
+
+compile the package with catkin build
+
+```
+cd ~/ws_moveit
+catkin build
+
+source ~/ws_moveit/devel/setup.bash
+```
+
+
+
+Now start the Gazebo simulator with an empty world
+
+```
+roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
+```
+
+Add the robot to the simulator using the urdf for gazebo. 
+
+
+```
+rosrun gazebo_ros spawn_model -file $(find aubo_i5_moveit_config)/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
+```
+
+Well it looks like it worked. Woop Woop!
+
+<img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="1000"/>
+
+
+```
+rosrun gazebo_ros spawn_model -file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
+[INFO] [1636155628.986157]: Loading model XML from file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
+[INFO] [1636155628.992780]: Waiting for service /gazebo/spawn_urdf_model
+[INFO] [1636155628.997679]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1636155629.301420]: Spawn status: SpawnModel: Successfully spawned entity
+```
+
+If the `ws_aubo` workspace is not sourced the error below is shown. This should be fixed.
+
+
+
+```
+[rospack] Error: package 'aubo_description' not found
+[librospack]: error while executing command
+[FATAL] [1636155476.819294674]: Package[aubo_description] does not have a path
+^C[gazebo_gui-3] killing on exit
+```
+ 
