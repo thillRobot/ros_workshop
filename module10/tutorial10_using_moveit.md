@@ -89,7 +89,7 @@ Download the aubo_robot package into the workspace so that it can be loaded by t
 
 ```
 cd ~/ws_moveit/src
-git clone https://github.com/AuboRobot/aubo_robot.git -devel-$ROS_DISTRO
+git clone https://github.com/AuboRobot/aubo_robot.git -b devel-$ROS_DISTRO
 ````
 
 Or put it in downloads cause it will not compile.
