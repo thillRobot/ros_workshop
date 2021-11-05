@@ -89,7 +89,7 @@ Download the aubo_robot package into the workspace so that it can be loaded by t
 
 ```
 cd ~/ws_moveit/src
-git clone https://github.com/AuboRobot/aubo_robot.git ~/ws_catkin/src
+git clone https://github.com/AuboRobot/aubo_robot.git
 ````
 
 Or put it in downloads cause it will not compile.
