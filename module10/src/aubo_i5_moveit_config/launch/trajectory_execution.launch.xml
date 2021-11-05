@@ -16,8 +16,8 @@
   <param name="trajectory_execution/allowed_start_tolerance" value="0.01"/> <!-- default 0.01 -->
 
   <!-- Load the robot specific controller manager; this sets the moveit_controller_manager ROS parameter -->
-  <arg name="moveit_controller_manager" default="aubo_i3" />
-  <include file="$(find aubo_i3_gazebo)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml">
+  <arg name="moveit_controller_manager" default="aubo_i5" />
+  <include file="$(find aubo_i5_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml">
     <arg name="execution_type" value="$(arg execution_type)" />
   </include>
 

@@ -26,5 +26,5 @@
   <param name="capabilities" value="$(arg capabilities)" />
   <param name="disable_capabilities" value="$(arg disable_capabilities)" />
 
-  <rosparam command="load" file="$(find aubo_i3_gazebo)/config/chomp_planning.yaml" />
+  <rosparam command="load" file="$(find aubo_i5_moveit_config)/config/chomp_planning.yaml" />
 </launch>

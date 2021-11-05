@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(aubo_i3_gazebo)
+project(aubo_i5_moveit_config)
 
 find_package(catkin REQUIRED)
 

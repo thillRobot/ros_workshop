@@ -1,9 +1,9 @@
 <package>
 
-  <name>aubo_i3_gazebo</name>
+  <name>aubo_i5_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the aubo_i3 with the MoveIt! Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the aubo_i5 with the MoveIt! Motion Planning Framework
   </description>
   <author email="thill@tntech.edu">thillRobot</author>
   <maintainer email="thill@tntech.edu">thillRobot</maintainer>
