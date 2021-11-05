@@ -1,6 +1,6 @@
 # moveit
 
-This is my notes for using moveit with ROS Melodic. I can quite call it a tutorial yet.
+This is my notes for using moveit with ROS Melodic. I can't quite call it a tutorial yet.
 
 ## Resources
 
