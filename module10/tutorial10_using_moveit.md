@@ -60,7 +60,7 @@ git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-de
 Prepare the workspace and compile with `catkin build`. 
 
 ```
-rosdep install -y --from-paths . --ignore-src --rosdistro melodic
+rosdep install -y --from-paths . --ignore-src --rosdistro $ROS_DISTRO
 cd ~/ws_moveit
 catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
 
