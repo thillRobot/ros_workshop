@@ -13,7 +13,9 @@ Read the docs! It looks like they are in two places...
 
 ## Installation
 
-It is assumed that you have install ROS melodic and sourced the setup file.
+It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed.
+
+Sourced the setup file before begin.
 
 ```
 source /opt/ros/melodic/setup.bash
@@ -79,7 +81,7 @@ git clone https://github.com/AuboRobot/aubo_robot.git ~/Downloads/aubo_robot
 
 Run the `moveit setup assistant` 
 
-Follow the tutorial here to generate a  Gazebno compatible URDF from the URDF in the aubo package. This sounds promising.
+Follow the tutorial here to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
 
 I used the the file `/aubo_robot/aubo_description/urdf/aubo_i3.urdf` to generate the urdf `aubo_i3_gazebo.urdf` and a package by the same name. We are no there yet, but this seems like progress.
 
