@@ -73,6 +73,7 @@ Install the Franka Robot Description Package (because tutorial said so...)
 sudo apt-get install ros-melodic-franka-description
 ```
 
+Install `ros_industrial` To use the aubo_arm package from [AuboRobot](https://github.com/AuboRobot/aubo_robot)
 ```
 sudo apt install ros-$ROS_DISTRO-industrial-core
 ```
