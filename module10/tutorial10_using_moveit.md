@@ -53,7 +53,7 @@ mkdir -p ~/ws_moveit/src
 Download the moveit_tutorials package into the melodic workspace.
 ```
 cd ~/ws_moveit/src
-git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
+git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-devel
 
 ```
 
