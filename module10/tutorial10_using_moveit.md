@@ -101,10 +101,11 @@ git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO
 cd ~ # we are not working here for now
 ```
 
-Run the `moveit setup assistant` 
+Run the `moveit setup assistant` from the tutorial [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html) to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
 
-Follow the tutorial here to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
-
+```
+roslaunch moveit_setup_assistant setup_assistant.launch
+```
 
 I used the the file `/aubo_robot/aubo_description/urdf/aubo_i3.urdf` to generate the urdf `aubo_i3_gazebo.urdf` and a package by the same name. We are no there yet, but this seems like progress.
 
