@@ -66,7 +66,7 @@ catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Re
 
 catkin build
 ```
-After compiling, source the workspace setup file.
+After compiling, source the workspace setup file. (put this in `~/.bashrc`)
 
 ```
 source ~/ws_moveit/devel/setup.bash
