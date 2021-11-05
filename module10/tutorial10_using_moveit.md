@@ -88,6 +88,7 @@ sudo apt install ros-$ROS_DISTRO-industrial-core
 Download the aubo_robot package into the workspace so that it can be loaded by the `moveit setup assistant`
 
 ```
+cd ~/ws_moveit/src
 git clone https://github.com/AuboRobot/aubo_robot.git ~/ws_catkin/src
 ````
 
