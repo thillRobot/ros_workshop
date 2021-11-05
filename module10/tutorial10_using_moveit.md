@@ -66,21 +66,27 @@ catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Re
 
 catkin build
 ```
-After compiling, source the workspace setup file. (put this in `~/.bashrc`)
+After compiling, source the workspace setup file. 
 
 ```
 source ~/ws_moveit/devel/setup.bash
+```
+Put this in `~/.bashrc` for convinience. This is optional.
+```
+echo "source ~/ws_moveit/devel/setup.bash" >> ~/.bashrc
 ```
 
 
 
 Install the Franka Robot Description Package (because tutorial said so...)
 
+I am not sure this is needed. 
 ```
 sudo apt-get install ros-melodic-franka-description
 ```
 
 Install `ros_industrial` to use the aubo_arm package from [AuboRobot](https://github.com/AuboRobot/aubo_robot) (because they said so...)
+I am not sure this is needed. 
 ```
 sudo apt install ros-$ROS_DISTRO-industrial-core
 ```
