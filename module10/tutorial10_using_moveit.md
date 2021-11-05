@@ -35,7 +35,7 @@ sudo apt upgrade  # tutorial above uses `dist-upgrade`
 Install neccesary packages (These are available in `venv`, test that next)
 
 ```
-sudo apt install ros-melodic-catkin python-catkin-tools
+sudo apt install ros-$ROS_DISTRO-catkin python-catkin-tools
 ```
 
 Install moveit
