@@ -15,7 +15,7 @@ Read the docs! It looks like they are in two places...
 
 It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed.
 
-Sourced the setup file before begin.
+Source the setup file before begin
 
 ```
 source /opt/ros/melodic/setup.bash
