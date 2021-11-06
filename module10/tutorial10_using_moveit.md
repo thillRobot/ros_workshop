@@ -75,21 +75,6 @@ Put this in `~/.bashrc` for convinience. This is optional.
 echo "source ~/ws_moveit/devel/setup.bash" >> ~/.bashrc
 ```
 
-
-
-Install the Franka Robot Description Package (because tutorial said so...)
-
-I think this is only needed if you are using one of Franka Emikas robots 
-```
-sudo apt-get install ros-melodic-franka-description
-```
-
-Install `ros_industrial` to use the aubo_arm package from [AuboRobot](https://github.com/AuboRobot/aubo_robot) (because they said so...)
-I think this is only needed if you are going to complile the aubo package.
-```
-sudo apt install ros-$ROS_DISTRO-industrial-core
-```
-
 Download the aubo_robot package into a different workspace so that it can be loaded by the `moveit setup assistant`. It will not compile, so it should not be in `ws_moveit`.
 
 ```
@@ -114,7 +99,7 @@ roslaunch moveit_setup_assistant setup_assistant.launch
 I used the the file `/aubo_robot/aubo_description/urdf/aubo_i5.urdf` to generate the urdf `aubo_i5_gazebo.urdf` and a package named `aubo_i5_moveit_config`
 
 
-Create a /gazebo directory in the new package to put the gazebo urdf in
+Create a directory in the new package to put the gazebo urdf in
 
 ```
 
