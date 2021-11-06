@@ -162,7 +162,16 @@ If the `ws_aubo` workspace is not sourced the error below is shown. This should 
 [FATAL] [1636155476.819294674]: Package[aubo_description] does not have a path
 ^C[gazebo_gui-3] killing on exit
 ```
+
+
+
+
+<img src="png_images/aubo_i5_demo_launch.png" alt="drawing" width="700"/>
+
  
+
+
+
  
  
 Download the `thillRobot/moveit_examples` package for pre-configured robot examples
