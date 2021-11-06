@@ -10,6 +10,8 @@ Read the docs! It looks like they are in two places...
 
  - [moveit_tutorials](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html#install-ros-and-catkin) 
 
+ - THIS README IS A MESS. I am going to clean it up tomorrow.
+
 
 ## Installation
 
@@ -54,6 +56,11 @@ Download the moveit_tutorials package into the workspace.
 ```
 cd ~/ws_moveit/src
 git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-devel
+```
+
+Download the `thillRobot/moveit_examples` package for into the workspace.
+```
+git clone https://github.com/thillRobot/moveit_examples.git
 ```
 
 
@@ -185,15 +192,16 @@ roslaunch aubo_i5_moveit_config demo.launch
 <img src="png_images/aubo_i5_demo_launch01.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/>
 
  
+ There is still a lot to do, but this is a good start.
+ 
 
 
 
  
  
-Download the `thillRobot/moveit_examples` package for pre-configured robot examples
-```
-git clone https://github.com/thillRobot/moveit_examples.git
-```
+ 
+ 
+
  
  
  
