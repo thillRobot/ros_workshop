@@ -81,7 +81,7 @@ Download the aubo_robot package into a different workspace so that it can be loa
 ```
 mkdir -p ~/ws_aubo/src
 cd ~/ws_aubo
-catkin_make
+catkin build 
 
 git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO src/aubo_robot
 
