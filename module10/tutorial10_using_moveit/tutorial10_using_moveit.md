@@ -1,6 +1,6 @@
 # using moveit
 
-This is my notes for using moveit with ROS Melodic. I can't quite call it a tutorial yet.
+This is my notes for using moveit with ROS. I can't quite call it a tutorial yet.
 
 ## Resources
 
@@ -15,16 +15,19 @@ Read the docs! It looks like they are in two places...
 
 ## Installation
 
-It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed.
+This has been test on Ubuntu 18.04 (minimal) in a VM (see module 1)
 
-Source the setup file before begin
+It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed 
+
+Source the ROS setup file before begin
 
 ```
-source /opt/ros/melodic/setup.bash
+source /opt/ros/$ROS_DISTRO/setup.bash
 ```
 
+### Install Moveit 
 
-Follow the instructions [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html#install-ros-and-catkin) to install `moveit`. The commands are copied here for convenience. 
+Follow the instructions [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html#install-ros-and-catkin) to install `moveit` with `apt` (aka _binary installation_). The commands are copied here for convenience. The _source installation_ is not needed unless you want to modify the Moveit package.  
 
 Upgrade system
 
@@ -46,23 +49,24 @@ Install moveit
 sudo apt-get install ros-$ROS_DISTRO-moveit
 ```
 
-Create a workspace for moveit
+Create a workspace for moveit. This will be a `catkin build` workspace, but `catkin_make` should work also.
 
 ```
 mkdir -p ~/ws_moveit/src
 ```
 
-Download the moveit_tutorials package into the workspace.
+### Download and compile moveit_tutorials and moveit_examples
+
+Clone the package into the workspace  
 ```
 cd ~/ws_moveit/src
 git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-devel
 ```
 
-Download the `thillRobot/moveit_examples` package for into the workspace.
+Clone the `thillRobot/moveit_examples` package for into the workspace.
 ```
 git clone https://github.com/thillRobot/moveit_examples.git
 ```
-
 
 Prepare the workspace and compile with `catkin build`. 
 
@@ -83,7 +87,11 @@ Put this in `~/.bashrc` for convinience. This is optional.
 echo "source ~/ws_moveit/devel/setup.bash" >> ~/.bashrc
 ```
 
-Download the aubo_robot package into a different workspace so that it can be loaded by the `moveit setup assistant`. It will not compile, so it should not be in `ws_moveit`.
+### Import a robot from URDF
+
+Import a robot of your choice. At minimum the model .stl files and a robot .urdf (Universal Robot Descriptor File) is required. This example uses the _Aubo i5_ from [AuboRobot](https://github.com/AuboRobot/aubo_robot)
+
+Clone the `aubo_robot` package into a different workspace so that it can be loaded by the `moveit setup assistant`. It will not compile, so it should not be in `ws_moveit`. The `UpdateMoveitLib` patch is not reccommend because is modifies the system wide libraries in an unknown and non-standard way. Don't bork the deps!
 
 ```
 mkdir -p ~/ws_aubo/src
@@ -95,7 +103,6 @@ git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO src/aubo_ro
 source ~/ws_aubo/devel/setup.bash # just for now
 cd ~ 
 ```
-
 
 
 Run the `moveit setup assistant` from the tutorial [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html) to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
