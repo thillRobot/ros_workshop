@@ -50,11 +50,12 @@ Create a workspace for moveit
 mkdir -p ~/ws_moveit/src
 ```
 
-Download the moveit_tutorials package into the melodic workspace.
+Download the moveit_tutorials package into the workspace.
 ```
 cd ~/ws_moveit/src
 git clone https://github.com/ros-planning/moveit_tutorials.git -b $ROS_DISTRO-devel
 ```
+
 
 Prepare the workspace and compile with `catkin build`. 
 
@@ -161,4 +162,13 @@ If the `ws_aubo` workspace is not sourced the error below is shown. This should 
 [FATAL] [1636155476.819294674]: Package[aubo_description] does not have a path
 ^C[gazebo_gui-3] killing on exit
 ```
+ 
+ 
+ 
+Download the `thillRobot/moveit_examples` package for pre-configured robot examples
+```
+git clone https://github.com/thillRobot/moveit_examples.git
+```
+ 
+ 
  
