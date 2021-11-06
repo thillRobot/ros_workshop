@@ -163,7 +163,23 @@ If the `ws_aubo` workspace is not sourced the error below is shown. This should 
 ^C[gazebo_gui-3] killing on exit
 ```
 
+I do not really like have both workspaces sourced. So I copied the missing package from ws_aubo to ws_moveit
 
+```
+mkdir -p ~/ws_moveit/src/moveit_examples/aubo_robot
+cp -r ~/ws_aubo/src/aubo_robot/aubo_description ~/ws_moveit/src/moveit_examples/aubo_description
+
+cd ~/ws_moveit
+catkin build
+```
+
+Now close both terminals and do not source the aubo workspace.
+
+The `aubo_i5_moveit_config` package contains a collection of launch files. This should be very useful.
+
+```
+roslaunch aubo_i5_moveit_config demo.launch
+```
 
 
 <img src="png_images/aubo_i5_demo_launch.png" alt="drawing" width="700"/>
