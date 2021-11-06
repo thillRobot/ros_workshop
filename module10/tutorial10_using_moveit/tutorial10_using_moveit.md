@@ -182,7 +182,7 @@ roslaunch aubo_i5_moveit_config demo.launch
 ```
 
 
-<img src="png_images/aubo_i5_demo_launch01.png" alt="drawing" width="700"/>
+<img src="png_images/aubo_i5_demo_launch01.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/>
 
  
 
