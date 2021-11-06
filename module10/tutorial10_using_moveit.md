@@ -161,9 +161,9 @@ rosrun gazebo_ros spawn_model -file ws_moveit/src/aubo_i5_moveit_config/gazebo/a
     [INFO] [1636155629.301420]: Spawn status: SpawnModel: Successfully spawned entity
 ```
 
-Well it looks like it worked. Woop Woop it is dinne time!
+Well it looks like it worked. Woop Woop!
 
-<img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="1000"/>
+<img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="700"/>
 
 
 
