@@ -2,6 +2,13 @@
 
 This is my notes for using moveit with ROS. I can't quite call it a tutorial yet.
 
+## ROS Version
+
+Select the repository branch for the appropriate version of ROS. 
+
+This is the `melodic` branch.
+
+
 ## Resources
 
 Read the docs! It looks like they are in two places...
