@@ -1,6 +1,6 @@
 # using moveit
 
-This is my notes for using moveit with ROS. I can't quite call it a tutorial yet.
+This is my notes for using moveit with ROS. This is pretty cool.
 
 ## ROS Version
 
