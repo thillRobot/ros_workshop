@@ -150,14 +150,8 @@ Now start the Gazebo simulator with an empty world
 roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
 ```
 
-Add the robot to the simulator using the urdf for gazebo. 
+Add the robot to the simulator using the urdf for gazebo. This could be improved with find or something similar. 
 
-
-```
-rosrun gazebo_ros spawn_model -file $(find aubo_i5_moveit_config)/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
-```
-
-Find did not work, lets try that again later. Use the full path for now.
 
 ```
 rosrun gazebo_ros spawn_model -file ws_moveit/src/moveit_examples/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
