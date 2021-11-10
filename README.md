@@ -33,7 +33,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: Launch Turtlebot3 Simulator (needs conversion to markdown)
 - [Module 9](module9/) 
   - Lecture: Using a Physical Robot (slides need to be made)
-  - Tutorial: Turtlebot3 Setup (needs conversion to markdown)
+  - Tutorial: [Turtlebot3 Setup](https://github.com/thillRobot/turtlebot3_setup/blob/master/README.md)
 
 
 
