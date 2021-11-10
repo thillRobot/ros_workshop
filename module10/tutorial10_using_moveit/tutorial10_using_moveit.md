@@ -112,27 +112,26 @@ cd ~
 ```
 
 
-Run the `moveit setup assistant` from the tutorial [here](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html) to generate a Gazebo compatible URDF from the URDF in the aubo package. This sounds promising.
-
+Run the `moveit setup assistant` from the [tutorial](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html)  
 ```
 roslaunch moveit_setup_assistant setup_assistant.launch
 ```
+Complete steps 1-12 to generate a Gazebo compatible URDF from the URDF in the aubo package.
 
 I used the the file `/aubo_robot/aubo_description/urdf/aubo_i5.urdf` to generate the urdf `aubo_i5_gazebo.urdf` and a package named `aubo_i5_moveit_config`
 
 
-Create a directory in the new package to put the gazebo urdf in
+Create a directory in the new package for the gazebo urdf.
 
 ```
 mkdir ~/ws_moveit/src/aubo_i5_moveit_config/gazebo
 vim ~/ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
 ```
 
+Paste in the urdf XML from the clipboard.
 
-Paste in the urdf XML from the clipboard (lol) 
 
-
-compile the package with catkin build
+Compile the package with catkin build
 
 ```
 cd ~/ws_moveit
@@ -141,7 +140,9 @@ catkin build
 source ~/ws_moveit/devel/setup.bash
 ```
 
+### Testing Robot in Moveit
 
+#### Test 1 - Gazebo Import 
 
 Now start the Gazebo simulator with an empty world
 
@@ -149,7 +150,7 @@ Now start the Gazebo simulator with an empty world
 roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
 ```
 
-Add the robot to the simulator using the urdf for gazebo. This could be improved with find or something similar. 
+Add the robot to the simulator using the urdf for gazebo. This should be improved with `find` or something similar. 
 
 
 ```
@@ -161,14 +162,12 @@ rosrun gazebo_ros spawn_model -file ws_moveit/src/moveit_examples/aubo_i5_moveit
     [INFO] [1636155629.301420]: Spawn status: SpawnModel: Successfully spawned entity
 ```
 
-Well it looks like it worked. Woop Woop!
+It looks like it worked. Woop Woop! This first example tends to crash on the virtual box used for testing.
 
 <img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="700"/>
 
 
-
-If the `ws_aubo` workspace is not sourced the error below is shown. This should be fixed.
-
+If the `ws_aubo` workspace is not sourced the error below is shown.  This can be fixed by moving the `aubo_description` package into the Moveit workspace.
 
 ```
 [rospack] Error: package 'aubo_description' not found
@@ -177,7 +176,7 @@ If the `ws_aubo` workspace is not sourced the error below is shown. This should 
 ^C[gazebo_gui-3] killing on exit
 ```
 
-I do not really like have both workspaces sourced. So I copied the missing package from ws_aubo to ws_moveit
+I do not want both workspaces sourced. So I copied the missing package from ws_aubo to ws_moveit. Read the [catkin_tools docs](https://catkin-tools.readthedocs.io/en/latest/verbs/catkin_build.html) about chained workspaces.It seems like it is OK to have both.
 
 ```
 mkdir -p ~/ws_moveit/src/moveit_examples/aubo_robot
@@ -187,17 +186,26 @@ cd ~/ws_moveit
 catkin build
 ```
 
-Now close both terminals and do not source the aubo workspace.
+Now close both terminals and do not source the aubo workspace. Repeat the test.
 
-The `aubo_i5_moveit_config` package contains a collection of launch files. This should be very useful.
+#### Test 2 - RVIZ Demo
+
+The `aubo_i5_moveit_config` package contains a collection of launch files. The example `demo.launch` displays the robot in RVIZ and allows the user to plan and execute arm motions using the the Moveit panel.
 
 ```
 roslaunch aubo_i5_moveit_config demo.launch
 ```
 
-
 <img src="png_images/aubo_i5_demo_launch01.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/>
 
- 
- There is still a lot to do, but this is a good start.
+Configure the display menu to show the start and goal locations by selecting _Planning Requests > Query Start State_ in the displays menu on the left.
+
+<img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/>
+
+Choose the the start and goal locations by dragging the end effector to the desired position. Animate the robot by pressing _plan_ or _plan and execute_ in the Moveit panel on the bottom left.
+
+<img src="png_images/aubo_i5_demo_launch03.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch02.png" alt="drawing" width="700"/>
+
+Show the intermediate poistions by selecting _Planned Path > Show Trail_, and disable the infinite loop by deselecting _Planned Path > Loop Animation_. The settings are described in more detail in the Moveit [getting started](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html) tutorial.
+
  
