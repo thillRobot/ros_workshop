@@ -124,7 +124,6 @@ I used the the file `/aubo_robot/aubo_description/urdf/aubo_i5.urdf` to generate
 Create a directory in the new package to put the gazebo urdf in
 
 ```
-
 mkdir ~/ws_moveit/src/aubo_i5_moveit_config/gazebo
 vim ~/ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
 ```
