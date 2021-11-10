@@ -200,11 +200,11 @@ roslaunch aubo_i5_moveit_config demo.launch
 
 Configure the display menu to show the start and goal locations by selecting _Planning Requests > Query Start State_ in the displays menu on the left.
 
-<img src="png_images/aubo_i5_demo_launch09.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch09.png" alt="drawing" width="700"/>
+<img src="png_images/aubo_i5_demo_launch03.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch04.png" alt="drawing" width="700"/>
 
 Choose the the start and goal locations by dragging the end effector to the desired position. Animate the robot by pressing _plan_ or _plan and execute_ in the Moveit panel on the bottom left.
 
-<img src="png_images/aubo_i5_demo_launch09.png" alt="drawing" width="700"/> <img src="png_images/aubo_i5_demo_launch09.png" alt="drawing" width="700"/>
+<img src="png_images/aubo_i5_demo_launch05.png" alt="drawing" width="700"/> 
 
 Show the intermediate poistions by selecting _Planned Path > Show Trail_, and disable the infinite loop by deselecting _Planned Path > Loop Animation_. The settings are described in more detail in the Moveit [getting started](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html) tutorial.
 
