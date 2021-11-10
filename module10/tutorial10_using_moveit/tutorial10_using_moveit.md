@@ -17,7 +17,7 @@ Read the docs! It looks like they are in two places...
 
  - [moveit_tutorials](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html#install-ros-and-catkin) 
 
- - THIS README IS A MESS. I am going to clean it up tomorrow.
+ - [Stephen Zuccaro on Youtube](https://www.youtube.com/channel/UCofPudSKrNzT3vccJD6VDyA)
 
 
 ## Installation
