@@ -4,9 +4,9 @@ This is my notes for using moveit with ROS. I can't quite call it a tutorial yet
 
 ## ROS Version
 
-Select the repository branch for the appropriate version of ROS. 
+This is the `melodic` branch. 
 
-This is the `melodic-devel` branch.
+Select the version of ROS by choosing the appropriate repository branch.
 
 
 ## Resources
@@ -22,11 +22,11 @@ Read the docs! It looks like they are in two places...
 
 ## Installation
 
-This has been test on Ubuntu 18.04 (minimal) in a VM (see module 1)
+This has been tested on Ubuntu 18.04 (minimal) in a VM (see module 1)
 
 It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed 
 
-Source the ROS setup file before begin
+Source the ROS setup file before starting. This is probably in your `~/.bashjrc`
 
 ```
 source /opt/ros/$ROS_DISTRO/setup.bash
@@ -75,7 +75,7 @@ Clone the `thillRobot/moveit_examples` package for into the workspace.
 git clone https://github.com/thillRobot/moveit_examples.git
 ```
 
-Prepare the workspace and compile with `catkin build`. 
+Prepare the workspace and compile with `catkin build`. Read about `catkin_build` in the [catkin_tools docs](https://catkin-tools.readthedocs.io/en/latest/verbs/catkin_build.html)
 
 ```
 rosdep install -y --from-paths . --ignore-src --rosdistro $ROS_DISTRO
@@ -160,7 +160,7 @@ rosrun gazebo_ros spawn_model -file $(find aubo_i5_moveit_config)/gazebo/aubo_i5
 Find did not work, lets try that again later. Use the full path for now.
 
 ```
-rosrun gazebo_ros spawn_model -file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
+rosrun gazebo_ros spawn_model -file ws_moveit/src/moveit_examples/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model aubo_i5
     
     [INFO] [1636155628.986157]: Loading model XML from file ws_moveit/src/aubo_i5_moveit_config/gazebo/aubo_i5_gazebo.urdf
     [INFO] [1636155628.992780]: Waiting for service /gazebo/spawn_urdf_model
@@ -207,15 +207,4 @@ roslaunch aubo_i5_moveit_config demo.launch
 
  
  There is still a lot to do, but this is a good start.
- 
-
-
-
- 
- 
- 
- 
-
- 
- 
  
