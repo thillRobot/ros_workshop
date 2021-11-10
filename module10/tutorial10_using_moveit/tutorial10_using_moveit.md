@@ -6,7 +6,7 @@ This is my notes for using moveit with ROS. I can't quite call it a tutorial yet
 
 Select the repository branch for the appropriate version of ROS. 
 
-This is the `melodic` branch.
+This is the `melodic-devel` branch.
 
 
 ## Resources
@@ -17,7 +17,7 @@ Read the docs! It looks like they are in two places...
 
  - [moveit_tutorials](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html#install-ros-and-catkin) 
 
- - THIS README IS A MESS. I am going to clean it up tomorrow.
+ - THIS README IS A MESS. I am working on this now.
 
 
 ## Installation
