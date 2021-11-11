@@ -101,9 +101,10 @@ Import a robot of your choice. At minimum the model .stl files and a robot .urdf
 Clone the `aubo_robot` package into a different workspace so that it can be loaded by the `moveit setup assistant`. It will not compile, so it should not be in `ws_moveit`. The `UpdateMoveitLib` patch is not reccommend because is modifies the system wide libraries in an unknown and non-standard way. Don't bork the deps!
 
 ```
-mkdir -p ~/ws_aubo/src
+mkdir -p ~/ws_aubo
 cd ~/ws_aubo
 catkin build 
+
 
 git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO src/aubo_robot
 
