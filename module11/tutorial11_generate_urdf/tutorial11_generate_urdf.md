@@ -24,7 +24,7 @@ The R2D2 gripper shows how to use a .dae mesh file to define the geometry in the
  ```
 
 
- Here is another tutorial [STL Mesh file for URDF Link](https://www.theconstructsim.com/ros-projects-my-robotic-manipulator-6-stl-mesh-file-for-urdf-link/) which uses STL files directly. This is what we want to do.
+
 
 Also, there is a solidworks plugin solidworks_urdf_exporter for generating URDFs, but it does not appear to be supported in SW2021.
 
@@ -83,4 +83,13 @@ TIFFFieldWithTag: Internal error, unknown tag 0x8828.
 ```
 
 Apparantly this error can be fixed by changing the TIFs to PNGs, but the DAEs need to be updated. This does not sound like what we want to do. 
+
+
+Here is another tutorial [STL Mesh file for URDF Link](https://www.theconstructsim.com/ros-projects-my-robotic-manipulator-6-stl-mesh-file-for-urdf-link/) for _theconstruct_ which uses STL files directly. This is what we want to do.
+
+
+
+
+
+
 
