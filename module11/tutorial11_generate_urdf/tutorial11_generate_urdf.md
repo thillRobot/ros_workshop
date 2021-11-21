@@ -59,3 +59,28 @@ Now the example launch file should run without errors.
 ```
 roslaunch urdf_tutorial display.launch model:='$(find urdf_tutorial)/urdf/01-myfirst.urdf'
 ```
+Try the different examples by changing the URDF file in the launch file.
+
+
+
+
+All of the examples work except the last one which loads the gripper from a .dae + .tif. 
+
+
+
+```
+roslaunch urdf_tutorial display.launch model:=urdf/05-visual.urdf
+ 
+ ...
+
+TIFFReadDirectory: Warning, Sum of Photometric type-related color channels and ExtraSamples doesn't match SamplesPerPixel. Defining non-color channels as ExtraSamples..
+TIFFFieldWithTag: Internal error, unknown tag 0x829a.
+TIFFFieldWithTag: Internal error, unknown tag 0x829d.
+TIFFFieldWithTag: Internal error, unknown tag 0x8822.
+TIFFFieldWithTag: Internal error, unknown tag 0x8824.
+TIFFFieldWithTag: Internal error, unknown tag 0x8827.
+TIFFFieldWithTag: Internal error, unknown tag 0x8828.
+```
+
+Apparantly this error can be fixed by changing the TIFs to PNGs, but the DAEs need to be updated. This does not sound like what we want to do. 
+
