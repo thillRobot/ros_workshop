@@ -85,8 +85,20 @@ TIFFFieldWithTag: Internal error, unknown tag 0x8828.
 Apparantly this error can be fixed by changing the TIFs to PNGs, but the DAEs need to be updated. This does not sound like what we want to do. 
 
 
-Here is another tutorial [STL Mesh file for URDF Link](https://www.theconstructsim.com/ros-projects-my-robotic-manipulator-6-stl-mesh-file-for-urdf-link/) for _theconstruct_ which uses STL files directly. This is what we want to do.
+Here is another tutorial [STL Mesh file for URDF Link](https://www.theconstructsim.com/ros-projects-my-robotic-manipulator-6-stl-mesh-file-for-urdf-link/) for _theconstruct_ which uses STL files directly. This is what we want to do. There is a video on that page that shows a useful example, but it is hard to follow without the source code. 
 
+Clone the source code from bitbucket to use as another example.
+
+```
+cd catkin_make_ws/src
+git clone https://bitbucket.org/theconstructcore/my-robotic-manipulator/src/master/
+```
+
+Apparantley, cloning from bitbucket acts differently. The directory appears as `master`. Re-name this to avoid confusion and to match the tutorial.
+
+```
+cp -r master mrm_description
+```
 
 
 
