@@ -26,7 +26,7 @@ This has been tested on Ubuntu 18.04 (minimal) in a VM (see module 1)
 
 It is assumed that [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) is installed 
 
-Source the ROS setup file before starting. This is probably in your `~/.bashjrc`
+Source the ROS setup file before starting. This is probably in your `~/.bashrc`
 
 ```
 source /opt/ros/$ROS_DISTRO/setup.bash
