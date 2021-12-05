@@ -4,5 +4,8 @@
 		{
 			"path": ".",
 		},
+		{
+			"path": "/home/thill/catkin_make_ws"
+		},
 	],
 }
