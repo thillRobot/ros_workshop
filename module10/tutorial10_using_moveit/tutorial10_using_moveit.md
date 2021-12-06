@@ -56,7 +56,9 @@ Install moveit
 sudo apt-get install ros-$ROS_DISTRO-moveit
 ```
 
-Create a workspace for moveit. This will be a `catkin build` workspace, but `catkin_make` should work also.
+### Create a workspace for moveit
+
+This will be a `catkin build` workspace, but `catkin_make` should work also.
 
 ```
 mkdir -p ~/catkin_build_ws/src
