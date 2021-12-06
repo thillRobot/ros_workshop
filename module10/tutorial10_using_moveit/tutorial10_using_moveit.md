@@ -115,12 +115,12 @@ Run the `moveit setup assistant` from the [tutorial](http://docs.ros.org/en/melo
 roslaunch moveit_setup_assistant setup_assistant.launch
 ```
 
-Complete steps 1-12 to generate a Gazebo compatible URDF from the URDF in the aubo package. Follow the instructions in thr tutorial above.
+Complete steps 1-12 to generate a Gazebo compatible URDF from the URDF in the aubo package. Follow the instructions in the tutorial above.
 
-I used the the file `/aubo_robot/aubo_description/urdf/aubo_i5.urdf` to generate the urdf `aubo_i5_gazebo.urdf` and a package named `aubo_i5_moveit_config`
+I used the the file `/catkin_build_ws/aubo_description/urdf/aubo_i5.urdf` to generate the urdf `aubo_i5_gazebo.urdf` and a package named `aubo_i5_moveit_config`
 
 
-Create a directory in the new package for the gazebo urdf.
+Create a directory in the new package for the gazebo urdf that you copied during _Step 9: Gazebo Simulation_ .
 
 ```
 mkdir ~/catkin_build_ws/src/aubo_i5_moveit_config/gazebo
