@@ -37,3 +37,16 @@ roslaunch generate_urdf display.launch model:='$(find generate_urdf)/urdf/me4140
 ```
 
 There is still much to do, but this is a start!
+
+```
+roslaunch generate_urdf display.launch model:='$(find generate_urdf)/urdf/me4140-example.xacro'
+```
+
+I have made some real progress, but now the frames need to be setup correctly. 
+
+```
+roslaunch generate_urdf rviz.launch
+```
+
+The first two links should show in rviz and you can control the joint angle with the slider bar in the separate window. The joint is not in the right location, but at least I figured out the XACRO stuff! Woop Woop!
+
