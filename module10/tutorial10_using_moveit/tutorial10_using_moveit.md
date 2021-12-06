@@ -1,6 +1,6 @@
 # using moveit
 
-This is my notes for using moveit with ROS. This is pretty cool.
+This is my notes for using moveit with ROS. I can't quite call it a tutorial yet.
 
 ## ROS Version
 
@@ -96,7 +96,6 @@ git clone https://github.com/AuboRobot/aubo_robot.git -b $ROS_DISTRO
 
 Copy the `aubo_description` package from inside the `aubo_robot` package into the `ws_moveit`. (`-r` is the recursive flag for copying directories )
 
-
 ```
 cp -r ~/Downloads/aubo_robot/aubo_description ~/catkin_build_ws/src/aubo_description
 ```
@@ -108,6 +107,8 @@ cd ~/catkin_build_ws
 catkin build
 source devel/setup.bash
 ```
+
+### Generate a moveit config package with Moveit Setup Assistant
 
 Run the `moveit setup assistant` from the [tutorial](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html)  
 ```
@@ -138,7 +139,7 @@ catkin build
 source devel/setup.bash
 ```
 
-### Testing Robot in Moveit
+### Test newly created moveit config package 
 
 #### Test 1 - Gazebo Import 
 
