@@ -160,6 +160,16 @@ It looks like it worked. Woop Woop!
 <img src="png_images/aubo_i5_gazebo.png" alt="drawing" width="700"/>
 
 
+I tried to go through the same process with the Jaco arm, but the gazebo simulation is not working. The only difference I see is the addition of the fingers as the end effector, but it could be in the xacro/urdf.
+
+```
+rosrun gazebo_ros spawn_model -file ~/catkin_build_ws/src/jaco_arm_moveit_config/gazebo/jaco_arm_gazebo.urdf -urdf -x 0 -y 0 -z 1 -model jaco_arm
+
+[INFO] [1638849286.552341]: Loading model XML from file /home/thill/catkin_build_ws/src/jaco_arm_moveit_config/gazebo/jaco_arm_gazebo.urdf
+[ERROR] [1638849286.558107]: Invalid XML: junk after document element: line 693, column 0
+
+```
+
 #### Test 2 - RVIZ Demo
 
 The `aubo_i5_moveit_config` package contains a collection of launch files. The example `demo.launch` displays the robot in RVIZ and allows the user to plan and execute arm motions using the the Moveit panel.
@@ -181,3 +191,122 @@ Choose the the start and goal locations by dragging the end effector to the desi
 Show the intermediate poistions by selecting _Planned Path > Show Trail_, and disable the infinite loop by deselecting _Planned Path > Loop Animation_. The settings are described in more detail in the Moveit [getting started](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html) tutorial.
 
  
+I have tested the same workflow with one of the 6DOF Jaco arms from `kinova-ros`. 
+
+```
+roslaunch jaco_arm_moveit_config demo.launch
+```
+
+<img src="png_images/jaco_arm_01.png" alt="drawing" width="800"/> 
+
+<img src="png_images/jaco_arm_02.png" alt="drawing" width="800"/> 
+
+
+This works, but the database needs to be setup to save the start and goal states. 
+
+<img src="png_images/jaco_arm_no_database.png" alt="drawing" width="800"/> 
+
+
+
+### Setting up MongoDB for storing planning states
+
+#### Install MongoDB for Ubuntu18 
+
+I followed the install instructions for ubuntu 18 [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/). The commands are shown below for convience. All steps executed without errors or warnings on my system.
+
+##### Import public keys
+
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+```
+
+##### Create list file for MongoDB
+
+```
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+```
+
+##### Install MongoDB packages
+
+```
+sudo apt install mongodb-org
+```
+
+##### Initialize MongoDB database
+
+```
+sudo systemctl start mongod
+```
+
+If you want the database to initialize following a ubuntu reboot
+
+```
+sudo systemctl enable mongod
+```
+
+
+##### Verify the database has started
+
+```
+sudo systemctl status mongod
+```
+
+The following output should be shown.
+``` 
+● mongod.service - MongoDB Database Server
+   Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+   Active: active (running) since Mon 2021-12-06 23:08:56 CST; 36min ago
+     Docs: https://docs.mongodb.org/manual
+ Main PID: 5475 (mongod)
+   CGroup: /system.slice/mongod.service
+           └─5475 /usr/bin/mongod --config /etc/mongod.conf
+
+Dec 06 23:08:56 ubuntu18-vm1 systemd[1]: Started MongoDB Database Server.
+```
+
+##### If needed, stop the database
+
+```
+sudo systemctl stop mongod
+```
+
+##### If needed, restart the database
+
+```
+sudo systemctl restart mongod
+```
+
+#### Install the ros wrapper package for MongoDB
+
+```
+sudo apt install ros-melodic-warehouse-ros-mongo
+```
+This also ran as expected.
+
+#### Finally, test the MongoDB database with Moveit
+
+Run `demo.launch` with the `db:=true` option.
+
+```
+roslaunch jaco_arm_moveit_config demo.launch db:=true
+```
+
+In the _MotionPlanning_ window, select the _Context_ tab on the left and click _Connect_. Select _yes_ to clear all states.
+
+<img src="png_images/moveit_mongodb_01.png" alt="drawing" width="800"/> 
+
+The _Connect_ button should change to _Disconnect_. The database is now connected. 
+
+<img src="png_images/moveit_mongodb_02.png" alt="drawing" width="800"/> 
+
+Select the _Stored States_ tab on the far right of the _MotionPlanning_ window. You should be able to use the _Save Start_ and _Save Goal_ buttons to store arm positions in the database. 
+
+<img src="png_images/moveit_mongodb_03.png" alt="drawing" width="800"/> 
+
+Close rviz and relaunch the demo with the `db:=true` option. Repeat the connection procedure in the _Context_ tab. Now, back in the _Stored States_ tab you can recall the arm positions by choosing the saved states shown on the left and clicking the _Set as Start_ and _Set as Goal_ buttons. The arm should move to the stored positions, and motion planning should work. Woop Woop!
+
+
+
+
+
+
