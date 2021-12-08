@@ -2,13 +2,7 @@
 	"folders":
 	[
 		{
-			"path": ".",
-		},
-		{
-			"path": "/home/thill/catkin_make_ws",
-		},
-		{
-			"path": "/home/thill/catkin_build_ws"
-		},
-	],
+			"path": "."
+		}
+	]
 }
