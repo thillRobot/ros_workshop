@@ -2,12 +2,19 @@
 
 The goal is to generate a URDF (Unified Robot Description Format) for a custom robot.
 
-#### Create a workspace for testing, or use a pre-existing workspace of your choice. This tutorial will use `catkin_make`
+#### Create a workspace for testing, or use a pre-existing workspace of your choice. This tutorial will use `catkin build'
 
 ```
-mkdir -p catkin_make_ws/src
-cd catkin_make_ws
-catkin_make
+cd ~/catkin_build_ws
+rosdep install -y --from-paths . --ignore-src --rosdistro $ROS_DISTRO
+catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
+
+catkin build
+```
+After compiling, source the workspace setup file. 
+
+```
+source ~/catkin_build_ws/devel/setup.bash
 ```
 
 #### Install neccesary ROS packages with `apt` 
@@ -19,15 +26,15 @@ sudo apt ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
 #### Clone `generate_urdf` from thillRobot on github into your workspace
 
 ```
-cd catkin_make_ws/src
+cd catkin_build_ws/src
 git clone https://github.com/thillRobot/generate_urdf.git
 ```
 
-Compile the package with `catkin_make`
+Compile the package with `catkin build`
 
 ```
-cd catkin_make_ws
-catkin_make
+cd catkin_build_ws
+catkin build
 ```
 
 Now, use this launch file to load the example STL from URDF and show it in rviz
