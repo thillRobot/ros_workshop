@@ -50,3 +50,29 @@ roslaunch generate_urdf rviz.launch
 
 The first two links should show in rviz and you can control the joint angle with the slider bar in the separate window. The joint is not in the right location, but at least I figured out the XACRO stuff! Woop Woop!
 
+#### generate URDF in docker 
+
+The process described above can be completed using docker. For the graphics to work this requires docker-CE and nvidia-docker2 
+
+First, build the image using the Dockerfile.
+
+```
+docker build -t generate_urdf
+```
+
+Run the example with the .bash script.
+
+```
+./run_generate_urdf.bash
+```
+
+
+
+
+
+
+
+
+
+
+

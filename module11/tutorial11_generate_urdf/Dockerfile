@@ -14,7 +14,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # RUN apt install -y ros-noetic-tf ros-noetic-xacro
 
-RUN apt install -y ros-noetic-rviz joint-state-publisher
+RUN apt install -y ros-noetic-rviz ros-noetic-joint-state-publisher-gui
 
 
 ENV GURDF_WS=/generate_urdf_workspace
@@ -25,8 +25,6 @@ RUN source /opt/ros/noetic/setup.bash && \
     git clone https://github.com/thillRobot/generate_urdf.git && \
     cd $GURDF_WS && \
     catkin_make
-
-
 
 # Required python packages for analysis
 #RUN \
