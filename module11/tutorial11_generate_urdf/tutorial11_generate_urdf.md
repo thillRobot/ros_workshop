@@ -38,9 +38,6 @@ roslaunch generate_urdf display.launch model:='$(find generate_urdf)/urdf/me4140
 
 There is still much to do, but this is a start!
 
-```
-roslaunch generate_urdf display.launch model:='$(find generate_urdf)/urdf/me4140-example.xacro'
-```
 
 I have made some real progress, but now the frames need to be setup correctly. 
 
@@ -63,7 +60,7 @@ docker build -t generate_urdf
 Run the example with the .bash script.
 
 ```
-./run_generate_urdf.bash
+./generate_urdf.bash
 ```
 
 

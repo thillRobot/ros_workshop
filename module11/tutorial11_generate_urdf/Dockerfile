@@ -5,12 +5,9 @@ ENV NVIDIA_VISIBLE_DEVICES \
 ENV NVIDIA_DRIVER_CAPABILITIES \
     ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
 
-RUN apt-get update && apt-get install -y apt-utils build-essential psmisc vim-gtk git 
-
-# RUN apt-get update && apt-get install -q -y python-catkin-tools
+RUN apt update && apt install -y apt-utils build-essential psmisc vim-gtk git 
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
 
 # RUN apt install -y ros-noetic-tf ros-noetic-xacro
 
