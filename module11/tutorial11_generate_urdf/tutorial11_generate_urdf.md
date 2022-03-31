@@ -2,12 +2,13 @@
 
 The goal is to generate a URDF (Unified Robot Description Format) for a custom robot.
 
-#### Create a workspace for testing, or use a pre-existing workspace of your choice. This tutorial will use `catkin_make`
+#### Create a workspace for testing, or use a pre-existing workspace of your choice. 
+This tutorial will use `catkin build`, but `catkin_make` should work also.
 
 ```
-mkdir -p catkin_make_ws/src
-cd catkin_make_ws
-catkin_make
+mkdir -p catkin_build_ws/src
+cd catkin_build_ws
+catkin make
 ```
 
 #### Install neccesary ROS packages with `apt` 
@@ -23,11 +24,11 @@ cd catkin_make_ws/src
 git clone https://github.com/thillRobot/generate_urdf.git
 ```
 
-Compile the package with `catkin_make`
+Compile the package with `catkin build`
 
 ```
-cd catkin_make_ws
-catkin_make
+cd catkin_build_ws
+catkin_build
 ```
 
 Now, use this launch file to load the example STL from URDF and show it in rviz
@@ -47,28 +48,6 @@ roslaunch generate_urdf rviz.launch
 
 The first two links should show in rviz and you can control the joint angle with the slider bar in the separate window. The joint is not in the right location, but at least I figured out the XACRO stuff! Woop Woop!
 
-#### generate URDF in docker 
-
-The process described above can be completed using docker. For the graphics to work this requires docker-CE and nvidia-docker2 
-
-First, build the image using the Dockerfile.
-
-```
-docker build -t generate_urdf
-```
-
-First adjust the xauth permission settings.
-
-```
-xhost +
-```
-
-Run the example with the .bash script. 
-```
-./generate_urdf_rviz.bash
-```
-
-
 
 
 #### spawning the robot in the gazebo simulator
@@ -76,7 +55,6 @@ Run the example with the .bash script.
 ```
 roslaunch generate_urdf gazebo.launch
 ```
-
 
 I was running into the error: `This robot has a joint named "base_link__link_01" which is not in the gazebo model.` Through some digging around I learned that this can be fixed by adding inertia `base_link`. This may have been from the kinetic example I wasa using from the `construct` (see link above). While trying to fix this, I read that the robot should be stored in two packages `<ROBOTNAME>_gazebo` and `<ROBOTNAME>_description` in the official Gazebo docs (http://gazebosim.org/tutorials/?tut=ros_urdf), so I created these as separate repositories. I want to combine them in a metapackage, but the launch files were not recognized when I tried that...try again later. 
 
@@ -103,3 +81,24 @@ You can see that it worked perfectly... well not exactly. The links did load int
 
 ![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_gazebo_fig2.png)
 
+
+#### generate URDF in docker 
+
+The process described above can be completed using docker. For the graphics to work this requires docker-CE and nvidia-docker2 
+
+First, build the image using the Dockerfile.
+
+```
+docker build -t generate_urdf
+```
+
+First adjust the xauth permission settings.
+
+```
+xhost +
+```
+
+Run the example with the .bash script. 
+```
+./generate_urdf_rviz.bash
+```
