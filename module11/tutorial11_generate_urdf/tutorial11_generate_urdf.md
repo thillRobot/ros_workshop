@@ -97,7 +97,7 @@ Now spawn the robot in the example world
 roslaunch examplerobot_gazebo examplerobot.launch
 ```
 
-You can see that it worked perfectly... well not exactly. The links did load into the example world, but there are some serious issues. The links are not defined in the correct frames! DH TIME!
+You can see that it worked perfectly... well not exactly. The links did load into the example world, but there are some serious issues. The links are not defined in the correct frames! DH TIME! This is not a great choice of robots anyway, it needs to be modified to have usable kinematics. Either way, this shows an example of how to import STL files as links and define the joints. 
 
 ![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_gazebo_fig1.png)
 
