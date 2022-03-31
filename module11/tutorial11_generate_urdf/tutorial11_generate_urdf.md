@@ -57,19 +57,43 @@ First, build the image using the Dockerfile.
 docker build -t generate_urdf
 ```
 
-Run the example with the .bash script.
+First adjust the xauth permission settings.
 
 ```
-./generate_urdf.bash
+xhost +
+```
+
+Run the example with the .bash script. 
+```
+./generate_urdf_rviz.bash
 ```
 
 
 
 
+#### spawning the robot in the gazebo simulator
+
+```
+roslaunch generate_urdf gazebo.launch
+```
 
 
+I was running into the error: `This robot has a joint named "base_link__link_01" which is not in the gazebo model.` Through some digging around I learned that this can be fixed by adding inertia `base_link`. This may have been from the kinetic example I wasa using from the `construct` (see link above). While trying to fix this, I read that the robot should be stored in two packages `<ROBOTNAME>_gazebo` and `<ROBOTNAME>_description` in the official Gazebo docs (http://gazebosim.org/tutorials/?tut=ros_urdf), so I created these as separate repositories. I want to combine them in a metapackage, but the launch files were not recognized when I tried that...try again later. 
 
+First clone the new packages from giuthub. 
 
+```
+cd ~/catkin_build_ws/src
+git clone https://github.com/thillRobot/examplerobot_gazebo.git -b noetic
+git clone https://github.com/thillRobot/examplerobot_description.git -b noetic
 
+catkin build
+source devel/setup.bash
+```
 
+Now spawn the robot in the example world
+
+```
+roslaunch examplerobot_gazebo eamplerobot.launch
+```
 
