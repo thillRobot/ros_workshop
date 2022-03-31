@@ -97,3 +97,9 @@ Now spawn the robot in the example world
 roslaunch examplerobot_gazebo examplerobot.launch
 ```
 
+You can see that it worked perfectly... well not exactly. The links did load into the example world, but there are some serious issues. The links are not defined in the correct frames! DH TIME!
+
+![examplerobot in gazebo](https://github.com/thillRobot/examplerobot_description/blob/noetic-devel/images/examplerobot_gazebo_fig1.png)
+
+![examplerobot in gazebo](https://github.com/thillRobot/examplerobot_description/blob/noetic-devel/images/examplerobot_gazebo_fig1.png)
+
