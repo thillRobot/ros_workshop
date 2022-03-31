@@ -17,11 +17,12 @@ catkin make
 sudo apt ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
 ```
 
-#### Clone `generate_urdf` from thillRobot on github into your workspace
+#### Clone `examplerobot_description` and `examplerobot_gazebo` from thillRobot on github into your workspace
 
 ```
-cd catkin_make_ws/src
-git clone https://github.com/thillRobot/generate_urdf.git
+cd ~/catkin_build_ws/src
+git clone https://github.com/thillRobot/examplerobot_gazebo.git
+git clone https://github.com/thillRobot/examplerobot_description.git
 ```
 
 Compile the package with `catkin build`
@@ -31,45 +32,25 @@ cd catkin_build_ws
 catkin_build
 ```
 
-Now, use this launch file to load the example STL from URDF and show it in rviz
+Show the model in RVIZ
 
 ```
-roslaunch generate_urdf display.launch model:='$(find generate_urdf)/urdf/me4140-example.urdf'
+roslaunch examplerobot_gazebo rviz.launch
 ```
 
-There is still much to do, but this is a start!
+I have made some progress, but now the frames need to be setup correctly. 
 
-
-I have made some real progress, but now the frames need to be setup correctly. 
-
-```
-roslaunch generate_urdf rviz.launch
-```
 
 The first two links should show in rviz and you can control the joint angle with the slider bar in the separate window. The joint is not in the right location, but at least I figured out the XACRO stuff! Woop Woop!
 
 
+#### spawn the robot in the gazebo simulator 
 
-#### spawning the robot in the gazebo simulator
-
+Spawn the robot in the default world 'empty_world'
 ```
-roslaunch generate_urdf gazebo.launch
+roslaunch examplerobot_gazebo gazebo.launch
 ```
-
-I was running into the error: `This robot has a joint named "base_link__link_01" which is not in the gazebo model.` Through some digging around I learned that this can be fixed by adding inertia `base_link`. This may have been from the kinetic example I wasa using from the `construct` (see link above). While trying to fix this, I read that the robot should be stored in two packages `<ROBOTNAME>_gazebo` and `<ROBOTNAME>_description` in the official Gazebo docs (http://gazebosim.org/tutorials/?tut=ros_urdf), so I created these as separate repositories. I want to combine them in a metapackage, but the launch files were not recognized when I tried that...try again later. 
-
-First clone the new packages from giuthub. 
-
-```
-cd ~/catkin_build_ws/src
-git clone https://github.com/thillRobot/examplerobot_gazebo.git -b noetic
-git clone https://github.com/thillRobot/examplerobot_description.git -b noetic
-
-catkin build
-source devel/setup.bash
-```
-
-Now spawn the robot in the example world
+Spawn the robot in the world defined in `examplerobot_description/worlds`. You should see the gas station from the Gazebo tutorials. 
 
 ```
 roslaunch examplerobot_gazebo examplerobot.launch
@@ -81,6 +62,7 @@ You can see that it worked perfectly... well not exactly. The links did load int
 
 ![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_gazebo_fig2.png)
 
+I was running into the error: `This robot has a joint named "base_link__link_01" which is not in the gazebo model.` Through some digging around I learned that this can be fixed by adding inertia `base_link`. This may have been from the kinetic example I wasa using from the `construct` (see link above). While trying to fix this, I read that the robot should be stored in two packages `<ROBOTNAME>_gazebo` and `<ROBOTNAME>_description` in the official Gazebo docs (http://gazebosim.org/tutorials/?tut=ros_urdf), so I created these as separate repositories. I want to combine them in a metapackage, but the launch files were not recognized when I tried that...try again later. 
 
 #### generate URDF in docker 
 
