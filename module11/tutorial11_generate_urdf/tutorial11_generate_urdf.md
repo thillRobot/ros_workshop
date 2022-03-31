@@ -94,6 +94,6 @@ source devel/setup.bash
 Now spawn the robot in the example world
 
 ```
-roslaunch examplerobot_gazebo eamplerobot.launch
+roslaunch examplerobot_gazebo examplerobot.launch
 ```
 
