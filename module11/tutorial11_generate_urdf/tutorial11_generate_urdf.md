@@ -64,6 +64,21 @@ You can see that it worked perfectly... well not exactly. The links did load int
 
 I was running into the error: `This robot has a joint named "base_link__link_01" which is not in the gazebo model.` Through some digging around I learned that this can be fixed by adding inertia `base_link`. This may have been from the kinetic example I wasa using from the `construct` (see link above). While trying to fix this, I read that the robot should be stored in two packages `<ROBOTNAME>_gazebo` and `<ROBOTNAME>_description` in the official Gazebo docs (http://gazebosim.org/tutorials/?tut=ros_urdf), so I created these as separate repositories. I want to combine them in a metapackage, but the launch files were not recognized when I tried that...try again later. 
 
+#### NEW! - 6DOF 'examplerobot'
+
+```
+roslaunch examplerobot_gazebo rviz.launch
+```
+![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_rviz_fig1.png)
+
+```
+roslaunch examplerobot_gazebo gazebo.launch
+```
+![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_gazebo_fig3.png)
+
+
+
+
 #### generate URDF in docker 
 
 The process described above can be completed using docker. For the graphics to work this requires docker-CE and nvidia-docker2 
