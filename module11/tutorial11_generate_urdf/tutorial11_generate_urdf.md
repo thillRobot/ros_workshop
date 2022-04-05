@@ -2,6 +2,9 @@
 
 The goal is to generate a URDF (Unified Robot Description Format) for a custom robot.
 
+This tutorial follows the (Gazebo docs)[http://gazebosim.org/tutorials/?tut=ros_control]
+
+
 #### Create a workspace for testing, or use a pre-existing workspace of your choice. 
 This tutorial will use `catkin build`, but `catkin_make` should work also.
 
@@ -83,14 +86,19 @@ roslaunch examplerobot_gazebo gazebo.launch
 
 
 
-#### generate URDF in docker 
+#### `generate_URDF` has been replaced by  `examplerobot_description` and `examplerobot_gazebo` 
+
+The documentation will be updated soon. 
+
+
+#### `examplerobot` in Docker
 
 The process described above can be completed using docker. For the graphics to work this requires docker-CE and nvidia-docker2 
 
 First, build the image using the Dockerfile.
 
 ```
-docker build -t generate_urdf
+docker build -t examplerobot
 ```
 
 First adjust the xauth permission settings.
@@ -99,7 +107,11 @@ First adjust the xauth permission settings.
 xhost +
 ```
 
-Run the example with the .bash script. 
+Run the examples with the .bash scripts. 
 ```
-./generate_urdf_rviz.bash
+./examplerobot.bash
+```
+
+```
+./examplerobot_rviz.bash
 ```
