@@ -2,7 +2,7 @@
 
 The goal is to generate a URDF (Unified Robot Description Format) for a custom robot.
 
-This tutorial follows the (Gazebo docs)[http://gazebosim.org/tutorials/?tut=ros_control]
+This tutorial follows the [Gazebo docs](http://gazebosim.org/tutorials/?tut=ros_control)
 
 
 #### Create a workspace for testing, or use a pre-existing workspace of your choice. 
