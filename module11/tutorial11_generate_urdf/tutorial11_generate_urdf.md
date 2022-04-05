@@ -71,6 +71,10 @@ roslaunch examplerobot_gazebo rviz.launch
 ```
 ![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_rviz_fig1.png)
 
+The forward kinematics is working properly (with weird eccentric rotation at first bug!) as you can see in the figure below.
+
+![examplerobot in gazebo](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module11/tutorial11_generate_urdf/images/examplerobot_rviz_fig2.png)
+
 ```
 roslaunch examplerobot_gazebo gazebo.launch
 ```
