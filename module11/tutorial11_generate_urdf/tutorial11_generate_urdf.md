@@ -49,6 +49,27 @@ The first two links should show in rviz and you can control the joint angle with
 
 #### spawn the robot in the gazebo simulator 
 
+read the gazebo docs! they are good
+
+first run the setup script that is in the gazebo install directory
+
+```
+source /usr/share/gazebo/setup.sh
+```
+
+If you want to use a custom world, append the `GAZEBO_RESOURCE_PATH` variable your new world directory (dont use a ~ for home/$USER)
+
+```
+export GAZEBO_RESOURCE_PATH="$GAZEBO_RESOURCE_PATH/home/$USER/catkin_build_ws/src/tvarobot_gazebo/worlds:"
+```
+
+Now test that the simultor will start. The line below should load the gas station from any directory.
+
+```
+gazebo tvarobot.world
+```
+
+
 Spawn the robot in the default world 'empty_world'
 ```
 roslaunch examplerobot_gazebo gazebo.launch
