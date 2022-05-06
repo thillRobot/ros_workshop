@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: aubo_description
+    relative_path: urdf/aubo_i5.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/aubo_i5.srdf
+  CONFIG:
+    author_name: thillRobot
+    author_email: thill@tntech.edu
+    generated_timestamp: 1636154220

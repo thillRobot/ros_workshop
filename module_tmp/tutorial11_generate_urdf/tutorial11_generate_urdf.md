@@ -2,7 +2,7 @@
 
 The goal is to generate a URDF (Unified Robot Description Format) for a custom robot.
 
-This tutorial follows the [Gazebo docs](http://gazebosim.org/tutorials/?tut=ros_control)
+This tutorial follows the [Gazebo docs](https://classic.gazebosim.org/tutorials?tut=ros_control&cat=connect_ros)
 
 
 #### Create a workspace for testing, or use a pre-existing workspace of your choice. 
@@ -11,28 +11,28 @@ This tutorial will use `catkin build`, but `catkin_make` should work also.
 ```
 mkdir -p catkin_build_ws/src
 cd catkin_build_ws
-catkin make
+catkin build
 ```
 
 #### Install neccesary ROS packages with `apt` 
 
 ```
-sudo apt ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
+sudo apt ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
 ```
 
 #### Clone `examplerobot_description` and `examplerobot_gazebo` from thillRobot on github into your workspace
 
 ```
 cd ~/catkin_build_ws/src
-git clone https://github.com/thillRobot/examplerobot_gazebo.git
-git clone https://github.com/thillRobot/examplerobot_description.git
+git clone https://github.com/thillRobot/examplerobot_ros.git
 ```
+The reposistory `examplerobot_ros` contains several ROS packages. See `examplerobot_ros/README.md` for more details.
 
-Compile the package with `catkin build`
+Compile the packages with `catkin build`
 
 ```
 cd catkin_build_ws
-catkin_build
+catkin build
 ```
 
 Show the model in RVIZ
@@ -49,15 +49,13 @@ The first two links should show in rviz and you can control the joint angle with
 
 #### spawn the robot in the gazebo simulator 
 
-Spawn the robot in the default world 'empty_world'
-```
-roslaunch examplerobot_gazebo gazebo.launch
-```
 Spawn the robot in the world defined in `examplerobot_description/worlds`. You should see the gas station from the Gazebo tutorials. 
 
 ```
-roslaunch examplerobot_gazebo examplerobot.launch
+roslaunch examplerobot_gazebo examplerobot_gazebo.launch
 ```
+
+The remainder of this document needs to be updated....
 
 You can see that it worked perfectly... well not exactly. The links did load into the example world, but there are some serious issues. The links are not defined in the correct frames! DH TIME! This is not a great choice of robots anyway, it needs to be modified to have usable kinematics. Either way, this shows an example of how to import STL files as links and define the joints. 
 

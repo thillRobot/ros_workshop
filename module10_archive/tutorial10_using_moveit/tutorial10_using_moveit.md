@@ -2,9 +2,11 @@
 
 This is my notes for using moveit with ROS. I can't quite call it a tutorial yet.
 
+This module should switch places with the next module. 10 should be 11 and 11 should be 10
+
 ## ROS Version
 
-This is the `melodic` branch. 
+This was the `melodic` branch, but it needs to be updated and tested with `noetic` 
 
 Select the version of ROS by choosing the appropriate repository branch.
 
