@@ -35,7 +35,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Lecture: Using a Physical Robot (slides need to be made)
   - Tutorial: [Turtlebot3 Setup](https://github.com/thillRobot/turtlebot3_setup/blob/master/README.md)
 - [Module 10](module10/) 
-  - Lecture: Motion Planning with Moveit (slides need to be made)
+  - Lecture: Generate a URDF for a Custom Robot (slides need to be made)
   - Tutorial: [Using Moveit](https://github.com/thillRobot/ros_workshop/blob/melodic/module10/tutorial10_generate_urdf/tutorial10_generate_urdf.md)
 - [Module 11](module11/) 
   - Lecture: Motion Planning with Moveit (slides need to be made)
