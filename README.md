@@ -36,18 +36,15 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: [Turtlebot3 Setup](https://github.com/thillRobot/turtlebot3_setup/blob/master/README.md)
 - [Module 10](module10/) 
   - Lecture: Motion Planning with Moveit (slides need to be made)
-  - Tutorial: [Using Moveit](https://github.com/thillRobot/ros_workshop/blob/melodic/module10/tutorial10_using_moveit/tutorial10_using_moveit.md)
+  - Tutorial: [Using Moveit](https://github.com/thillRobot/ros_workshop/blob/melodic/module10/tutorial10_generate_urdf/tutorial10_generate_urdf.md)
 - [Module 11](module11/) 
   - Lecture: Motion Planning with Moveit (slides need to be made)
-  - Tutorial: [Generate URDF](https://github.com/thillRobot/ros_workshop/blob/melodic/module11/tutorial11_generate_urdf/tutorial11_generate_urdf.md)
+  - Tutorial: [Generate URDF](https://github.com/thillRobot/ros_workshop/blob/melodic/module11/tutorial11_using_moveit/tutorial11_using_moveit.md)
 
+Note: The default branch is now `noetic`. Modules 1-9 still use `melodic` and need to be updated...
 
 ### Things to do
 
-- [x] put it on the github, write this readme!
-- [x] plan weekly schedule, what goes in what weeks
-- [x] thoroughly test all modules
-- [ ] convert PDF files to markdown so the github stands alone - this is started at least	
-- [ ] Update to Focal Fossa
-- [ ] remove this list
+- [ ] Update to Focal Fossa + noetic
 - [ ] add references for all images
+- [ ] remove this list
