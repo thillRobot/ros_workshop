@@ -100,7 +100,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 ### Part 4 - Ubuntu OS Installation and Setup
 
-Click _Start_ to boot the VM for the first time
+Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot is an involved process.
 
 <img src="images/Capture24.png" alt="drawing" width="500"/> 
 
