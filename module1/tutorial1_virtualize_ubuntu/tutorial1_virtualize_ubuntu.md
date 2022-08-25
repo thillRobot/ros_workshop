@@ -5,7 +5,7 @@
 
 In this tutorial you will first download and install VirtualBox from Oracle which is an application for _virtualizing_ operating systems inside of an existing one. Next, you will download the Ubuntu installation .iso file and setup a virtual operating system for learning ROS.  After completing this exercise, you will be ready to install the ROS Melodic software package in Ubuntu which is described in detailed in the next module.
 
-<img src="CaptureA.png" alt="drawing" width="400"/>
+<img src="images/CaptureA.png" alt="drawing" width="400"/>
 
 ## Watch on Youtube 
 You can watch this tutorial [Youtube](https://youtu.be/E7Ga6tbY0Iw)
