@@ -8,7 +8,7 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 <img src="CaptureA.png" alt="drawing" width="400"/>
 
 ## Watch on Youtube 
-You can watch this tutorial (Youtube)[https://youtu.be/E7Ga6tbY0Iw]
+You can watch this tutorial [Youtube](https://youtu.be/E7Ga6tbY0Iw)
 
 
 The remainder of the this tutorial is being repaired and will be down until 08/25/2022.
