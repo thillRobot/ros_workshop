@@ -103,13 +103,14 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot is an involved process.
 
 <img src="images/Capture24.png" alt="drawing" width="500"/> 
+
 <img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
+
 <img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 <img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
 <img src="images/Capture34.png" alt="drawing" width="500"/> <img src="images/Capture35.png" alt="drawing" width="500"/>
 <img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
-
 
 #### Click the folder icon
 <img src="Capture10.png" alt="drawing" width="1000"/>
