@@ -39,18 +39,22 @@ The remainder of the this tutorial is being repaired and will be down until 08/2
 - Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
 
 <img src="images/Capture1_edited.png" alt="drawing" width="500"/> <img src="images/Capture2_edited.png" alt="drawing" width="500"/>
-
 <img src="images/Capture3_edited.png" alt="drawing" width="500"/> <img src="images/Capture4_edited.png" alt="drawing" width="500"/>
-
 <img src="images/Capture5_edited.png" alt="drawing" width="500"/> <img src="images/Capture6_edited.png" alt="drawing" width="500"/>
-
 <img src="images/Capture7_edited.png" alt="drawing" width="500"/> <img src="images/Capture8_edited.png" alt="drawing" width="500"/>
-
 
 ### Part 2 - Virtual Machine Configuration
 Before proceeding make sure you have an internet connection and access to a power supply or battery.
 
 #### Open the VirtualBox application installed in Part 2
+
+<img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture10.png" alt="drawing" width="500"/>
+<img src="images/Capture11.png" alt="drawing" width="500"/> <img src="images/Capture12.png" alt="drawing" width="500"/>
+<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
+<img src="images/Capture15.png" alt="drawing" width="500"/> <img src="images/Capture16.png" alt="drawing" width="500"/>
+
+
+
 <img src="Capture2.png" alt="drawing" width="400"/>
 
 #### Create New Virtual Machine
