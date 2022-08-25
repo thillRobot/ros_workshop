@@ -20,7 +20,7 @@ The remainder of the this tutorial is being repaired and will be down until 08/2
 - [VirtualBox](https://www.virtualbox.org/) is a trusted application from Oracle widely used for this process. [VMware](https://www.vmware.com/) is alternative option for virtualization, but it will not be supported in this course.
 
 ## System Requirements
-- **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
+- **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be slow. A tablet or Chromebook is not supported.
 - **Memory:** At least 8Gb of RAM is recommended.        
 - **Storage:** Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
 - **GPU:** A dedicated graphics prcocessing unit is **not required**. This process has been tested with Intel embedded graphics.
@@ -38,7 +38,7 @@ The remainder of the this tutorial is being repaired and will be down until 08/2
     
 - Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
 
-<img src="Capture1.png" alt="drawing" width="1000"/>
+<img src="images/Capture1.png" alt="drawing" width="1000"/>
 
 ### Part 2 - Virtual Machine Configuration
 Before proceeding make sure you have an internet connection and access to a power supply or battery.
