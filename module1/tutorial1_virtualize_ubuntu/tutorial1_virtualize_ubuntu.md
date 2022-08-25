@@ -137,10 +137,7 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 
 <img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
-<img src="images/Capture70.png" alt="drawing" width="500"/> 
-
-
-
+<img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
 
 
@@ -235,17 +232,27 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 - the default selections are fine
 - click **next**
 
-#### Fresh New Ubuntu - Bionic Beaver
+#### Fresh New Ubuntu - Focal Fossa
 <img src="Capture25.png" alt="drawing" width="1000"/>
 
 - Install the updates. Do not upgrade to Ubuntu 20 unless you want fly solo.
 - Updating requires the internet, but you knew that already.
 
 #### Make a Backup
-<img src="Capture26.png" alt="drawing" width="1000"/>
 
 - Now, it is a good idea to make a **backup** of your fresh install. VirtualBox can do this for you but you have to shut it down first.  
 - Find the **shutdown** button in Ubuntu, or open a terminal and type `sudo shutdown`. You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
+
+
+<img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture76.png" alt="drawing" width="500"/> <img src="images/Capture77.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture78.png" alt="drawing" width="500"/> <img src="images/Capture79.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
+
+
 
 #### Back to VirtualBox
 <img src="CaptureZ.png" alt="drawing" width="1000"/>
