@@ -100,6 +100,8 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 ### Part 4 - Ubuntu OS Installation and Setup
 
+Click _Start_ to boot the VM for the first time
+
 <img src="images/Capture24.png" alt="drawing" width="500"/> 
 
 <img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
@@ -115,7 +117,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 
 
-#### Start the VM for the first time
+#### 
 <img src="Capture9.png" alt="drawing" width="1000"/>
 
 - select your newly created VM      
