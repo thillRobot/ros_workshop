@@ -57,46 +57,48 @@ Before proceeding make sure you have an internet connection and access to a powe
 - Click **Expert Mode** to view basic settings in single window
 
 
-#### Define Virtual Machine Parameters
+#### Define Virtual Machine Virtual Hard Drive Parameters
 
-<img src="images/Capture12.png" alt="drawing" width="500"/> <img src="images/Capture13.png" alt="drawing" width="500"/>
+<img src="images/Capture12.png" alt="drawing" width="500"/>
 
 - choose the **computer name**: (this is your choice but remember it!)
 - choose the **operating system** type: (this should be _Linux_)
 - choose the **version**: _Ubuntu 64-bit_ 
 - Choose the amount of RAM you want to allocate to the VM (while running only)  
 	- More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
-- click **next**
+- click **create**
 
 
-#### Define Virtual Machine Parameters
-<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
+#### Define Virtual Hard Drive Parmeters
 
-
-#### Define Virtual Hard Drive Parameters
-<img src="images/Capture15.png" alt="drawing" width="500"/> <img src="images/Capture16.png" alt="drawing" width="500"/>
-
+ <img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
 - choose **create a virtual hard drive now**
 - click **create**
+- choose the virtual hard drive type, _VDI_ is the recommended type. 
+- click **next**
+- choose **Fixed Size** virtual hard drive. 
+- click **next**
+- choose the size of your virtual hard drive       
+- to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
+- click **create**
+
+#### Complete Virtual Machine and Hard Drive Setup
+<img src="images/Capture16.png" alt="drawing" width="500"/>
+
 
 #### Virtual Hard Drive Setup
 <img src="Capture7.png" alt="drawing" width="1000"/>
 
-- choose the virtual hard drive type, _VDI_ is the recommended type. 
-- click **next**
 
 #### Virtual Hard Drive Setup (continued)
 <img src="Capture8.png" alt="drawing" width="1000"/>
 
-- choose **Fixed Size** virtual hard drive. 
-- click **next**
+
 
 #### Virtual Hard Drive Setup (continued)
 <img src="CaptureX.png" alt="drawing" width="1000"/>
 
-- choose the size of your virtual hard drive       
-- to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
-- click **create**
+
 
 
 
