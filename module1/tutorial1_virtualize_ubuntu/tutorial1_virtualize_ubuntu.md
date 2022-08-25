@@ -85,24 +85,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Complete Virtual Machine and Hard Drive Setup
 <img src="images/Capture16.png" alt="drawing" width="500"/>
 
-
-#### Virtual Hard Drive Setup
-<img src="Capture7.png" alt="drawing" width="1000"/>
-
-
-#### Virtual Hard Drive Setup (continued)
-<img src="Capture8.png" alt="drawing" width="1000"/>
-
-
-
-#### Virtual Hard Drive Setup (continued)
-<img src="CaptureX.png" alt="drawing" width="1000"/>
-
-
-
-
-
-
+You can now see the virtual machine you created in the list on the left.
 
 
           
