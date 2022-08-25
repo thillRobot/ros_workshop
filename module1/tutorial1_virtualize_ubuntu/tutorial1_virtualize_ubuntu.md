@@ -48,22 +48,13 @@ Before proceeding make sure you have an internet connection and access to a powe
 
 #### Open the VirtualBox application installed in Part 2
 
-<img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture10.png" alt="drawing" width="500"/>
-<img src="images/Capture11.png" alt="drawing" width="500"/> <img src="images/Capture12.png" alt="drawing" width="500"/>
-<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
-<img src="images/Capture15.png" alt="drawing" width="500"/> <img src="images/Capture16.png" alt="drawing" width="500"/>
-
-
-
-<img src="Capture2.png" alt="drawing" width="400"/>
-
 #### Create New Virtual Machine
-<img src="Capture3.png" alt="drawing" width="1000"/>
+<img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture10.png" alt="drawing" width="500"/>
 
 - Click the **new** button.
 
 #### Define Basic Settings
-<img src="Capture4.png" alt="drawing" width="1000"/>
+<img src="images/Capture11.png" alt="drawing" width="500"/> <img src="images/Capture12.png" alt="drawing" width="500"/>
 
 - choose a **computer name** aka _hostname_ (this is your choice but remember it!)
 - choose an **operating system** type (this should be _Linux_)
@@ -71,14 +62,14 @@ Before proceeding make sure you have an internet connection and access to a powe
 - click **next**
 
 #### Define Virtual Machine Parameters
-<img src="Capture5.png" alt="drawing" width="1000"/>
+<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
 
 - Choose the amount of RAM you want to allocate to the VM  
 - More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
 - click **next**
 
 #### Define Virtual Hard Drive Parameters
-<img src="Capture6.png" alt="drawing" width="1000"/>
+<img src="images/Capture15.png" alt="drawing" width="500"/> <img src="images/Capture16.png" alt="drawing" width="500"/>
 
 - choose **create a virtual hard drive now**
 - click **create**
@@ -101,6 +92,12 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose the size of your virtual hard drive       
 - to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
 - click **create**
+
+
+
+
+
+
           
 ### Part 3 - Ubuntu OS Installation and Setup
 
