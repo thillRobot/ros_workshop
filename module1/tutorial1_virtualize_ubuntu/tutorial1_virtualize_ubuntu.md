@@ -88,10 +88,18 @@ Before proceeding make sure you have an internet connection and access to a powe
 You can now see the virtual machine you created in the list on the left.
 
 
-          
-### Part 3 - Ubuntu OS Installation and Setup
+### Part 3 - Virtual Machine Performance Settings
+
+Click _Settings_ to adjust the performance settings the virtual machine that you have created. 
 
 <img src="images/Capture17.png" alt="drawing" width="500"/> <img src="images/Capture18.png" alt="drawing" width="500"/>
+
+<img src="images/Capture19.png" alt="drawing" width="500"/> <img src="images/Capture20.png" alt="drawing" width="500"/>
+
+          
+          
+### Part 4 - Ubuntu OS Installation and Setup
+
 
 
 #### Start the VM for the first time
