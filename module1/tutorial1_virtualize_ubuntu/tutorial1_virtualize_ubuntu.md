@@ -104,6 +104,11 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 
+<img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
+
+<img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
+
+      
       
 
 
