@@ -11,7 +11,7 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 You can watch this tutorial [Youtube](https://youtu.be/E7Ga6tbY0Iw)
 
 
-The remainder of the this tutorial is being repaired and will be down until 08/25/2022.
+The remainder of the this tutorial is being repaired and will be volatile until 08/25/2022.
 
 
 ## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) ?
