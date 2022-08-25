@@ -61,8 +61,8 @@ Before proceeding make sure you have an internet connection and access to a powe
 
 <img src="images/Capture12.png" alt="drawing" width="500"/>
 
-- choose the **computer name**: (this is your choice but remember it!)
-- choose the **operating system** type: (this should be _Linux_)
+- choose the **computer name**: this is your choice (0-9, a-z, and hyphens (-) allowed)
+- choose the **operating system** type: _Linux_
 - choose the **version**: _Ubuntu 64-bit_ 
 - Choose the amount of RAM you want to allocate to the VM (while running only)  
 	- More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
