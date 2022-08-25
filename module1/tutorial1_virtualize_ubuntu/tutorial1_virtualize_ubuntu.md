@@ -56,6 +56,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Define Basic Settings 
 
 - Click **Expert Mode** to view basic settings in single window
+
 <img src="images/Capture11.png" alt="drawing" width="500"/> <img src="images/Capture12.png" alt="drawing" width="500"/>
 
 - choose a **computer name** aka _hostname_ (this is your choice but remember it!)
