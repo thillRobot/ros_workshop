@@ -107,7 +107,10 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 <img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 <img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
+<img src="images/Capture34.png" alt="drawing" width="500"/> <img src="images/Capture35.png" alt="drawing" width="500"/>
+<img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
 
+      
       
       
 
