@@ -38,9 +38,7 @@ The remainder of the this tutorial is being repaired and will be down until 08/2
     
 - Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
 
-<img src="images/Capture1_edited.png" alt="drawing" width="1000"/>
-
-<img src="images/Capture2_edited.png" alt="drawing" width="1000"/>
+<img src="images/Capture1_edited.png" alt="drawing" width="500"/> <img src="images/Capture2_edited.png" alt="drawing" width="500"/>
 
 
 ### Part 2 - Virtual Machine Configuration
