@@ -61,9 +61,9 @@ Before proceeding make sure you have an internet connection and access to a powe
 
 <img src="images/Capture12.png" alt="drawing" width="500"/> <img src="images/Capture13.png" alt="drawing" width="500"/>
 
-- choose a **computer name** aka _hostname_ (this is your choice but remember it!)
-- choose an **operating system** type (this should be _Linux_)
-- choose a **version**, this depends on your host machine hardware - it is most likely _Ubuntu 64-bit_ 
+- choose the **computer name**: (this is your choice but remember it!)
+- choose the**operating system** type: (this should be _Linux_)
+- choose the **version**: _Ubuntu 64-bit_ 
 - click **next**
 
 - Choose the amount of RAM you want to allocate to the VM  
