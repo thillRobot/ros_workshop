@@ -7,6 +7,13 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 
 <img src="CaptureA.png" alt="drawing" width="400"/>
 
+## Watch on Youtube 
+You can watch this tutorial in video form on (Youtube)[link coming soon]
+
+
+The remainder of the this tutorial is being repaired and will be down until 08/25/2022.
+
+
 ## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) ?
 - A virtual machine is an operating system that is installed or _virtualized_ inside another operating system.
 - This is useful for learning and testing, but it is resource intensive and is not ideal for permanent use. 
