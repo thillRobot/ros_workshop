@@ -114,6 +114,11 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 
 <img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
 
+<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
+
+
 #### Click the folder icon
 <img src="Capture10.png" alt="drawing" width="1000"/>
 
