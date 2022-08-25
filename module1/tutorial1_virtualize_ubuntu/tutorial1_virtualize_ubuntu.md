@@ -79,7 +79,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose **Fixed Size** virtual hard drive. 
 - click **next**
 - choose the size of your virtual hard drive       
-- to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
+- to virtualize Ubuntu and install ROS it is recommended to make a 25 GB VDI if you have space
 - click **create**
 
 #### Complete Virtual Machine and Hard Drive Setup
@@ -90,6 +90,9 @@ You can now see the virtual machine you created in the list on the left.
 
           
 ### Part 3 - Ubuntu OS Installation and Setup
+
+<img src="images/Capture17.png" alt="drawing" width="500"/> <img src="images/Capture18.png" alt="drawing" width="500"/>
+
 
 #### Start the VM for the first time
 <img src="Capture9.png" alt="drawing" width="1000"/>
