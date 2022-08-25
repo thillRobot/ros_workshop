@@ -16,7 +16,10 @@
    height="640.79999"
    viewBox="0 0 936 640.79999"
    sodipodi:docname="Capture2_edited.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/tntech.edu/thill/courses/ros_workshop/module1/tutorial1_virtualize_ubuntu/images/Capture2_edited.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <metadata
      id="metadata975">
     <rdf:RDF>
@@ -44,9 +47,9 @@
      inkscape:window-height="1043"
      id="namedview971"
      showgrid="false"
-     inkscape:zoom="1.0416804"
-     inkscape:cx="396.9222"
-     inkscape:cy="301.29164"
+     inkscape:zoom="1.4731586"
+     inkscape:cx="414.8328"
+     inkscape:cy="248.82803"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -14760,4 +14763,20 @@ zdVI2mrz4/8HnrzaCeTrEtAAAAAASUVORK5CYII=
      x="79.678947"
      y="282.7247"
      ry="0.67923403" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2147"
+     width="98.38459"
+     height="255.03426"
+     x="748.7901"
+     y="267.12494"
+     ry="2.0368569" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect2149"
+     width="32.243645"
+     height="265.07672"
+     x="217.22034"
+     y="253.19745"
+     ry="2.03686" />
 </svg>
