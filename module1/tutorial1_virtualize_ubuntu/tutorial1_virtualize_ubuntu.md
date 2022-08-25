@@ -8,7 +8,7 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 <img src="images/CaptureA.png" alt="drawing" width="400"/>
 
 ## Watch on Youtube 
-You can watch this tutorial [Youtube](https://youtu.be/E7Ga6tbY0Iw)
+You can watch this tutorial on [Youtube](https://youtu.be/E7Ga6tbY0Iw).
 
 
 The remainder of the this tutorial is being repaired and will be volatile until 08/25/2022.
@@ -22,7 +22,7 @@ The remainder of the this tutorial is being repaired and will be volatile until 
 ## System Requirements
 - **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be slow. A tablet or Chromebook is not supported.
 - **Memory:** At least 8Gb of RAM is recommended.        
-- **Storage:** Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
+- **Storage:** Approximately 25Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
 - **GPU:** A dedicated graphics prcocessing unit is **not required**. This process has been tested with Intel embedded graphics.
 
 ## Before You Begin
@@ -64,12 +64,14 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose a **version**, this depends on your host machine hardware - it is most likely _Ubuntu 64-bit_ 
 - click **next**
 
-#### Define Virtual Machine Parameters
-<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
-
 - Choose the amount of RAM you want to allocate to the VM  
 - More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
 - click **next**
+
+
+#### Define Virtual Machine Parameters
+<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/>
+
 
 #### Define Virtual Hard Drive Parameters
 <img src="images/Capture15.png" alt="drawing" width="500"/> <img src="images/Capture16.png" alt="drawing" width="500"/>
