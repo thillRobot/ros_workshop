@@ -49,11 +49,13 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Open the VirtualBox application installed in Part 2
 
 #### Create New Virtual Machine
+
 <img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture11.png" alt="drawing" width="500"/>
 
 - Click the **new** button.
 
 - Click **Expert Mode** to view basic settings in single window
+
 
 #### Define Virtual Machine Parameters
 
