@@ -92,12 +92,11 @@ You can now see the virtual machine you created in the list on the left.
 
 Click _Settings_ to adjust the performance settings the virtual machine that you have created. 
 
-<img src="images/Capture17.png" alt="drawing" width="500"/> <img src="images/Capture18.png" alt="drawing" width="500"/>
+<img src="images/Capture17.png" alt="drawing" width="500"/> <img src="images/Capture19.png" alt="drawing" width="500"/>
 
-<img src="images/Capture19.png" alt="drawing" width="500"/> <img src="images/Capture20.png" alt="drawing" width="500"/>
 
           
-          
+
 ### Part 4 - Ubuntu OS Installation and Setup
 
 
