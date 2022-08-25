@@ -253,7 +253,6 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 <img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
 
 
-
 #### Back to VirtualBox
 <img src="CaptureZ.png" alt="drawing" width="1000"/>
 
@@ -265,4 +264,5 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 - Snapshots can be used as a backup. This will save you all those steps if you if you ever need to start over.  
 - click **Take** to save a snapshot of the current state of your virtual machine. Whew... that was a lot of steps. 
 - **You did it!** _Welcome to the world of Linux. Have fun!_
+
 
