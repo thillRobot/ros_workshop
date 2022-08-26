@@ -162,8 +162,12 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 #### Restart Virtual Machine 
 <img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
 
+- Press enter to restart the virtual machine
+
 <img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
 
+- You should see the username you chose 
+- Login with the credential you created previously
 
 <img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
@@ -182,8 +186,6 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 #### Ubuntu Login Screen
 <img src="Capture23.png" alt="drawing" width="1000"/>
 
-- You should see the username you chose 
-- Login with the credential you created previously.
 <img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
 <img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
