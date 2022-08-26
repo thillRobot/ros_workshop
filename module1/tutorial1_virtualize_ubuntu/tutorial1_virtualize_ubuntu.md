@@ -105,6 +105,8 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot is an involved process.
 
+
+#### Choose the installation media
 <img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
 
 - Click the folder icon to open the Optical Disc Selector menu. 
@@ -117,74 +119,26 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - Click choose to continue
 
+#### Boot Ubuntu Installation Image
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 
 - Click start to begin the initial boot of the virtual operating system
 
-<img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
-
-<img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
-
-<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
-
-<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
-
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
-
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
-
-
-<img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
-
-<img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
-
-<img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
-
-<img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
-
-<img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
-
-<img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
-
-<img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
-
-<img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
-
-
-
-
-<img src="Capture10.png" alt="drawing" width="1000"/>
-
-- choose to select media from a local folder
-
-#### Choose the installation media
-<img src="Capture11.png" alt="drawing" width="1000"/>
-
-- choose the Ubuntu .iso file that you downloaded.
-- it is recommended that the media is on the local machine, and not a remote or cloud drive
-- click **open**
-
-#### Boot Ubuntu Installation Image
-<img src="Capture12.png" alt="drawing" width="1000"/>
-
-- click **start**
 
 #### Ubuntu Installation
-<img src="Capture13.png" alt="drawing" width="1000"/>
+<img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
 
 - click **Install Ubuntu** - This is **harmless** _if using VirtualBox_
 - **try** is for temporary or _live_ session which can be used for computer maintence 
 
-#### Ubuntu Installation (Continued)
-<img src="Capture15.png" alt="drawing" width="1000"/>
+<img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
 
 - choose **Minimal Installation**
 - choose **Download Updates**
 - choose **Install third-party software**  
 - click **continue**
 
-#### Ubuntu Installation (Continued)
-<img src="Capture16.png" alt="drawing" width="1000"/>
+<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
 
 - choose **Erase Everything and Install Ubuntu** 
 - this is _HARMLESS IF INSIDE VIRTUALBOX_
@@ -192,62 +146,61 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **Install Now**
 
 #### Confirm Hard drive partitioning
-<img src="Capture17.png" alt="drawing" width="1000"/>
+<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
 - you are confirming to partition your virtual hard drive 
 - this will not affect your files outside of VirtualBox
 - click **continue**
 
 #### Choose the correct timezone
-<img src="Capture18.png" alt="drawing" width="1000"/>
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 #### Define you user settings
-<img src="Capture19.png" alt="drawing" width="1000"/>
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 - choose a simple user name and computer name
-- choose a simple password or leave it blank
+- choose a simple password that you can remember
 - click **continue**
 
-#### Wait for installation to complete
-<img src="Capture20.png" alt="drawing" width="1000"/>
+<img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
+
+- choose **Minimal Installation**
+- choose **Download Updates**
+- choose **Install third-party software**  
+- click **continue**
+<img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
+'
+#### Wait for installation to complete'
+<img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
 - Make sure you are plugged into a power source or have a good battery
 - This will take several minutes depending on your system and network connection. _Be patient_, you are almost done!
 
 #### Restart the VM
-<img src="Capture21.png" alt="drawing" width="1000"/>
-
-- click **restart now**
+<img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
 
 #### Restart to complete installation
-<img src="Capture22.png" alt="drawing" width="1000"/>
+<img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
 
 - The installation of Ubuntu is now complete. Press the {\bf enter} key to shut down the machine. 
 - If it does not shut down click {\bf Machine $\rightarrow $ ACPI Shutdown}.
 
 #### Finally! Installation Complete
-<img src="CaptureY.png" alt="drawing" width="1000"/>
+<img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
 
-- You should now see your new virtual operating system in the list on the left. 
-- Click the **start** button to turn it on. 
 
 #### Ubuntu Login Screen
 <img src="Capture23.png" alt="drawing" width="1000"/>
 
 - You should see the username you chose 
 - Login with the credential you created previously.
+<img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
-#### Ubuntu Welcome
-<img src="Capture24.png" alt="drawing" width="1000"/>
+<img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
-- the default selections are fine
-- click **next**
 
-#### Fresh New Ubuntu - Focal Fossa
-<img src="Capture25.png" alt="drawing" width="1000"/>
-
-- Install the updates. Do not upgrade to Ubuntu 20 unless you want fly solo.
-- Updating requires the internet, but you knew that already.
+- Install the updates. Do not upgrade to Ubuntu 22 unless you want to learn ROS2
+- Updating requires the internet. This should be done regualrly.
 
 #### Make a Backup
 
