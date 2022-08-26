@@ -193,38 +193,43 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **Done**
 
 #### System Update
-<img src="Capture23.png" alt="drawing" width="1000"/>
+<img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
 - when prompted by Software Updater, click **Install Now**
 - if not prompted press the Windows key and type _Software Updater_, open the app and install the updates
-
-<img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
 <img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
 - click **Restart Now** to restart the virtual machine to complete the process
 
+- If the machine does not shut down automatically find the **Power Off** button in Ubuntu in the upper right.
+
+- You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
+
 <img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
 
 <img src="images/Capture76.png" alt="drawing" width="500"/> 
 
-- If the machine does not shut down automatically find the **shutdown** button in Ubuntu. You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
 
 #### Make a Backup
+  
+<img src="images/Capture77.png" alt="drawing" width="500"/> <img src="images/Capture78.png" alt="drawing" width="500"/> 
 
-- Now, it is a good idea to make a **backup** of your fresh install. VirtualBox can do this for you but you have to shut it down first.  
-<img src="images/Capture77.png" alt="drawing" width="500"/> 
+- click **Machine->Tools->Snapshots**  
 
-<img src="images/Capture78.png" alt="drawing" width="500"/> <img src="images/Capture79.png" alt="drawing" width="500"/> 
+- Select your VM so that it is highlighted blue
+
+- Click **Take** to save the current state of the virtual machine 
+
+- This may not work if your physical storage device is full
 
 <img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
 
+- Choose a name and write a brief description of the snapshot 
 
-#### Back to VirtualBox
-<img src="CaptureZ.png" alt="drawing" width="1000"/>
 
-- Select your VM so that it is highlighted blue
-- click **Machine->Tools->Snapshots**             
+
+           
 
 #### Take a Snapshot of the VM for Backup
 
