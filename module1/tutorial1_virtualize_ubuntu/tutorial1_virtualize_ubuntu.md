@@ -153,11 +153,12 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - unselect _Log in automatically_ and _Use Active Directory_ if previously selected
 - click **continue** 
 
-#### Wait for installation to complete
+#### Complete Installation
 <img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 - Make sure you are plugged into a power source or have a good battery
 - This step may take 15-20 minutes depending on your system and network connection. _Be patient_, you are almost done!
+- When prompted, click _Restart Now_
 
 #### Restart Virtual Machine 
 <img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
