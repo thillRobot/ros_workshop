@@ -111,18 +111,18 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - Click the folder icon to open the Optical Disc Selector menu. 
 
-- Click _add_
+- Click **add**
 
 <img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 
 - Open the file _ubuntu-20.04.4-desktop-amd64_. 
 
-- Click choose to continue
+- Click **choose** to continue
 
 #### Boot Ubuntu Installation Image
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 
-- Click start to begin the initial boot of the virtual operating system
+- Click **start** to begin the initial boot of the virtual operating system
 
 
 #### Ubuntu Installation
