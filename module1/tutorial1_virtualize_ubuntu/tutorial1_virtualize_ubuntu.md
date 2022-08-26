@@ -36,7 +36,7 @@ The remainder of the this tutorial is being repaired and will be volatile until 
 
 - Download the VirtualBox installation file using the link on ilearn. Choose the link that matches your computer type. If you are using a Linux computer already you do not need this tutorial. 
     
-- Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
+- Open the VirtualBox installation file you downloaded and install the application. You may need to provide admistrator access and click allow). 
 
 <img src="images/Capture1_edited.png" alt="drawing" width="500"/> <img src="images/Capture2_edited.png" alt="drawing" width="500"/>
 <img src="images/Capture3_edited.png" alt="drawing" width="500"/> <img src="images/Capture4_edited.png" alt="drawing" width="500"/>
