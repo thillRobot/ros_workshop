@@ -163,7 +163,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 #### Restart Virtual Machine 
 <img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
 
-- Press enter to restart the virtual machine
+- Press **enter** to restart the virtual machine
 
 <img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
 
@@ -175,20 +175,31 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
 
+- **Don't Upgrade** to Ubuntu 22.04
+- click OK
+
 <img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
+
+- click **next**
+- choose to send info and click **next**
 
 <img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
 
+- leave **Location Services** unchecked 
+- click **Next**
+- click **Done**
+
 #### System Update
 <img src="Capture23.png" alt="drawing" width="1000"/>
+
+- when prompted by Software Updater, click **Install Now**
+- if not prompted press the Windows key and type _Software Updater_, open the app and install the updates
 
 <img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
 <img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
-
-- Install the updates. Do not upgrade to Ubuntu 22 unless you want to learn ROS2
-- Updating requires the internet. This should be done regualrly.
+- Restart the virtual machine to complete the process. 
 
 #### Make a Backup
 
