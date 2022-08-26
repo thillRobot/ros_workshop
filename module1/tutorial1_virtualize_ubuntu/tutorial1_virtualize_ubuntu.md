@@ -103,7 +103,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture24.png" alt="drawing" width="500"/> 
 
-- Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot is an involved process.
+- Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot may take 15 to 30 minutes.
 
 
 #### Choose the installation media
@@ -170,7 +170,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **continue**
 <img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
 
-#### Wait for installation to complete'
+#### Wait for installation to complete
 <img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
 - Make sure you are plugged into a power source or have a good battery
