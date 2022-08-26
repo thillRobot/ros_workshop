@@ -2,7 +2,6 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics
 
 ## Overview
-
 In this tutorial you will first download and install VirtualBox from Oracle which is an application for _virtualizing_ operating systems inside of an existing one. Next, you will download the Ubuntu installation .iso file and setup a virtual operating system for learning ROS.  After completing this exercise, you will be ready to install the ROS Melodic software package in Ubuntu which is described in detailed in the next module.
 
 <img src="images/CaptureA.png" alt="drawing" width="400"/>
@@ -13,8 +12,7 @@ You can watch this tutorial on [Youtube](https://youtu.be/E7Ga6tbY0Iw).
 
 The remainder of the this tutorial is being repaired and will be volatile until 08/25/2022.
 
-
-## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) ?
+## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine)
 - A virtual machine is an operating system that is installed or _virtualized_ inside another operating system.
 - This is useful for learning and testing, but it is resource intensive and is not ideal for permanent use. 
 - [VirtualBox](https://www.virtualbox.org/) is a trusted application from Oracle widely used for this process. [VMware](https://www.vmware.com/) is alternative option for virtualization, but it will not be supported in this course.
@@ -49,7 +47,6 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Open the VirtualBox application installed in Part 2
 
 #### Create New Virtual Machine
-
 <img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture11.png" alt="drawing" width="500"/>
 
 - Click the **new** button.
@@ -58,7 +55,6 @@ Before proceeding make sure you have an internet connection and access to a powe
 
 
 #### Define Virtual Machine Virtual Hard Drive Parameters
-
 <img src="images/Capture12.png" alt="drawing" width="500"/>
 
 - choose the **computer name**: this is your choice (0-9, a-z, and hyphens (-) allowed)
@@ -71,8 +67,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 
 
 #### Define Virtual Hard Drive Parmeters
-
- <img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
+<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
 
 - choose Hard disk file type: _VDI (Virtual Disc Image)_. 
 - choose Storrage on physical hard disk: **Fixed Size** virtual hard drive. 
@@ -146,9 +141,10 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - click **continue** to confirm partitioning your virtual hard drive
 
-<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
 #### Choose User Account Settings 
+<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
+
 - Choose the correct timezone
 
 - choose _Your name_ and _Your computer's name_ (0-9, a-z, and hyphens (-) allowed)
