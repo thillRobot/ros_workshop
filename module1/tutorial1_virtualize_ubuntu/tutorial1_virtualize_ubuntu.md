@@ -138,30 +138,30 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - choose **Install third-party software**  
 - click **continue**
 
-<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
-
-- choose **Erase Everything and Install Ubuntu** 
-- this is _HARMLESS IF INSIDE VIRTUALBOX_
-- this could results in _PERMANENT DATA LOSS IF NOT IN VIRTUALBOX_
-- click **Install Now**
 
 #### Confirm Hard drive partitioning
-<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
+<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
 
+- click **continue**
 - you are confirming to partition your virtual hard drive 
 - this will not affect your files outside of VirtualBox
-- click **continue**
+- choose **Erase Everything and Install Ubuntu** 
+- this is _HARMLESS IF INSIDE VIRTUALBOX_
+- click **Install Now**
+
+<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
 #### Choose the correct timezone
 <img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
-#### Define you user settings
+#### Define you user credentials
 <img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 - choose a simple user name and computer name
 - choose a simple password that you can remember
 - click **continue**
 
+#### Choose Install Settings
 <img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
 
 - choose **Minimal Installation**
@@ -169,7 +169,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - choose **Install third-party software**  
 - click **continue**
 <img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
-'
+
 #### Wait for installation to complete'
 <img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
