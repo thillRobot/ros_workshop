@@ -204,19 +204,16 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - click **Restart Now** to restart the virtual machine to complete the process
 
+<img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture76.png" alt="drawing" width="500"/> 
+
+- If the machine does not shut down automatically find the **shutdown** button in Ubuntu. You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
+
 #### Make a Backup
 
 - Now, it is a good idea to make a **backup** of your fresh install. VirtualBox can do this for you but you have to shut it down first.  
-- Find the **shutdown** button in Ubuntu, or open a terminal and type `sudo shutdown`. You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
-
-- The installation of Ubuntu is now complete. Press the {\bf enter} key to shut down the machine. 
-- If it does not shut down click {\bf Machine $\rightarrow $ ACPI Shutdown}.
-
-
-
-<img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
-
-<img src="images/Capture76.png" alt="drawing" width="500"/> <img src="images/Capture77.png" alt="drawing" width="500"/> 
+<img src="images/Capture77.png" alt="drawing" width="500"/> 
 
 <img src="images/Capture78.png" alt="drawing" width="500"/> <img src="images/Capture79.png" alt="drawing" width="500"/> 
 
