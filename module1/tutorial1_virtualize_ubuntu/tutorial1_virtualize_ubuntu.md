@@ -90,10 +90,13 @@ You can now see the virtual machine you created in the list on the left and the 
 
 Click _Settings_ to adjust the performance settings the virtual machine that you have created. 
 
-<img src="images/Capture17.png" alt="drawing" width="500"/> <img src="images/Capture19.png" alt="drawing" width="500"/>
+<img src="images/Capture19.png" alt="drawing" width="500"/> <img src="images/Capture22.png" alt="drawing" width="500"/> 
 
-<img src="images/Capture22.png" alt="drawing" width="500"/> 
+- increase _Processor(s)_ to 4, 6, or more if available in green 
 
+- increase the _Video Memory_ to the maximum value in green
+
+- select _Enable 3D Acceleration_
           
 
 ### Part 4 - Ubuntu OS Installation and Setup
