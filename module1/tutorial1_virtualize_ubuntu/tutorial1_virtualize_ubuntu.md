@@ -105,15 +105,16 @@ Choose your new VM and Click _Start_ to turn on the virtual machine. The initial
 
 <img src="images/Capture24.png" alt="drawing" width="500"/> 
 
+
+<img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
+
 - Click the folder icon to open the Optical Disc Selector menu. Then click _add_ and open the file _ubuntu-20.04.4-desktop-amd64_. 
 
 - Click choose to continue
 
-<img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
+<img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 
 - Click start to begin the initial boot of the virtual operating system
-
-<img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 
