@@ -218,13 +218,13 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **Machine->Tools->Snapshots**  
 - Select your VM so that it is highlighted blue
 - Click **Take** to save the current state of the virtual machine 
-- This snaphot will save you alot of time, in the event you have to restart
 - This may not work if your physical storage device is full 
 
 <img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
 
 - Choose a name and write a brief description of the snapshot 
-           
+- This snaphot will save you alot of time if you have to restart           
+
 ## Tutorial 1 - Virtualize Ubuntu 20.04 - Complete 
 
 Great Job. You have completed the tutorial.
