@@ -142,7 +142,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **Install Now**,this will not affect your files outside of VirtualBox
 
 #### Confirm Hard drive partitioning
-<img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
+<img src="images/Capture38.png" alt="drawing" width="500"/> 
 
 - click **continue** to confirm partitioning your virtual hard drive
 
@@ -155,33 +155,26 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - choose a simple _username_ and _password_ that you can remember
 - select _Require my password to log in_
 - unselect _Log in automatically_ and _Use Active Directory_ if previously selected
-- click **continue**
-
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
-
-
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
-
-
-#### Choose Install Settings
-<img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
-
-- choose **Minimal Installation**
-- choose **Download Updates**
-- choose **Install third-party software**  
-- click **continue**
-<img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
+- click **continue** 
 
 #### Wait for installation to complete
-<img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 - Make sure you are plugged into a power source or have a good battery
-- This will take several minutes depending on your system and network connection. _Be patient_, you are almost done!
+- This step may take 15-20 minutes depending on your system and network connection. _Be patient_, you are almost done!
 
-#### Restart the VM
+#### Restart Virtual Machine 
+<img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
+
+<img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
+
+
+<img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
+
+#### ASDF
 <img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
 
-#### Restart to complete installation
+#### ASDFF
 <img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
 
 - The installation of Ubuntu is now complete. Press the {\bf enter} key to shut down the machine. 
@@ -189,7 +182,6 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 #### Finally! Installation Complete
 <img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
-
 
 #### Ubuntu Login Screen
 <img src="Capture23.png" alt="drawing" width="1000"/>
