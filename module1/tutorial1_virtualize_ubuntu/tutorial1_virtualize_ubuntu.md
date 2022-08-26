@@ -138,15 +138,13 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - choose **Install third-party software**  
 - click **continue**
 
+- choose **Erase Everything and Install Ubuntu**, this is _HARMLESS_ because we are inside a virtual machine
+- click **Install Now**,this will not affect your files outside of VirtualBox
 
 #### Confirm Hard drive partitioning
 <img src="images/Capture38.png" alt="drawing" width="500"/> <img src="images/Capture39.png" alt="drawing" width="500"/> 
 
-- click **continue**
-- you are confirming to partition your virtual hard drive 
-- this will not affect your files outside of VirtualBox
-- choose **Erase Everything and Install Ubuntu** (this is _HARMLESS_ because we are inside a virtual machine)
-- click **Install Now** 
+- click **continue** to confirm partitioning your virtual hard drive
 
 <img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
