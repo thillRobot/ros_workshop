@@ -178,7 +178,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
 
-- **Don't Upgrade** to Ubuntu 22.04
+- if prompted **Don't Upgrade** to Ubuntu 22.04
 - click OK
 
 <img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
@@ -202,7 +202,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
-- Restart the virtual machine to complete the process. 
+- click **Restart Now** to restart the virtual machine to complete the process
 
 #### Make a Backup
 
