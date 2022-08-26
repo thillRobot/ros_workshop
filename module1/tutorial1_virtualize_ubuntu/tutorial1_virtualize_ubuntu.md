@@ -135,7 +135,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - choose **Minimal Installation**
 - choose **Download updates while installing Ubuntu**
-- choose **Install third-party software for graphics and Wifi hardware and additional media formats**  
+- choose **Install third-party software...**  
 - click **continue**
 
 - choose **Erase Everything and Install Ubuntu**, this is _HARMLESS_ because we are inside a virtual machine
