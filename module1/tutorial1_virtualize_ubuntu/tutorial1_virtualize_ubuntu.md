@@ -173,6 +173,9 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 #### Ubuntu Welcome Screen
 <img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
+- click **Skip**
+- click **Next**
+
 <img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
 
 - **Don't Upgrade** to Ubuntu 22.04
