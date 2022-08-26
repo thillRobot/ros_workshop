@@ -65,7 +65,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose the **operating system** type: _Linux_
 - choose the **version**: _Ubuntu 64-bit_ 
 - choose the amount of RAM you want to allocate to the VM (while running only)  
-	- If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
+	- If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your computer has 16GB, then 8-10Gb is reccomended for the VM.
 - choose **create a virtual hard disk now**
 - click **create**
 
@@ -73,7 +73,6 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Define Virtual Hard Drive Parmeters
 
  <img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
-
 
 - choose Hard disk file type: _VDI (Virtual Disc Image)_. 
 - choose Storrage on physical hard disk: **Fixed Size** virtual hard drive. 
@@ -85,7 +84,7 @@ Before proceeding make sure you have an internet connection and access to a powe
 #### Complete Virtual Machine and Hard Drive Setup
 <img src="images/Capture16.png" alt="drawing" width="500"/>
 
-You can now see the virtual machine you created in the list on the left and the settings your defined on the right.
+You can now see the virtual machine you created in the list on the left and the defined settings on the right.
 
 ### Part 3 - Virtual Machine Performance Settings
 
