@@ -184,7 +184,7 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 <img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
 
 - click **next**
-- choose to send info and click **next**
+- choose to send info or not and click **next**
 
 <img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
 
@@ -202,39 +202,29 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 - click **Restart Now** to restart the virtual machine to complete the process
 
-- If the machine does not shut down automatically find the **Power Off** button in Ubuntu in the upper right.
+- If the machine does not shut down automatically find the **Power Off** button in Ubuntu in the upper right and restart
 
-- You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
+- You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. 
 
 <img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
 
 <img src="images/Capture76.png" alt="drawing" width="500"/> 
 
 
-#### Make a Backup
+#### Take a Snapshot of the VM for Backup
   
 <img src="images/Capture77.png" alt="drawing" width="500"/> <img src="images/Capture78.png" alt="drawing" width="500"/> 
 
 - click **Machine->Tools->Snapshots**  
-
 - Select your VM so that it is highlighted blue
-
 - Click **Take** to save the current state of the virtual machine 
-
-- This may not work if your physical storage device is full
+- This snaphot will save you alot of time, in the event you have to restart
+- This may not work if your physical storage device is full 
 
 <img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
 
 - Choose a name and write a brief description of the snapshot 
-
-
-
            
+## Tutorial 1 - Virtualize Ubuntu 20.04 - Complete 
 
-#### Take a Snapshot of the VM for Backup
-
-- Snapshots can be used as a backup. This will save you all those steps if you if you ever need to start over.  
-- click **Take** to save a snapshot of the current state of your virtual machine. Whew... that was a lot of steps. 
-- **You did it!** _Welcome to the world of Linux. Have fun!_
-
-
+Great Job. You have completed the tutorial.
