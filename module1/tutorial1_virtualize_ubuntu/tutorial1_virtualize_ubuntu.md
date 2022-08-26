@@ -128,8 +128,8 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 #### Ubuntu Installation
 <img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
 
-- click **Install Ubuntu** - This is **harmless** _if using VirtualBox_
-- **try** is for temporary or _live_ session which can be used for computer maintence 
+- click **Install Ubuntu**
+- **try** is for temporary or _live_ session and can be used for computer maintence 
 
 <img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
 
@@ -145,21 +145,25 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 - click **continue**
 - you are confirming to partition your virtual hard drive 
 - this will not affect your files outside of VirtualBox
-- choose **Erase Everything and Install Ubuntu** 
-- this is _HARMLESS IF INSIDE VIRTUALBOX_
-- click **Install Now**
+- choose **Erase Everything and Install Ubuntu** (this is _HARMLESS_ because we are inside a virtual machine)
+- click **Install Now** 
 
 <img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
-#### Choose the correct timezone
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
+#### Choose User Account Settings 
+- Choose the correct timezone
 
-#### Define you user credentials
-<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
-
-- choose a simple user name and computer name
-- choose a simple password that you can remember
+- choose _Your name_ and _Your computer's name_ (0-9, a-z, and hyphens (-) allowed)
+- choose a simple _username_ and _password_ that you can remember
+- select _Require my password to log in_
+- unselect _Log in automatically_ and _Use Active Directory_ if previously selected
 - click **continue**
+
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
+
+
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
+
 
 #### Choose Install Settings
 <img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
