@@ -36,7 +36,7 @@ The remainder of the this tutorial is being repaired and will be volatile until 
 
 - Download the VirtualBox installation file using the link on ilearn. Choose the link that matches your computer type. If you are using a Linux computer already you do not need this tutorial. 
     
-- Open the VirtualBox installation file you downloaded and install the application. You may need to provide admistrator access and click allow). 
+- Click the VirtualBox installation file you downloaded and install the application. You may need to provide admistrator access and click allow). 
 
 <img src="images/Capture1_edited.png" alt="drawing" width="500"/> <img src="images/Capture2_edited.png" alt="drawing" width="500"/>
 <img src="images/Capture3_edited.png" alt="drawing" width="500"/> <img src="images/Capture4_edited.png" alt="drawing" width="500"/>
@@ -64,9 +64,9 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose the **computer name**: this is your choice (0-9, a-z, and hyphens (-) allowed)
 - choose the **operating system** type: _Linux_
 - choose the **version**: _Ubuntu 64-bit_ 
-- Choose the amount of RAM you want to allocate to the VM (while running only)  
+- choose the amount of RAM you want to allocate to the VM (while running only)  
 	- If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
-- choose **create a virtual hard drive now**
+- choose **create a virtual hard disk now**
 - click **create**
 
 
@@ -75,18 +75,17 @@ Before proceeding make sure you have an internet connection and access to a powe
  <img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
 
 
-- choose Hard disk file type: _VDI(Virtual Disc Image)_. 
+- choose Hard disk file type: _VDI (Virtual Disc Image)_. 
 - choose Storrage on physical hard disk: **Fixed Size** virtual hard drive. 
 - choose the size of your virtual hard drive       
-- select 25 GB VDI size if available, 20Gb to 15Gb may work 
+- select 25 Gb VDI size if available, 20Gb to 15Gb may work 
 	- Ubuntu 20.04 minimal: 9Gb
 	- ROS-Desktop-Full: 3Gb
 
 #### Complete Virtual Machine and Hard Drive Setup
 <img src="images/Capture16.png" alt="drawing" width="500"/>
 
-You can now see the virtual machine you created in the list on the left.
-
+You can now see the virtual machine you created in the list on the left and the settings your defined on the right.
 
 ### Part 3 - Virtual Machine Performance Settings
 
