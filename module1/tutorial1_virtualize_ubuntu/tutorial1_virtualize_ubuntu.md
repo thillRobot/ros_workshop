@@ -107,13 +107,13 @@ Click _Settings_ to adjust the performance settings the virtual machine that you
 
 <img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
 
-- Click the folder icon to open the Optical Disc Selector menu. Then click _add_ and open the file _ubuntu-20.04.4-desktop-amd64_. 
-
-- Click choose to continue
+- Click the folder icon to open the Optical Disc Selector menu. 
 
 <img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
 
+- Click _add_ and open the file _ubuntu-20.04.4-desktop-amd64_. 
 
+- Click choose to continue
 
 <img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 
