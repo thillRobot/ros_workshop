@@ -65,22 +65,22 @@ Before proceeding make sure you have an internet connection and access to a powe
 - choose the **operating system** type: _Linux_
 - choose the **version**: _Ubuntu 64-bit_ 
 - Choose the amount of RAM you want to allocate to the VM (while running only)  
-	- More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
+	- If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
+- choose **create a virtual hard drive now**
 - click **create**
 
 
 #### Define Virtual Hard Drive Parmeters
 
  <img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
-- choose **create a virtual hard drive now**
-- click **create**
-- choose the virtual hard drive type, _VDI_ is the recommended type. 
-- click **next**
-- choose **Fixed Size** virtual hard drive. 
-- click **next**
+
+
+- choose Hard disk file type: _VDI(Virtual Disc Image)_. 
+- choose Storrage on physical hard disk: **Fixed Size** virtual hard drive. 
 - choose the size of your virtual hard drive       
-- to virtualize Ubuntu and install ROS it is recommended to make a 25 GB VDI if you have space
-- click **create**
+- select 25 GB VDI size if available, 20Gb to 15Gb may work 
+	- Ubuntu 20.04 minimal: 9Gb
+	- ROS-Desktop-Full: 3Gb
 
 #### Complete Virtual Machine and Hard Drive Setup
 <img src="images/Capture16.png" alt="drawing" width="500"/>
