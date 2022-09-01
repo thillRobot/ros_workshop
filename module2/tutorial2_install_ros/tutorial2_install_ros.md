@@ -5,7 +5,7 @@
 
 In _Tutorial 2 - Install ROS_ you install ROS(1) Noetic on the Ubuntu 20.04 virtual machine and learn some basics elements of the Linux operating system. After completing the tutorial you will have a ROS environment ready to use for the remainder of the tutorials.  
 
-You can read more about the installation [here](http://wiki.ros.org/noetic/Installation/Ubuntu}{here}) on the ROS wiki.
+You can read more about the installation [here](http://wiki.ros.org/noetic/Installation/Ubuntu) on the ROS wiki.
 
 ## System Requirements
 - Complete _Tutorial 1 Virtualize Ubuntu_ before beginning, or skip to this tutorial if you have a Linux computer ready.
@@ -84,7 +84,7 @@ source ~/.bashrc
 Install a list of package
 
 ```
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 
 Intitialize the package rosdep
@@ -106,7 +106,7 @@ roscore
 
 If the installation was successful, the terminal output will be _similar_ to the image below.
 
-<img src="roscore_charlie.png" alt="drawing" width="1000"/>
+<img src="roscore_charlie_noetic.png" alt="drawing" width="1000"/>
 
 Abort the roscore process by clicking in the terminal and pressing CTRL + C then close the terminal window. Congratulations, you have installed ROS noetic.
 
