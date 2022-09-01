@@ -108,7 +108,7 @@ roscore
 
 If the installation was successful, the terminal output will be _similar_ to the image below.
 
-<img src="roscore_charlie_noetic.png" alt="drawing" width="1000"/>
+<img src="roscore_noetic.png" alt="drawing" width="1000"/>
 
 Abort the roscore process by clicking in the terminal and pressing CTRL + C then close the terminal window. Congratulations, you have installed ROS noetic.
 
