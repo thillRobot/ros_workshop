@@ -10,11 +10,12 @@ You can read more about the installation [here](http://wiki.ros.org/noetic/Insta
 ## System Requirements
 - Complete _Tutorial 1 Virtualize Ubuntu_ before beginning, or skip to this tutorial if you have a Linux computer ready.
 - **OS:** This tutorial is intended for the Ubuntu 20.04 LTS operating system. Alternate flavors of 20.04 (i.e. - Mint, Mate, kbuntu) may work but have not been tested.
-- **Internet:** Your computer must be connected to the internet to proceed. Downloading and installing ROS may take approximately 15 to 30 minutes. 
-
+- **Internet:** Your computer must be connected to the internet to proceed. 
+- This tutorial may take approximately 15 minutes to 20 minutes depending on your internet connection. 
+ 
 ## Before You Begin
 - **Copy and Paste:** It is recommended to use copy and paste to enter the longer commands in this tutorial. Use the tutorial webpage or download the PDF to copy the commands directly.
-- **Backup:** If you are using a virt1ual machine, it is recommend to make a snaphot of your virtual machine before begining this tutorial. See _Tutorial 1 - Virtualize Ubuntu_ for details.
+- **Backup:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before begining this tutorial. See _Tutorial 1 - Virtualize Ubuntu_ for details.
 
 ## Installation Instructions
 
