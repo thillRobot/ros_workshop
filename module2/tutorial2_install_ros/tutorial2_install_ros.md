@@ -3,7 +3,7 @@
 
 ## Overview
 
-In this tutorial you will install **ROS(1) Noetic** on the **Ubuntu 20.04** virtual machine and learn some basics elements of the Linux operating system. After completing the tutorial you will have a ROS environment ready to use for the remainder of the tutorials.  
+In this tutorial you will install **ROS(1) Noetic** on the **Ubuntu 20.04** virtual machine and learn basics elements of the Linux operating system. After completing tutorial 2 you will have a ROS environment on the virtual machine ready to use for the remainder of the tutorials.  
 
 You can read more about the installation [here](http://wiki.ros.org/noetic/Installation/Ubuntu) on the ROS wiki.
 
