@@ -8,10 +8,10 @@ In this tutorial you will install **ROS(1) Noetic** on the **Ubuntu 20.04** virt
 You can read more about the installation [here](http://wiki.ros.org/noetic/Installation/Ubuntu) on the ROS wiki.
 
 ## System Requirements
-- Complete _Tutorial 1 Virtualize Ubuntu_ before beginning, or skip to this tutorial if you have a Linux computer ready.
+- **Prequisite:** Complete _Tutorial 1 Virtualize Ubuntu_ before beginning, or skip to this tutorial if you have a Linux computer ready.
 - **OS:** This tutorial is intended for the Ubuntu 20.04 LTS operating system. Alternate flavors of 20.04 (i.e. - Mint, Mate, kbuntu) may work but have not been tested.
 - **Internet:** Your computer must be connected to the internet to proceed. 
-- This tutorial may take approximately 15 minutes to 20 minutes depending on your internet connection. 
+- **Duration:** This tutorial will take approximately 15 minutes to 20 minutes to complete depending on your internet connection. 
  
 ## Before You Begin
 - **Copy and Paste:** It is recommended to use copy and paste to enter the longer commands in this tutorial. Use the tutorial webpage or download the PDF to copy the commands directly.
