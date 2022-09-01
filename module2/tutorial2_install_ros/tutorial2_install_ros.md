@@ -29,11 +29,11 @@ sudo apt update
 If you see any errors, check your internet connection. If you still see errors, reboot the VM.
 
 
-Apply avaiable updates
+Apply available updates
 ```
 sudo apt upgrade
 ```
-This step should complete from errors.
+This step should complete without errors.
 
 
 
