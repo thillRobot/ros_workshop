@@ -8,7 +8,7 @@ In this tutorial you will install **ROS(1) Noetic** on the **Ubuntu 20.04** virt
 You can read more about the installation [here](http://wiki.ros.org/noetic/Installation/Ubuntu) on the ROS wiki.
 
 ## System Requirements
-- **Prequisite:** Complete _Tutorial 1 Virtualize Ubuntu_ before beginning, or skip to this tutorial if you have a Linux computer ready.
+- **Prequisite:** Complete _Tutorial 1 Virtualize Ubuntu_ before beginning (skip to this tutorial if you have a Linux computer ready).
 - **OS:** This tutorial is intended for the Ubuntu 20.04 LTS operating system. Alternate flavors of 20.04 (i.e. - Mint, Mate, kbuntu) may work but have not been tested.
 - **Internet:** Your computer must be connected to the internet to proceed. 
 - **Duration:** This tutorial will take approximately 15 minutes to 20 minutes to complete depending on your internet connection. 
@@ -19,7 +19,7 @@ You can read more about the installation [here](http://wiki.ros.org/noetic/Insta
 
 ## Installation Instructions
 
-The following commands must be entered into the Ubuntu terminal. Press CTRL+ALT+T to open a new terminal, then carefully copy each command and paste it into the terminal then press ENTER. **The terminal commands are shown `formatted as commands`.**
+The following commands must be entered into the Ubuntu terminal. Press CTRL+ALT+T to open a new terminal. Carefully copy (CTRL+C) each command and paste (CTRL+SHIFT+V) it into the terminal then press ENTER. **The terminal commands are shown `formatted as commands`.**
 
 ### Step 0 - Update the Ubuntu System
 
@@ -37,7 +37,6 @@ sudo apt upgrade
 This step should complete without errors.
 
 
-
 ### Step 1.1 - Configure your Ubuntu repositories (The default settings are fine)
 ### Step 1.2 - Setup your sources.list to accept software from packages.ros.org
 
@@ -53,6 +52,8 @@ sudo apt install curl # if you haven't already installed curl
 ```
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
+You should receive a confirmation `OK`.
+
 
 ### Step 1.4 - Install the ROS package
 
