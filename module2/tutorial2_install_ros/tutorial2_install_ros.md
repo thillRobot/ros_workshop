@@ -1,4 +1,4 @@
-# ROS Workshop - Tutorial 2 - Install ROS
+# ROS Workshop - Tutorial 2 - Install ROS Noetic
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics
 
 ## Overview
