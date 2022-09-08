@@ -5,7 +5,8 @@
 In this tutorial you will begin to learn ROS with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 
 
 ## System Requirements
-**ROS+OS:** This tutorial is intended for a system with ROS noetic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+**ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. Use the branch selector above for alternate versions of ROS (i.e. - Kinetic, Melodic, etc.). Versions of ROS are tied to versions of Ubuntu.
+
 **Internet:** Your computer must be connected to the internet to proceed. Downloading and installing the turtlesim package will only take a few minutes
 
 ## Disclaimer
