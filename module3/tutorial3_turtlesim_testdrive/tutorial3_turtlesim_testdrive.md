@@ -26,7 +26,7 @@ Check for avaiable package updates.
 sudo apt update
 ```
 
-Install the available updates with the follow command. It is recommended to update before installing new packages.
+Install the available updates with the following command. It is recommended to update before installing new packages.
 ```
 sudo apt upgrade
 ```
@@ -38,7 +38,7 @@ Install the turtlesim packge for ros Noetic, `ros-noetic-turtlesim`, and a keybo
 sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
 ```
 
-The terminal will show if the installations were successfully, and it may indicate the packages were previously installed (turtlesim came with `ros-noetic-desktop-full`).
+The terminal will show if the installations were successful. It may indicate the packages were previously installed (turtlesim came with `ros-noetic-desktop-full`).
 
 ## Turtlesim Testdrive
 
