@@ -18,25 +18,30 @@ In this tutorial you will begin to learn ROS with Turtlesim, a simplistic robot 
 
 Press **Ctrl+Alt+t** to open a new terminal, then carefully enter each command into the terminal then press **Enter**. The terminal commands are shown in gray boxes. _You will have multiple terminals open at once during this tutorial_. 
 
-### Update your Ubuntu package list. 
+### Update package list
 
-It is recommended to do this before you install something new.
-
+Check for avaiable package updates. 
 ```
 sudo apt update
 ```
-### Install `turtlesim` package for ROS Noetic
-Also, install a keyboard controller node `teleop-twist-keyboard`. This will take a few moments. 
+
+Install the available updates with the follow command. It is recommended to update before installing new packages.
+```
+sudo apt upgrade
+```
+
+### Install `turtlesim` package 
+Install the turtlesim packge for ros Noetic, `ros-noetic-turtlesim`, and a keyboard controller node, `teleop-twist-keyboard`.
 
 ```
 sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
 ```
 
-The terminal will show if the installations were successfully, and it will indicate if the packages were previously installed (turtlesim came with ros-noetic-desktop-full).
+The terminal will show if the installations were successfully, and it may indicate the packages were previously installed (turtlesim came with `ros-noetic-desktop-full`).
 
 ## Turtlesim Testdrive
 
-Now, test the newly installed simulator. This exercise is simple, but the process is important. 
+Now, test the newly installed simulator package. This exercise is simple, but the process is important. 
 
 ### Step 1 - roscore
 
@@ -123,7 +128,7 @@ cmd_vel:=turtle1/cmd_vel
 
 Move the turtlesim window to the side, and select the keyboard terminal to drive using the following keys. **I** **J** **K** **L**, and **,**  
 
-Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
+Drive your turtle around the window and save an image of the window showing the turtle and the path. Use the _Screenshot_ app in Ubuntu to save screen captures, or use the host OS. 
 
 <img src="tutorial3_fig1.png" alt="drawing" width="750"/>
 
