@@ -2,15 +2,15 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview
-After completing _Tutorial 2 - Install ROS_ , your system is setup. You are ready to begin with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 
+In this tutorial you will begin to learn ROS with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 
 
 ## System Requirements
-**ROS+OS:** This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+**ROS+OS:** This tutorial is intended for a system with ROS noetic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 **Internet:** Your computer must be connected to the internet to proceed. Downloading and installing the turtlesim package will only take a few minutes
 
 ## Disclaimer
 
-- **Copy and Paste Errors:** Be careful if you use copy and paste for commands. Make sure to copy the entire command.
+- **Copy and Paste:** Be careful if you use copy and paste for commands. Make sure to copy the entire command.
     
 - **Practice with the Terminal:** The commands in this tutorial are relatively short, and it may help improve understanding to type them manually. Press **Tab** for _auto-completion_.
     
@@ -25,14 +25,14 @@ It is recommended to do this before you install something new.
 ```
 sudo apt update
 ```
-### Install `turtlesim` package for ROS Melodic
+### Install `turtlesim` package for ROS Noetic
 Also, install a keyboard controller node `teleop-twist-keyboard`. This will take a few moments. 
 
 ```
-sudo apt install ros-melodic-turtlesim ros-melodic-teleop-twist-keyboard
+sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
 ```
 
-The terminal will show if the installations were successfully, and it will indicate if the packages were previously installed (turtlesim came with ros-melodic-desktop-full).
+The terminal will show if the installations were successfully, and it will indicate if the packages were previously installed (turtlesim came with ros-noetic-desktop-full).
 
 ## Turtlesim Testdrive
 
