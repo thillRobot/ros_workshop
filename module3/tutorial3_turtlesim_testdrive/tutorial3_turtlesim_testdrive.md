@@ -32,17 +32,17 @@ sudo apt upgrade
 ```
 
 ### Install `turtlesim` package 
-Install the turtlesim packge for ros Noetic, `ros-noetic-turtlesim`, and a keyboard controller node, `teleop-twist-keyboard`.
+Install the turtlesim package for ROS Noetic, `ros-noetic-turtlesim`, and the keyboard controller package `ros-noetic-teleop-twist-keyboard`. 
 
 ```
-sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
+sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard`
 ```
 
-The terminal will show if the installations were successful. It may indicate the packages were previously installed (turtlesim came with `ros-noetic-desktop-full`).
+The terminal will show if the installations were successful. It may indicate the packages were previously installed (`turtlesim` came with `ros-noetic-desktop-full`).
 
 ## Turtlesim Testdrive
 
-Now, test the newly installed simulator package. This exercise is simple, but the process is important. 
+Test the newly installed simulator package. This exercise is simple, but the process is important. 
 
 ### Step 1 - roscore
 
