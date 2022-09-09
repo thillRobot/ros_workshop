@@ -35,10 +35,10 @@ sudo apt upgrade
 Install the turtlesim package for ROS Noetic, `ros-noetic-turtlesim`, and the keyboard controller package `ros-noetic-teleop-twist-keyboard`. 
 
 ```
-sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard`
+sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
 ```
 
-The terminal will show if the installations were successful. It may indicate the packages were previously installed (`turtlesim` came with `ros-noetic-desktop-full`).
+The terminal will show if the installations were successful. It may indicate the packages were previously installed.
 
 ## Turtlesim Testdrive
 
@@ -80,7 +80,7 @@ The nodes are not communicating because the turtlesim node is not subscribing th
 ### Troubleshoot 
 
 #### rostopic
-Use the `rostopic` tool to to invesitage the topics published be the nodes _while the system is running_. 
+Use the `rostopic` tool to to invesitage the topics published be the nodes _while `roscore` is running_. 
 
 | List available topics | Print info about <TOPIC> | Print data from <TOPIC> |
 |-----------------------|--------------------------|-------------------------|
