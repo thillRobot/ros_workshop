@@ -371,7 +371,10 @@ cd ~/catkin_ws/src
 git clone https://github.com/ros-teleop/teleop_twist_joy
 ```
 
-`cd ~/catkin_ws`
+```
+cd ~/catkin_ws`
+```
 
-`catkin_make`
-
+```
+catkin_make`
+```
