@@ -61,9 +61,7 @@ Open a new terminal and navigate to the future location of your workspace. It is
 cd ~ 				
 ```
 
-_Note:_ `~` is alias for `/home/$USER`
-
-Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directory contents.
+_Note:_ `~` is alias for `/home/$USER`. Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directory contents.
 
 
 #### Step 3: Create Workspace Directory `catkin_ws/`
