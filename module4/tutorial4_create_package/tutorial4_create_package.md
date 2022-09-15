@@ -65,7 +65,7 @@ _Note:_ `~` is alias for `/home/$USER`. Look carefully and you can see that the 
 
 
 #### Step 3: Create Workspace Directory 
-Create a workspace and source directory with `mkdir`. Follow the naming rules described above when choosing a workspace name. The default `~/catkin_ws` is sufficient and will be used as the <workspace_name> in this tutorial. 
+Create a workspace and source directory with `mkdir`. The default `~/catkin_ws` is sufficient and will be used as the <workspace_name> in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. 
 
 ```
 mkdir -p catkin_ws/src
