@@ -2,11 +2,11 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview:
-After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
+In this tutorial you will create a custom C++ package for you ROS system. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
 
 ## System Requirements:
 
-- **ROS+OS:** This tutorial is intended for a system with ROS noetic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **ROS+OS:** This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **Internet:** Your computer must be connected to the internet to proceed. 
 - **Ubuntu Updates:** Update the system before you begin the tutorial. This can be done with the _Software Updater_ found in the _Launcher_ or the following command. This will update the list of available packages and apply any available upgrades to the previously installed packages.  
 
@@ -16,9 +16,7 @@ sudo apt update && sudo apt upgrade
 	
 ## Before You Begin:
 	
--  **TUTORIAL READY** - This file has just been converted, and it should be working. Minor edits will be made as it is tested.  
-
-- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you begin this module. In the event of an untraceable error, you can restore to a previous snapshot. 
 		
 - **Workspace Setup:** In Part I you will setup a Catkin Workspace as your working directory for creating packages. _This only needs to be done once_.  
 	
