@@ -2,17 +2,15 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview:
-After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you are ready to create a custom C++ package. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
+In this tutorial you will create a custom C++ package for you ROS system to control the turtlsim. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
 
 ## System Requirements:
 
-- **ROS+OS:** This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. You the branch selector above for alternate versions. Versions of ROS are generally tied to versions of Ubuntu.
 - **Internet:** Your computer must be connected to the internet to proceed. 
 - **Ubuntu Updates:** Update the system before you begin the tutorial. This can be done with the _Software Updater_ found in the _Launcher_ or the following command. This will update the list of available packages and apply any available upgrades to the previously installed packages.  
 
-```
-sudo apt update && sudo apt upgrade
-``` 
+
 	
 ## Before You Begin:
 	
@@ -38,6 +36,17 @@ In this tutorial you will replace several <fields> with names of your choice. Th
 
 ## Instructions for Creating a Custom Package and Node
 
+### Update the system before you begin
+
+```
+sudo apt update
+```
+
+```
+sudo apt upgrade
+``` 
+
+
 ### Part I Setup the [Workspace:](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) ( Part I only needs to be done once Fall2021. )  
 
 In Part I you will setup a _catkin workspace_ as the working directory for your ROS system. Catkin is the program that manages your custom nodes and compiles your .cpp source code into executable programs. 
@@ -46,7 +55,7 @@ In Part I you will setup a _catkin workspace_ as the working directory for your 
 #### Step 1: Source the installation files
 This runs a script `setup.bash` needed to use ROS (this line should already be in `~/.bashrc`).
 ```
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 ```
 
 #### Step 2: Navigate Parent Directory
