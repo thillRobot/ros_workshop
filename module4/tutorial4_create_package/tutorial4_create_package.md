@@ -64,7 +64,7 @@ cd ~
 _Note:_ `~` is alias for `/home/$USER`. Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directory contents.
 
 
-#### Step 3: Create Workspace Directory `catkin_ws/`
+#### Step 3: Create Workspace Directory 
 Create a workspace and source directory with `mkdir`. Follow the naming rules described above when choosing a workspace name. The default `~/catkin_ws` is sufficient and will be used as the <workspace_name> in this tutorial. 
 
 ```
