@@ -2,7 +2,7 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview:
-In this tutorial you will create a custom C++ package for you ROS system to control the turtlsim. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
+In this tutorial you will create a custom C++ package for you ROS system to control the turtlesim. You can read more [here](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) on the wiki.
 
 ## System Requirements:
 
