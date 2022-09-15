@@ -47,30 +47,34 @@ sudo apt upgrade
 In Part I you will setup a _catkin workspace_ as the working directory for your ROS system. Catkin is the program that manages your custom nodes and compiles your .cpp source code into executable programs. 
 	
 
-#### Step 1: Source the installation files
+#### Step 1: Source the Installation files
 This runs a script `setup.bash` needed to use ROS (this line should already be in `~/.bashrc`).
 ```
 source /opt/ros/noetic/setup.bash
 ```
 
 #### Step 2: Navigate Parent Directory
-Open a new terminal and navigate to the future location of your workspace. It is reccomended to choose home (`/~`) as the directory location.  
-```
-cd /home/$USER      # Note: the variable $USER contains your user name
-```
-Alternatively you can use the command below. This is a shorthand for the command above.
+Open a new terminal and navigate to the future location of your workspace. It is reccomended to choose home (`/home/$USER`) as the directory location.  
+
 
 ```		
-cd ~ 				# this is just a shortcut					
+cd ~ 				
 ```
-Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directoy contents.
 
-#### Step 3: Choose Name and Create Workspace Directory
-Choose a workspace name and create a workspace and source directory with `mkdir`. Follow the naming rules described above when choosing a workspace name. The default name `catkin_ws` is commonly used, and will be used as the <workspace_name> in this tutorial. The `catkin_ws/src` folder is where custom ROS packages are stored. (Note: You can add a package from a friend or from Github by copying it into this directory and building.) 
+_Note:_ `~` is alias for `/home/$USER`
+
+Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directory contents.
+
+
+#### Step 3: Create Workspace Directory `catkin_ws/`
+Create a workspace and source directory with `mkdir`. Follow the naming rules described above when choosing a workspace name. The default `~/catkin_ws` is sufficient and will be used as the <workspace_name> in this tutorial. 
 
 ```
 mkdir -p catkin_ws/src
 ```
+
+The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or other custom nodes are stored. Also, open source packages can be downloaded (`git clone <PKG>`) into the src directory and compiled in the workspace.  
+
 
 #### Step 4: Build the Workspace 
 Navigate to the top of your workspace directory (`~/catkin_ws`) and build your workspace with `catkin_make`. This will configure your workspace directory, and compile any source code that is ready to be built. Your workspace has no source code yet so nothing will be compiled.
