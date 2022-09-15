@@ -14,9 +14,7 @@ In this tutorial you will create a custom C++ package for you ROS system to cont
 	
 ## Before You Begin:
 	
--  **TUTORIAL READY** - This file has just been converted, and it should be working. Minor edits will be made as it is tested.  
-
-- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
+- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start this module. In the event of an untraceable error, you can restore to a previous snapshot. This may not be an option if you have limited hard drive space. 
 		
 - **Workspace Setup:** In Part I you will setup a Catkin Workspace as your working directory for creating packages. _This only needs to be done once_.  
 	
