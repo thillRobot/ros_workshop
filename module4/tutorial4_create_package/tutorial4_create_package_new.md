@@ -6,7 +6,7 @@ After completing _Tutorial 3 - Turtlesim_  You have begun learning ROS and you a
 
 ## System Requirements:
 
-- **ROS+OS:** This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **ROS+OS:** This tutorial is intended for a system with ROS noetic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **Internet:** Your computer must be connected to the internet to proceed. 
 - **Ubuntu Updates:** Update the system before you begin the tutorial. This can be done with the _Software Updater_ found in the _Launcher_ or the following command. This will update the list of available packages and apply any available upgrades to the previously installed packages.  
 
@@ -45,7 +45,7 @@ In Part I you will setup a _catkin workspace_ as the working directory for your 
 #### Step 1: Source the installation files
 This runs a script `setup.bash` needed to use ROS (this line should already be in `~/.bashrc`).
 ```
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 ```
 
 #### Step 2: Navigate Parent Directory
