@@ -8,9 +8,6 @@ In this tutorial you will create a custom C++ package for you ROS system to cont
 
 - **ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. You the branch selector above for alternate versions. Versions of ROS are generally tied to versions of Ubuntu.
 - **Internet:** Your computer must be connected to the internet to proceed. 
-- **Ubuntu Updates:** Update the system before you begin the tutorial. This can be done with the _Software Updater_ found in the _Launcher_ or the following command. This will update the list of available packages and apply any available upgrades to the previously installed packages.  
-
-
 	
 ## Before You Begin:
 	
