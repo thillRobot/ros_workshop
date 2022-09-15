@@ -363,6 +363,15 @@ rosrun <package_name> <node_name>
 
 ### Bonus Excercise: Install the [Joystick Teleop Node](http://wiki.ros.org/joy/Tutorials/WritingTeleopNode) to drive the turtle with a USB joystick or game controller.
 	
-	
+```
+cd ~/catkin_ws/src
+```
 
+```
+git clone https://github.com/ros-teleop/teleop_twist_joy
+```
+
+`cd ~/catkin_ws`
+
+`catkin_make`
 
