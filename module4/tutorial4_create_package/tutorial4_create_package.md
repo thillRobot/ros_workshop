@@ -75,15 +75,20 @@ The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or ot
 
 
 #### Step 4: Build the Workspace 
-Navigate to the top of your workspace directory (`~/catkin_ws`) and build your workspace with `catkin_make`. This will configure your workspace directory, and compile any source code that is ready to be built. Your workspace has no source code yet so nothing will be compiled.
+Navigate to the top of your workspace directory (`~/catkin_ws`).
+
 ```
 cd catkin_ws
 ```
-Now, the terminal is in the top directory of the ROS workspace. Build the workspace with the `catkin_make` this may take several minutes depending on your system.
+
+Build your workspace with `catkin_make`. This will configure your workspace directory for the first time and may take several minutes depending on your system.
 
 ```
 catkin_make
 ```
+
+Your workspace contains no packages or no source code yet so nothing was compiled, but the workspace was initialized.
+
 
 The terminal output should look similar to what is shown below. 
 
