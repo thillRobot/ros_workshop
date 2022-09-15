@@ -338,7 +338,7 @@ Addtional entries in the output should be shown associated with the changes to t
 #### Step 4: Test the new node. 
 
 
-Repeat the process used in Part II to start the turtle simulator and publisher node. Does the subscriber node recieve the intended topic? How do you know?\\
+Repeat the process used in Part II to start the turtle simulator and publisher node. Does the subscriber node recieve the intended topic? How do you know?
 
 Start ROS with the `roscore` command. 
 ``` 
