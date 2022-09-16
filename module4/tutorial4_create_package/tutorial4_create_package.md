@@ -17,18 +17,22 @@ In this tutorial you will create a custom C++ package for you ROS system to cont
 	
 ## Important Note on Naming: 
 	
-In this tutorial you will replace several <fields> with names of your choice. These are general guidlines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions).
+The following names will be used in this tutorial.
+
+ -  `catkin_ws`: name of your workspace (default:  will be used in this tutorial)
+ -  `tutorial4` : name of your package () 
+ -  `publisher` : name of your publisher node  
+ -  `subscriber` : name of your publisher node  
+
+
+Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if different names are used.
 
 - use descriptive names, very long or very short names are hard to read
 - **do not** include the < > symbols
 - **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
 - the underscore _ character **is** allowed 
 
-   -  <workspace_name> : name of your workspace (default: `catkin_ws` will be used in this tutorial)
-   -  <package_name> : name of your package  
-   -  <node_name> : name of your node  
-   -  <user_name> : ubuntu user name 	
-
+  
 ## Instructions for Creating a Custom Package and Node
 
 ### Update the system before you begin
