@@ -53,18 +53,7 @@ This runs a script `setup.bash` needed to use ROS (this line should already be i
 source /opt/ros/noetic/setup.bash
 ```
 
-#### Step 2: Navigate Parent Directory
-Open a new terminal and navigate to the future location of your workspace. It is reccomended to choose home (`/home/$USER`) as the directory location.  
-
-
-```		
-cd ~ 				
-```
-
-_Note:_ `~` is alias for `/home/$USER`. Look carefully and you can see that the current directory of the terminal session has changed. Use `ls` to list the directory contents.
-
-
-#### Step 3: Create Workspace Directory 
+#### Step 2: Create Workspace Directory 
 Create a workspace and source directory with `mkdir`. The default path `~/catkin_ws/` is sufficient and will be used in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. 
 
 ```
@@ -77,7 +66,7 @@ _Note:_ `~` is alias for `/home/$USER`. The full workspace path is `/home/$USER/
 The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or other custom nodes are stored. Also, open source packages can be downloaded (`git clone <PKG>`) into the src directory and compiled in the workspace.  
 
 
-#### Step 4: Build the Workspace 
+#### Step 3: Build the Workspace 
 Navigate to the top of your workspace directory (`~/catkin_ws`).
 
 ```
@@ -121,7 +110,7 @@ Source space: /home/******/catkin_ws/src
 ####
 ``` 
 
-#### Step 5: Add workspace directory to `.bashrc` and source the script
+#### Step 4 Add workspace directory to `.bashrc` and source the script
 
 The command below appends the line `source ~/catkin_ws/devel/setup.bash` to the file `.bashrc` which contains terminal configuration commands. 
 
@@ -142,7 +131,7 @@ gedit ~/.bashrc
 ```
 
 		
-#### Step 6: Test ROS system before continuing 
+#### Step 5: Test ROS system before continuing 
 		
 ```		
 echo $ROS_PACKAGE_PATH
