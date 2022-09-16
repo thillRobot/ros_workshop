@@ -25,7 +25,7 @@ The following names will be used in this tutorial.
 	 	- `turtlesim_publisher` : custom publisher node  
 	 	- `turtlesim_subscriber` : custom subscriber node  
 - `turtlesim`: standard turtlesim package (installed tutorial 3)
-	 	- `turtlesim_node`: simulator node 
+- `turtlesim_node`: simulator node 
 
 Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if using different names.
 
