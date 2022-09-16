@@ -19,20 +19,21 @@ In this tutorial you will create a custom C++ package for you ROS system to cont
 	
 The following names will be used in this tutorial.
 
- -  `catkin_ws`: name of your workspace (default:  will be used in this tutorial)
- -  `tutorial4` : name of your package () 
- -  `publisher` : name of your publisher node  
- -  `subscriber` : name of your publisher node  
+ -  `catkin_ws`: default workspace name
+	 -  `turtlesim`: standard turtlesim package (installed tutorial 3)
+	 	- `turtlesim_node`: simulator node   	
+	 -  `tutorial4` : custom package (created in this tutorial) 
+	 	-  `turtlesim_publisher` : custom publisher node  
+	 	-  `turtlesim_subscriber` : custom subscriber node  
 
+Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if using different names.
 
-Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if different names are used.
-
-- use descriptive names, very long or very short names are hard to read
+- choose descriptive names, very long or very short names are hard to read
 - **do not** include the < > symbols
 - **do not** use spaces, UPPER CASE letters, or special characters (@,$,*, etc.)
 - the underscore _ character **is** allowed 
 
-  
+
 ## Instructions for Creating a Custom Package and Node
 
 ### Update the system before you begin
@@ -44,7 +45,6 @@ sudo apt update
 ```
 sudo apt upgrade
 ``` 
-
 
 ### Part I Setup the [Workspace:](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) ( Part I only needs to be done once. )  
 
@@ -175,10 +175,10 @@ The output shows the workspace has compiled again and the custom package is list
 
 
 #### Step 3: Create a new file for your C++ **publisher node**
-Use _gedit_ from the command line (or `vim`!) to create and open a new file named `publisher.cpp` in the package source directory.
+Use _gedit_ from the command line (or `vim`!) to create and open a new file named `turtlesim_publisher.cpp` in the package source directory.
 
 ``` 
-gedit ~/catkin_ws/src/tutorial4/src/publisher.cpp
+gedit ~/catkin_ws/src/tutorial4/src/turtlesim_publisher.cpp
 ```
 
 Copy the C++ ode below into the source file. This script decsribes a c++ program that will publish a topic to be subscribed to by the turtlesim node. Inside the while loop the linear velocity command in increased incrementally causing turtlesim to move in a spiral pattern. **Note:** This C++ code must be compiled before it can be executed.
@@ -190,7 +190,7 @@ Copy the C++ ode below into the source file. This script decsribes a c++ program
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "<node_name>");
+    ros::init(argc, argv, "turtlesim_publisher");
     ros::NodeHandle n;
     ros::Publisher ttu_publisher = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1000);
     ros::Rate loop_rate(10);
@@ -213,17 +213,17 @@ Save the file as a <node_name>.cpp in the src directory of the package your crea
 
 #### Step 4: Configure `CMakeLists.txt` and compile node
 	
-Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `<package_name>` as indicated by the preceding directort location `~/catkin_ws/src/<package_name>/` .
+Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `<package_name>` as indicated by the preceding directort location `~/catkin_ws/src/tutorial4/` .
 
 ```
-gedit ~/catkin_ws/src/<package_name>/CMakeLists.txt
+gedit ~/catkin_ws/src/tutorial4/CMakeLists.txt
 ```
 
 Add the following two lines to the bottom of the file and save. This file will not be used again in this exercise so it can be closed. Each additional node added to the workspace requires both an `add_executable` and a `target_link_libraries` line in the package `CMakeLists.txt` file. These commands configure the workspace to compile the c++ source code added above.
 	
 ```
-add_executable(<node_name> src/<node_name>.cpp)
-target_link_libraries(<node_name> ${catkin_LIBRARIES}) 
+add_executable(turtlesim_publisher src/turtlesim_publisher.cpp)
+target_link_libraries(turtlesim_publisher ${catkin_LIBRARIES}) 
 ```
 
 The C++ code must be compiled before the node can be run. The `catkin_make` command will compile and build your source code as well as check for errors throughout the ROS workspace. Remember to navigate to the workspace directory before compiling. 
@@ -254,7 +254,7 @@ rosrun turtlesim turtlesim_node
 
 Open a third terminal or terminal tab and start your custom publisher node.
 ```
-rosrun <package_name> <node_name>
+rosrun tutorial4 turtlesim_publisher
 ```
 	
 Use rostopic to view the available topics. 
@@ -265,7 +265,7 @@ rostopic list
 Stop the publisher node and start it again with the `cmd_vel` topic mapped to `turtle1/cmd_vel` as in the previous tutorial.
 
 ```
-rosrun <package_name> <node_name> cmd_vel:=/turtle1/cmd_vel
+rosrun tutorial4 turtlesim_publisher cmd_vel:=/turtle1/cmd_vel
 ```
 
 If the turtlesim node subscribes to the published topic, the turtle will begin to move in a spiral motion as the velocity is published and updated in the while loop. Close the terminals or use the `ctrl-c` to stop the individual processes when you are done testing. 
