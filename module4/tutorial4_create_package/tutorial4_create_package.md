@@ -60,7 +60,7 @@ Create a workspace and source directory with `mkdir` at the default path `~/catk
 mkdir -p ~/catkin_ws/src
 ```
 
-The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or other custom nodes are stored. Also, open source packages can be downloaded (`git clone <PKG>`) into the src directory and compiled in the workspace. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name.  
+The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or other custom nodes are stored. Also, open source packages can be downloaded (`git clone <PKG>`) into the `src` directory and compiled in the workspace. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name.  
 
 #### Step 3: Build the Workspace 
 Navigate to the top of your workspace directory (`~/catkin_ws`).
@@ -127,7 +127,7 @@ gedit ~/.bashrc
 ```
 
 		
-#### Step 5: Test ROS system before continuing 
+#### Step 5: Test ROS path before continuing 
 		
 ```		
 echo $ROS_PACKAGE_PATH
