@@ -120,7 +120,7 @@ The `.bashrc` script runs automatically each time you open a new terminal, so RO
 source ~/.bashrc 
 ```		
 		
-Open the `.bashrc` file with the gedit text editor (or use `vim`). You can see the lines you have added with `echo` at the bottom of the file. Verify that the paths are correct. Make any neccessary edits, and save then source file if it has changed. This file is used to customize the user's terminal session environment.   
+Open the `.bashrc` file with the `gedit` text editor (or use `vim`). You can see the lines you have added with `echo` at the bottom of the file. Verify that the paths are correct. Make any neccessary edits, and save then source file if it has changed. This file is used to customize the user's terminal session environment.   
 
 ```
 gedit ~/.bashrc
@@ -149,38 +149,35 @@ Navigate to the source directory of the ROS workspace. Custom packages are store
 ```
 cd ~/catkin_ws/src
 ```
-Initialize a new package with the `catkin_create_pkg` command. Choose the `<package_name>` and dependecies `std_msgs`, `rospy`, and `roscpp`. More dependecies can be added later. The name should not inlcude capital letters or special characters. See the naming rules discussed above for more information.  	
+Initialize a new package with the `catkin_create_pkg` command named `tutorial4` with dependecies `std_msgs`, `rospy`, and `roscpp`. More dependecies can be added later. The name should not inlcude capital letters or special characters. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) when choosing a <pkg_name>.  	
 
 ```
-catkin_create_pkg <pkg_name> std_msgs rospy roscpp
+catkin_create_pkg tutorial4 std_msgs rospy roscpp
 ```
-	            
-	            
+
 #### Step 2: Compile your package with [catkin_make](http://wiki.ros.org/catkin/Tutorials/using_a_workspace#Building_Packages_in_a_catkin_Workspace) 
 
-Back out to the top of the workspace directory then compile using the `catkin_make` command. This step is not required until later, but it should verify that you completed the previous parts correctly. 	
+Change to the top of the workspace directory then compile using `catkin_make` . 
 
 ```  
-cd ~/catkin_ws 	OR 	cd ..
+cd ~/catkin_ws 
 ```
 
 ```
 catkin_make
 ```	            
 
-Look at the output to see that the workspace has compiled again including the custom package. If you get here with no errors, the ROS workspace is setup and ready for the C++ code. 
-	            
-	            
+The output shows the workspace has compiled again and the custom package is listed. If no errors are shown, the ROS workspace is configured and the package is ready for the C++ code. 
 
-#### Step 3: Create a new file for your C++ {\bf publisher node}
-Use _gedit_ from the command line to create and open a new file named `<node_name>` in the directory shown.
 
-	
+#### Step 3: Create a new file for your C++ **publisher node**
+Use _gedit_ from the command line (or `vim`!) to create and open a new file named `publisher.cpp` in the package source directory.
+
 ``` 
-gedit ~/catkin_ws/src/<package_name>/src/<node_name>.cpp
+gedit ~/catkin_ws/src/tutorial4/src/publisher.cpp
 ```
 
-Copy the C++ ode below into the source file. This script will publish a topic similar that will be subscribed to by the turtlesim simulator node. Inside the while loop the linear velocity command in increased incrementally which should case the turtlesim to move in a spiral pattern. 
+Copy the C++ ode below into the source file. This script decsribes a c++ program that will publish a topic to be subscribed to by the turtlesim node. Inside the while loop the linear velocity command in increased incrementally causing turtlesim to move in a spiral pattern. **Note:** This C++ code must be compiled before it can be executed.
 	
 ```c++	 
 #include "ros/ros.h"
