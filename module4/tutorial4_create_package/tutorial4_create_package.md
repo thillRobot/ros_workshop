@@ -210,11 +210,12 @@ int main(int argc, char **argv)
 }
 ```
 	
-Save the file as a <node_name>.cpp in the src directory of the package your created in previously in **Part I**.The sample code shown below. 
+Save the file as a `turtlesim_publisher.cpp` in the source directory of the package your created in previously in **Part I**.
+
 
 #### Step 4: Configure `CMakeLists.txt` and compile node
 	
-Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `<package_name>` as indicated by the preceding directort location `~/catkin_ws/src/tutorial4/` .
+Open the `CMakeList.txt` file with the text editor. This file contains configuration commands related to the custom package `tutorial4` as indicated by the preceding directory location `~/catkin_ws/src/tutorial4/` .
 
 ```
 gedit ~/catkin_ws/src/tutorial4/CMakeLists.txt
@@ -304,14 +305,14 @@ int main(int argc, char **argv)
 Remeber, each C++ node in the package requires an entry in the appropriate `CMakeList.txt` file.
 
 ```
-gedit ~/catkin_ws/src/<package_name>/CMakeLists.txt
+gedit ~/catkin_ws/src/tutorial4/CMakeLists.txt
 ```
 
-Add the following lines to the file as done previously. This time <node_name> should refer to the new subscriber node.
+Add the following lines to the file as done previously. This time refer to the new subscriber node.
 
 ```
-add_executable(<node_name> src/<node_name>.cpp)
-target_link_libraries(<node_name> ${catkin_LIBRARIES}) 
+add_executable(turtlesim_subscriber src/turtlesim_subscriber.cpp)
+target_link_libraries(turtlesim_subscriber ${catkin_LIBRARIES}) 
 ```
 
 Change to the top of the ROS workspace and compile. 	
@@ -342,8 +343,14 @@ rosrun turtlesim turtlesim_node
 ```
 
 Open a third terminal or terminal tab and start your custom publisher node.
+
 ```
-rosrun <package_name> <node_name>
+rosrun tutorial4 turtlesim_publisher cmd_vel:=/turtle1/cmd_vel
+```
+
+Test the new subscriber node. Do you see the message in the terminal?
+```
+rosrun tutorial4 turtlsim_subscriber
 
 ```
 	
