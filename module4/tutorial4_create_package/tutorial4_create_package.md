@@ -66,7 +66,7 @@ The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or ot
 Navigate to the top of your workspace directory (`~/catkin_ws`).
 
 ```
-cd catkin_ws
+cd ~/catkin_ws
 ```
 
 Build your workspace with `catkin_make`. This will configure your workspace directory for the first time and may take several minutes depending on your system.
