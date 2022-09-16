@@ -54,7 +54,7 @@ source /opt/ros/noetic/setup.bash
 ```
 
 #### Step 2: Create Workspace Directory 
-Create a workspace and source directory with `mkdir`. The default path `~/catkin_ws/` is sufficient and will be used in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. _Note:_ `~` is alias for `/home/$USER`. The full workspace path is `/home/$USER/catkin_ws`.
+Create a workspace and source directory with `mkdir`. The default path `~/catkin_ws/` will be used in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. _Note:_ `~` is alias for `/home/$USER`. The full workspace path is `/home/$USER/catkin_ws`.
 
 
 ```
