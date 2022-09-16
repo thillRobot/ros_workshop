@@ -54,13 +54,13 @@ source /opt/ros/noetic/setup.bash
 ```
 
 #### Step 2: Create Workspace Directory 
-Create a workspace and source directory with `mkdir`. The default path `~/catkin_ws/` is sufficient and will be used in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. 
+Create a workspace and source directory with `mkdir`. The default path `~/catkin_ws/` is sufficient and will be used in this tutorial. Follow the [naming rules](http://wiki.ros.org/ROS/Patterns/Conventions) described above when choosing an alternate workspace name. _Note:_ `~` is alias for `/home/$USER`. The full workspace path is `/home/$USER/catkin_ws`.
+
 
 ```
 mkdir -p ~/catkin_ws/src
 ```
 
-_Note:_ `~` is alias for `/home/$USER`. The full workspace path is `/home/$USER/catkin_ws`.
 
 
 The `~/catkin_ws/src` folder is where ROS packages containing C++, Python, or other custom nodes are stored. Also, open source packages can be downloaded (`git clone <PKG>`) into the src directory and compiled in the workspace.  
