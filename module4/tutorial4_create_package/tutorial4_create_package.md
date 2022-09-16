@@ -19,12 +19,13 @@ In this tutorial you will create a custom C++ package for you ROS system to cont
 	
 The following names will be used in this tutorial.
 
- -  `catkin_ws`: default workspace name
-	 -  `turtlesim`: standard turtlesim package (installed tutorial 3)
-	 	- `turtlesim_node`: simulator node   	
-	 -  `tutorial4` : custom package (created in this tutorial) 
-	 	-  `turtlesim_publisher` : custom publisher node  
-	 	-  `turtlesim_subscriber` : custom subscriber node  
+	  
+- `catkin_ws`: default workspace name
+	- `tutorial4` : custom package (created in this tutorial) 
+	 	- `turtlesim_publisher` : custom publisher node  
+	 	- `turtlesim_subscriber` : custom subscriber node  
+- `turtlesim`: standard turtlesim package (installed tutorial 3)
+	 	- `turtlesim_node`: simulator node 
 
 Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if using different names.
 
