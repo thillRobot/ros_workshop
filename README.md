@@ -21,7 +21,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: [Create Package](https://github.com/thillRobot/ros_workshop/blob/noetic/module4/tutorial4_create_package/tutorial4_create_package.md)
 - [Module 5](module5/) 
   - Lecture: [Turtlebot Platform](https://github.com/thillRobot/ros_workshop/blob/noetic/module5/lecture5_turtlebot_platform/lecture5_turtlebot_platform.pdf)
-  - Tutorial: [Turtlebot3 Simulator](https://github.com/thillRobot/ros_workshop/blob/noetic/module5/tutorial5_turtlebot3_simulator/tutorial5_turtlebot3_simulator.md) 
+  - Tutorial: [Turtlebot3 Simulations](https://github.com/thillRobot/ros_workshop/blob/noetic/module5/tutorial5_turtlebot3_simulations/tutorial5_turtlebot3_simulations.md) 
 - [Module 6](module6/) 
   - Lecture: Navigation Stack (slides need to be made)
   - Tutorial: [Turtlebot3 Navigation](https://github.com/thillRobot/ros_workshop/blob/noetic/module6/tutorial6_turtlebot3_navigation/tutorial6_turtlebot3_navigation.md)
