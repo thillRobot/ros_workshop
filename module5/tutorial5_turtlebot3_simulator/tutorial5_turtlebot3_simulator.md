@@ -4,19 +4,17 @@
 <img src="turtlebot3_simulations.png" alt="drawing" width="400"/>
 
 ## Overview:
-After completing _Tutorial 4 - Create Package_, You have learned some basics of ROS, and you are ready for a more advanced robot. You can read more about the Turtlebot3 [here](https://www.turtlebot.com/) and [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/).
+In this tutorial you will learn to use a 2D robot navigation with Turtlebot3 Simulator in ROS. You can read more about the Turtlebot3 [here](https://www.turtlebot.com/) and [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/).
 	
 ## System Requirements:
-- ROS+OS: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e.  Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- ROS+OS: This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Use the branch selector above for alternate versions. ROS versions are tied to versions of Ubuntu.
 - ROS: Your computer must be connected to the internet to proceed. Update the system before you begin.
-- Workspace Setup: You must have successfully setup a Catkin Workspace in tutorial 4.  
+- Workspace Setup: You must have successfully setup a catkin workspace (`~/catkin_ws`) in tutorial 4.  
 
 ## Before You Begin:
 	
-- Backup the System: If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 - ROSLAUNCH: This tutorial involves using the roslaunch command which runs a multiple of nodes at once as described in the launch file. We will learn more about this later. 
 	
-
 ## Part 1 - Turtlebot3 Package Installation:
 
 ### Step 1 Update Repository List
@@ -29,17 +27,17 @@ Install the neccessary packages into your ROS system. This tutorial comes from [
     	
 **turtlebot3**
 ```
-sudo apt install ros-melodic-turtlebot3
+sudo apt install ros-noetic-turtlebot3
 ```
 
 **turtlebot3_simulations**
 ```
-sudo apt install ros-melodic-turtlebot3-simulations
+sudo apt install ros-noetic-turtlebot3-simulations
 ```
 
 **turtlebot3_gazebo**
 ```
-sudo apt install ros-melodic-turtlebot3-gazebo
+sudo apt install ros-noetic-turtlebot3-gazebo
 ```
 
 ### Step 3 Test Package Installation
