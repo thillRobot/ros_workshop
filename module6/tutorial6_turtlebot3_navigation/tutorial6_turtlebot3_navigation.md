@@ -3,7 +3,7 @@
 
 ## Navigation:
 
-What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS melodic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
+What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS noetic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
 
 <img src="turtlebot3_models.png" alt="drawing" width="400"/>
 
@@ -11,18 +11,17 @@ What do we mean by navigation? This means different things in different places. 
 
 	
 ## Overview:
-After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basics of ROS, and you have a more advanced robot. Next you are going to learn to use the navigation stack with the turtlebot3 simulator. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
+In this tutorial you will learn to use the navigation stack with the turtlebot3 simulations. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
 	
 ## System Requirements:
 
-- **ROS+OS**: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **ROS+OS**: This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **ROS**: Your computer must be connected to the internet to proceed. Update the system before you begin.
 - **Workspace Setup**: The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 6.  
 
 	
 ## Before Beginning:
 	
-- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 
 - **ROSLAUNCH:** This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
 
@@ -38,7 +37,7 @@ Install the packages required for autonomous navigation if you have not already.
 ```
 sudo apt update
 
-sudo apt install ros-melodic-navigation ros-melodic-gmapping
+sudo apt install ros-noetic-navigation ros-noetic-gmapping
 ```
 
 ### Step 2 -  Set the robot model. This only needs to be done once. Modify the .bashrc file If you want to change models.
