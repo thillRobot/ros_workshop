@@ -85,7 +85,19 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ### Step 4 Save Map
 
 Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
+
+Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
  
+```
+mkdir ~/catkin_ws/src/<package_name>/maps
+
+cd ~/catkin_ws/src/<package_name>/maps
+
+rosrun map_server map_saver -f <map_name>  
+```
+
+**For Example:** The two options below work on my system. 
+
 _Option 1_ Use the absolute paths to the map file in new directory. 
 
 ```
