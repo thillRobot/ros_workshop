@@ -48,12 +48,14 @@ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Step 3 - Create a package `tutorial6` to use for this exercise. 
+### Step 3 - Create a package `tutorial6` to use for this exercise. Also create a directory to store maps.
 
 ```
 cd ~/catkin_ws/src
 
 catkin_create_pkg tutorial6 std_msgs roscpp rospy
+
+mkdir ~/catkin_ws/src/tutorial6/maps
 ```
 
 
@@ -89,8 +91,6 @@ Create a directory in your custom turtlesim package for storing map files, then 
 Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
  
 ```
-mkdir ~/catkin_ws/src/<package_name>/maps
-
 cd ~/catkin_ws/src/<package_name>/maps
 
 rosrun map_server map_saver -f <map_name>  
@@ -101,16 +101,12 @@ rosrun map_server map_saver -f <map_name>
 _Option 1_ Use the absolute paths to the map file in new directory. 
 
 ```
-mkdir ~/catkin_ws/src/tutorial6/maps
-
 rosrun map_server map_saver -f ~/catkin_ws/src/tutorial6/maps/demo_world  
 ```
 
 _Option 2_ Navigate to package directory and use relative paths. 
 
 ```
-mkdir ~/catkin_ws/src/tutorial6/maps
-
 cd ~/catkin_ws/src/tutorial6/maps
 
 rosrun map_server map_saver -f demo_world  
