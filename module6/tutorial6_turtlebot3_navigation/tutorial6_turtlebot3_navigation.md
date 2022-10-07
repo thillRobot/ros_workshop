@@ -102,7 +102,7 @@ cd ~/catkin_ws/src/tutorial6/maps
 rosrun map_server map_saver -f demo_world  
 ```
 
-Two new map files both with the same filename (`demo_world .pgm` and `demo_world.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
+Two new map files both with the same filename (`demo_world.pgm` and `demo_world.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
 
 
 ## Part 3 - Navigate Virtual space:
