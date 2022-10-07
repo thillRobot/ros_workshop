@@ -51,9 +51,7 @@ source ~/.bashrc
 
 ```
 cd ~/catkin_ws/src
-```
 
-```
 catkin_create_pkg tutorial6 std_msgs roscpp rospy
 ```
 
