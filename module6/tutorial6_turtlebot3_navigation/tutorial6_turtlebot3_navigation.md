@@ -86,17 +86,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### Step 4 Save Map
 
-Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
-
-Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
- 
-```
-cd ~/catkin_ws/src/<package_name>/maps
-
-rosrun map_server map_saver -f <map_name>  
-```
-
-**For Example:** The two options below work on my system. 
+Use the `-f` option to set the filename. 
 
 _Option 1_ Use the absolute paths to the map file in new directory. 
 
@@ -112,7 +102,7 @@ cd ~/catkin_ws/src/tutorial6/maps
 rosrun map_server map_saver -f demo_world  
 ```
 
-Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
+Two new map files both with the same filename (`demo_world .pgm` and `demo_world.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
 
 
 ## Part 3 - Navigate Virtual space:
@@ -126,14 +116,6 @@ Now that navigation is installed and there is a map saved to file, the robot can
 ### Step 2 - Turn on navigation and RVIZ. 
 Use the name of the map you created for the map_file option in the command. If you navigate to the package with the maps the absolute paths will work.
 
-```
-cd ~/catkin_ws/src/<package_name>
-
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map_name>.yaml
-
-```
-
-**For Example:** The three options below work on a my system.
 
 _Option 1_ Navigate to the package directory and then use relative paths to the map files. 
 
@@ -183,7 +165,7 @@ rosrun rqt_graph rqt_graph
 You may have run into an issue in which `turtlebot3_navigation` cannot load the map file. A typical error message is shown below, along with the preferred solution.
 
 ```
-[ERROR] [1604667817.760623311]: Map server could not open /<map_name>.yaml.
+[ERROR] [1604667817.760623311]: Map server could not open /demo_world.yaml.
 ```
 
 ### Step 1 
