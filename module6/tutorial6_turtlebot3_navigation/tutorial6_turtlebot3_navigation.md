@@ -44,6 +44,7 @@ sudo apt install ros-noetic-navigation ros-noetic-gmapping
 
 ```
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
+
 source ~/.bashrc
 ```
 
