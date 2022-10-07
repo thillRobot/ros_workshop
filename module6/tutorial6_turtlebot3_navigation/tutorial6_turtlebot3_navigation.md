@@ -148,7 +148,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 _Option 3_ (**preffered method**) Use `find` to access the package containing the maps without changing the current directory. Use relative paths from the package directory in the find command.
 
 ```
- roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlesim_control)/maps/demo_world.yaml'
+ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)/maps/demo_world.yaml'
 ```
 
 
@@ -209,7 +209,7 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 Turn on the navigation nodes and RVIZ. Use the name of the map you created, and it should be recogonized and displayed in RVIZ. 
 
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find <package_name>)\maps\<map_name>.yaml'
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\tutorial6.yaml'
 ```
 
 ### Tutorial Complete: 
