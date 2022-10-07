@@ -47,6 +47,18 @@ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+### Step 3 - Create a package `tutorial6` to use for this exercise. 
+
+```
+cd ~/catkin_ws/src
+```
+
+```
+catkin_create_pkg tutorial6 std_msgs roscpp rospy
+```
+
+
+
 ## Part 2 - Generate a map of the virtual space:
 
 
@@ -75,30 +87,20 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
  
-```
-mkdir ~/catkin_ws/src/<package_name>/maps
-
-cd ~/catkin_ws/src/<package_name>/maps
-
-rosrun map_server map_saver -f <map_name>  
-```
-
-**For Example:** The two options below work on my system. 
-
 _Option 1_ Use the absolute paths to the map file in new directory. 
 
 ```
-mkdir ~/catkin_ws/src/turtlesim_control/maps
+mkdir ~/catkin_ws/src/tutorial6/maps
 
-rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world  
+rosrun map_server map_saver -f ~/catkin_ws/src/tutorial6/maps/demo_world  
 ```
 
 _Option 2_ Navigate to package directory and use relative paths. 
 
 ```
-mkdir ~/catkin_ws/src/turtlesim_control/maps
+mkdir ~/catkin_ws/src/tutorial6/maps
 
-cd ~/catkin_ws/src/turtlesim_control/maps
+cd ~/catkin_ws/src/tutorial6/maps
 
 rosrun map_server map_saver -f demo_world  
 ```
@@ -129,7 +131,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map
 _Option 1_ Navigate to the package directory and then use relative paths to the map files. 
 
 ```
-cd ~/catkin_ws/src/turtlesim_control
+cd ~/catkin_ws/src/tutorial6
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
 
@@ -138,7 +140,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 _Option 2_ Use the built-in ROS Change Directory tool `roscd` to quickly navigating to a ROS package on the system. This method is portable because it is not specfic to the location of the package containing the maps. 
 
 ```
-roscd turtlesim_control
+roscd tutorial6
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
 
