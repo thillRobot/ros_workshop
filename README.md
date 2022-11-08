@@ -27,7 +27,7 @@ Each Module contains a lecture and a tutorial. You can begin with [module 1](mod
   - Tutorial: [Turtlebot3 Navigation](https://github.com/thillRobot/ros_workshop/blob/noetic/module6/tutorial6_turtlebot3_navigation/tutorial6_turtlebot3_navigation.md)
 - [Module 7](module7/) 
   - Lecture: Custom Maps (slides need to be made)
-  - Tutorial: [Turtlebot3 Brown Hall](https://github.com/thillRobot/ros_workshop/blob/noetic-devel/module7/tutorial7_turtlebot3_brownhall/tutorial7_turtlebot3_brownhall.md)
+  - Tutorial: [Turtlebot3 Brown Hall](https://github.com/thillRobot/ros_workshop/blob/noetic/module7/tutorial7_turtlebot3_brownhall/tutorial7_turtlebot3_brownhall.md)
 - [Module 8](module8/) 
   - Lecture: Using Launch Files (slides need to be made)
   - Tutorial: Launch Turtlebot3 Simulator (needs conversion to markdown)
