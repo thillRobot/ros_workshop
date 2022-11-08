@@ -26,7 +26,7 @@ Configure a custom gazebo world representing Brown Hall. The simulated world is 
 move the source directory of the workspace 
 
 ```
-cd ~/catkin_ws
+cd ~/catkin_ws/src
 ```
 
 download a copy of the required package from github
