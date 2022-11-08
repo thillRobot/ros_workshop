@@ -8,7 +8,7 @@ In this tutorial you will import a map of Brown Hall to use with the navigation 
 
 - **ROS+OS**: This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **ROS**: Your computer must be connected to the internet to proceed. Update the system before you begin.
-- **Workspace Setup**: The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 6.  
+- **Workspace Setup**: The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 7.  
 
 	
 ## Before Beginning:
@@ -22,29 +22,32 @@ In this tutorial you will import a map of Brown Hall to use with the navigation 
 
 Configure a custom gazebo world representing Brown Hall. The simulated world is generated from the files in the `/models/turtlebot3_brown/meshes` directory.
 
-source the proper setup files for ROS
-
-```
-source /opt/ros/noetic/setup.bash
-source ~/catkin_ws/devel/setup.bash
-export TURTLEBOT3_MODEL=waffle_pi
-```
 
 move the source directory of the workspace 
+
 ```
 cd ~/catkin_ws
 ```
 
 download a copy of the required package from github
 ```
-git clone https://github.com/thillRobot/turtlebot3_planner.git
+git clone https://github.com/thillRobot/turtlebot3_navigation.git
 ```
 
-export environment variables for custom map
+source the proper setup files for ROS (these shoud be in `~/.bashrc`)
 ```
-export GAZEBO_PLUGIN_PATH=~/catkin_ws/src/turtlebot3_planner/lib:${GAZEBO_PLUGIN_PATH}
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/turtlebot3_planner/models:${GAZEBO_MODEL_PATH}
-export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_planner/models:${GAZEBO_RESOURCE_PATH}
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+```
+
+export environment variables for gazebo simulator (add these to `~/.bashrc`)
+
+```
+export TURTLEBOT3_MODEL=waffle_pi
+
+export GAZEBO_PLUGIN_PATH=~/catkin_ws/src/turtlebot3_navigation/lib:${GAZEBO_PLUGIN_PATH}
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/turtlebot3_navigation/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_navigation/models:${GAZEBO_RESOURCE_PATH}
 ```
 
 
@@ -53,7 +56,7 @@ export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_planner/models:${GAZEBO_R
 
 It is convenient to use a lauch to combine the required commands to run a robot application. 
 
-The launch file `turtlebot3_planner.launch` is in the `turtlbot3_planner/launch/` directory. This file confiures and starts the turtlebot3 simulations in a custom Gazebo world `turtlebot3_brown`.
+The launch file `turtlebot3_gazebo.launch` is in the `turtlbot3_planner/launch/` directory. This file confiures and starts the turtlebot3 simulations in a custom Gazebo world `turtlebot3_brown`.
 
 
 ```
@@ -83,7 +86,7 @@ The launch file `turtlebot3_planner.launch` is in the `turtlbot3_planner/launch/
 Use the following command to run the launch file. A new core will be started unless a previous roscore is running. The command line arguments are not set so the default values are used.
 
 ```
-roslaunch turtlebot3_planner turtlebot3_planner.launch
+roslaunch turtlebot3_navigation turtlebot3_gazebo.launch
 ```
 
 The robot should appear in Brown Hall. A three button mouse is very helpful here.
