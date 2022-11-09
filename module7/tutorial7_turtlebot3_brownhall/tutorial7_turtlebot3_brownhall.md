@@ -31,7 +31,7 @@ cd ~/catkin_ws/src
 
 download a copy of the required package from github
 ```
-git clone https://github.com/thillRobot/turtlebot3_navigation.git
+git clone https://github.com/thillRobot/turtlebot3_brownhall.git
 ```
 
 source the proper setup files for ROS (these shoud be in `~/.bashrc`)
@@ -45,9 +45,9 @@ export environment variables for gazebo simulator (add these to `~/.bashrc`)
 ```
 export TURTLEBOT3_MODEL=waffle_pi
 
-export GAZEBO_PLUGIN_PATH=~/catkin_ws/src/turtlebot3_navigation/lib:${GAZEBO_PLUGIN_PATH}
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/turtlebot3_navigation/models:${GAZEBO_MODEL_PATH}
-export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_navigation/models:${GAZEBO_RESOURCE_PATH}
+export GAZEBO_PLUGIN_PATH=~/catkin_ws/src/turtlebot3_brownhall/lib:${GAZEBO_PLUGIN_PATH}
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/turtlebot3_brownhall/models:${GAZEBO_MODEL_PATH}
+export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_brownhall/models:${GAZEBO_RESOURCE_PATH}
 ```
 
 
@@ -56,7 +56,7 @@ export GAZEBO_RESOURCE_PATH=~/catkin_ws/src/turtlebot3_navigation/models:${GAZEB
 
 It is convenient to use a lauch to combine the required commands to run a robot application. 
 
-The launch file `turtlebot3_gazebo.launch` is in the `turtlbot3_planner/launch/` directory. This file confiures and starts the turtlebot3 simulations in a custom Gazebo world `turtlebot3_brown`.
+The launch file `turtlebot3_brownhall.launch` is in the `turtlbot3_brownhall/launch/` directory. This file confiures and starts the turtlebot3 simulations in a custom Gazebo world `turtlebot3_brown`.
 
 
 ```
@@ -67,7 +67,7 @@ The launch file `turtlebot3_gazebo.launch` is in the `turtlbot3_planner/launch/`
   <arg name="z_pos" default="0.0"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find turtlebot3_planner)/worlds/turtlebot3_brown.world"/>
+    <arg name="world_name" value="$(find turtlebot3_brownhall)/worlds/turtlebot3_brown3.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
@@ -86,7 +86,7 @@ The launch file `turtlebot3_gazebo.launch` is in the `turtlbot3_planner/launch/`
 Use the following command to run the launch file. A new core will be started unless a previous roscore is running. The command line arguments are not set so the default values are used.
 
 ```
-roslaunch turtlebot3_navigation turtlebot3_gazebo.launch
+roslaunch turtlebot3_brownhall turtlebot3_brownhall.launch
 ```
 
 The robot should appear in Brown Hall. A three button mouse is very helpful here.
@@ -105,6 +105,20 @@ The robot should react to keyboard commands in the teleop terminal.
 
 ### Part 3, Challenge 1
 Use ROS navigation plan a path from one place in the building to the next. 
+
+install local planner used by turtlebot3
+```
+sudo apt update
+sudo apt install ros-noetic-dwa-local-planner
+```
+
+with the `turtlebot3_brownhall.launch` command still running, execute the following to start navigation  
+
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlebot3_brownhall)/maps/map0.yaml'
+```
+
+
 
 ### Part 3, Challenge 2
 Use the the goal status topic and a custom C++ node to plan a mission containing multiple waypoints. The robot should wait at each waypoint for 5 seconds before proceeding with the mission.
