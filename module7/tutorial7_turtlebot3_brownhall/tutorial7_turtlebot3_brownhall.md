@@ -112,10 +112,38 @@ sudo apt update
 sudo apt install ros-noetic-dwa-local-planner
 ```
 
-with the `turtlebot3_brownhall.launch` command still running, execute the following to start navigation  
+
+#### make a new map of the virtual brown hall
+
+follow the steps from tutorial 6 
+
+
+Start gmapping
+```
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+```
+
+Drive the robot around
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
 
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlebot3_brownhall)/maps/map0.yaml'
+cd ~/catkin_ws/src/turtlebot3_brownhall/maps
+
+rosrun map_server map_saver -f bh3_map0  
+```
+
+first attempt produced a very bad map... 
+
+
+#### start turtlebot3 navigation new map
+
+with the `turtlebot3_brownhall.launch` command still running, execute the following to start navigation  
+
+
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlebot3_brownhall)/maps/bh3_map0.yaml'
 ```
 
 
