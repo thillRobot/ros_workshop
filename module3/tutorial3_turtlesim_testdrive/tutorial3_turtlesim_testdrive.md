@@ -2,15 +2,16 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview
-After completing _Tutorial 2 - Install ROS_ , your system is setup. You are ready to begin with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 
+In this tutorial you will begin to learn ROS with Turtlesim, a simplistic robot model and simulator that serves as the _Hello World of ROS_. You can read more about turtlesim [here](http://wiki.ros.org/turtlesim) the ROS wiki. 
 
 ## System Requirements
-**ROS+OS:** This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+**ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. Use the branch selector above for alternate versions of ROS (i.e. - Kinetic, Melodic, etc.). Versions of ROS are tied to versions of Ubuntu.
+
 **Internet:** Your computer must be connected to the internet to proceed. Downloading and installing the turtlesim package will only take a few minutes
 
 ## Disclaimer
 
-- **Copy and Paste Errors:** Be careful if you use copy and paste for commands. Make sure to copy the entire command.
+- **Copy and Paste:** Be careful if you use copy and paste for commands. Make sure to copy the entire command.
     
 - **Practice with the Terminal:** The commands in this tutorial are relatively short, and it may help improve understanding to type them manually. Press **Tab** for _auto-completion_.
     
@@ -18,25 +19,30 @@ After completing _Tutorial 2 - Install ROS_ , your system is setup. You are read
 
 Press **Ctrl+Alt+t** to open a new terminal, then carefully enter each command into the terminal then press **Enter**. The terminal commands are shown in gray boxes. _You will have multiple terminals open at once during this tutorial_. 
 
-### Update your Ubuntu package list. 
+### Update package list
 
-It is recommended to do this before you install something new.
-
+Check for avaiable package updates. 
 ```
 sudo apt update
 ```
-### Install `turtlesim` package for ROS Melodic
-Also, install a keyboard controller node `teleop-twist-keyboard`. This will take a few moments. 
+
+Install the available updates with the following command. It is recommended to update before installing new packages.
+```
+sudo apt upgrade
+```
+
+### Install `turtlesim` package 
+Install the turtlesim package for ROS Noetic, `ros-noetic-turtlesim`, and the keyboard controller package `ros-noetic-teleop-twist-keyboard`. 
 
 ```
-sudo apt install ros-melodic-turtlesim ros-melodic-teleop-twist-keyboard
+sudo apt install ros-noetic-turtlesim ros-noetic-teleop-twist-keyboard
 ```
 
-The terminal will show if the installations were successfully, and it will indicate if the packages were previously installed (turtlesim came with ros-melodic-desktop-full).
+The terminal will show if the installations were successful. It may indicate the packages were previously installed.
 
 ## Turtlesim Testdrive
 
-Now, test the newly installed simulator. This exercise is simple, but the process is important. 
+Test the newly installed simulator package. This exercise is simple, but the process is important. 
 
 ### Step 1 - roscore
 
@@ -61,9 +67,7 @@ Open a third terminal tab and run the keyboard controller node. Now, there shoul
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-<img src="tutorial3_fig3.png" alt="drawing" width="750"/>
-
-<img src="tutorial3_fig2.png" alt="drawing" width="750"/>
+<img src="tutorial3_noetic_fig1.png" alt="drawing" width="750"/>
 
 ### Issue! - Communication Disconnect
 
@@ -74,7 +78,7 @@ The nodes are not communicating because the turtlesim node is not subscribing th
 ### Troubleshoot 
 
 #### rostopic
-Use the `rostopic` tool to to invesitage the topics published be the nodes _while the system is running_. 
+Use the `rostopic` tool to to invesitage the topics published be the nodes _while `roscore` is running_. 
 
 | List available topics | Print info about <TOPIC> | Print data from <TOPIC> |
 |-----------------------|--------------------------|-------------------------|
@@ -123,9 +127,9 @@ cmd_vel:=turtle1/cmd_vel
 
 Move the turtlesim window to the side, and select the keyboard terminal to drive using the following keys. **I** **J** **K** **L**, and **,**  
 
-Drive your turtle around the window and save an image of the window showing the turtle and the path. Can you drive a better ROS than shown in this picture? 
+Drive your turtle around the window and save an image of the window showing the turtle and the path. Use the _Screenshot_ app in Ubuntu to save screen captures, or use the host OS. 
 
-<img src="tutorial3_fig1.png" alt="drawing" width="750"/>
+<img src="tutorial3_noetic_fig2.png" alt="drawing" width="750"/>
 
 ## Tutorial Complete
 

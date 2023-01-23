@@ -2,20 +2,25 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics
 
 ## Overview
-
 In this tutorial you will first download and install VirtualBox from Oracle which is an application for _virtualizing_ operating systems inside of an existing one. Next, you will download the Ubuntu installation .iso file and setup a virtual operating system for learning ROS.  After completing this exercise, you will be ready to install the ROS Melodic software package in Ubuntu which is described in detailed in the next module.
 
-<img src="CaptureA.png" alt="drawing" width="400"/>
+<img src="images/CaptureA.png" alt="drawing" width="400"/>
 
-## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine) ?
+## Watch on Youtube 
+You can watch this tutorial on [Youtube](https://youtu.be/E7Ga6tbY0Iw).
+
+
+The remainder of the this tutorial is being repaired and will be volatile until 08/25/2022.
+
+## What is a [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_machine)
 - A virtual machine is an operating system that is installed or _virtualized_ inside another operating system.
 - This is useful for learning and testing, but it is resource intensive and is not ideal for permanent use. 
 - [VirtualBox](https://www.virtualbox.org/) is a trusted application from Oracle widely used for this process. [VMware](https://www.vmware.com/) is alternative option for virtualization, but it will not be supported in this course.
 
 ## System Requirements
-- **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be very slow. A tablet or Chromebook is not supported.
+- **CPU:** Most modern notebook or desktop computers will work well. If you are using a very old computer it may be slow. A tablet or Chromebook is not supported.
 - **Memory:** At least 8Gb of RAM is recommended.        
-- **Storage:** Approximately 20Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
+- **Storage:** Approximately 25Gb of free space on a hard drive is required. This space will remain in its current partition, and you are free to delete the files later. USB 2.0 or slower connection to the hard drive is not recommended. 
 - **GPU:** A dedicated graphics prcocessing unit is **not required**. This process has been tested with Intel embedded graphics.
 
 ## Before You Begin
@@ -29,181 +34,197 @@ In this tutorial you will first download and install VirtualBox from Oracle whic
 
 - Download the VirtualBox installation file using the link on ilearn. Choose the link that matches your computer type. If you are using a Linux computer already you do not need this tutorial. 
     
-- Click the VirtualBox installation file you downloaded and install the application. You will need to provide admistrator access and click allow. You no longer need the installation file, but it is small so it wont hurt to keep it. 
+- Click the VirtualBox installation file you downloaded and install the application. You may need to provide admistrator access and click allow). 
 
-<img src="Capture1.png" alt="drawing" width="1000"/>
+<img src="images/Capture1_edited.png" alt="drawing" width="500"/> <img src="images/Capture2_edited.png" alt="drawing" width="500"/>
+<img src="images/Capture3_edited.png" alt="drawing" width="500"/> <img src="images/Capture4_edited.png" alt="drawing" width="500"/>
+<img src="images/Capture5_edited.png" alt="drawing" width="500"/> <img src="images/Capture6_edited.png" alt="drawing" width="500"/>
+<img src="images/Capture7_edited.png" alt="drawing" width="500"/> <img src="images/Capture8_edited.png" alt="drawing" width="500"/>
 
 ### Part 2 - Virtual Machine Configuration
 Before proceeding make sure you have an internet connection and access to a power supply or battery.
 
 #### Open the VirtualBox application installed in Part 2
-<img src="Capture2.png" alt="drawing" width="400"/>
 
 #### Create New Virtual Machine
-<img src="Capture3.png" alt="drawing" width="1000"/>
+<img src="images/Capture9.png" alt="drawing" width="500"/> <img src="images/Capture11.png" alt="drawing" width="500"/>
 
 - Click the **new** button.
 
-#### Define Basic Settings
-<img src="Capture4.png" alt="drawing" width="1000"/>
+- Click **Expert Mode** to view basic settings in single window
 
-- choose a **computer name** aka _hostname_ (this is your choice but remember it!)
-- choose an **operating system** type (this should be _Linux_)
-- choose a **version**, this depends on your host machine hardware - it is most likely _Ubuntu 64-bit_ 
-- click **next**
 
-#### Define Virtual Machine Parameters
-<img src="Capture5.png" alt="drawing" width="1000"/>
+#### Define Virtual Machine Virtual Hard Drive Parameters
+<img src="images/Capture12.png" alt="drawing" width="500"/>
 
-- Choose the amount of RAM you want to allocate to the VM  
-- More is better but you must leave some RAM for the host operating system (Windows or Mac). If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your host machine has 16GB, then 10Gb is reccomended for the VM.
-- click **next**
-
-#### Define Virtual Hard Drive Parameters
-<img src="Capture6.png" alt="drawing" width="1000"/>
-
-- choose **create a virtual hard drive now**
+- choose the **computer name**: this is your choice (0-9, a-z, and hyphens (-) allowed)
+- choose the **operating system** type: _Linux_
+- choose the **version**: _Ubuntu 64-bit_ 
+- choose the amount of RAM you want to allocate to the VM (while running only)  
+	- If your computer has 8GB total I suggest no more than 6GB for for the virtual machine. If your computer has 16GB, then 8-10Gb is reccomended for the VM.
+- choose **create a virtual hard disk now**
 - click **create**
 
-#### Virtual Hard Drive Setup
-<img src="Capture7.png" alt="drawing" width="1000"/>
 
-- choose the virtual hard drive type, _VDI_ is the recommended type. 
-- click **next**
+#### Define Virtual Hard Drive Parmeters
+<img src="images/Capture13.png" alt="drawing" width="500"/> <img src="images/Capture14.png" alt="drawing" width="500"/> 
 
-#### Virtual Hard Drive Setup (continued)
-<img src="Capture8.png" alt="drawing" width="1000"/>
-
-- choose **Fixed Size** virtual hard drive. 
-- click **next**
-
-#### Virtual Hard Drive Setup (continued)
-<img src="CaptureX.png" alt="drawing" width="1000"/>
-
+- choose Hard disk file type: _VDI (Virtual Disc Image)_. 
+- choose Storrage on physical hard disk: **Fixed Size** virtual hard drive. 
 - choose the size of your virtual hard drive       
-- to virtualize Ubuntu and install ROS it is recommended to make a 20 GB VDI if you have space
-- click **create**
+- select 25 Gb VDI size if available, 20Gb to 15Gb may work 
+	- Ubuntu 20.04 minimal: 9Gb
+	- ROS-Desktop-Full: 3Gb
+
+#### Complete Virtual Machine and Hard Drive Setup
+<img src="images/Capture16.png" alt="drawing" width="500"/>
+
+You can now see the virtual machine you created in the list on the left and the defined settings on the right.
+
+### Part 3 - Virtual Machine Performance Settings
+
+<img src="images/Capture19.png" alt="drawing" width="500"/> <img src="images/Capture22.png" alt="drawing" width="500"/> 
+
+Click _Settings_ to adjust the performance settings the virtual machine that you have created. 
+ 
+- increase _Processor(s)_ to 4, 6, or more if available in green 
+
+- increase the _Video Memory_ to the maximum value in green
+
+- select _Enable 3D Acceleration_
           
-### Part 3 - Ubuntu OS Installation and Setup
 
-#### Start the VM for the first time
-<img src="Capture9.png" alt="drawing" width="1000"/>
+### Part 4 - Ubuntu OS Installation and Setup
 
-- select your newly created VM      
-- press the green **start** button and wait...
+<img src="images/Capture24.png" alt="drawing" width="500"/> 
 
-#### Click the folder icon
-<img src="Capture10.png" alt="drawing" width="1000"/>
+- Choose your new VM and Click _Start_ to turn on the virtual machine. The initial boot may take 15 to 30 minutes.
 
-- choose to select media from a local folder
 
 #### Choose the installation media
-<img src="Capture11.png" alt="drawing" width="1000"/>
+<img src="images/Capture26.png" alt="drawing" width="500"/> <img src="images/Capture27.png" alt="drawing" width="500"/>
 
-- choose the Ubuntu .iso file that you downloaded.
-- it is recommended that the media is on the local machine, and not a remote or cloud drive
-- click **open**
+- Click the folder icon to open the Optical Disc Selector menu. 
+
+- Click **add**
+
+<img src="images/Capture28.png" alt="drawing" width="500"/> <img src="images/Capture29.png" alt="drawing" width="500"/> 
+
+- Open the file _ubuntu-20.04.4-desktop-amd64_. 
+
+- Click **choose** to continue
 
 #### Boot Ubuntu Installation Image
-<img src="Capture12.png" alt="drawing" width="1000"/>
+<img src="images/Capture30.png" alt="drawing" width="500"/> <img src="images/Capture31.png" alt="drawing" width="500"/>
 
-- click **start**
+- Click **start** to begin the initial boot of the virtual operating system
+
 
 #### Ubuntu Installation
-<img src="Capture13.png" alt="drawing" width="1000"/>
+<img src="images/Capture32.png" alt="drawing" width="500"/> <img src="images/Capture33.png" alt="drawing" width="500"/> 
 
-- click **Install Ubuntu** - This is **harmless** _if using VirtualBox_
-- **try** is for temporary or _live_ session which can be used for computer maintence 
+- click **Install Ubuntu**
+- **try** is for temporary or _live_ session and can be used for computer maintence 
 
-#### Ubuntu Installation (Continued)
-<img src="Capture15.png" alt="drawing" width="1000"/>
+<img src="images/Capture36.png" alt="drawing" width="500"/> <img src="images/Capture37.png" alt="drawing" width="500"/> 
 
 - choose **Minimal Installation**
-- choose **Download Updates**
-- choose **Install third-party software**  
+- choose **Download updates while installing Ubuntu**
+- choose **Install third-party software...**  
 - click **continue**
 
-#### Ubuntu Installation (Continued)
-<img src="Capture16.png" alt="drawing" width="1000"/>
-
-- choose **Erase Everything and Install Ubuntu** 
-- this is _HARMLESS IF INSIDE VIRTUALBOX_
-- this could results in _PERMANENT DATA LOSS IF NOT IN VIRTUALBOX_
-- click **Install Now**
+- choose **Erase Everything and Install Ubuntu**, this is _HARMLESS_ because we are inside a virtual machine
+- click **Install Now**,this will not affect your files outside of VirtualBox
 
 #### Confirm Hard drive partitioning
-<img src="Capture17.png" alt="drawing" width="1000"/>
+<img src="images/Capture38.png" alt="drawing" width="500"/> 
 
-- you are confirming to partition your virtual hard drive 
-- this will not affect your files outside of VirtualBox
-- click **continue**
+- click **continue** to confirm partitioning your virtual hard drive
 
-#### Choose the correct timezone
-<img src="Capture18.png" alt="drawing" width="1000"/>
 
-#### Define you user settings
-<img src="Capture19.png" alt="drawing" width="1000"/>
+#### Choose User Account Settings 
+<img src="images/Capture40.png" alt="drawing" width="500"/> <img src="images/Capture41.png" alt="drawing" width="500"/> 
 
-- choose a simple user name and computer name
-- choose a simple password or leave it blank
-- click **continue**
+- Choose the correct timezone
 
-#### Wait for installation to complete
-<img src="Capture20.png" alt="drawing" width="1000"/>
+- choose _Your name_ and _Your computer's name_ (0-9, a-z, and hyphens (-) allowed)
+- choose a simple _username_ and _password_ that you can remember
+- select _Require my password to log in_
+- unselect _Log in automatically_ and _Use Active Directory_ if previously selected
+- click **continue** 
+
+#### Complete Installation
+<img src="images/Capture42.png" alt="drawing" width="500"/> <img src="images/Capture48.png" alt="drawing" width="500"/>
 
 - Make sure you are plugged into a power source or have a good battery
-- This will take several minutes depending on your system and network connection. _Be patient_, you are almost done!
+- This step may take 15-20 minutes depending on your system and network connection. _Be patient_, you are almost done!
+- When prompted, click _Restart Now_
 
-#### Restart the VM
-<img src="Capture21.png" alt="drawing" width="1000"/>
+#### Restart Virtual Machine 
+<img src="images/Capture49.png" alt="drawing" width="500"/> <img src="images/Capture50.png" alt="drawing" width="500"/>
 
-- click **restart now**
+- Press **enter** to restart the virtual machine
 
-#### Restart to complete installation
-<img src="Capture22.png" alt="drawing" width="1000"/>
-
-- The installation of Ubuntu is now complete. Press the {\bf enter} key to shut down the machine. 
-- If it does not shut down click {\bf Machine $\rightarrow $ ACPI Shutdown}.
-
-#### Finally! Installation Complete
-<img src="CaptureY.png" alt="drawing" width="1000"/>
-
-- You should now see your new virtual operating system in the list on the left. 
-- Click the **start** button to turn it on. 
-
-#### Ubuntu Login Screen
-<img src="Capture23.png" alt="drawing" width="1000"/>
+<img src="images/Capture51.png" alt="drawing" width="500"/> <img src="images/Capture52.png" alt="drawing" width="500"/>
 
 - You should see the username you chose 
-- Login with the credential you created previously.
+- Login with the password you created previously
 
-#### Ubuntu Welcome
-<img src="Capture24.png" alt="drawing" width="1000"/>
+#### Ubuntu Welcome Screen
+<img src="images/Capture53.png" alt="drawing" width="500"/> <img src="images/Capture54.png" alt="drawing" width="500"/>
 
-- the default selections are fine
+- click **Skip**
+- click **Next**
+
+<img src="images/Capture55.png" alt="drawing" width="500"/> <img src="images/Capture56.png" alt="drawing" width="500"/>
+
+- if prompted **Don't Upgrade** to Ubuntu 22.04
+- click OK
+
+<img src="images/Capture57.png" alt="drawing" width="500"/> <img src="images/Capture58.png" alt="drawing" width="500"/>
+
 - click **next**
+- choose to send info or not and click **next**
 
-#### Fresh New Ubuntu - Bionic Beaver
-<img src="Capture25.png" alt="drawing" width="1000"/>
+<img src="images/Capture59.png" alt="drawing" width="500"/> <img src="images/Capture60.png" alt="drawing" width="500"/>
 
-- Install the updates. Do not upgrade to Ubuntu 20 unless you want fly solo.
-- Updating requires the internet, but you knew that already.
+- leave **Location Services** unchecked 
+- click **Next**
+- click **Done**
 
-#### Make a Backup
-<img src="Capture26.png" alt="drawing" width="1000"/>
+#### System Update
+<img src="images/Capture61.png" alt="drawing" width="500"/> <img src="images/Capture62.png" alt="drawing" width="500"/>
 
-- Now, it is a good idea to make a **backup** of your fresh install. VirtualBox can do this for you but you have to shut it down first.  
-- Find the **shutdown** button in Ubuntu, or open a terminal and type `sudo shutdown`. You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. This snaphot will save you alot of time, in the event you have to restart.
+- when prompted by Software Updater, click **Install Now**
+- if not prompted press the Windows key and type _Software Updater_, open the app and install the updates
 
-#### Back to VirtualBox
-<img src="CaptureZ.png" alt="drawing" width="1000"/>
+<img src="images/Capture70.png" alt="drawing" width="500"/> <img src="images/Capture73.png" alt="drawing" width="500"/> 
 
-- Select your VM so that it is highlighted blue
-- click **Machine->Tools->Snapshots**             
+- click **Restart Now** to restart the virtual machine to complete the process
+
+- If the machine does not shut down automatically find the **Power Off** button in Ubuntu in the upper right and restart
+
+- You can also use the _ACPI shutdown_ button in VirtualBox. An unexpected shutdown should not hurt the system unless it is updating at the time, and if that happens it can usually repair itself. 
+
+<img src="images/Capture74.png" alt="drawing" width="500"/> <img src="images/Capture75.png" alt="drawing" width="500"/> 
+
+<img src="images/Capture76.png" alt="drawing" width="500"/> 
+
 
 #### Take a Snapshot of the VM for Backup
+  
+<img src="images/Capture77.png" alt="drawing" width="500"/> <img src="images/Capture78.png" alt="drawing" width="500"/> 
 
-- Snapshots can be used as a backup. This will save you all those steps if you if you ever need to start over.  
-- click **Take** to save a snapshot of the current state of your virtual machine. Whew... that was a lot of steps. 
-- **You did it!** _Welcome to the world of Linux. Have fun!_
+- click **Machine->Tools->Snapshots**  
+- Select your VM so that it is highlighted blue
+- Click **Take** to save the current state of the virtual machine 
+- This may not work if your physical storage device is full 
 
+<img src="images/Capture80.png" alt="drawing" width="500"/> <img src="images/Capture81.png" alt="drawing" width="500"/> 
+
+- Choose a name and write a brief description of the snapshot 
+- This snaphot will save you alot of time if you have to restart           
+
+## Tutorial 1 - Virtualize Ubuntu 20.04 - Complete 
+
+Great Job. You have completed the tutorial.

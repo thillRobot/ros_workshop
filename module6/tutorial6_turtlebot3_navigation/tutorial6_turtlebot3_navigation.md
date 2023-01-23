@@ -3,7 +3,7 @@
 
 ## Navigation:
 
-What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS melodic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
+What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS noetic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
 
 <img src="turtlebot3_models.png" alt="drawing" width="400"/>
 
@@ -11,18 +11,17 @@ What do we mean by navigation? This means different things in different places. 
 
 	
 ## Overview:
-After completing _Tutorial 5 - Turtlebot Simulator_, You have learned some basics of ROS, and you have a more advanced robot. Next you are going to learn to use the navigation stack with the turtlebot3 simulator. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
+In this tutorial you will learn to use the navigation stack with the turtlebot3 simulations. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
 	
 ## System Requirements:
 
-- **ROS+OS**: This tutorial is intended for a system with ROS Melodic installed on the Ubuntu 18.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
+- **ROS+OS**: This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
 - **ROS**: Your computer must be connected to the internet to proceed. Update the system before you begin.
 - **Workspace Setup**: The Turtlebot3 Simulator from tutorial 5 must be operational before completing tutorial 6.  
 
 	
 ## Before Beginning:
 	
-- **Backup the System:** If you are using a virtual machine, it is recommend to make a snaphot of your virtual machine before you start each module. In the event of an untraceable error, you can restore to a previous snapshot. 
 
 - **ROSLAUNCH:** This tutorial involves using the roslaunch command which runs a muliple of nodes at once as described in the launch file. We will learn more about this later. 
 
@@ -38,15 +37,28 @@ Install the packages required for autonomous navigation if you have not already.
 ```
 sudo apt update
 
-sudo apt install ros-melodic-navigation ros-melodic-gmapping
+sudo apt install ros-noetic-navigation ros-noetic-gmapping
 ```
 
 ### Step 2 -  Set the robot model. This only needs to be done once. Modify the .bashrc file If you want to change models.
 
 ```
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
+
 source ~/.bashrc
 ```
+
+### Step 3 - Create a package `tutorial6` to use for this exercise. Also create a directory to store maps.
+
+```
+cd ~/catkin_ws/src
+
+catkin_create_pkg tutorial6 std_msgs roscpp rospy
+
+mkdir ~/catkin_ws/src/tutorial6/maps
+```
+
+
 
 ## Part 2 - Generate a map of the virtual space:
 
@@ -74,37 +86,23 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### Step 4 Save Map
 
-Create a directory in your custom turtlesim package for storing map files, then save the map in this directory with `map_saver`. Use the `-f` option to set the filename. Do not include a file extension on `<map_name>` in the commands below.
- 
-```
-mkdir ~/catkin_ws/src/<package_name>/maps
-
-cd ~/catkin_ws/src/<package_name>/maps
-
-rosrun map_server map_saver -f <map_name>  
-```
-
-**For Example:** The two options below work on my system. 
+Use the `-f` option to set the filename. 
 
 _Option 1_ Use the absolute paths to the map file in new directory. 
 
 ```
-mkdir ~/catkin_ws/src/turtlesim_control/maps
-
-rosrun map_server map_saver -f ~/catkin_ws/src/turtlesim_control/maps/demo_world  
+rosrun map_server map_saver -f ~/catkin_ws/src/tutorial6/maps/demo_world  
 ```
 
 _Option 2_ Navigate to package directory and use relative paths. 
 
 ```
-mkdir ~/catkin_ws/src/turtlesim_control/maps
-
-cd ~/catkin_ws/src/turtlesim_control/maps
+cd ~/catkin_ws/src/tutorial6/maps
 
 rosrun map_server map_saver -f demo_world  
 ```
 
-Two new map files both with the same filename (`<map_name>.pgm` and `<map_name>.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
+Two new map files both with the same filename (`demo_world.pgm` and `demo_world.yaml`) will appear in the `maps` folder after Step 4. These map files can be moved or copied for for backup, but both files are required and the file names must match. After saving the map, stop the `gmapping` node.
 
 
 ## Part 3 - Navigate Virtual space:
@@ -118,19 +116,11 @@ Now that navigation is installed and there is a map saved to file, the robot can
 ### Step 2 - Turn on navigation and RVIZ. 
 Use the name of the map you created for the map_file option in the command. If you navigate to the package with the maps the absolute paths will work.
 
-```
-cd ~/catkin_ws/src/<package_name>
-
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/<map_name>.yaml
-
-```
-
-**For Example:** The three options below work on a my system.
 
 _Option 1_ Navigate to the package directory and then use relative paths to the map files. 
 
 ```
-cd ~/catkin_ws/src/turtlesim_control
+cd ~/catkin_ws/src/tutorial6
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
 
@@ -139,7 +129,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 _Option 2_ Use the built-in ROS Change Directory tool `roscd` to quickly navigating to a ROS package on the system. This method is portable because it is not specfic to the location of the package containing the maps. 
 
 ```
-roscd turtlesim_control
+roscd tutorial6
 
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo_world.yaml
 
@@ -148,7 +138,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=maps/demo
 _Option 3_ (**preffered method**) Use `find` to access the package containing the maps without changing the current directory. Use relative paths from the package directory in the find command.
 
 ```
- roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find turtlesim_control)/maps/demo_world.yaml'
+ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)/maps/demo_world.yaml'
 ```
 
 
@@ -175,7 +165,7 @@ rosrun rqt_graph rqt_graph
 You may have run into an issue in which `turtlebot3_navigation` cannot load the map file. A typical error message is shown below, along with the preferred solution.
 
 ```
-[ERROR] [1604667817.760623311]: Map server could not open /<map_name>.yaml.
+[ERROR] [1604667817.760623311]: Map server could not open /demo_world.yaml.
 ```
 
 ### Step 1 
@@ -209,7 +199,7 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 Turn on the navigation nodes and RVIZ. Use the name of the map you created, and it should be recogonized and displayed in RVIZ. 
 
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find <package_name>)\maps\<map_name>.yaml'
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\tutorial6.yaml'
 ```
 
 ### Tutorial Complete: 

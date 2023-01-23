@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+
+	\addtolength{\oddsidemargin}{-.5in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+
+\usepackage{minted}
+%\newminted[python]{python}{frame=single}
+%\fvset{showspaces}
+%\renewcommand\FancyVerbSpace{\textcolor{mygray}{\char32}}
+\setminted[text]{
+escapeinside=||, 
+%breaksymbolleft=\carriagereturn,
+frame=single,
+%showspaces=true
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=mygray
+}
+\setminted[cpp]{
+escapeinside=||, 
+%breaksymbolleft=\carriagereturn,
+frame=single,
+%showspaces=true
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=mygray
+}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+ % escapeinside={\%*}{*)}
+}
+
+% ME4140 - Fall 2016 - Fall 2017 - Fall 2019 - Fal 2020
+
+
+
+\textwidth=6.5in
+\topmargin=-0.5in
+\textheight=9.25in
+\hoffset=-0.5in
+\footskip=0.2in
+
+\pagestyle{myheadings}
+\markright{{\large ME 4140 Fall 2020---The Robotic Operating System}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\definecolor{mygray}{rgb}{.6, .6, .6}
+\definecolor{mypurple}{rgb}{0.6,0.1961,0.8}
+\definecolor{mybrown}{rgb}{0.5451,0.2706,0.0745}
+\definecolor{mygreen}{rgb}{0, .39, 0}
+
+\newcommand{\R}{\color{red}}
+\newcommand{\B}{\color{blue}}
+\newcommand{\BR}{\color{mybrown}}
+\newcommand{\K}{\color{black}}
+\newcommand{\G}{\color{mygreen}}
+\newcommand{\PR}{\color{mypurple}}
+
+\newcommand{\pkgname}{<package\_name>}
+\newcommand{\wspname}{<workspace\_name>}
+\newcommand{\nodname}{<node\_name>}
+\newcommand{\tpcname}{<topic\_name>}
+\newcommand{\lfname}{<launchfile\_name>}
+
+\newcommand{\home}{\textasciitilde/}
+
+\newcommand{\rosdistro}{melodic}
+
+\newcommand{\pthname}{/opt/ros/\rosdistro/share/turtlebot\_stage/maps/}
+
+
+
+\begin{document}
+
+
+\thispagestyle{plain}
+
+\begin{center}
+   {\bf \Large ROS - Creating a Simple Launch File}\vspace{2mm} \\
+   {\bf \large ME 4140 - Introduction to Robotics - Fall 2020} \\
+\end{center}
+
+
+\begin{itemize}
+	
+	\item A ROS system generally is comprised of several packages, nodes, and possibly other data files working together. Each node can be started seperately after the roscore has started. However the nodes are often started all at the same time using a  \href{http://wiki.ros.org/roslaunch} {launch file} .
+
+	\item To create a launch file open a new text file. Save it inside of an existing package source directory. You could alternatively save it somewhere else in the workspace but note the path if you choose to do so.\\
+	
+\begin{minted}{text}
+gedit |\home\wspname|/src/|\pkgname|/src/|\lfname|.launch
+\end{minted}
+	 
+	\item Type the following into your new file. This is XML, the {\it extensible markup language}. Notice there are two nodes in this launch file.
+\begin{lstlisting}
+<launch>
+	<node 
+		pkg="turtlesim" 
+		name="turtlesim_node" 
+		type="turtlesim_node"
+		output="screen" >	
+	</node>
+	<node 
+		pkg="ttu_turtle"
+		name="ttu_publisher"  
+		type="ttu_publisher"
+		output="screen" 
+		args="/cmd_vel:=/turtle1/cmd_vel">	
+	</node>		
+</launch>
+\end{lstlisting}
+
+	\item After the launch file is properly created you can run the launch file as follows.\\
+\begin{minted}{text}
+roslaunch|\hspace{4mm}\pkgname\hspace{4mm}\lfname|.launch 
+\end{minted}
+	\item If the launch file is not in a package can run the launch file with the path instead.\\
+\begin{minted}{text}
+roslaunch|\hspace{4mm}/<path\_to\_file>/\lfname|.launch 
+\end{minted}
+
+	\item If there was not a core previously running, one will be started with the roslaunch command above. Therefore, you dont have to manually start the core, however, a launch file can work with a core that was previously started. In both situations there is only one core running. 
+
+	\end{itemize}
+\end{document}
+

@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-roslaunch\PYG{esc}{\hspace{4mm}\pkgname\hspace{4mm}\lfname}.launch
-\end{Verbatim}
