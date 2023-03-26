@@ -229,6 +229,21 @@ warning: unknown escape sequence: '\c'
 ```
 soon it is time to test the motors
 
+# install lm-sensors to check cpu temps
+```
+sudo apt update
+sudo apt install lm-sensors
+```
+
+test it
+```
+ sensors
+thermal-fan-est-virtual-0
+Adapter: Virtual device
+temp1:        +26.8°C
+```
+
+very cool, lol
 
 
 
