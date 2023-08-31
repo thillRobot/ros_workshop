@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{What is Linux?}{3}{0}{1}
-\beamer@sectionintoc {2}{A Brief History}{5}{0}{2}
-\beamer@sectionintoc {3}{Keyboard Shortcuts}{6}{0}{3}
-\beamer@sectionintoc {4}{The Terminal}{7}{0}{4}
-\beamer@sectionintoc {5}{Tutorial 2 - Install ROS Melodic}{8}{0}{5}
+\beamer@sectionintoc {2}{A Brief History, Examples}{5}{0}{2}
+\beamer@sectionintoc {3}{Keyboard Shortcuts}{7}{0}{3}
+\beamer@sectionintoc {4}{The Terminal}{8}{0}{4}
+\beamer@sectionintoc {5}{Tutorial 2 - Install ROS Melodic}{9}{0}{5}
