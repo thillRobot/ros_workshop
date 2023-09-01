@@ -22,7 +22,7 @@
 \newcommand{\sectiontitleII}{A Brief History, Examples}
 \newcommand{\sectiontitleIII}{Keyboard Shortcuts}
 \newcommand{\sectiontitleIV}{The Terminal}
-\newcommand{\sectiontitleV}{Tutorial 2 - Install ROS Melodic}
+\newcommand{\sectiontitleV}{Tutorial 2 - Install ROS Noetic}
 
 \author{ME4140 - ROS Workshop}
 \title{\GD Module \MNUM - \moduletitle}
@@ -38,16 +38,20 @@
 	\frame{
 		
 		\large \textbf{\lecturetitle} \vspace{3mm}\\
-	
-	\begin{itemize}
-	
-		\item \hyperlink{sectionI}{\color{black}\sectiontitleI}	\vspace{3mm} % Section I
-		\item \hyperlink{sectionII}{\color{black}\sectiontitleII}	\vspace{3mm} % Section II
-		\item \hyperlink{sectionIII}{\color{black}\sectiontitleIII}	\vspace{3mm} %Section III
-		\item \hyperlink{sectionIV}{\color{black}\sectiontitleIV}	\vspace{3mm} %Section IV
-		\item \hyperlink{sectionV}{\color{black}\sectiontitleV} %Section IV	
-	
-	\end{itemize}
+	\begin{multicols}{2}
+		\begin{itemize}
+		
+			\item \hyperlink{sectionI}{\color{black}\sectiontitleI}	\vspace{3mm} % Section I
+			\item \hyperlink{sectionII}{\color{black}\sectiontitleII}	\vspace{3mm} % Section II
+			\item \hyperlink{sectionIII}{\color{black}\sectiontitleIII}	\vspace{3mm} %Section III
+			\item \hyperlink{sectionIV}{\color{black}\sectiontitleIV}	\vspace{3mm} %Section IV
+			\item \hyperlink{sectionV}{\color{black}\sectiontitleV} %Section IV	
+		
+		\end{itemize}
+
+		\hspace*{2mm}\includegraphics[scale=0.25]{AndrosII.jpg}
+		
+	\end{multicols}
 
 }
 
@@ -58,7 +62,7 @@
 		\frametitle{\sectiontitleI}
 		
 \begin{itemize}
-		\item {\it Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn?t function.} - \href{https://www.linux.com/what-is-linux/}{LINUX.COM}  \vspc
+		\item {\it Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn't function.} - \href{https://www.linux.com/what-is-linux/}{LINUX.COM}  \vspc
         
             \end{itemize}
 	\end{frame}
@@ -67,15 +71,17 @@
 	\begin{frame} \small
 		\frametitle{\sectiontitleI}
 			
-			\hspace*{9cm}\includegraphics[scale=.25]{Tux.png}
+			\hspace*{1cm}\includegraphics[scale=.2]{Tux.png}\hspace{10mm}\includegraphics[scale=.2]{UbuntuCoF.png}\hspace{10mm}\includegraphics[scale=.15]{Debian_logo.png}
 
-			Ubuntu is a {\BL distribution} of Linux. But there are many others. 
+			Ubuntu is a \href{https://en.wikipedia.org/wiki/Linux_distribution}{distribution} of Linux. But there are many others. 
             \begin{itemize}
                 \item 
                 \item 
                 \item 
             \end{itemize} 
 
+            \btVFill
+            {\tiny images: Wikimedia -\href{https://commons.wikimedia.org/w/index.php?curid=753970}{Tux}, \href{https://commons.wikimedia.org/wiki/File:UbuntuCoF.svg}{Ubuntu}, \href{https://commons.wikimedia.org/wiki/File:Debian_logo.png}{Debian}} 
 	\end{frame}
 		
 \section{\sectiontitleII}	
@@ -154,7 +160,7 @@
 	% Section IV - Frame I
 	\begin{frame}[label=sectionIV] \small
 		\frametitle{\sectiontitleIV}    
-          The {\it Terminal} is a text based interface to the computer.\vspace{2mm}\\ Press CTRLKey+\ALTKey+T to open a new terminal. \vspace{3mm}\\      
+          The {\it Terminal} is a text based interface to the computer.\vspace{2mm}\\ Press \CTRLKey+\ALTKey+T to open a new terminal. \vspace{3mm}\\      
                 \begin{multicols}{2}
 		
 		\renewcommand{\arraystretch}{1.4}
@@ -189,7 +195,7 @@
 
 					\item {\bf Overview:} ROS runs on Linux! Now that Ubuntu is setup you need to install ROS. 		
 
-					\item {\bf Assignment:} Complete the tutorial \href{https://github.com/thillRobot/ros_workshop/blob/main/module2/tutorial2_install_ros/tutorial2_install_ros.md}{\it Tutorial2 Install ROS} on ilearn. Your new system must have ROS Melodic installed.
+					\item {\bf Assignment:} Complete the tutorial \href{https://github.com/thillRobot/ros_workshop/blob/main/module2/tutorial2_install_ros/tutorial2_install_ros.md}{\it Tutorial2 Install ROS} on ilearn. Your new system must have ROS \rosDistro \hspace{1mm} installed.
                     
                     \item {\bf Deliverable:} Write a one to two paragraph summary of what you accomplished and what you struggled with the most. Include an image of a terminal after the {\it roscore} command. 
     

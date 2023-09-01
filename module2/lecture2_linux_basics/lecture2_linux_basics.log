@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  31 AUG 2023 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  31 AUG 2023 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,69 +1302,85 @@ Dictionary: translator-theorem-dictionary, Language: English
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
+]
+<AndrosII.jpg, id=91, 451.6875pt x 602.25pt>
+File: AndrosII.jpg Graphic file (type jpg)
+<use AndrosII.jpg>
+Package pdftex.def Info: AndrosII.jpg  used on input line 56.
+(pdftex.def)             Requested size: 112.92159pt x 150.56212pt.
+ [2
 
-] [3
+ <./AndrosII.jpg>] [3
 
 ]
-<Tux.png, id=164, 173.448pt x 205.568pt>
+<Tux.png, id=166, 173.448pt x 205.568pt>
 File: Tux.png Graphic file (type png)
 <use Tux.png>
-Package pdftex.def Info: Tux.png  used on input line 79.
-(pdftex.def)             Requested size: 43.3619pt x 51.39186pt.
+Package pdftex.def Info: Tux.png  used on input line 85.
+(pdftex.def)             Requested size: 34.68898pt x 41.11285pt.
+<UbuntuCoF.png, id=168, 256.96pt x 256.96pt>
+File: UbuntuCoF.png Graphic file (type png)
+<use UbuntuCoF.png>
+Package pdftex.def Info: UbuntuCoF.png  used on input line 85.
+(pdftex.def)             Requested size: 51.39108pt x 51.39108pt.
+<Debian_logo.png, id=169, 301.125pt x 396.48125pt>
+File: Debian_logo.png Graphic file (type png)
+<use Debian_logo.png>
+Package pdftex.def Info: Debian_logo.png  used on input line 85.
+(pdftex.def)             Requested size: 45.1668pt x 59.46962pt.
  [4
 
- <./Tux.png>] [5
+ <./Tux.png> <./UbuntuCoF.png> <./Debian_logo.png>] [5
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{sectionII<1>
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 	\end{frame}
+l.128 	\end{frame}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{sectionII}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 	\end{frame}
+l.128 	\end{frame}
                    [6
 
 ]
-<win_logo.jpg, id=280, 260.975pt x 260.975pt>
+<win_logo.jpg, id=290, 260.975pt x 260.975pt>
 File: win_logo.jpg Graphic file (type jpg)
 <use win_logo.jpg>
-Package pdftex.def Info: win_logo.jpg  used on input line 151.
+Package pdftex.def Info: win_logo.jpg  used on input line 157.
 (pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 151
+LaTeX Font Info:    Trying to load font information for U+msa on input line 157
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 151
+LaTeX Font Info:    Trying to load font information for U+msb on input line 157
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
-1.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 File: win_logo.jpg Graphic file (type jpg)
 <use win_logo.jpg>
-Package pdftex.def Info: win_logo.jpg  used on input line 151.
+Package pdftex.def Info: win_logo.jpg  used on input line 157.
 (pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
 
-Overfull \hbox (17.3256pt too wide) in paragraph at lines 151--151
+Overfull \hbox (17.3256pt too wide) in paragraph at lines 157--157
 [][]  
  []
 
-<lenovo_keyboard.jpg, id=281, 1091.07625pt x 722.7pt>
+<lenovo_keyboard.jpg, id=291, 1091.07625pt x 722.7pt>
 File: lenovo_keyboard.jpg Graphic file (type jpg)
 <use lenovo_keyboard.jpg>
-Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 151.
+Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 157.
 (pdftex.def)             Requested size: 109.11401pt x 72.27423pt.
 [7
 
@@ -1372,13 +1388,13 @@ Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 151.
 logo.jpg> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_middle.p
 df> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_right.pdf> <./
 lenovo_keyboard.jpg>]
-<ubuntu_terminal.png, id=317, 744.7825pt x 481.8pt>
+<ubuntu_terminal.png, id=327, 744.7825pt x 481.8pt>
 File: ubuntu_terminal.png Graphic file (type png)
 <use ubuntu_terminal.png>
-Package pdftex.def Info: ubuntu_terminal.png  used on input line 178.
+Package pdftex.def Info: ubuntu_terminal.png  used on input line 184.
 (pdftex.def)             Requested size: 148.95386pt x 96.35829pt.
 
-Overfull \hbox (0.30893pt too wide) in paragraph at lines 178--178
+Overfull \hbox (0.30893pt too wide) in paragraph at lines 184--184
 []  
  []
 
@@ -1401,19 +1417,19 @@ Overfull \hbox (0.30893pt too wide) in paragraph at lines 178--178
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `lecture2_linux_basics.out' has not changed.
-(rerunfilecheck)             Checksum: 8140F5A180AD16A0E5AC89F40206EDE0;276.
+(rerunfilecheck)             Checksum: AAB8208148015B5D094BABCBE6983F27;275.
  ) 
 Here is how much of TeX's memory you used:
- 29866 strings out of 480247
- 600835 string characters out of 5896151
- 1065534 words of memory out of 5000000
- 47159 multiletter control sequences out of 15000+600000
+ 29889 strings out of 480247
+ 601225 string characters out of 5896151
+ 1065551 words of memory out of 5000000
+ 47179 multiletter control sequences out of 15000+600000
  487440 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,19n,104p,568b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600
-pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.60
-0pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.6
+pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.60
+0pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.6
 00pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.
 600pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1000
 .600pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss120
@@ -1424,10 +1440,10 @@ pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.60
 s1440.600pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 sx0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb>
-Output written on lecture2_linux_basics.pdf (9 pages, 340349 bytes).
+Output written on lecture2_linux_basics.pdf (9 pages, 881996 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
+ 809 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
  34 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
