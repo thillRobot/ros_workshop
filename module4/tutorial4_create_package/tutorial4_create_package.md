@@ -319,13 +319,13 @@ Change to the top of the ROS workspace and compile.
 ```
 cd ~/catkin_ws
 ```
-	
+
 ```
 catkin_make
 ```
 Addtional entries in the output should be shown associated with the changes to the workspace. 
 
-	
+
 #### Step 4: Test the new node. 
 
 
@@ -350,16 +350,14 @@ rosrun tutorial4 turtlesim_publisher cmd_vel:=/turtle1/cmd_vel
 
 Test the new subscriber node. Do you see the message in the terminal?
 ```
-rosrun tutorial4 turtlsim_subscriber
-
+rosrun tutorial4 turtlesim_subscriber
 ```
-	
-	
+
 ## Tutorial Complete: After completing _Tutorial 4 - Create Package_, you are ready for a more advanced robot simulator.
-	
+
 
 ### Bonus Excercise: Install the [Joystick Teleop Node](http://wiki.ros.org/joy/Tutorials/WritingTeleopNode) to drive the turtle with a USB joystick or game controller.
-	
+
 ```
 cd ~/catkin_ws/src
 ```
