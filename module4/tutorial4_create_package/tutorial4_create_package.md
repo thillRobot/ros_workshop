@@ -294,7 +294,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "turtlesim_subscriber");
 	ros::NodeHandle n;
-	ros::Subscriber sub = n.subscribe("/cmd_vel", 1000, dataCallback);
+	ros::Subscriber sub = n.subscribe("/turtle1/cmd_vel", 1000, dataCallback);
 	ros::spin();
 	return 0;
 }
