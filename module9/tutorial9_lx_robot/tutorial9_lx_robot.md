@@ -45,7 +45,7 @@ The `control_computer` will use WLAN to comminicate with the `lx_robot`. Both de
 
 ### Step 1 - obtain ip addresses
 
-The ip addresses of both computers must be known to begin. Power on and log into `lx_robot` and run the following command to obtain the ipv4 address. This step is only required if the address of the robot changes which may happen occasionally when using DHC (dynamic host configuration protocol).
+The ip addresses of both computers must be known to begin. Power on and log into `lx_robot` and run the following command to obtain the ipv4 address. This step is only required if the address of the robot changes which may happen occasionally when using DHCP(dynamic host configuration protocol).
 
 ```
 ip a
@@ -135,7 +135,7 @@ Save the file and apply the changes with the following command.
 source ~/.bashrc
 ```
 
-Add the following lines to the bottom of `~/.bashrc` on `lx_robot`.
+Add the following lines to the bottom of `~/.bashrc` on `control_computer`.
 
 ```
 export ROS_MASTER_URI=http://10.104.66.X:11311
@@ -148,7 +148,7 @@ Save the file and apply the changes with the following command.
 source ~/.bashrc
 ```
 
-Perform a simple test of ROS across the network. In this tutorial, the roscore will always run from `lx_robot.`  Starting a roscore on `lx_robot`.
+Perform a simple test of ROS across the network. In this tutorial, the roscore will always run from `lx_robot.`  Start a roscore on `lx_robot`.
 
 ```
 roscore
@@ -160,8 +160,29 @@ Test that `control_computer` can access the roscore by running a simple ROS comm
 rostopic list
 ```
 
-If you see a short list of topics, then ROS is working across the network. If the network is configured correctly, then roscore errors will be shown.
+If you see a short list of topics, then ROS is working across the network. If the network is configured incorrectly, roscore errors will be shown.
+
+
+## Part 2 - LX Robot Teleop Control
+
+
+Run the remote drive node on the `lx_robot`. Make sure the estop is not pressed before running the following command on `lx_robot`.
+
+```
+roslaunch lx_navigation lx_remote_drive.launch robot_ip:=10.104.66.X control_ip:=10.104.66.Y
+
+```
+
+Run the teleop twist keyboard node on the `control_computer`. 
+
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+Keyboard commands entered in the terminal should publish a `cmd_vel` topic to be read by the subscriber node on `lx_robot`. The lx robot can move fast, so it is advisable to turn the command speeds down before proceeding. 
 
 
 
-## Part 2 -
+
+
+## Part 3 - LX Robot Navigation
