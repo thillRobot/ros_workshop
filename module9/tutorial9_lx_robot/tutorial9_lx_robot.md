@@ -24,12 +24,16 @@ The following names will be used in this tutorial.
 	- `tutorial9` : custom package created in this tutorial in `catkin_ws` on `control_computer` 
 	 	- `lx_publisher` : custom publisher node  
 	 	- `lx_subscriber` : custom subscriber node  
+	 	- `tutorial9.launch`: launch to start custom process for this tutorial
 
 - `lx_robot`: robot embedded computer
 	- `robot_ip`: ipv4 address of `lx_robot`
 	- `catkin_ws`: workspace name on `lx_robot` and `control_computer`
 
 	- `lx_navigation`: lx navigation package in `catkin_ws` on `lx_robot`	
+		- `lx_remote_drive.launch`: launch to receive and drive from remote `cmd_vel`
+		- `lx_drive.launch`: launch to receive and drive from local `cmd_vel`
+		- `lx_navigation.launch`: launch to start `navigation` and load map
 
 Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patterns/Conventions) if using different names.
 
@@ -179,9 +183,15 @@ Run the teleop twist keyboard node on the `control_computer`.
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-Keyboard commands entered in the terminal should publish a `cmd_vel` topic to be read by the subscriber node on `lx_robot`. The lx robot can move fast, so it is advisable to turn the command speeds down before proceeding. 
+Keyboard commands entered in the terminal should publish a `cmd_vel` topic to be read by the subscriber node on `lx_robot`. The lx robot can move fast, so it is advisable to turn the command speeds down before driving. 
 
+Turn on RVIZ to visualize the available data.
 
+```
+rosrun rviz rviz
+```
+
+Add topics using the add button in the bottom left. The selected topics and screen settings can be saved to an rviz configuration file (.rviz) and loaded to save time. It is the convention to save rviz config files in a directory called `rviz` in the associated package. example: `~/catkin_ws/src/tutorial9/rviz/tutorial9.rviz`
 
 
 
