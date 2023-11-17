@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.21)  21 DEC 2022 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.21)  21 DEC 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tutorial2_install_ros.tex
-(./tutorial2_install_ros.tex
+**test.tex
+(./test.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -850,8 +850,9 @@ Package hyperref Info: Option `pdffitwindow' set `false' on input line 90.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 90.
 Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 \mybox=\box119
-) (./tutorial2_install_ros.aux)
-\openout1 = `tutorial2_install_ros.aux'.
+)
+No file test.aux.
+\openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -869,7 +870,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
-
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count331
@@ -944,46 +944,45 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
-
-(./tutorial2_install_ros.out) (./tutorial2_install_ros.out)
 \@outlinefile=\write5
-\openout5 = `tutorial2_install_ros.out'.
+\openout5 = `test.out'.
 
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 36
-.
 
-(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 5
-8.
+[1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+ (./test.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 
-! LaTeX Error: Environment minted undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 	\begin{minted}
-                    {text}
-? x
- 
+Package rerunfilecheck Warning: File `test.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `test.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+ ) 
 Here is how much of TeX's memory you used:
- 21915 strings out of 483183
- 421606 string characters out of 5966291
- 812819 words of memory out of 5000000
- 36496 multiletter control sequences out of 15000+600000
- 542362 words of font info for 48 fonts, out of 8000000 for 9000
+ 21842 strings out of 483183
+ 419849 string characters out of 5966291
+ 807802 words of memory out of 5000000
+ 36447 multiletter control sequences out of 15000+600000
+ 536041 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 76i,4n,73p,466b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 76i,5n,73p,449b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600
+pk> </home/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.60
+0pk> </home/thill/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.6
+00pk>
+Output written on test.pdf (1 page, 17566 bytes).
 PDF statistics:
- 10 PDF objects out of 1000 (max. 8388607)
- 1 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
