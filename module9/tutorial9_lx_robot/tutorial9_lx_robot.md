@@ -152,7 +152,7 @@ Save the file and apply the changes with the following command.
 source ~/.bashrc
 ```
 
-Perform a simple test of ROS across the network. In this tutorial, the roscore will always run from `lx_robot.`  Start a roscore on `lx_robot`.
+Perform a simple test of ROS across the network. In this tutorial, the roscore will always run from `lx_robot`.  Start a roscore on `lx_robot`.
 
 ```
 roscore
@@ -196,3 +196,6 @@ Add topics using the add button in the bottom left. The selected topics and scre
 
 
 ## Part 3 - LX Robot Navigation
+
+
+Go to [LX Navigation](https://github.com/thillRobot/lx_navigation) for instructions for using [navigation](http://wiki.ros.org/navigation) with the Pioneer LX robot.
