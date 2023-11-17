@@ -45,6 +45,6 @@ Note: The default branch is now `noetic`. Modules 1-9 still use `noetic` and nee
 
 ### Things to do
 
-- [ ] Update to Focal Fossa + noetic
+- [x] Update to Focal Fossa + noetic
 - [ ] add references for all images
 - [ ] remove this list
