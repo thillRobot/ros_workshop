@@ -39,11 +39,81 @@ Follow the general guidelines for [naming in ROS](http://wiki.ros.org/ROS/Patter
 - the underscore _ character **is** allowed 
 
 
-## Network Setup
+## Part 1 - Network Setup
 
 The `control_computer` will use WLAN to comminicate with the `lx_robot`. Both devices must be connected to the network and be able to resolve each others ip addresses. Read the ROS [network setup](http://wiki.ros.org/ROS/NetworkSetup) docs for more information.
 
-Use `ping` to test connectivity.  
+### Step 1 - obtain ip addresses
+
+The ip addresses of both computers must be known to begin. Power on and log into `lx_robot` and run the following command to obtain the ipv4 address. This step is only required if the address of the robot changes which may happen occasionally when using DHC (dynamic host configuration protocol).
+
+```
+ip a
+```
+
+The ipv4 address of `lx_robot` is `10.104.66.X` as shown in the command output. 
+
+If using a VirtualBox VM, the network settings must be adjusted so the VM is assigned an ip address that is accessible from the network. With the VM powered off, change the Virtualbox network settings. Set network > adapter type to `bridged`. The name field below should automatically show the network adapter name which will differ based on the specific hardware.
+
+Turn on the `control_computer` VM. Log in and run the following command to obtain the ipv4 address.
+
+```
+ip a
+```
+
+The ipv4 address of `control_computer` is `10.104.66.Y` as shown in the command output. 
+
+
+### Step 2 - test connectivity
+
+Test connectivity from `control_computer` to `lx_robot`. Run the following from `control_computer`.
+
+```
+ping <robot_ip>
+```
+
+for example:
+
+```
+ping 10.104.66.X
+
+```
+
+
+
+Test connectivity from `lx_robot` to `control_computer`. Run the following command from `lx_robot`.
+
+```
+ping <control_ip>
+```
+
+for example:
+```
+ping 10.104.66.Y
+```
+
+If both tests are successful, proceed. Otherwise troubleshooting network connectivity...
+
+
+### Step 3 - remote access
+
+The address of `lx_robot` can be used to open a remote terminal from the `control_computer`. Run the following command from `control_computer` to open a remote termial (secure shell) on `lx_robot`. Notice the text left on the left side of the terminal shows the current user and computer name after starting the remote terminal.
+
+```
+ssh researcher@10.104.66.X
+```
+
+Now test a simple command on `lx_robot` through the remote terminal on `control_computer`.
+
+for example:
+```
+ls
+```
+
+The home directory of `lx_robot` is shown in the command output. 
+
+
+
 
 
 
