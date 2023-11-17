@@ -112,21 +112,56 @@ ls
 
 The home directory of `lx_robot` is shown in the command output. 
 
-
-
-
-
-
-
-## Instructions for Creating a Custom Package and Node
-
-### Update the control computer system before you begin
-
-Run the following command on the `control_computer`
+To log out of the remote terminal use the following.
 ```
-sudo apt update
+exit
 ```
 
+
+### Step 4 - ROS networking 
+
+The ip addresses of both computers must be known by each other for ROS to function across the two. Set the ip addresses of the computers in the appropriate environment variables in the `/.bashrc` files for each computer.
+
+Add the following lines to the bottom of `~/.bashrc` on `lx_robot`.
+
 ```
-sudo apt upgrade
-``` 
+export ROS_MASTER_URI=http://10.104.66.X:11311
+export ROS_IP=10.104.66.X
+```
+
+Save the file and apply the changes with the following command.
+
+```
+source ~/.bashrc
+```
+
+Add the following lines to the bottom of `~/.bashrc` on `lx_robot`.
+
+```
+export ROS_MASTER_URI=http://10.104.66.X:11311
+export ROS_IP=10.104.66.Y
+```
+
+Save the file and apply the changes with the following command.
+
+```
+source ~/.bashrc
+```
+
+Perform a simple test of ROS across the network. In this tutorial, the roscore will always run from `lx_robot.`  Starting a roscore on `lx_robot`.
+
+```
+roscore
+```
+
+Test that `control_computer` can access the roscore by running a simple ROS command on `control_computer`. Close any previously running ROS processes on `control_computer` and run the following.
+
+```
+rostopic list
+```
+
+If you see a short list of topics, then ROS is working across the network. If the network is configured correctly, then roscore errors will be shown.
+
+
+
+## Part 2 -
