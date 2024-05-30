@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  31 AUG 2023 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  29 MAY 2024 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,7 +667,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \beamer@dimb=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/mnt/c/Users/thill/Documents/courses/ros_workshop/ros_lecture.sty
+(../../ros_lecture.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
@@ -1110,18 +1110,18 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 110.
+(hyperref)                setting the option has no effect on input line 109.
 
-Package hyperref Info: Option `unicode' set `false' on input line 110.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 110.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 110.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 110.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 110.
-Package hyperref Info: Option `colorlinks' set `true' on input line 110.
+Package hyperref Info: Option `unicode' set `false' on input line 109.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 109.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 109.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 109.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 109.
+Package hyperref Info: Option `colorlinks' set `true' on input line 109.
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 31.
+(hyperref)                removing `\color' on input line 29.
 
 (./lecture2_linux_basics.aux
 
@@ -1133,24 +1133,24 @@ LaTeX Warning: Label `sectionII' multiply defined.
 )
 \openout1 = `lecture2_linux_basics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1208,7 +1208,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1221,56 +1221,56 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count462
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./lecture2_linux_basics.out) (./lecture2_linux_basics.out)
 \@outlinefile=\write6
 \openout6 = `lecture2_linux_basics.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 31.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 31.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 31.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 31.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 31.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 31.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 31.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 31.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 31.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1303,30 +1303,30 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<AndrosII.jpg, id=91, 451.6875pt x 602.25pt>
+<AndrosII.jpg, id=87, 451.6875pt x 602.25pt>
 File: AndrosII.jpg Graphic file (type jpg)
 <use AndrosII.jpg>
-Package pdftex.def Info: AndrosII.jpg  used on input line 56.
+Package pdftex.def Info: AndrosII.jpg  used on input line 54.
 (pdftex.def)             Requested size: 112.92159pt x 150.56212pt.
  [2
 
  <./AndrosII.jpg>] [3
 
 ]
-<Tux.png, id=166, 173.448pt x 205.568pt>
+<Tux.png, id=162, 173.448pt x 205.568pt>
 File: Tux.png Graphic file (type png)
 <use Tux.png>
-Package pdftex.def Info: Tux.png  used on input line 85.
+Package pdftex.def Info: Tux.png  used on input line 83.
 (pdftex.def)             Requested size: 34.68898pt x 41.11285pt.
-<UbuntuCoF.png, id=168, 256.96pt x 256.96pt>
+<UbuntuCoF.png, id=164, 256.96pt x 256.96pt>
 File: UbuntuCoF.png Graphic file (type png)
 <use UbuntuCoF.png>
-Package pdftex.def Info: UbuntuCoF.png  used on input line 85.
+Package pdftex.def Info: UbuntuCoF.png  used on input line 83.
 (pdftex.def)             Requested size: 51.39108pt x 51.39108pt.
-<Debian_logo.png, id=169, 301.125pt x 396.48125pt>
+<Debian_logo.png, id=165, 301.125pt x 396.48125pt>
 File: Debian_logo.png Graphic file (type png)
 <use Debian_logo.png>
-Package pdftex.def Info: Debian_logo.png  used on input line 85.
+Package pdftex.def Info: Debian_logo.png  used on input line 83.
 (pdftex.def)             Requested size: 45.1668pt x 59.46962pt.
  [4
 
@@ -1336,51 +1336,51 @@ Package pdftex.def Info: Debian_logo.png  used on input line 85.
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 	\end{frame}
+l.126 	\end{frame}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{sectionII}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 	\end{frame}
+l.126 	\end{frame}
                    [6
 
 ]
-<win_logo.jpg, id=290, 260.975pt x 260.975pt>
+<win_logo.jpg, id=286, 260.975pt x 260.975pt>
 File: win_logo.jpg Graphic file (type jpg)
 <use win_logo.jpg>
-Package pdftex.def Info: win_logo.jpg  used on input line 157.
+Package pdftex.def Info: win_logo.jpg  used on input line 155.
 (pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 157
+LaTeX Font Info:    Trying to load font information for U+msa on input line 155
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 157
+LaTeX Font Info:    Trying to load font information for U+msb on input line 155
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
-7.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 File: win_logo.jpg Graphic file (type jpg)
 <use win_logo.jpg>
-Package pdftex.def Info: win_logo.jpg  used on input line 157.
+Package pdftex.def Info: win_logo.jpg  used on input line 155.
 (pdftex.def)             Requested size: 7.39485pt x 7.39821pt.
 
-Overfull \hbox (17.3256pt too wide) in paragraph at lines 157--157
+Overfull \hbox (17.3256pt too wide) in paragraph at lines 155--155
 [][]  
  []
 
-<lenovo_keyboard.jpg, id=291, 1091.07625pt x 722.7pt>
+<lenovo_keyboard.jpg, id=287, 1091.07625pt x 722.7pt>
 File: lenovo_keyboard.jpg Graphic file (type jpg)
 <use lenovo_keyboard.jpg>
-Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 157.
+Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 155.
 (pdftex.def)             Requested size: 109.11401pt x 72.27423pt.
 [7
 
@@ -1388,13 +1388,13 @@ Package pdftex.def Info: lenovo_keyboard.jpg  used on input line 157.
 logo.jpg> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_middle.p
 df> </usr/share/texlive/texmf-dist/tex/latex/keystroke/keystroke_right.pdf> <./
 lenovo_keyboard.jpg>]
-<ubuntu_terminal.png, id=327, 744.7825pt x 481.8pt>
+<ubuntu_terminal.png, id=323, 744.7825pt x 481.8pt>
 File: ubuntu_terminal.png Graphic file (type png)
 <use ubuntu_terminal.png>
-Package pdftex.def Info: ubuntu_terminal.png  used on input line 184.
+Package pdftex.def Info: ubuntu_terminal.png  used on input line 182.
 (pdftex.def)             Requested size: 148.95386pt x 96.35829pt.
 
-Overfull \hbox (0.30893pt too wide) in paragraph at lines 184--184
+Overfull \hbox (0.30893pt too wide) in paragraph at lines 182--182
 []  
  []
 
@@ -1416,14 +1416,20 @@ Overfull \hbox (0.30893pt too wide) in paragraph at lines 184--184
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `lecture2_linux_basics.out' has not changed.
-(rerunfilecheck)             Checksum: AAB8208148015B5D094BABCBE6983F27;275.
+
+Package rerunfilecheck Warning: File `lecture2_linux_basics.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lecture2_linux_basics.out':
+(rerunfilecheck)             Before: DA0B6A243B51F234A3C4E323F08681DC;209
+(rerunfilecheck)             After:  AAB8208148015B5D094BABCBE6983F27;275.
  ) 
 Here is how much of TeX's memory you used:
- 29889 strings out of 480247
- 601225 string characters out of 5896151
- 1065551 words of memory out of 5000000
- 47179 multiletter control sequences out of 15000+600000
+ 29887 strings out of 480247
+ 600984 string characters out of 5896151
+ 1065504 words of memory out of 5000000
+ 47177 multiletter control sequences out of 15000+600000
  487440 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,19n,104p,568b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1440,10 +1446,10 @@ pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.60
 s1440.600pk> </home/thill/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
 sx0600.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb>
-Output written on lecture2_linux_basics.pdf (9 pages, 881996 bytes).
+Output written on lecture2_linux_basics.pdf (9 pages, 881896 bytes).
 PDF statistics:
- 809 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
+ 806 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
  34 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  31 AUG 2023 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.13)  29 MAY 2024 23:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(/mnt/c/Users/thill/Documents/courses/ros_workshop/ros_tutorial.sty
+(../../ros_tutorial.sty
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
@@ -1072,8 +1072,8 @@ l.26 \begin{document}
  
 Here is how much of TeX's memory you used:
  27153 strings out of 480247
- 531453 string characters out of 5896151
- 865305 words of memory out of 5000000
+ 531233 string characters out of 5896151
+ 865003 words of memory out of 5000000
  44658 multiletter control sequences out of 15000+600000
  470634 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
