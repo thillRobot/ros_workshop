@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  22 OCT 2024 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  22 OCT 2024 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,13 +1273,13 @@ nged.
 (rerunfilecheck)             Checksum: 26BB9A4BCA8E38C70E6F2BF337BAEF4D;211.
  ) 
 Here is how much of TeX's memory you used:
- 25772 strings out of 483183
- 510388 string characters out of 5966292
- 985641 words of memory out of 5000000
- 40151 multiletter control sequences out of 15000+600000
+ 25771 strings out of 483183
+ 510375 string characters out of 5966292
+ 985638 words of memory out of 5000000
+ 40150 multiletter control sequences out of 15000+600000
  549750 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,19n,73p,824b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,19n,73p,856b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{sectionIII} has been referenced but does not exis
 t, replaced by a fixed one
 

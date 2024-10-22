@@ -6,7 +6,7 @@ In this tutorial you will interact with the LX robot using your laptop as a remo
 
 ## System Requirements:
 
-- **ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. You the branch selector above for alternate versions. Versions of ROS are generally tied to versions of Ubuntu.
+- **ROS+OS:** This tutorial is intended for a system with ROS Noetic installed on the Ubuntu 20.04 LTS operating system. Use the branch selector above for alternate versions. Versions of ROS are generally tied to versions of Ubuntu.
 - **Internet:** Your computer must be connected to the internet to proceed. 
 	
 ## Before You Begin:
