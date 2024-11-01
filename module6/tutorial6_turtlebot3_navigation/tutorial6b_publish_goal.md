@@ -154,7 +154,6 @@ catkin_make
 
 The workspace should compile without errors before continuing.
 
-```
 
 # Step 4 - Test Subscribe Status Node
 Start the simulator with the same commands as before and run the subscribe_status node.
