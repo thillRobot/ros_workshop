@@ -2,9 +2,9 @@
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 ## Overview:
-Applications typically require the mobile robot to visit goal points defined by a top-level planning or controller node. Goals may be sampled from predefined paths or computed in time to achieve the mission. The _Pose Estimate_ and _1D Nav_ buttons in RVIZ are useful for testing but are not suitable for most robotic applications. During operation, the goal points and robot status are accessed programatically with a user defined node.
+Applications typically require the mobile robot to visit goal points defined by a top-level planning or controller node. Goals may be sampled from predefined paths or computed in time to achieve the mission. The _Pose Estimate_ and _1D Nav_ buttons in RVIZ used in the previous tutorial are useful for testing but are not suitable for most robotic applications. During operation, the goal points and robot status are accessed programatically with a user defined node.
 
-<img src="turtlebot3_models.png" alt="drawing" width="400"/>
+<img src="ai143_map1_rotated_cropped.png" alt="drawing" width="400"/>
 
 (Image: [emanual.robotis.com](https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#features) )
  
