@@ -1,18 +1,15 @@
 # ROS Workshop - Tutorial 6 - Turtlebot3 Navigation
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
-## Navigation:
-
-What do we mean by navigation? This means different things in different places. Here, we mean the navigation stack in ROS noetic. This tutorial comes from [here](http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#simulation) 
+## Overview:
+Applications typically require the mobile robot to visit goal points defined by a top-level planning or controller node. Goals may be sampled from predefined paths or computed in time to achieve the mission. The _Pose Estimate_ and _1D Nav_ buttons in RVIZ are useful for testing but are not suitable for most robotic applications. During operation, the goal points and robot status are accessed programatically with a user defined node.
 
 <img src="turtlebot3_models.png" alt="drawing" width="400"/>
 
 (Image: [emanual.robotis.com](https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#features) )
+ 
+ In this tutorial you will learn to publish and subcribe to navigation topics used by Turtlebot3 Simulations with a custom C++ node. Read more here at [some reference](https://wiki.ros.org)
 
-	
-## Overview:
-In this tutorial you will learn to use the navigation stack with the turtlebot3 simulations. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
-	
 ## System Requirements:
 
 - **ROS+OS**: This tutorial is intended for a system with ROS noetic installed on the Ubuntu 20.04 LTS operating system. Alternate versions of ROS (i.e. - Kinetic, Noetic, etc.) may work but have not been tested. Versions of ROS are tied to versions of Ubuntu.
@@ -201,13 +198,6 @@ Turn on the navigation nodes and RVIZ. Use the name of the map you created, and 
 ```
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\tutorial6.yaml'
 ```
-
-## Part 5 - Goals and Status
-
-The _Pose Estimate_ and _2D Nav_ buttons in RVIZ are useful for testing but are not suitable for most robotic applications. This section will show how to publish and subcribed to the relevant topics using a custom C++ node as the interface to ROS navigation.
-
-
-
 
 ### Tutorial Complete: 
 After completing _Tutorial 6 - Turtlebot3 Simulator_, you are ready to learn about ... more ROS!
