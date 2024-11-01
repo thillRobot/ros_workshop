@@ -85,5 +85,119 @@ Open RVIZ to view the data. This is a very useful tool.
 roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ```
 
+## Part 3 - Customize the Simulator 
+
+The `turtlebot3_simulations` package installed in Step 1 is not easliy configurable in the default install directory `/opt/ros/noetic`. To customize the simulator, remove the installed package using the package manager and clone a copy of the source code into user workspace `catkin_ws/src`. 
+
+### Step 1 - Install simulator in  user space
+Remove the package
+
+```
+sudo apt udpate
+sudo apt remove turtlebot3_simulations
+```
+
+Clone a copy into the ROS workspace
+
+```
+cd ~/catkin_ws/src
+git clone https://github.com/ROBOTIS-GIT.com/turtlebot3_simulations
+```
+
+Compile the workspace
+
+```
+cd ~/catkin_ws
+catkin_make
+```
+
+### Step 2 - Configure Gazebo Simulation
+
+Now the launch files and world configuration can be edited by the user. 
+
+The simulated physics can in the background without Gazebo window. Set `gui` to `false` by editing `turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_world.launch`, and the Gazebo window will no longer open.
+ 
+```
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle,     waffle_pi]"/>
+  <arg name="x_pos" default="-2.0"/>
+  <arg name="y_pos" default="-0.5"/>
+  <arg name="z_pos" default="0.0"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_world.wor    ld"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="false"/>
+    <arg name="headless" value="true"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtleb    ot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtl    ebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_descrip    tion" />
+</launch>
+              
+```
+
+The realtime update rate can be adjusted in `turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_world.world`
+
+```
+<sdf version='1.4'>
+  <world name='default'>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <physics type="ode">
+      <real_time_update_rate>250.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.400000</sor>
+          <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01000</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+    <!-- Load world -->
+    <include>
+      <uri>model://turtlebot3_world</uri>
+    </include>
+
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.8 0.0 12.0 0 1.5708 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
+```
+
+These two changes should reduce the CPU load and increase performance.
+
 ## Tutorial Complete:
 After completing _Tutorial 5 - Turtlebot3 Simulator_, you are ready to learn about robot navigation with SLAM and GMAPPING ! See the tutorial referenced above if you are ready to proceed.
