@@ -4,9 +4,9 @@
 ## Overview:
 Applications typically require the mobile robot to visit goal points defined by a top-level planning or controller node. Goals may be sampled from predefined paths or computed in time to achieve the mission. The _Pose Estimate_ and _1D Nav_ buttons in RVIZ used in the previous tutorial are useful for testing but are not suitable for most robotic applications. During operation, the goal points and robot status are accessed programatically with a user defined node.
 
-<img src="ai143_map1_rotated_cropped.png" alt="drawing" width="400"/>
+<img src="ai143_map1_rotated_cropped.png" alt="drawing" width="800"/>
 
-(Image: [emanual.robotis.com](https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#features) )
+(Image: TNTech Robotics)
  
  In this tutorial you will learn to publish and subcribe to navigation topics used by Turtlebot3 Simulations with a custom C++ node. Read more here at [some reference](https://wiki.ros.org)
 
