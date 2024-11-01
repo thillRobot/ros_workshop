@@ -101,7 +101,7 @@ Clone a copy into the ROS workspace
 
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/ROBOTIS-GIT.com/turtlebot3_simulations
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations
 ```
 
 Compile the workspace
