@@ -94,7 +94,7 @@ Remove the package
 
 ```
 sudo apt udpate
-sudo apt remove turtlebot3_simulations
+sudo apt remove ros-noetic-turtlebot3-simulations
 ```
 
 Clone a copy into the ROS workspace
