@@ -91,7 +91,7 @@ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 In a second terminal, turn on navigation and RVIZ using the custom map
 ```
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\tutorial6.yaml'
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\demo_world.yaml'
 ```
 
 Run the publish goal node in a third terminal.
@@ -100,7 +100,68 @@ rosrun tutorial6 publish_goal
 ``` 
 The robot should begin planning a path to the goal. If a valid path is found, the robot will begin to move toward the goal.
 
+# Part 3 - Create Status Subscriber Node
 
+Create a new file for the subcriber node source code in the same package 
+```
+gedit ~/catkin_ws/src/tutorial6/src/subscribe_status.cpp
+```
+Copy and paste the following code into the file and save
+
+```c++
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+#include "actionlib_msgs/GoalStatusArray.h"
+
+void statusCB(const actionlib_msgs::GoalStatusArray::ConstPtr& msg)
+{
+    ROS_INFO("Subscriber Callback Executed");
+    if (!msg->status_list.empty())
+    {
+        actionlib_msgs::GoalStatus goalStatus = msg->status_list[0];
+        ROS_INFO("Status Recieved: %i",goalStatus.status);
+    }
+}
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "subscribe_status");
+    ros::NodeHandle n;
+    ros::Subscriber sub = n.subscribe("/move_base/status", 1000, statusCB);
+    ros::spin();
+    return 0;
+}
+```
+Edit the CMakeLists.txt file so the new node can be compiled.
+
+```
+gedit ~/catkin_ws/src/tutorial6/CMakeLists.txt
+```
+
+Copy the following lines into the bottom of the file and save.
+
+```
+add_executable(subscribe_status src/subscribe_status.cpp)
+target_link_libraries(subscribe_status ${catkin_LIBRARIES})
+```
+
+Move to the top of the workspace and compile to generate an executable from the source code.
+
+```
+cd ~/catkin_ws
+catkin_make
+```
+
+The workspace should compile without errors before continuing.
+
+```
+
+# Step 4 - Test Subscribe Status Node
+Start the simulator with the same commands as before and run the subscribe_status node.
+
+```
+rosrun tutorial6 subscribe_status
+```
 
 
 

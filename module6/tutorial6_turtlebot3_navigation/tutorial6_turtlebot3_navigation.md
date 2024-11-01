@@ -35,7 +35,7 @@ In this tutorial you will learn to use the navigation stack with the turtlebot3 
 Install the packages required for autonomous navigation if you have not already. It will not hurt to run the install command again.
 
 ```
-sudo apt update
+sudo apt update && sudo apt upgrade
 
 sudo apt install ros-noetic-navigation ros-noetic-gmapping
 ```
