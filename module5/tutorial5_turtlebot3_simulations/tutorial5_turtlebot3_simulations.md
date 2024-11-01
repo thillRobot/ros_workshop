@@ -140,7 +140,8 @@ The simulated physics can in the background without Gazebo window. Set `gui` to 
               
 ```
 
-The realtime update rate can be adjusted in `turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_world.world`
+Reduce the `real_time_update_rate` and adjust the `max_step_size` as the reciprocal in `turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_world.world`. The lighting and other world parameters can be modified as well.
+
 
 ```
 <sdf version='1.4'>
@@ -157,7 +158,7 @@ The realtime update rate can be adjusted in `turtlebot3_simulations/turtlebot3_g
 
     <physics type="ode">
       <real_time_update_rate>250.0</real_time_update_rate>
-      <max_step_size>0.001</max_step_size>
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1</real_time_factor>
       <ode>
         <solver>
