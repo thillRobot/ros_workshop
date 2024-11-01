@@ -1,4 +1,4 @@
-# ROS Workshop - Turtorial 5 - Turtlebot3 Simulations
+# ROS Workshop - Tutorial 5 - Turtlebot3 Simulations
 ## ME4140 - Introduction to Robotics, ME6640 - Advanced Robotics 
 
 <img src="turtlebot3_simulations.png" alt="drawing" width="400"/>
