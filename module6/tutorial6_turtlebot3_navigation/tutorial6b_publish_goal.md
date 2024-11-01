@@ -79,6 +79,29 @@ cd ~/catkin_ws
 catkin_make
 ```
 
+The workspace should compile without errors before continuing.
+
+
+# Part 2 - Test the Goal Publisher Node
+
+Start the turtlebot3 robot simulation with commands from _Tutorial6 - Turtlebot3 Navigation_
+
+```
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```
+In a second terminal, turn on navigation and RVIZ using the custom map
+```
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:='$(find tutorial6)\maps\tutorial6.yaml'
+```
+
+Run the publish goal node in a third terminal.
+```
+rosrun tutorial6 publish_goal
+``` 
+The robot should begin planning a path to the goal. If a valid path is found, the robot will begin to move toward the goal.
+
+
+
 
 
 
