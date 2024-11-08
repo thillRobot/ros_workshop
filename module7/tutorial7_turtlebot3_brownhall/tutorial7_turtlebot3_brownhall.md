@@ -115,8 +115,12 @@ sudo apt install ros-noetic-dwa-local-planner
 
 #### make a new map of the virtual brown hall
 
-follow the steps from tutorial 6 
+Use the process from tutorial 6 to map the simulated Brown Hall
 
+Start simulator
+```
+roslaunch turtlebot3_brownhall turtlebot3_brownhall.launch
+```
 
 Start gmapping
 ```
