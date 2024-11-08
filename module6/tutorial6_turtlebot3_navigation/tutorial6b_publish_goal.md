@@ -156,7 +156,7 @@ The workspace should compile without errors before continuing.
 
 
 # Step 4 - Test Subscribe Status Node
-Start the simulator with the same commands as before and run the subscribe_status node. Read about the GoalStatus message \href[https://docs.ros.org/en/noetic/api/actionlib_msgs/html/msg/GoalStatus.html][here]
+Start the simulator with the same commands as before and run the subscribe_status node. Read about the GoalStatus message (here)[https://docs.ros.org/en/noetic/api/actionlib_msgs/html/msg/GoalStatus.html]
 
 ```
 rosrun tutorial6 subscribe_status
