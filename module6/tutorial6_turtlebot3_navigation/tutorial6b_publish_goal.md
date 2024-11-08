@@ -164,7 +164,7 @@ rosrun tutorial6 subscribe_status
 
 The status topic should contain an integer 0-9 indicating one of the following states.
 
-\begin{lstlisting}
+```
 GoalID goal_id
 uint8 status
 uint8 PENDING         = 0   # The goal has yet to be processed by the action server
@@ -187,10 +187,7 @@ uint8 LOST            = 9   # An action client can determine that a goal is LOST
 
 #Allow for the user to associate a string with GoalStatus for debugging
 string text
-
-\end{lstlisting}
-
-
+```
 
 ### Tutorial Complete: 
 After completing _Tutorial 6B - Turtlebot3 Simulator_, you are ready to learn about ... even more ROS!
