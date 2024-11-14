@@ -4,8 +4,7 @@
 ## Overview:
 In this tutorial you will import a map of Brown Hall to use with the navigation stack and the turtlebot3 simulations. Read more [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#ros-1-navigation) and [here](http://wiki.ros.org/navigation/Tutorials).
 
-<img src="images/turtlebot3_brownhall_gazebo.png" alt="drawing" width="800"/>
-<img src="images/turtlebot3_brownhall_rviz.png" alt="drawing" width="800"/>
+<img src="images/turtlebot3_brownhall_gazebo.png" alt="drawing" width="600"/><img src="images/turtlebot3_brownhall_rviz.png" alt="drawing" width="600"/>
 
 (Image: TNTech Robotics)
 	
