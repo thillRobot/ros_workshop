@@ -193,7 +193,7 @@ string text
 
 This a basic approach to publishing an array of goals. There is plenty of room for improvement... have fun.
 
-```
+```c++
 #include "ros/ros.h"
 #include "geometry_msgs/PoseStamped.h"
 #include <sstream>
