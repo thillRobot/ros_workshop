@@ -1,0 +1,65 @@
+{
+    "name": "ROS 2 Workspace humble-ros-base",
+    "remoteUser": "rosdev",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "rosdev",
+            "GID": "1000",
+            "UID": "1000"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-iot.vscode-ros",
+                "smilerobotics.urdf",
+                "redhat.vscode-xml",
+                "tamasfe.even-better-toml",
+                "timonwong.shellcheck",
+                "yzhang.markdown-all-in-one",
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.rviz": "yaml",
+                    "*.srdf": "xml",
+                    "*.urdf": "xml",
+                    "*.xacro": "xml"
+                }
+            }
+        }
+    },
+    "workspaceFolder": "/home/rosdev/ros2_ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/rosdev/ros2_ws/doc,type=bind",
+    "mounts": [
+        "source=${localWorkspaceFolder}/src,target=/home/rosdev/ros2_ws/src,type=bind"
+    ],
+    "runArgs": [
+        "--privileged",
+        "--net=host"
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers-extra/features/wget-apt-get:1": {}
+    },
+    "forwardPorts": [
+        6090,
+        5901
+    ],
+    "portsAttributes": {
+        "6090": {
+            "label": "Desktop (Web)"
+        },
+        "5901": {
+            "label": "Desktop (VNC)"
+        }
+    },
+    "containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}"
+        //"XAUTHORITY": "/tmp/.X11-unix"
+    }
+}
